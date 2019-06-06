@@ -10,8 +10,8 @@ export CIL_FEATURES=cil.oneret
 
 .PHONY: all clean
 
-merged_g_0:merged_g_0.c
-	$(CILLY) $(COPTS) --save-temps --noPrintLn -c --load=$(INSTKLEE) --doinstKlee --entry=lib  --assume='x_copy1 == '4' & x == '-2146435024' & ret == '0'' merged_g_0.c
+client_merged_g_0:client_merged_g_0.c
+	$(CILLY) $(COPTS) --save-temps --noPrintLn -c --load=$(INSTKLEE) --doinstKlee --entry=clientmain   client_merged_g_0.c
 
 clean:
 	rm -rf *.o *.i *.cil.* klee-*

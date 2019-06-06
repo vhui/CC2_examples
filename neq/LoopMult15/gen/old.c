@@ -1,24 +1,13 @@
 int foo(int a, int b);
-int clientmain(int x, int x_copy1)
+int clientmain(void, void)
 {
-  int ret = 0;
-  if ((x >= 13) && (x < 16))
-    ret = foo(x, 15);
-
-  ret;
-  int ret_copy1 = 0;
-  if ((x_copy1 >= 13) && (x_copy1 < 16))
-    ret_copy1 = foo(x_copy1, 15);
-
-  return ret_copy1;
+  foo(5, 900);
+  return foo(5, 900) + foo(5, 900);
 }
 
 int foo(int a, int b)
 {
-  int c = 0;
-  for (int i = 1; i <= b; ++i)
-    c -= a;
-
+  int c = a + b;
   return c;
 }
 

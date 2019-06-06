@@ -77,12 +77,12 @@ UNWINDS = 1000
 start = False
 
 for dirpath, dnames, fnames in os.walk("./"):
-  #dnames.sort()
   #for dirname in sorted(dnames):
+    dnames.sort()
     #print(dirpath)
     if len(dirpath.split("/")) != 4: #not inside gen folder!
         continue
-    if "gen" not in dirpath:
+    if "merged" not in dirpath:
         continue
     dirname = dirpath.split("/")[-1]
     """if "loopmult" not in dirpath and "LoopMult" not in dirpath and "loopunreach" not in dirpath and "LoopUnreach" not in dirpath:
