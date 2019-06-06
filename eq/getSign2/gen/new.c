@@ -7,20 +7,22 @@ int lib(int x)
 
 }
 
-int client(int x, int x_1)
+int client(int x, int x_copy1)
 {
+  int ret = x;
   if (x > 0)
   {
-    return lib(x);
+    ret = lib(x);
   }
 
-  x;
-  if (x_1 > 0)
+  ret;
+  int ret_copy1 = x_copy1;
+  if (x_copy1 > 0)
   {
-    return lib(x);
+    ret_copy1 = lib(x_copy1);
   }
 
-  return x_1;
+  return ret_copy1;
 }
 
 int main()

@@ -1,5 +1,5 @@
 int foo(int a, int b);
-int clientmain(int x, int x_1)
+int clientmain(int x, int x_copy1)
 {
   foo(2, 2);
   return foo(2, 2);

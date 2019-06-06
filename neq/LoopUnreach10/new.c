@@ -1,9 +1,10 @@
 int foo(int a, int b);
 
 int clientmain(int x) {
+  int ret = 0;
 	if (x>=9 && x<12)
-		return foo(x,10);
-	return 0;
+		ret = foo(x,10);
+	return ret;
 }
 
 int foo(int a, int b) {

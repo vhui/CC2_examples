@@ -3,20 +3,30 @@ int lib(int x, int y)
   return x / y;
 }
 
-int client(int c, int d, int c_1, int d_1)
+int client(int c, int d, int c_copy1, int d_copy1)
 {
+  int ret;
   if (d == 0)
   {
-    return 0;
+    ret = 0;
   }
-
-  lib(c, d);
-  if (d_1 == 0)
+  else
   {
-    return 0;
+    ret = lib(c, d);
   }
 
-  return lib(c, d);
+  ret;
+  int ret_copy1;
+  if (d_copy1 == 0)
+  {
+    ret_copy1 = 0;
+  }
+  else
+  {
+    ret_copy1 = lib(c_copy1, d_copy1);
+  }
+
+  return ret_copy1;
 }
 
 int main()

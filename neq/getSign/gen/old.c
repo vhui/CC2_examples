@@ -10,10 +10,10 @@ int lib(int x)
 
 }
 
-int client(int x, int x_1)
+int client(int x, int x_copy1)
 {
   lib(x);
-  return lib(x);
+  return lib(x_copy1);
 }
 
 int main()

@@ -19,5 +19,5 @@ int lib(int a){
         }
         i++;
     }
-    return count+1;
+    return count;
 }

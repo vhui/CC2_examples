@@ -3,17 +3,21 @@
  */
 
 int lib(int x){
+  int ret;
 	if (x > 10)
-		return 11;
+		ret = 11;
 	else
-		return x;
+		ret = x;
+  return ret;
 }
 
 int client(int x){
+  int ret;
 	if (x > lib(x))
-		return x;
+		ret = x;
 	else
-		return lib(x);
+		ret = lib(x);
+  return ret;
 }
 
 int main() {

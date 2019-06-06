@@ -6,13 +6,16 @@ int lib(int x) {
 }
 
 int client(int x) {
+  int ret;
   if (x < -100 || x > 100) {
-    return x;
+    ret = x;
+  } else {
+    if (x > lib(x))
+      ret = x;
+    else
+      ret = lib(x);
   }
-  if (x > lib(x))
-    return x;
-  else
-    return lib(x);
+  return ret;
 }
 
 int main() {

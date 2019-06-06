@@ -9,13 +9,14 @@ int lib(int x) {
 }
 
 int client(int x){
+  int ret;
 	if (x > 0) {
-		return -lib(-x);
+		ret = -lib(-x);
 	}else{
-		return lib(x);
+		ret = lib(x);
 	}
+  return ret;
 }
-
 
 int main() {
 	int x;//=3089104896;

@@ -6,11 +6,13 @@ int lib(int x) {
 }
 
 int client(int x){
+  int ret;
 	if (x < 0){
-		return -lib((-x)*5)/5;
+		ret = -lib((-x)*5)/5;
 	}else{
-		return lib((x+1)*5)/5 - 1;
+		ret = lib((x+1)*5)/5 - 1;
 	}
+  return ret;
 }
 
 int main() {

@@ -13,16 +13,16 @@ class IDRenameVisitor(c_ast.NodeVisitor):
 
     def visit_ID(self, node):
         if isinstance(node, c_ast.ID):
-            if not node.name.endswith("_"+self.version):
-                node.name = (node.name+"_"+ self.version)
+            if not node.name.endswith("_copy"+self.version):
+                node.name = (node.name+"_copy"+ self.version)
 
     def visit_Decl(self, node):
         if isinstance(node, c_ast.Decl):
-            if not node.name.endswith("_" + self.version):
-                node.name = (node.name + "_" + self.version)
+            if not node.name.endswith("_copy" + self.version):
+                node.name = (node.name + "_copy" + self.version)
             if isinstance(node.type, c_ast.TypeDecl):
-                if not node.type.declname.endswith("_"+self.version):
-                    node.type.declname = (node.type.declname+"_"+ self.version)
+                if not node.type.declname.endswith("_copy"+self.version):
+                    node.type.declname = (node.type.declname+"_copy"+ self.version)
             c_ast.NodeVisitor.generic_visit(self, node)
             """if node.init is not None:
                 hunter = IDhunterRaw()
@@ -102,7 +102,7 @@ def main():
     generator = c_generator.CGenerator()
     print(generator.visit(fulltree1))
     print(generator.visit(fulltree2))
-    import pdb; pdb.set_trace()
+    #import pdb; pdb.set_trace()
 
     with open(gen_new, 'w+') as f:
         f.write(generator.visit(fulltree1))

@@ -1,14 +1,16 @@
 int foo(int a, int b);
-int clientmain(int x, int x_1)
+int clientmain(int x, int x_copy1)
 {
+  int ret = 0;
   if ((x >= 5) && (x < 7))
-    return foo(x, 5);
+    ret = foo(x, 5);
 
-  0;
-  if ((x_1 >= 5) && (x_1 < 7))
-    return foo(x, 5);
+  ret;
+  int ret_copy1 = 0;
+  if ((x_copy1 >= 5) && (x_copy1 < 7))
+    ret_copy1 = foo(x_copy1, 5);
 
-  return 0;
+  return ret_copy1;
 }
 
 int foo(int a, int b)

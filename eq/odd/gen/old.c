@@ -10,26 +10,30 @@ int lib(int x)
   return counter;
 }
 
-int client(int x, int x_1)
+int client(int x, int x_copy1)
 {
+  int ret;
   if (lib(x) == 0)
   {
-    return 1;
+    ret = 1;
   }
   else
   {
-    return 0;
+    ret = 0;
   }
 
-  if (lib(x) == 0)
+  ret;
+  int ret_copy1;
+  if (lib(x_copy1) == 0)
   {
-    return 1;
+    ret_copy1 = 1;
   }
   else
   {
-    return 0;
+    ret_copy1 = 0;
   }
 
+  return ret_copy1;
 }
 
 int main()

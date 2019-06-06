@@ -20,7 +20,7 @@ int lib(unsigned int x, int b)
   return 1;
 }
 
-int client(unsigned int x, unsigned int x_1)
+int client(unsigned int x, unsigned int x_copy1)
 {
   for (int i = 0; i < 8; i++)
   {
@@ -30,14 +30,14 @@ int client(unsigned int x, unsigned int x_1)
   }
 
   lib(x, 1);
-  for (int i_1 = 0; i_1 < 8; i_1++)
+  for (int i_copy1 = 0; i_copy1 < 8; i_copy1++)
   {
-    if (x_1 == primes_1[i_1])
+    if (x_copy1 == primes_copy1[i_copy1])
       return 1;
 
   }
 
-  return lib(x, 1);
+  return lib(x_copy1, 1);
 }
 
 int main()

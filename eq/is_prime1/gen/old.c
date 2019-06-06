@@ -20,10 +20,10 @@ int lib(unsigned int x, int b)
   return 1;
 }
 
-int client(unsigned int x, unsigned int x_1)
+int client(unsigned int x, unsigned int x_copy1)
 {
   lib(x, 0);
-  return lib(x, 0);
+  return lib(x_copy1, 0);
 }
 
 int main()

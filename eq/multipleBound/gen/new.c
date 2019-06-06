@@ -3,38 +3,48 @@ int lib(int x)
   return x % 6;
 }
 
-int client(int x, int x_1)
+int client(int x, int x_copy1)
 {
+  int ret;
   if ((x < (-100)) || (x > 100))
   {
-    return x;
-  }
-
-  x = (x * 5) * 6;
-  if (lib(x) == 0)
-  {
-    return 1;
+    ret = x;
   }
   else
   {
-    return 0;
+    x = (x * 5) * 6;
+    if (lib(x) == 0)
+    {
+      ret = 1;
+    }
+    else
+    {
+      ret = 0;
+    }
+
   }
 
-  if ((x_1 < (-100)) || (x_1 > 100))
+  ret;
+  int ret_copy1;
+  if ((x_copy1 < (-100)) || (x_copy1 > 100))
   {
-    return x_1;
-  }
-
-  x_1 = (x_1 * 5) * 6;
-  if (lib(x) == 0)
-  {
-    return 1;
+    ret_copy1 = x_copy1;
   }
   else
   {
-    return 0;
+    x_copy1 = (x_copy1 * 5) * 6;
+    if (lib(x_copy1) == 0)
+    {
+      ret_copy1 = 1;
+    }
+    else
+    {
+      ret_copy1 = 0;
+    }
+
   }
 
+  return ret_copy1;
 }
 
 int main()

@@ -10,10 +10,12 @@ int lib(int x){
 }
 
 int client(int x){
+  int ret;
 	if (x > lib(x))
-		return x;
+		ret = x;
 	else
-		return lib(x);
+		ret = lib(x);
+  return ret;
 }
 
 int main() {

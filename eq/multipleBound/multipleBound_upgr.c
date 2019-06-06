@@ -3,15 +3,18 @@ int lib(int x) {
 }
 
 int client(int x){
+  int ret;
 	if (x < -100 || x > 100) {
-		return x;
-	}
-	x = x*5*6;
-	if (lib(x)==0){
-		return 1;
-	}else{
-		return 0;
-	}
+		ret = x;
+	} else {
+	  x = x*5*6;
+	  if (lib(x)==0){
+		  ret = 1;
+	  }else{
+		  ret = 0;
+	  }
+  }
+  return ret;
 }
 
 int main() {

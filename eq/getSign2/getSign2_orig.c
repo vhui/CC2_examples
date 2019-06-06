@@ -8,10 +8,11 @@ int lib(int x) {
 }
 
 int client(int x){
+  int ret = x;
   if (x > 0) {
-    return lib(x);
+    ret = lib(x);
   }
-  return x;
+  return ret;
 }
 
 int main() {

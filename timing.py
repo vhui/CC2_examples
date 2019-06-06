@@ -78,9 +78,11 @@ start = False
 
 for dirpath, dnames, fnames in os.walk("./"):
   #dnames.sort()
-  #for dirname in dnames:
+  #for dirname in sorted(dnames):
     #print(dirpath)
     if len(dirpath.split("/")) != 4: #not inside gen folder!
+        continue
+    if "gen" not in dirpath:
         continue
     dirname = dirpath.split("/")[-1]
     """if "loopmult" not in dirpath and "LoopMult" not in dirpath and "loopunreach" not in dirpath and "LoopUnreach" not in dirpath:
@@ -93,10 +95,11 @@ for dirpath, dnames, fnames in os.walk("./"):
         start = True
     if not start:
         continue"""
-    if "gen" not in dirpath:
-        continue
     c_files = [f for f in fnames if f.endswith(".c")]
     py_files = [f for f in fnames if f.endswith(".py")]
+    if (len(c_files) != 2):
+        print("Skipped: %s", dirpath)
+        continue
     """if (len(c_files) != 2 or len(py_files) != 2):
         print("Skipped: %s", dirpath)
         continue"""
@@ -169,9 +172,9 @@ for dirpath, dnames, fnames in os.walk("./"):
               CC2_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
       if "real " in err_lines[-4]: #more robust?
           CC2_TIME = float(err_lines[-4].split()[1])
-      for line in err_lines:
-          if "Command exited with non-zero" in line:
-              CC2_RESULT = ERROR
+      #for line in err_lines:
+      #    if "Command exited with non-zero" in line:
+      #        CC2_RESULT = ERROR
     except TimeoutExpired:
         proc.kill()
         #out, err = proc.communicate()
@@ -196,14 +199,41 @@ for dirpath, dnames, fnames in os.walk("./"):
               CC2_SEA_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
       if "real " in err_lines[-4]: #more robust?
           CC2_SEA_TIME = float(err_lines[-4].split()[1])
-      for line in err_lines:
-          if "Command exited with non-zero" in line:
-              CC2_SEA_RESULT = ERROR
+      #for line in err_lines:
+      #    if "Command exited with non-zero" in line:
+      #        CC2_SEA_RESULT = ERROR
     except TimeoutExpired:
         proc.kill()
         #out, err = proc.communicate()
         CC2_SEA_RESULT = "timeout"
         CC2_SEA_TIME   = TIMEOUT
+
+    try: 
+      #TODO: WARNING - STATIC PATH ARGUMENT
+      args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s --new %s \
+                 --client %s --lib %s --hybrid-solving HYBRID --concurrent CONCURRENT" 
+                  % (old_c_filename, new_c_filename, c_client, c_lib))
+      proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
+      out, err = proc.communicate(timeout=TIMEOUT)
+      out_lines = out.decode('utf8').split('\n')
+      err_lines = err.decode('utf8').split('\n')
+      for line in out_lines:
+          if "Grow out of context, CEX" in line:
+              CC2_CBMC_RESULT = NEQ
+          elif "have been checked, CSE" in line:
+              CC2_CBMC_RESULT = EQ
+          elif "Solver decision Time:" in line:
+              CC2_CBMC_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
+      #for line in err_lines:
+      #    if "Command exited with non-zero" in line:
+      #        CC2_CBMC_RESULT = ERROR
+      if "real " in err_lines[-4]: #more robust?
+          CC2_CBMC_TIME = float(err_lines[-4].split()[1])
+    except TimeoutExpired:
+        proc.kill()
+        #out, err = proc.communicate()
+        CC2_CBMC_RESULT = "timeout"
+        CC2_CBMC_TIME = TIMEOUT
 
     """try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
@@ -223,9 +253,9 @@ for dirpath, dnames, fnames in os.walk("./"):
               CC2_KLEE_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
       if "real " in err_lines[-4]: #more robust?
           CC2_KLEE_TIME = float(err_lines[-4].split()[1])
-      for line in err_lines:
-          if "Command exited with non-zero" in line:
-              CC2_KLEE_RESULT = ERROR
+      #for line in err_lines:
+      #    if "Command exited with non-zero" in line:
+      #        CC2_KLEE_RESULT = ERROR
     except TimeoutExpired:
         proc.kill()
         #out, err = proc.communicate()
@@ -248,9 +278,9 @@ for dirpath, dnames, fnames in os.walk("./"):
               CC2_CBMC_RESULT = EQ
           elif "Solver decision Time:" in line:
               CC2_CBMC_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
-      for line in err_lines:
-          if "Command exited with non-zero" in line:
-              CC2_CBMC_RESULT = ERROR
+      #for line in err_lines:
+      #    if "Command exited with non-zero" in line:
+      #        CC2_CBMC_RESULT = ERROR
       if "real " in err_lines[-4]: #more robust?
           CC2_CBMC_TIME = float(err_lines[-4].split()[1])
     except TimeoutExpired:
@@ -275,9 +305,9 @@ for dirpath, dnames, fnames in os.walk("./"):
               KLEECLEVER_RESULT = EQ
           elif "time :" in line:
               KLEECLEVER_TIME = float(line.lstrip("time : ").rstrip())
-      for line in err_lines:
-          if "Command exited with non-zero" in line:
-              KLEECLEVER_RESULT = ERROR
+      #for line in err_lines:
+      #    if "Command exited with non-zero" in line:
+      #        KLEECLEVER_RESULT = ERROR
       #import pdb; pdb.set_trace()
     except TimeoutExpired:
         proc.kill()
@@ -309,7 +339,7 @@ for dirpath, dnames, fnames in os.walk("./"):
         CLEVER_TIME = TIMEOUT"""
 
     #print("%-20s CC2-SEA: %-8s %-6.2f (Solve) %-7.3f\tCC2-BMC: %-8s %-6.2f (Solve) %-7.3f\tKleeCLEVER: %-8s %-8.4f\tPyCLEVER: %-8s %-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, CLEVER_RESULT, CLEVER_TIME))
-    print("%-20s CC2-SEA: %-8s %-6.2f (Solve) %-7.3f\tCC2-Hybrid: %-8s %-6.2f (Solve) %-7.3f\tCC2-BMC: %-8s %-6.2f (Solve) %-7.3f\tKleeCLEVER: %-8s %-8.4f" % (dirpath, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_SEA_SOLVE_TIME, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
+    print("%-20s CC2-SEA: %-8s %-6.2f (Solve) %-7.3f\tCC2-Hybrid: %-8s %-6.2f (Solve) %-7.3f\tCC2-Concurrent: %-8s %-6.2f (Solve) %-7.3f\tKleeCLEVER: %-8s %-8.4f" % (dirpath, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_SEA_SOLVE_TIME, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
     #print("%-20s \tCC2-BMC: %-8s %-6.2f (Solve) %-10.6f \tPyCLEVER: %-8s %-10.6f" % (dirpath, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, CLEVER_RESULT, CLEVER_TIME))
     """if EQLoopMult:
         EQLoopMultMap[loopnum] = (CC2_TIME, CC2_CBMC_TIME, CC2_KLEE_TIME, KLEECLEVER_TIME)

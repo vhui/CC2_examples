@@ -18,10 +18,12 @@ int lib(unsigned int x, int b) {
 }
 
 int client(unsigned int x){
+  int ret;
   if (x < 19) {
-    return lib(20, 1);
+    ret = lib(20, 1);
+  } else { ret = lib(x,1)
   }
-  return lib(x,1);
+  return ret;
 }
 
 int main() {
