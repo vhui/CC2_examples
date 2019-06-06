@@ -38,14 +38,14 @@ class IDRenameVisitor(c_ast.NodeVisitor):
 class FuncCallFindVisitor(c_ast.NodeVisitor):
     def __init__(self, name):
         self.name = name
-        self.args = None
-        self.container = None
+        self.argslist = []
+        self.containerlist = []
 
     def visit_FuncCall(self, node): #avoids renaming calling library
-        if (self.container is None and node.name.name == self.name): #node.name AND node.args
-            self.container = node
-            self.args = copy.deepcopy(node.args.exprs)
-        return
+        if (node.name.name == self.name): #node.name AND node.args
+            self.containerlist.append( node )
+            self.argslist.append( copy.deepcopy(node.args.exprs) )
+        c_ast.NodeVisitor.generic_visit(self, node)
 
 
 class FuncDefVisitor(c_ast.NodeVisitor):
@@ -116,21 +116,50 @@ def main():
         client1o, lib1o, fulltree1o = getFunc_AST(path_old, clientname, libname)
         client2n, _2, fulltree2n = getFunc_AST(path_new2, clientname2, libname2) #eventually something else
         _1, _2, fulltree2o = getFunc_AST(path_old2, clientname2, libname2)
+        client_box = client1n
+        client_in = client2n
     else:
         client2n, _2, fulltree2n = getFunc_AST(path_new, clientname, libname)
         _1, _2, fulltree2o = getFunc_AST(path_old, clientname, libname)
         client1n, lib1n, fulltree1n = getFunc_AST(path_new2, clientname2, libname2) #eventually something else
         client1o, lib1o, fulltree1o = getFunc_AST(path_old2, clientname2, libname2)
+        client_box = client1n
+        client_in = client2n        
+        """client_box = client2n #WRONG!
+        client_in = client1n"""
+        temp = libname
+        libname = libname2
+        libname2 = temp
+        #temp = clientname
+        #clientname = clientname2
+        #clientname2 = temp
     #check if returns
     
-    callVisitor = FuncCallFindVisitor(libname)
-    callVisitor.visit(client1n)
-    callVisitor2 = FuncCallFindVisitor(libname2)
-    callVisitor2.visit(client2n)
-    # TODO always replace client2(lib2) with client2(lib1), adjusting args to context
-    #import pdb; pdb.set_trace()
-    
+    boxCallVisitor = FuncCallFindVisitor(libname)
+    boxCallVisitor.visit(client_box)
+    assert(boxCallVisitor.containerlist[0] is not None)
+    args_box = boxCallVisitor.argslist[0]
+    boxCallName = boxCallVisitor.containerlist[0].name.name
 
+    inCallVisitor = FuncCallFindVisitor(libname2)
+    inCallVisitor.visit(client_in)
+    assert(inCallVisitor.containerlist[0] is not None)
+    args_in_list = inCallVisitor.argslist
+    inFuncCall_list = inCallVisitor.containerlist
+    
+    for args_in, inFuncCall in zip(args_in_list, inFuncCall_list):
+        # TODO always replace client_in(lib_in) with client_in(lib_box), adjusting args to context
+        if len(args_box) > 2 or len(args_in) > 2 or len(args_box) <= 0 or len(args_in) <= 0:
+            print("Error: Lib call has > 2, or <= 0 args, more preprocessing needed")
+            return
+        inFuncCall.name.name = boxCallName
+        if len(args_box) == 1:
+            inFuncCall.args.exprs = inFuncCall.args.exprs[:1]
+        elif len(args_box) == 2 and len(args_in) == 2:
+            None
+        elif len(args_box) == 2 and len(args_in) == 1:
+            inFuncCall.args.exprs.extend(args_in)    
+    
     if not useV2:
         client1n_RetExpr = None
         if isinstance(client1n.body.block_items[-1], c_ast.Return):
@@ -177,14 +206,14 @@ def main():
     generator = c_generator.CGenerator()
     print(generator.visit(fulltree1n))
     print(generator.visit(fulltree1o))
-    import pdb; pdb.set_trace()
+    #import pdb; pdb.set_trace()
 
     with open(gen_new, 'w+') as f:
         f.write(generator.visit(fulltree1n))
     with open(gen_old, 'w+') as f:
         f.write(generator.visit(fulltree1o))
 
-    import pdb; pdb.set_trace()
+    #import pdb; pdb.set_trace()
     #client1n.body.block_items[-1].show()
     #client1o.body.block_items[-1].show()
 
