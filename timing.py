@@ -53,7 +53,7 @@ EQ      = 'equiv'
 NEQ     = 'not equiv'
 UNKNOWN = 'unknown'
 ERROR   = 'error'
-TIMEOUT   = 300
+TIMEOUT   = 180
 CC2_RESULT = UNKNOWN
 CC2_CBMC_RESULT = UNKNOWN
 CC2_SEA_RESULT = UNKNOWN
@@ -142,12 +142,14 @@ for dirpath, dnames, fnames in os.walk("./"):
     CC2_RESULT = UNKNOWN
     CC2_SEA_RESULT = UNKNOWN
     CC2_CBMC_RESULT = UNKNOWN
+    CC2_CONC_RESULT = UNKNOWN
     CLEVER_RESULT = UNKNOWN
     KLEECLEVER_RESULT = UNKNOWN
     CC2_KLEE_RESULT = UNKNOWN
     CC2_TIME = 0
     CC2_SEA_TIME = 0
     CC2_CBMC_TIME = 0
+    CC2_CONC_TIME = 0
     CLEVER_TIME = 0
     KLEECLEVER_TIME = 0
     CC2_KLEE_TIME = 0
@@ -162,7 +164,10 @@ for dirpath, dnames, fnames in os.walk("./"):
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
       out_lines = out.decode('utf8').split('\n')
-      err_lines = err.decode('utf8').split('\n')
+      #err_lines = err.decode('utf8').split('\n')
+      for line in out_lines:
+          if "error" in line:
+              CC2_RESULT = ERROR
       for line in out_lines:
           if "Grow out of context, CEX" in line:
               CC2_RESULT = NEQ
@@ -170,18 +175,20 @@ for dirpath, dnames, fnames in os.walk("./"):
               CC2_RESULT = EQ
           elif "Solver decision Time:" in line:
               CC2_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
-      if "real " in err_lines[-4]: #more robust?
-          CC2_TIME = float(err_lines[-4].split()[1])
-      #for line in err_lines:
-      #    if "Command exited with non-zero" in line:
-      #        CC2_RESULT = ERROR
+          elif "Total Checking Time:" in line:
+              CC2_TIME = float(line.lstrip("Total Checking Time: ").rstrip())
+      #if "real " in err_lines[-4]: #more robust?
+      #    CC2_TIME = float(err_lines[-4].split()[1])
     except TimeoutExpired:
         proc.kill()
         #out, err = proc.communicate()
+        args = shlex.split("./kill_procs.sh") 
+        kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
+        out, err = kill.communicate(timeout=TIMEOUT)
         CC2_RESULT = "timeout"
         CC2_TIME   = TIMEOUT
  
-    try:    
+    """try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
       args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s --new %s \
                  --client %s --lib %s --unwind %d --engine %s" 
@@ -191,22 +198,30 @@ for dirpath, dnames, fnames in os.walk("./"):
       out_lines = out.decode('utf8').split('\n')
       err_lines = err.decode('utf8').split('\n')
       for line in out_lines:
+          if "error" in line:
+              CC2_RESULT = ERROR
+      for line in out_lines:
           if "Grow out of context, CEX" in line:
               CC2_SEA_RESULT = NEQ
           elif "have been checked, CSE" in line:
               CC2_SEA_RESULT = EQ
           elif "Solver decision Time:" in line:
               CC2_SEA_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
-      if "real " in err_lines[-4]: #more robust?
-          CC2_SEA_TIME = float(err_lines[-4].split()[1])
+          elif "Total Checking Time:" in line:
+              CC2_SEA_TIME = float(line.lstrip("Total Checking Time: ").rstrip())
+      #if "real " in err_lines[-4]: #more robust?
+      #    CC2_SEA_TIME = float(err_lines[-4].split()[1])
       #for line in err_lines:
       #    if "Command exited with non-zero" in line:
       #        CC2_SEA_RESULT = ERROR
     except TimeoutExpired:
         proc.kill()
         #out, err = proc.communicate()
+        args = shlex.split("./kill_procs.sh") 
+        kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
+        out, err = kill.communicate(timeout=TIMEOUT)
         CC2_SEA_RESULT = "timeout"
-        CC2_SEA_TIME   = TIMEOUT
+        CC2_SEA_TIME   = TIMEOUT"""
 
     try: 
       #TODO: WARNING - STATIC PATH ARGUMENT
@@ -216,24 +231,32 @@ for dirpath, dnames, fnames in os.walk("./"):
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
       out_lines = out.decode('utf8').split('\n')
-      err_lines = err.decode('utf8').split('\n')
+      #err_lines = err.decode('utf8').split('\n')
+      for line in out_lines:
+          if "error" in line:
+              CC2_RESULT = ERROR
       for line in out_lines:
           if "Grow out of context, CEX" in line:
-              CC2_CBMC_RESULT = NEQ
+              CC2_CONC_RESULT = NEQ
           elif "have been checked, CSE" in line:
-              CC2_CBMC_RESULT = EQ
+              CC2_CONC_RESULT = EQ
           elif "Solver decision Time:" in line:
-              CC2_CBMC_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
+              CC2_CONC_SOLVE_TIME = float(line.lstrip("Solver decision Time: ").rstrip())
+          elif "Total Checking Time:" in line:
+              CC2_CONC_TIME = float(line.lstrip("Total Checking Time: ").rstrip())
       #for line in err_lines:
       #    if "Command exited with non-zero" in line:
-      #        CC2_CBMC_RESULT = ERROR
-      if "real " in err_lines[-4]: #more robust?
-          CC2_CBMC_TIME = float(err_lines[-4].split()[1])
+      #        CC2_CONC_RESULT = ERROR
+      #if "real " in err_lines[-4]: #more robust?
+      #    CC2_CONC_TIME = float(err_lines[-4].split()[1])
     except TimeoutExpired:
         proc.kill()
         #out, err = proc.communicate()
-        CC2_CBMC_RESULT = "timeout"
-        CC2_CBMC_TIME = TIMEOUT
+        args = shlex.split("./kill_procs.sh") 
+        kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
+        out, err = kill.communicate(timeout=TIMEOUT)
+        CC2_CONC_RESULT = "timeout"
+        CC2_CONC_TIME = TIMEOUT
 
     """try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
@@ -264,7 +287,7 @@ for dirpath, dnames, fnames in os.walk("./"):
 
     try: 
       #TODO: WARNING - STATIC PATH ARGUMENT
-      args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s \
+      args = shlex.split("/usr/bin/time -p python3 ../../CLEVER+/CC2/merger/parser.py --old %s \
                 --new %s --client %s --lib %s --unwind %d --BMC-incremental=True" 
                 % (old_c_filename, new_c_filename, c_client, c_lib, UNWINDS))
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
@@ -299,6 +322,9 @@ for dirpath, dnames, fnames in os.walk("./"):
       out_lines = out.decode('utf8').split('\n')
       err_lines = err.decode('utf8').split('\n')
       for line in out_lines:
+          if "error" in line:
+              CC2_RESULT = ERROR
+      for line in out_lines:
           if "CEX" in line:
               KLEECLEVER_RESULT = NEQ
           elif "CSE" in line:
@@ -311,6 +337,9 @@ for dirpath, dnames, fnames in os.walk("./"):
       #import pdb; pdb.set_trace()
     except TimeoutExpired:
         proc.kill()
+        args = shlex.split("./kill_procs.sh") 
+        kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
+        out, err = kill.communicate(timeout=TIMEOUT)
         KLEECLEVER_RESULT = "timeout"
         KLEECLEVER_TIME = TIMEOUT
 
@@ -338,9 +367,13 @@ for dirpath, dnames, fnames in os.walk("./"):
         CLEVER_RESULT = "timeout"
         CLEVER_TIME = TIMEOUT"""
 
-    #print("%-20s CC2-SEA: %-8s %-6.2f (Solve) %-7.3f\tCC2-BMC: %-8s %-6.2f (Solve) %-7.3f\tKleeCLEVER: %-8s %-8.4f\tPyCLEVER: %-8s %-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, CLEVER_RESULT, CLEVER_TIME))
-    print("%-20s CC2-SEA: %-8s %-6.2f (Solve) %-7.3f\tCC2-Hybrid: %-8s %-6.2f (Solve) %-7.3f\tCC2-Concurrent: %-8s %-6.2f (Solve) %-7.3f\tKleeCLEVER: %-8s %-8.4f" % (dirpath, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_SEA_SOLVE_TIME, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
-    #print("%-20s \tCC2-BMC: %-8s %-6.2f (Solve) %-10.6f \tPyCLEVER: %-8s %-10.6f" % (dirpath, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, CLEVER_RESULT, CLEVER_TIME))
+    print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))    
+    with open("timing1.csv", 'a') as f:
+        f.write("%-20s: %-8.4f,%-8.4f,,%-8.4f\n" %(dirpath, CC2_TIME, CC2_CONC_TIME, KLEECLEVER_TIME))
+    if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout":
+        print("Disagreement error: %s" % dirpath)
+    continue
+    #print("%-20s CC2-SEA: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_SEA_SOLVE_TIME, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CBMC_RESULT, CC2_CBMC_TIME, CC2_CBMC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
     """if EQLoopMult:
         EQLoopMultMap[loopnum] = (CC2_TIME, CC2_CBMC_TIME, CC2_KLEE_TIME, KLEECLEVER_TIME)
     if EQLoopUnreach:
@@ -349,7 +382,6 @@ for dirpath, dnames, fnames in os.walk("./"):
         NEQLoopMultMap[loopnum] = (CC2_TIME, CC2_CBMC_TIME, CC2_KLEE_TIME, KLEECLEVER_TIME)
     if NEQLoopUnreach:    
         NEQLoopUnreachMap[loopnum] = (CC2_TIME, CC2_CBMC_TIME, CC2_KLEE_TIME, KLEECLEVER_TIME)"""
-    continue
     #if (CC2_RESULT != CLEVER_RESULT):
     #    continue
 
