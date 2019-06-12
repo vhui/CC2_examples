@@ -20,7 +20,7 @@ int lib(unsigned int x, int b)
   return 1;
 }
 
-int clientmain(void, unsigned int x_copy1)
+int clientmain(unsigned int x_copy1)
 {
   lib(5, 900);
   return lib(5, 900) + lib(x_copy1, 0);

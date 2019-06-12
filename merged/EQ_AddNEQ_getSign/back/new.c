@@ -7,7 +7,7 @@ int lib(int x)
 
 }
 
-int clientmain(void, int x_copy1)
+int clientmain(int x_copy1)
 {
   lib(5);
   return lib(5) + lib(x_copy1);

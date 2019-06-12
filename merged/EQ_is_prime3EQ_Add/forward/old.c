@@ -20,7 +20,7 @@ int lib(unsigned int x, int b)
   return 1;
 }
 
-int client(unsigned int x, void)
+int client(unsigned int x)
 {
   for (int i = 0; i < 8; i++)
   {

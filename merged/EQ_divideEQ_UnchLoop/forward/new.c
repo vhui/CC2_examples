@@ -8,7 +8,7 @@ int lib(int x, int y)
   return x / y;
 }
 
-int client(int c, int d, void)
+int client(int c, int d)
 {
   int ret;
   if (d == 0)

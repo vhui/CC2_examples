@@ -1,5 +1,5 @@
 int foo(int a, int b);
-int clientmain(int x, void)
+int clientmain(int x)
 {
   int ret = 0;
   if ((x >= 5) && (x < 7))

@@ -7,7 +7,7 @@ int lib(int x)
 
 }
 
-int client(int x, void)
+int client(int x)
 {
   int ret;
   if (x > lib(x))

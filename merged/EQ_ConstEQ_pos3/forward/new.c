@@ -1,5 +1,5 @@
 int foo(int a, int b);
-int clientmain(void, int x_copy1)
+int clientmain(int x_copy1)
 {
   foo(5, 900);
   int ret_copy1 = -x_copy1;

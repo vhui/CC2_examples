@@ -3,7 +3,7 @@ int lib(int x)
   return x % 5;
 }
 
-int clientmain(void, int x_copy1)
+int clientmain(int x_copy1)
 {
   lib(5);
   int ret_copy1;
