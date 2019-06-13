@@ -91,10 +91,12 @@ for dirpath, dnames, fnames in os.walk("./"):
         continue"""
     """if dirpath != "./extras/prime_sum":
         continue"""
-    """if dirpath == "./eq/LoopMult2":
+    if dirpath == "./merged/EQ_ltfiveBoundEQ_LoopUnreach2/back":
         start = True
     if not start:
-        continue"""
+        continue
+    if "EQ_LoopMult" in dirpath or "EQ_LoopUnreach" in dirpath:
+        continue
     c_files = [f for f in fnames if f.endswith(".c")]
     py_files = [f for f in fnames if f.endswith(".py")]
     if (len(c_files) != 2):
