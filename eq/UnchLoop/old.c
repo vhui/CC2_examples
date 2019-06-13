@@ -1,6 +1,6 @@
 int foo(int a, int b);
 
-int clientmain(void) {
+int clientmain() {
 	return foo(5,900);
 }
 
