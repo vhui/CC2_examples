@@ -1,5 +1,5 @@
 int foo(int a, int b);
-int client(int x, void)
+int client(int x)
 {
   foo(x, x);
   return foo(x, x) + foo(5, 900);

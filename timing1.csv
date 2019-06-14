@@ -1675,3 +1675,313 @@
 ./merged/EQ_oddEQ_ltfiveBound/back: 180.0000,180.0000,,0.2298  
 ./merged/EQ_oddEQ_ltfiveBound/forward: 180.0000,180.0000,,1.8431  
 ./merged/EQ_oddEQ_multiple/back: 0.9020  ,0.9032  ,,0.4040  
+./merged/EQ_oddEQ_multiple/forward: 2.5176  ,2.5206  ,,180.0000
+./merged/EQ_oddEQ_multipleBound/back: 2.1564  ,2.1517  ,,0.3956  
+./merged/EQ_oddEQ_multipleBound/forward: 3.0547  ,3.0361  ,,180.0000
+./merged/EQ_oddEQ_odd/back: 2.4694  ,2.5454  ,,180.0000
+./merged/EQ_oddEQ_odd/forward: 2.5010  ,0.4096  ,,180.0000
+./merged/EQ_oddEQ_one/back: 180.0000,180.0000,,0.2895  
+./merged/EQ_oddEQ_one/forward: 1.1583  ,1.0975  ,,1.0086  
+./merged/EQ_oddEQ_oneBound/back: 0.6006  ,0.5820  ,,0.2336  
+./merged/EQ_oddEQ_oneBound/forward: 176.8135,180.0000,,1.2935  
+./merged/EQ_oddEQ_oneN2/back: 17.4889 ,0.5199  ,,0.2723  
+./merged/EQ_oddEQ_oneN2/forward: 1.0444  ,1.0508  ,,1.0200  
+./merged/EQ_oddEQ_pos/back: 0.7256  ,0.7054  ,,0.3501  
+./merged/EQ_oddEQ_pos/forward: 1.3340  ,1.3126  ,,0.9226  
+./merged/EQ_oddEQ_pos2/back: 0.7176  ,0.6008  ,,180.0000
+./merged/EQ_oddEQ_pos2/forward: 1.3093  ,1.2846  ,,0.8778  
+./merged/EQ_oddEQ_pos3/back: 0.5354  ,2.3113  ,,180.0000
+./merged/EQ_oddEQ_pos3/forward: 1.3396  ,1.3542  ,,0.7179  
+./merged/EQ_oddNEQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopMult10/forward: 2.4825  ,2.4422  ,,176.6507
+./merged/EQ_oddNEQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopMult15/forward: 2.5655  ,2.5439  ,,173.1861
+./merged/EQ_oddNEQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopMult2/forward: 0.6290  ,0.6623  ,,180.0000
+./merged/EQ_oddNEQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopMult20/forward: 0.9275  ,0.8917  ,,0.5294  
+./merged/EQ_oddNEQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopMult5/forward: 0.4159  ,0.1345  ,,180.0000
+./merged/EQ_oddNEQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopUnreach10/forward: 0.4584  ,0.4173  ,,180.0000
+./merged/EQ_oddNEQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopUnreach15/forward: 2.4809  ,2.4585  ,,180.0000
+./merged/EQ_oddNEQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopUnreach2/forward: 1.3409  ,1.3357  ,,180.0000
+./merged/EQ_oddNEQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopUnreach20/forward: 0.9345  ,0.9441  ,,0.4964  
+./merged/EQ_oddNEQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oddNEQ_LoopUnreach5/forward: 2.4761  ,2.4671  ,,180.0000
+./merged/EQ_oddNEQ_getSign/back: 0.5420  ,0.5205  ,,0.2086  
+./merged/EQ_oddNEQ_getSign/forward: 1.2585  ,1.2625  ,,0.5530  
+./merged/EQ_oneBoundEQ_Add/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_Add/forward: 180.0000,180.0000,,0.2075  
+./merged/EQ_oneBoundEQ_Const/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_Const/forward: 180.0000,180.0000,,0.2038  
+./merged/EQ_oneBoundEQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopMult10/forward: 4.5431  ,0.5658  ,,0.2467  
+./merged/EQ_oneBoundEQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopMult15/forward: 0.2079  ,0.2107  ,,0.2524  
+./merged/EQ_oneBoundEQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopMult2/forward: 180.0000,180.0000,,0.2067  
+./merged/EQ_oneBoundEQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopMult20/forward: 0.2194  ,0.2254  ,,0.2826  
+./merged/EQ_oneBoundEQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopMult5/forward: 1.7742  ,1.7423  ,,0.2409  
+./merged/EQ_oneBoundEQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopUnreach10/forward: 2.6354  ,1.8067  ,,0.2578  
+./merged/EQ_oneBoundEQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopUnreach15/forward: 0.2223  ,0.2302  ,,0.2793  
+./merged/EQ_oneBoundEQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopUnreach2/forward: 180.0000,180.0000,,0.2247  
+./merged/EQ_oneBoundEQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopUnreach20/forward: 0.2165  ,0.2257  ,,0.2790  
+./merged/EQ_oneBoundEQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_LoopUnreach5/forward: 2.3931  ,1.6850  ,,0.2447  
+./merged/EQ_oneBoundEQ_UnchLoop/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundEQ_UnchLoop/forward: 180.0000,180.0000,,0.2243  
+./merged/EQ_oneBoundEQ_divide/back: 0.3324  ,0.3277  ,,0.2472  
+./merged/EQ_oneBoundEQ_divide/forward: 0.6253  ,0.5838  ,,0.2478  
+./merged/EQ_oneBoundEQ_getSign2/back: 0.2216  ,0.2208  ,,0.2760  
+./merged/EQ_oneBoundEQ_getSign2/forward: 0.6688  ,1.9151  ,,0.2442  
+./merged/EQ_oneBoundEQ_is_prime1/back: 0.1935  ,0.1896  ,,1.7372  
+./merged/EQ_oneBoundEQ_is_prime1/forward: 0.6416  ,0.6328  ,,0.2253  
+./merged/EQ_oneBoundEQ_is_prime3/back: 0.3270  ,0.3256  ,,0.1171  
+./merged/EQ_oneBoundEQ_is_prime3/forward: 2.9718  ,2.9817  ,,0.0978  
+./merged/EQ_oneBoundEQ_ltfive/back: 180.0000,0.0000  ,,0.3004  
+./merged/EQ_oneBoundEQ_ltfive/forward: 180.0000,3.6546  ,,16.0113 
+./merged/EQ_oneBoundEQ_ltfiveBound/back: 180.0000,180.0000,,0.3302  
+./merged/EQ_oneBoundEQ_ltfiveBound/forward: 180.0000,57.7508 ,,0.2823  
+./merged/EQ_oneBoundEQ_multiple/back: 180.0000,180.0000,,0.3470  
+./merged/EQ_oneBoundEQ_multiple/forward: 180.0000,180.0000,,0.2416  
+./merged/EQ_oneBoundEQ_multipleBound/back: 180.0000,180.0000,,0.6284  
+./merged/EQ_oneBoundEQ_multipleBound/forward: 180.0000,180.0000,,0.2631  
+./merged/EQ_oneBoundEQ_odd/back: 180.0000,5.3402  ,,11.8041 
+./merged/EQ_oneBoundEQ_odd/forward: 0.5978  ,0.6585  ,,0.2488  
+./merged/EQ_oneBoundEQ_one/back: 180.0000,180.0000,,0.2911  
+./merged/EQ_oneBoundEQ_one/forward: 1.8074  ,1.8877  ,,0.2609  
+./merged/EQ_oneBoundEQ_oneBound/back: 0.2871  ,0.2867  ,,0.3634  
+./merged/EQ_oneBoundEQ_oneBound/forward: 0.2852  ,0.2861  ,,0.3674  
+./merged/EQ_oneBoundEQ_oneN2/back: 1.9778  ,2.9996  ,,0.3064  
+./merged/EQ_oneBoundEQ_oneN2/forward: 1.8046  ,2.2931  ,,0.2728  
+./merged/EQ_oneBoundEQ_pos/back: 4.0937  ,4.1193  ,,180.0000
+./merged/EQ_oneBoundEQ_pos/forward: 0.7012  ,0.7032  ,,0.2573  
+./merged/EQ_oneBoundEQ_pos2/back: 16.5392 ,15.6862 ,,180.0000
+./merged/EQ_oneBoundEQ_pos2/forward: 0.6999  ,0.7026  ,,0.2502  
+./merged/EQ_oneBoundEQ_pos3/back: 4.0837  ,4.0435  ,,180.0000
+./merged/EQ_oneBoundEQ_pos3/forward: 0.6615  ,0.6152  ,,0.2574  
+./merged/EQ_oneBoundNEQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopMult10/forward: 1.8118  ,1.9067  ,,0.2557  
+./merged/EQ_oneBoundNEQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopMult15/forward: 0.2182  ,0.2214  ,,0.2872  
+./merged/EQ_oneBoundNEQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopMult2/forward: 180.0000,180.0000,,0.2157  
+./merged/EQ_oneBoundNEQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopMult20/forward: 0.2092  ,0.2085  ,,0.2736  
+./merged/EQ_oneBoundNEQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopMult5/forward: 1.3254  ,1.6329  ,,0.2461  
+./merged/EQ_oneBoundNEQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopUnreach10/forward: 1.8627  ,1.8504  ,,0.2750  
+./merged/EQ_oneBoundNEQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopUnreach15/forward: 0.2174  ,0.2143  ,,0.3920  
+./merged/EQ_oneBoundNEQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopUnreach2/forward: 180.0000,180.0000,,0.2407  
+./merged/EQ_oneBoundNEQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopUnreach20/forward: 0.2114  ,0.2191  ,,0.2636  
+./merged/EQ_oneBoundNEQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneBoundNEQ_LoopUnreach5/forward: 2.8685  ,1.3190  ,,0.2570  
+./merged/EQ_oneBoundNEQ_getSign/back: 3.5167  ,180.0000,,0.2409  
+./merged/EQ_oneBoundNEQ_getSign/forward: 0.5813  ,0.6178  ,,0.2327  
+./merged/EQ_oneEQ_Add/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_Add/forward: 1.1536  ,0.5923  ,,0.2217  
+./merged/EQ_oneEQ_Const/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_Const/forward: 0.5947  ,0.6024  ,,0.2248  
+./merged/EQ_oneEQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopMult10/forward: 0.6297  ,0.6486  ,,0.2454  
+./merged/EQ_oneEQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopMult15/forward: 0.5819  ,0.6315  ,,0.2386  
+./merged/EQ_oneEQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopMult2/forward: 0.6048  ,0.6015  ,,0.2215  
+./merged/EQ_oneEQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopMult20/forward: 0.7643  ,0.6532  ,,0.2482  
+./merged/EQ_oneEQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopMult5/forward: 0.6417  ,0.6376  ,,0.2430  
+./merged/EQ_oneEQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopUnreach10/forward: 0.6226  ,0.6354  ,,0.2485  
+./merged/EQ_oneEQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopUnreach15/forward: 0.6384  ,0.6340  ,,0.2379  
+./merged/EQ_oneEQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopUnreach2/forward: 0.6077  ,0.5672  ,,0.2121  
+./merged/EQ_oneEQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopUnreach20/forward: 0.6408  ,0.6432  ,,0.2442  
+./merged/EQ_oneEQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_LoopUnreach5/forward: 0.6312  ,0.6339  ,,0.2482  
+./merged/EQ_oneEQ_UnchLoop/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneEQ_UnchLoop/forward: 0.5947  ,0.5993  ,,0.2272  
+./merged/EQ_oneEQ_divide/back: 0.3186  ,0.3172  ,,0.2541  
+./merged/EQ_oneEQ_divide/forward: 0.6252  ,0.6438  ,,0.2353  
+./merged/EQ_oneEQ_getSign2/back: 0.1948  ,0.1945  ,,0.2726  
+./merged/EQ_oneEQ_getSign2/forward: 0.6322  ,0.6270  ,,0.2377  
+./merged/EQ_oneEQ_is_prime1/back: 0.1632  ,0.1660  ,,1.8686  
+./merged/EQ_oneEQ_is_prime1/forward: 0.5650  ,0.6067  ,,0.2315  
+./merged/EQ_oneEQ_is_prime3/back: 0.2918  ,0.2913  ,,0.1175  
+./merged/EQ_oneEQ_is_prime3/forward: 2.8311  ,2.9448  ,,0.1004  
+./merged/EQ_oneEQ_ltfive/back: 0.8209  ,0.8173  ,,0.2979  
+./merged/EQ_oneEQ_ltfive/forward: 1.6426  ,1.2695  ,,0.2366  
+./merged/EQ_oneEQ_ltfiveBound/back: 180.0000,3.8598  ,,0.2646  
+./merged/EQ_oneEQ_ltfiveBound/forward: 1.2965  ,1.3166  ,,0.2872  
+./merged/EQ_oneEQ_multiple/back: 0.8594  ,0.9070  ,,1.7454  
+./merged/EQ_oneEQ_multiple/forward: 1.9907  ,1.9314  ,,0.2660  
+./merged/EQ_oneEQ_multipleBound/back: 3.2187  ,2.5763  ,,3.3098  
+./merged/EQ_oneEQ_multipleBound/forward: 1.8533  ,1.7644  ,,0.2592  
+./merged/EQ_oneEQ_odd/back: 1.3901  ,1.4058  ,,1.5562  
+./merged/EQ_oneEQ_odd/forward: 180.0000,180.0000,,0.2431  
+./merged/EQ_oneEQ_one/back: 0.6270  ,0.6213  ,,0.2657  
+./merged/EQ_oneEQ_one/forward: 0.6126  ,0.6239  ,,0.2527  
+./merged/EQ_oneEQ_oneBound/back: 180.0000,1.8901  ,,0.2817  
+./merged/EQ_oneEQ_oneBound/forward: 0.7080  ,0.6624  ,,0.2527  
+./merged/EQ_oneEQ_oneN2/back: 1.8704  ,1.8698  ,,0.2712  
+./merged/EQ_oneEQ_oneN2/forward: 0.6472  ,0.6708  ,,0.2564  
+./merged/EQ_oneEQ_pos/back: 4.1382  ,4.0449  ,,180.0000
+./merged/EQ_oneEQ_pos/forward: 0.5854  ,0.6485  ,,0.3704  
+./merged/EQ_oneEQ_pos2/back: 16.4640 ,16.8657 ,,180.0000
+./merged/EQ_oneEQ_pos2/forward: 0.7859  ,0.6641  ,,0.3251  
+./merged/EQ_oneEQ_pos3/back: 4.1971  ,4.1455  ,,180.0000
+./merged/EQ_oneEQ_pos3/forward: 0.6451  ,0.6372  ,,0.2417  
+./merged/EQ_oneN2EQ_Add/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_Add/forward: 180.0000,180.0000,,0.2829  
+./merged/EQ_oneN2EQ_Const/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_Const/forward: 180.0000,180.0000,,0.2511  
+./merged/EQ_oneN2EQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopMult10/forward: 0.6098  ,0.5891  ,,0.2619  
+./merged/EQ_oneN2EQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopMult15/forward: 0.6549  ,0.6539  ,,0.2525  
+./merged/EQ_oneN2EQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopMult2/forward: 180.0000,180.0000,,0.2378  
+./merged/EQ_oneN2EQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopMult20/forward: 1.7222  ,0.6550  ,,0.2610  
+./merged/EQ_oneN2EQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopMult5/forward: 0.6683  ,0.6646  ,,0.2499  
+./merged/EQ_oneN2EQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopUnreach10/forward: 0.6788  ,0.6693  ,,0.2515  
+./merged/EQ_oneN2EQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopUnreach15/forward: 0.6752  ,0.6554  ,,0.2595  
+./merged/EQ_oneN2EQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopUnreach2/forward: 180.0000,180.0000,,0.2791  
+./merged/EQ_oneN2EQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopUnreach20/forward: 0.8020  ,0.7817  ,,0.5215  
+./merged/EQ_oneN2EQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_LoopUnreach5/forward: 25.3402 ,0.9034  ,,0.2670  
+./merged/EQ_oneN2EQ_UnchLoop/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2EQ_UnchLoop/forward: 180.0000,180.0000,,0.2258  
+./merged/EQ_oneN2EQ_divide/back: 0.3074  ,0.3242  ,,0.2541  
+./merged/EQ_oneN2EQ_divide/forward: 0.6612  ,0.0000  ,,0.4184  
+./merged/EQ_oneN2EQ_getSign2/back: 0.1852  ,0.1937  ,,0.4249  
+./merged/EQ_oneN2EQ_getSign2/forward: 0.0000  ,0.0000  ,,0.4062  
+./merged/EQ_oneN2EQ_is_prime1/back: 0.2731  ,0.1835  ,,0.5308  
+./merged/EQ_oneN2EQ_is_prime1/forward: 0.0000  ,0.0000  ,,0.3962  
+./merged/EQ_oneN2EQ_is_prime3/back: 0.2671  ,0.2775  ,,0.1291  
+./merged/EQ_oneN2EQ_is_prime3/forward: 0.0000  ,0.0000  ,,0.0812  
+./merged/EQ_oneN2EQ_ltfive/back: 0.0000  ,0.0000  ,,0.4399  
+./merged/EQ_oneN2EQ_ltfive/forward: 0.0000  ,0.0000  ,,0.4301  
+./merged/EQ_oneN2EQ_ltfiveBound/back: 0.0000  ,0.0000  ,,0.4262  
+./merged/EQ_oneN2EQ_ltfiveBound/forward: 0.0000  ,0.0000  ,,0.4070  
+./merged/EQ_oneN2EQ_multiple/back: 0.0000  ,0.0000  ,,1.8206  
+./merged/EQ_oneN2EQ_multiple/forward: 0.0000  ,0.0000  ,,0.3985  
+./merged/EQ_oneN2EQ_multipleBound/back: 0.0000  ,0.0000  ,,3.2039  
+./merged/EQ_oneN2EQ_multipleBound/forward: 0.0000  ,0.0000  ,,0.4554  
+./merged/EQ_oneN2EQ_odd/back: 0.0000  ,0.0000  ,,1.1244  
+./merged/EQ_oneN2EQ_odd/forward: 0.0000  ,0.0000  ,,0.4256  
+./merged/EQ_oneN2EQ_one/back: 0.0000  ,0.6386  ,,0.2601  
+./merged/EQ_oneN2EQ_one/forward: 1.8115  ,1.8745  ,,0.2648  
+./merged/EQ_oneN2EQ_oneBound/back: 1.9107  ,180.0000,,0.3090  
+./merged/EQ_oneN2EQ_oneBound/forward: 1.5475  ,1.5103  ,,0.2853  
+./merged/EQ_oneN2EQ_oneN2/back: 180.0000,180.0000,,0.3204  
+./merged/EQ_oneN2EQ_oneN2/forward: 4.8721  ,0.7793  ,,0.2867  
+./merged/EQ_oneN2EQ_pos/back: 4.4505  ,3.8511  ,,180.0000
+./merged/EQ_oneN2EQ_pos/forward: 0.7563  ,0.7414  ,,0.2562  
+./merged/EQ_oneN2EQ_pos2/back: 15.9455 ,15.1779 ,,180.0000
+./merged/EQ_oneN2EQ_pos2/forward: 0.7288  ,0.7126  ,,0.2674  
+./merged/EQ_oneN2EQ_pos3/back: 4.4639  ,4.2182  ,,180.0000
+./merged/EQ_oneN2EQ_pos3/forward: 0.6249  ,0.6441  ,,0.2734  
+./merged/EQ_oneN2NEQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopMult10/forward: 0.6461  ,0.6328  ,,0.2712  
+./merged/EQ_oneN2NEQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopMult15/forward: 0.6811  ,0.6801  ,,0.2557  
+./merged/EQ_oneN2NEQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopMult2/forward: 0.6460  ,0.6346  ,,0.2343  
+./merged/EQ_oneN2NEQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopMult20/forward: 0.6745  ,0.6459  ,,0.2493  
+./merged/EQ_oneN2NEQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopMult5/forward: 0.6598  ,0.6664  ,,0.2562  
+./merged/EQ_oneN2NEQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopUnreach10/forward: 0.6066  ,0.6476  ,,0.2461  
+./merged/EQ_oneN2NEQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopUnreach15/forward: 0.6489  ,0.6493  ,,0.2613  
+./merged/EQ_oneN2NEQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopUnreach2/forward: 0.6285  ,0.6258  ,,0.2388  
+./merged/EQ_oneN2NEQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopUnreach20/forward: 0.6567  ,0.6811  ,,0.2650  
+./merged/EQ_oneN2NEQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneN2NEQ_LoopUnreach5/forward: 0.6713  ,0.6846  ,,0.2539  
+./merged/EQ_oneN2NEQ_getSign/back: 0.6559  ,0.6701  ,,0.2903  
+./merged/EQ_oneN2NEQ_getSign/forward: 0.6808  ,0.6542  ,,0.3099  
+./merged/EQ_oneNEQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopMult10/forward: 0.6597  ,0.6582  ,,0.2529  
+./merged/EQ_oneNEQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopMult15/forward: 0.6476  ,0.6532  ,,0.2567  
+./merged/EQ_oneNEQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopMult2/forward: 0.6408  ,0.6107  ,,0.2388  
+./merged/EQ_oneNEQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopMult20/forward: 0.6599  ,0.6323  ,,0.2716  
+./merged/EQ_oneNEQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopMult5/forward: 0.5954  ,0.6212  ,,0.2860  
+./merged/EQ_oneNEQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopUnreach10/forward: 0.6636  ,0.6278  ,,0.2569  
+./merged/EQ_oneNEQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopUnreach15/forward: 0.6349  ,0.6291  ,,0.2426  
+./merged/EQ_oneNEQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopUnreach2/forward: 0.6594  ,0.5976  ,,0.2373  
+./merged/EQ_oneNEQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopUnreach20/forward: 0.6299  ,0.6593  ,,0.2567  
+./merged/EQ_oneNEQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_oneNEQ_LoopUnreach5/forward: 0.6047  ,0.6471  ,,0.2486  
+./merged/EQ_oneNEQ_getSign/back: 0.5937  ,0.6053  ,,0.2417  
+./merged/EQ_oneNEQ_getSign/forward: 0.5994  ,0.6158  ,,0.2444  
+./merged/EQ_pos2EQ_Add/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_Add/forward: 2.7935  ,2.8056  ,,180.0000
+./merged/EQ_pos2EQ_Const/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_Const/forward: 2.8110  ,2.8940  ,,180.0000
+./merged/EQ_pos2EQ_LoopMult10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopMult10/forward: 8.8546  ,7.6791  ,,180.0000
+./merged/EQ_pos2EQ_LoopMult15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopMult15/forward: 7.5383  ,7.4886  ,,180.0000
+./merged/EQ_pos2EQ_LoopMult2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopMult2/forward: 2.8158  ,2.8109  ,,180.0000
+./merged/EQ_pos2EQ_LoopMult20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopMult20/forward: 7.9546  ,7.5238  ,,180.0000
+./merged/EQ_pos2EQ_LoopMult5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopMult5/forward: 7.5489  ,7.5471  ,,180.0000
+./merged/EQ_pos2EQ_LoopUnreach10/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopUnreach10/forward: 7.7270  ,8.1119  ,,180.0000
+./merged/EQ_pos2EQ_LoopUnreach15/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopUnreach15/forward: 7.6009  ,7.9454  ,,180.0000
+./merged/EQ_pos2EQ_LoopUnreach2/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopUnreach2/forward: 2.8167  ,2.7944  ,,180.0000
+./merged/EQ_pos2EQ_LoopUnreach20/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopUnreach20/forward: 7.4850  ,7.4952  ,,180.0000
+./merged/EQ_pos2EQ_LoopUnreach5/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_LoopUnreach5/forward: 7.4506  ,7.4826  ,,180.0000
+./merged/EQ_pos2EQ_UnchLoop/back: 0.0000  ,0.0000  ,,0.0000  
+./merged/EQ_pos2EQ_UnchLoop/forward: 2.8152  ,2.8049  ,,180.0000
+./merged/EQ_pos2EQ_divide/back: 1.7536  ,1.7491  ,,0.2194  
+./merged/EQ_pos2EQ_divide/forward: 7.5531  ,7.5182  ,,180.0000
+./merged/EQ_pos2EQ_getSign2/back: 0.6431  ,0.6546  ,,0.2621  
+./merged/EQ_pos2EQ_getSign2/forward: 7.4310  ,7.4067  ,,180.0000
+./merged/EQ_pos2EQ_is_prime1/back: 0.1760  ,0.1696  ,,1.1978  
+./merged/EQ_pos2EQ_is_prime1/forward: 7.9780  ,8.0177  ,,180.0000
+./merged/EQ_pos2EQ_is_prime3/back: 0.3130  ,0.3072  ,,0.1168  
+./merged/EQ_pos2EQ_is_prime3/forward: 2.8159  ,2.8299  ,,0.1094  
+./merged/EQ_pos2EQ_ltfive/back: 1.0958  ,1.0742  ,,0.2830  
+./merged/EQ_pos2EQ_ltfive/forward: 14.8759 ,14.8722 ,,180.0000
+./merged/EQ_pos2EQ_ltfiveBound/back: 1.4083  ,1.4119  ,,0.2686  

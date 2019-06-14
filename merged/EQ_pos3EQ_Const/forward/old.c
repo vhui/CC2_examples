@@ -15,7 +15,7 @@ int lib(int x)
   return counter;
 }
 
-int client(int x, void)
+int client(int x)
 {
   int ret = -x;
   if (x < 0)

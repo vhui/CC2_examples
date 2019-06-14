@@ -1,5 +1,5 @@
 int foo(int a, int b);
-int client(int c, int d, void)
+int client(int c, int d)
 {
   int ret;
   if (d == 0)

@@ -7,7 +7,7 @@ int lib(int x)
 
 }
 
-int client(int x, void)
+int client(int x)
 {
   lib(x);
   return lib(x) + lib(5);

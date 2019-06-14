@@ -1,5 +1,5 @@
 int foo(int a, int b);
-int client(unsigned int x, void)
+int client(unsigned int x)
 {
   for (int i = 0; i < 8; i++)
   {
