@@ -7,7 +7,6 @@ int client(int x)
     ret = foo(x, x);
   }
 
-  ret;
   return ret + foo(5, 900);
 }
 

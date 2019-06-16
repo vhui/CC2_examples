@@ -5,7 +5,6 @@ int clientmain(int x)
   if ((x >= 18) && (x < 22))
     ret = foo(x, 20);
 
-  ret;
   return ret + foo(5, 900);
 }
 

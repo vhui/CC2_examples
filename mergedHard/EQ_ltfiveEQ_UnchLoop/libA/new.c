@@ -19,7 +19,6 @@ int client(int x)
     ret = (lib((x + 1) * 5) / 5) - 1;
   }
 
-  ret;
   return ret + lib(5);
 }
 

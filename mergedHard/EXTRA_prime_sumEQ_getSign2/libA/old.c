@@ -12,7 +12,6 @@ int client(int n, int x_copy1)
     i++;
   }
 
-  sum;
   int ret_copy1 = x_copy1;
   if (x_copy1 > 0)
   {

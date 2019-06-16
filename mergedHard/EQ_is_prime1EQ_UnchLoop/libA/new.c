@@ -22,7 +22,6 @@ int lib(unsigned int x, int b)
 
 int client(unsigned int x)
 {
-  lib(x, 0);
   return lib(x, 0) + lib(5, 900);
 }
 

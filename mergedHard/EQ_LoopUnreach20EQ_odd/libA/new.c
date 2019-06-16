@@ -5,7 +5,6 @@ int clientmain(int x, int x_copy1)
   if ((x >= 18) && (x < 22))
     ret = foo(x, 20);
 
-  ret;
   int ret_copy1;
   if (foo(x_copy1, x_copy1) == 0)
   {

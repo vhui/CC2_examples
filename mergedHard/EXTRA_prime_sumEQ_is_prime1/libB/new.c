@@ -34,7 +34,6 @@ int client(int n, unsigned int x_copy1)
     i++;
   }
 
-  sum;
   return sum + lib(x_copy1, 0);
 }
 

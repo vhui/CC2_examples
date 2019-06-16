@@ -1,5 +1,6 @@
 int client(unsigned int x, int n_copy1)
 {
+  const unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   for (int i = 0; i < 8; i++)
   {
     if (x == primes[i])
@@ -7,7 +8,6 @@ int client(unsigned int x, int n_copy1)
 
   }
 
-  lib(x);
   int i_copy1 = 0;
   int sum_copy1 = 0;
   while (i_copy1 <= n_copy1)

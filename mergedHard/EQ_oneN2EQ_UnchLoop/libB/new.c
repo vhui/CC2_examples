@@ -7,7 +7,6 @@ int client(int x)
   else
     ret = foo(x, x);
 
-  ret;
   return ret + foo(5, 900);
 }
 

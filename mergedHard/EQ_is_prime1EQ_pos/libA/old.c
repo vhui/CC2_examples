@@ -22,7 +22,6 @@ int lib(unsigned int x, int b)
 
 int client(unsigned int x, int x_copy1)
 {
-  lib(x, 0);
   int ret_copy1;
   if (x_copy1 > 0)
   {

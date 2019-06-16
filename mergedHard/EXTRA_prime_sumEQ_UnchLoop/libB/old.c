@@ -13,7 +13,6 @@ int client(int n)
     i++;
   }
 
-  sum;
   return sum + foo(5, 900);
 }
 

@@ -21,7 +21,6 @@ int client(int n, int x_copy1)
     i++;
   }
 
-  sum;
   return sum + lib(x_copy1);
 }
 

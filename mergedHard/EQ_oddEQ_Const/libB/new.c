@@ -11,7 +11,6 @@ int client(int x)
     ret = 0;
   }
 
-  ret;
   return ret + foo(5, 900);
 }
 

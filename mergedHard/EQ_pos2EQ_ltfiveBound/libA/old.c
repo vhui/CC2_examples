@@ -22,7 +22,6 @@ int client(int x, int x_copy1)
     ret = lib(x);
   }
 
-  ret;
   int ret_copy1;
   if ((x_copy1 < (-100)) || (x_copy1 > 100))
   {

@@ -15,7 +15,6 @@ int client(int x, int x_copy1)
     ret = 0;
   }
 
-  ret;
   return ret + lib(x_copy1);
 }
 

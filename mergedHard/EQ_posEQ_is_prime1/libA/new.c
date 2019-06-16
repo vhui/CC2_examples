@@ -23,7 +23,6 @@ int client(int x, unsigned int x_copy1)
     ret = lib(x);
   }
 
-  ret;
   return ret + lib(x_copy1);
 }
 

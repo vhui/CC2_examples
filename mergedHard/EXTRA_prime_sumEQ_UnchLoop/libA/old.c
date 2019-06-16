@@ -12,7 +12,6 @@ int client(int n)
     i++;
   }
 
-  sum;
   return sum + lib(5);
 }
 

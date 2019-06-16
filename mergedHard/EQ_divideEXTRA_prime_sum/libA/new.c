@@ -20,7 +20,6 @@ int client(int c, int d, int n_copy1)
     ret = lib(c, d);
   }
 
-  ret;
   int i_copy1 = 0;
   int sum_copy1 = 0;
   while (i_copy1 <= n_copy1)

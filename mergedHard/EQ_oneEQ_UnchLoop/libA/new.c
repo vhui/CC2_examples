@@ -15,7 +15,6 @@ int client(int x)
   else
     ret = lib(x);
 
-  ret;
   return ret + lib(5);
 }
 

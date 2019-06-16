@@ -22,7 +22,6 @@ int client(int x, int n_copy1)
     ret = 0;
   }
 
-  ret;
   int i_copy1 = 0;
   int sum_copy1 = 0;
   while (i_copy1 <= n_copy1)

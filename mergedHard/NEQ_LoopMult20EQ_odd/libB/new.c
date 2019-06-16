@@ -9,7 +9,6 @@ int clientmain(int x, int x_copy1)
   if ((x >= 18) && (x < 22))
     ret = lib(x);
 
-  ret;
   int ret_copy1;
   if (lib(x_copy1) == 0)
   {

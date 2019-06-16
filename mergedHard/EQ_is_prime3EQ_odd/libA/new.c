@@ -1,6 +1,6 @@
-static const unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
 int lib(unsigned int x, int b)
 {
+  const unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     return 0;
@@ -22,6 +22,7 @@ int lib(unsigned int x, int b)
 
 int client(unsigned int x, int x_copy1)
 {
+  const unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   for (int i = 0; i < 8; i++)
   {
     if (x == primes[i])
@@ -29,7 +30,6 @@ int client(unsigned int x, int x_copy1)
 
   }
 
-  lib(x, 1);
   int ret_copy1;
   if (lib(x_copy1, x_copy1) == 0)
   {

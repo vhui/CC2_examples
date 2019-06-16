@@ -1,6 +1,7 @@
 int foo(int a, int b);
 int client(unsigned int x)
 {
+  const unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   for (int i = 0; i < 8; i++)
   {
     if (x == primes[i])
@@ -8,7 +9,6 @@ int client(unsigned int x)
 
   }
 
-  foo(x, 1);
   return foo(x, 1) + foo(5, 900);
 }
 

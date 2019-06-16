@@ -15,7 +15,6 @@ int client(int c, int d)
     ret = lib(c, d);
   }
 
-  ret;
   return ret + lib(5, 900);
 }
 

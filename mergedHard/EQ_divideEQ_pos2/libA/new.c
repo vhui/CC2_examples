@@ -20,7 +20,6 @@ int client(int c, int d, int x_copy1)
     ret = lib(c, d);
   }
 
-  ret;
   int ret_copy1;
   if (x_copy1 > 0)
   {

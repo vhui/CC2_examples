@@ -22,7 +22,6 @@ int client(int x, int c_copy1, int d_copy1)
     ret = lib(x);
   }
 
-  ret;
   int ret_copy1;
   if (d_copy1 == 0)
   {

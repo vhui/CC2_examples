@@ -11,7 +11,6 @@ int client(int x)
     ret = (foo((x + 1) * 5, (x + 1) * 5) / 5) - 1;
   }
 
-  ret;
   return ret + foo(5, 900);
 }
 

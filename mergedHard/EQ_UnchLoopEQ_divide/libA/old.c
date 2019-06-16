@@ -1,7 +1,6 @@
 int foo(int a, int b);
 int clientmain(int c_copy1, int d_copy1)
 {
-  foo(5, 900);
   int ret_copy1;
   if (d_copy1 == 0)
   {

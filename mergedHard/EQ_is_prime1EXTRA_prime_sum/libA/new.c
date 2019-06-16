@@ -22,7 +22,6 @@ int lib(unsigned int x, int b)
 
 int client(unsigned int x, int n_copy1)
 {
-  lib(x, 0);
   int i_copy1 = 0;
   int sum_copy1 = 0;
   while (i_copy1 <= n_copy1)

@@ -27,7 +27,6 @@ int client(int x)
 
   }
 
-  ret;
   return ret + lib(5);
 }
 

@@ -5,7 +5,6 @@ int clientmain(int x, int n_copy1)
   if ((x >= 18) && (x < 22))
     ret = foo(x, 20);
 
-  ret;
   int i_copy1 = 0;
   int sum_copy1 = 0;
   while (i_copy1 <= n_copy1)

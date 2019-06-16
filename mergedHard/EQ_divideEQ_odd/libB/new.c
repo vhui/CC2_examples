@@ -15,7 +15,6 @@ int client(int c, int d, int x_copy1)
     ret = lib(c);
   }
 
-  ret;
   int ret_copy1;
   if (lib(x_copy1) == 0)
   {
