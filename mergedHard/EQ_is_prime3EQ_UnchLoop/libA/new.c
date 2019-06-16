@@ -1,6 +1,6 @@
 int lib(unsigned int x, int b)
 {
-  const unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     return 0;
@@ -22,7 +22,7 @@ int lib(unsigned int x, int b)
 
 int client(unsigned int x)
 {
-  const unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   for (int i = 0; i < 8; i++)
   {
     if (x == primes[i])
