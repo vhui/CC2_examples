@@ -1,0 +1,7 @@
+./mergedHard/EQ_AddEQ_UnchLoop/libA: equiv,0.1629  , equiv,0.3005  , equiv,0.0946  
+./mergedHard/EQ_AddEQ_UnchLoop/libB: equiv,30.3129 , equiv,30.6768 , equiv,0.1019  
+./mergedHard/EQ_AddEQ_odd/libA: equiv,0.1980  , equiv,0.3868  , equiv,0.1126  
+./mergedHard/EQ_AddEQ_odd/libB: equiv,2.0685  , equiv,2.8288  , equiv,185.9584
+./mergedHard/EQ_AddEQ_pos/libA: equiv,0.2573  , equiv,0.4304  , equiv,0.1198  
+./mergedHard/EQ_AddEQ_pos/libB: not equiv,0.5933  , not equiv,1.0728  , not equiv,0.1668  
+./mergedHard/EQ_AddEQ_pos2/libA: equiv,0.2557  , equiv,0.4081  , equiv,0.0992 
