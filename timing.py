@@ -80,10 +80,14 @@ for dirpath, dnames, fnames in os.walk("./"):
   #for dirname in sorted(dnames):
     dnames.sort()
     #print(dirpath)
-    if len(dirpath.split("/")) != 4: #not inside gen folder!
+    if len(dirpath.split("/")) != 3: #not inside gen folder!
         continue
-    if "mergedLoop" not in dirpath:
+    if ".git" in dirpath:
         continue
+    if "eq" not in dirpath and "neq" not in dirpath:
+        continue
+    #if "mergedLoop" not in dirpath:
+    #    continue
     dirname = dirpath.split("/")[-1]
     """if "loopmult" not in dirpath and "LoopMult" not in dirpath and "loopunreach" not in dirpath and "LoopUnreach" not in dirpath:
         continue"""
@@ -91,12 +95,12 @@ for dirpath, dnames, fnames in os.walk("./"):
         continue"""
     """if dirpath != "./extras/prime_sum":
         continue"""
-    if dirpath == "./merged/EQ_ltfiveBoundEQ_LoopUnreach2/back":
+    """if dirpath == "./merged/EQ_ltfiveBoundEQ_LoopUnreach2/back":
         start = True
     if not start:
-        continue
-    if "EQ_LoopMult" in dirpath or "EQ_LoopUnreach" in dirpath:
-        continue
+        continue"""
+    #if "EQ_LoopMult" in dirpath or "EQ_LoopUnreach" in dirpath:
+    #    continue
     c_files = [f for f in fnames if f.endswith(".c")]
     py_files = [f for f in fnames if f.endswith(".py")]
     if (len(c_files) != 2):
@@ -156,12 +160,13 @@ for dirpath, dnames, fnames in os.walk("./"):
     KLEECLEVER_TIME = 0
     CC2_KLEE_TIME = 0
     CC2_SOLVE_TIME = 0
+    CC2_CONC_SOLVE_TIME = 0
     CC2_SEA_SOLVE_TIME = 0
 
     try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
       args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s --new %s \
-                 --client %s --lib %s --hybrid-solving HYBRID" 
+                 --client %s --lib %s --hybrid-solving=True" 
                   % (old_c_filename, new_c_filename, c_client, c_lib))
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
@@ -190,7 +195,7 @@ for dirpath, dnames, fnames in os.walk("./"):
         CC2_RESULT = "timeout"
         CC2_TIME   = TIMEOUT
  
-    try:    
+    """try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
       args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s --new %s \
                  --client %s --lib %s --unwind %d --engine %s" 
@@ -201,7 +206,7 @@ for dirpath, dnames, fnames in os.walk("./"):
       err_lines = err.decode('utf8').split('\n')
       for line in out_lines:
           if "error" in line:
-              CC2_RESULT = ERROR
+              CC2_SEA_RESULT = ERROR
       for line in out_lines:
           if "Grow out of context, CEX" in line:
               CC2_SEA_RESULT = NEQ
@@ -223,12 +228,12 @@ for dirpath, dnames, fnames in os.walk("./"):
         kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
         out, err = kill.communicate(timeout=TIMEOUT)
         CC2_SEA_RESULT = "timeout"
-        CC2_SEA_TIME   = TIMEOUT
+        CC2_SEA_TIME   = TIMEOUT"""
 
     try: 
       #TODO: WARNING - STATIC PATH ARGUMENT
       args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s --new %s \
-                 --client %s --lib %s --hybrid-solving HYBRID --concurrent CONCURRENT" 
+                 --client %s --lib %s --hybrid-solving=True --concurrent=True" 
                   % (old_c_filename, new_c_filename, c_client, c_lib))
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
@@ -236,7 +241,7 @@ for dirpath, dnames, fnames in os.walk("./"):
       #err_lines = err.decode('utf8').split('\n')
       for line in out_lines:
           if "error" in line:
-              CC2_RESULT = ERROR
+              CC2_CONC_RESULT = ERROR
       for line in out_lines:
           if "Grow out of context, CEX" in line:
               CC2_CONC_RESULT = NEQ
@@ -325,7 +330,7 @@ for dirpath, dnames, fnames in os.walk("./"):
       err_lines = err.decode('utf8').split('\n')
       for line in out_lines:
           if "error" in line:
-              CC2_RESULT = ERROR
+              KLEECLEVER_RESULT = ERROR
       for line in out_lines:
           if "CEX" in line:
               KLEECLEVER_RESULT = NEQ
@@ -369,17 +374,17 @@ for dirpath, dnames, fnames in os.walk("./"):
         CLEVER_RESULT = "timeout"
         CLEVER_TIME = TIMEOUT"""
 
-    """print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))    
-    with open("timing1.csv", 'a') as f:
-        f.write("%-20s: %-8.4f,%-8.4f,,%-8.4f\n" %(dirpath, CC2_TIME, CC2_CONC_TIME, KLEECLEVER_TIME))
+    print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))    
+    #with open("timing1.csv", 'a') as f:
+    #    f.write("%-20s: %-8.4f,%-8.4f,,%-8.4f\n" %(dirpath, CC2_TIME, CC2_CONC_TIME, KLEECLEVER_TIME))
     if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout":
-        print("Disagreement error: %s" % dirpath)"""
+        print("Disagreement error: %s" % dirpath)
     
-    print("%-20s CC2-SEA: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_SEA_SOLVE_TIME, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
+    """print("%-20s CC2-SEA: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_SEA_SOLVE_TIME, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
     with open("timing2.csv", 'a') as f:
         f.write("%-20s: %s,%-8.4f, %s,%-8.4f, %s,%-8.4f, %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
     if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout" or CC2_RESULT != CC2_SEA_RESULT and CC2_SEA_RESULT != "timeout":
-        print("Disagreement error: %s" % dirpath)
+        print("Disagreement error: %s" % dirpath)"""
     continue
     """if EQLoopMult:
         EQLoopMultMap[loopnum] = (CC2_TIME, CC2_CBMC_TIME, CC2_KLEE_TIME, KLEECLEVER_TIME)
