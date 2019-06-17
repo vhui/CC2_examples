@@ -162,7 +162,7 @@ for dirpath, dnames, fnames in os.walk("./"):
     try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
       args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s --new %s \
-                 --client %s --lib %s --hybrid-solving HYBRID" 
+                 --client %s --lib %s --hybrid-solving=True" 
                   % (old_c_filename, new_c_filename, c_client, c_lib))
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
@@ -229,7 +229,7 @@ for dirpath, dnames, fnames in os.walk("./"):
     try: 
       #TODO: WARNING - STATIC PATH ARGUMENT
       args = shlex.split("/usr/bin/time -p python3 ../CC2/merger/parser.py --old %s --new %s \
-                 --client %s --lib %s --hybrid-solving HYBRID --concurrent CONCURRENT" 
+                 --client %s --lib %s --hybrid-solving=True --concurrent=True" 
                   % (old_c_filename, new_c_filename, c_client, c_lib))
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
