@@ -204,7 +204,7 @@ Disagreement error: ./mergedHard/EQ_oddEQ_ltfive/libA
 ./mergedHard/EQ_oddEQ_multipleBound/libA CC2-Hybrid: equiv    ,3.5418   (Solve) ,,3.295  	CC2-Concurrent: equiv    ,3.9355   (Solve) ,,3.482  	KleeCLEVER: timeout  ,200.0000
 ./mergedHard/EQ_oddEQ_multipleBound/libB CC2-Hybrid: not equiv ,0.8626   (Solve) ,,0.479  	CC2-Concurrent: not equiv ,1.2176   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3114  
 ./mergedHard/EQ_oddEQ_odd/libA      CC2-Hybrid: equiv    ,3.0683   (Solve) ,,2.869  	CC2-Concurrent: equiv    ,3.4358   (Solve) ,,3.030  	KleeCLEVER: timeout  ,200.0000
-./mergedHard/EQ_oddEQ_odd/libB      CC2-Hybrid: equiv    ,3.1088   (Solve) ,,2.884  	CC2-Concurrent: timeout  ,200.0000 (Solve) ,,0.000  	KleeCLEVER: timeout  ,200.0000
+./mergedHard/EQ_oddEQ_odd/libB*      CC2-Hybrid: equiv    ,3.1088   (Solve) ,,2.884  	CC2-Concurrent: timeout  ,200.0000 (Solve) ,,0.000  	KleeCLEVER: timeout  ,200.0000
 ./mergedHard/EQ_oddEQ_one/libA      CC2-Hybrid: not equiv ,0.9610   (Solve) ,,0.580  	CC2-Concurrent: not equiv ,1.2733   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.8672  
 ./mergedHard/EQ_oddEQ_one/libB      CC2-Hybrid: not equiv ,0.5808   (Solve) ,,0.189  	CC2-Concurrent: not equiv ,0.8996   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1693  
 ./mergedHard/EQ_oddEQ_oneBound/libA CC2-Hybrid: not equiv ,1.7045   (Solve) ,,1.327  	CC2-Concurrent: not equiv ,2.0943   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.9197  
