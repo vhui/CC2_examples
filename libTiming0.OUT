@@ -1,0 +1,302 @@
+./multLibs/EQ_Add/1                 CC2-Hybrid: equiv    ,0.1272   (Solve) ,,0.024  	CC2-Concurrent: equiv    ,0.1321   (Solve) ,,0.029  	KleeCLEVER: equiv    ,0.0875  
+./multLibs/EQ_Add/10                CC2-Hybrid: equiv    ,0.2895   (Solve) ,,0.026  	CC2-Concurrent: equiv    ,0.4199   (Solve) ,,0.060  	KleeCLEVER: equiv    ,0.0989  
+./multLibs/EQ_Add/11                CC2-Hybrid: equiv    ,0.3325   (Solve) ,,0.027  	CC2-Concurrent: equiv    ,0.4766   (Solve) ,,0.063  	KleeCLEVER: equiv    ,0.0952  
+./multLibs/EQ_Add/12                CC2-Hybrid: equiv    ,0.3586   (Solve) ,,0.030  	CC2-Concurrent: equiv    ,0.4826   (Solve) ,,0.048  	KleeCLEVER: equiv    ,0.0985  
+./multLibs/EQ_Add/2                 CC2-Hybrid: equiv    ,0.1458   (Solve) ,,0.028  	CC2-Concurrent: equiv    ,0.2831   (Solve) ,,0.069  	KleeCLEVER: equiv    ,0.0916  
+./multLibs/EQ_Add/3                 CC2-Hybrid: equiv    ,0.1587   (Solve) ,,0.029  	CC2-Concurrent: equiv    ,0.3133   (Solve) ,,0.073  	KleeCLEVER: equiv    ,0.0931  
+./multLibs/EQ_Add/4                 CC2-Hybrid: equiv    ,0.1706   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.2811   (Solve) ,,0.048  	KleeCLEVER: equiv    ,0.0942  
+./multLibs/EQ_Add/5                 CC2-Hybrid: equiv    ,0.1934   (Solve) ,,0.030  	CC2-Concurrent: equiv    ,0.3498   (Solve) ,,0.078  	KleeCLEVER: equiv    ,0.0739  
+./multLibs/EQ_Add/6                 CC2-Hybrid: equiv    ,0.2090   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.3634   (Solve) ,,0.073  	KleeCLEVER: equiv    ,0.0886  
+./multLibs/EQ_Add/7                 CC2-Hybrid: equiv    ,0.2309   (Solve) ,,0.029  	CC2-Concurrent: equiv    ,0.3612   (Solve) ,,0.057  	KleeCLEVER: equiv    ,0.0936  
+./multLibs/EQ_Add/8                 CC2-Hybrid: equiv    ,0.2536   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.3416   (Solve) ,,0.047  	KleeCLEVER: equiv    ,0.0884  
+./multLibs/EQ_Add/9                 CC2-Hybrid: equiv    ,0.2794   (Solve) ,,0.029  	CC2-Concurrent: equiv    ,0.3932   (Solve) ,,0.058  	KleeCLEVER: equiv    ,0.0956  
+./multLibs/EQ_Const/1               CC2-Hybrid: equiv    ,0.1250   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.1267   (Solve) ,,0.025  	KleeCLEVER: equiv    ,0.0935  
+./multLibs/EQ_Const/10              CC2-Hybrid: equiv    ,0.3063   (Solve) ,,0.029  	CC2-Concurrent: equiv    ,0.4087   (Solve) ,,0.047  	KleeCLEVER: equiv    ,0.0976  
+./multLibs/EQ_Const/11              CC2-Hybrid: equiv    ,0.3274   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.4336   (Solve) ,,0.042  	KleeCLEVER: equiv    ,0.0948  
+./multLibs/EQ_Const/12              CC2-Hybrid: equiv    ,0.3563   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.4762   (Solve) ,,0.048  	KleeCLEVER: equiv    ,0.0964  
+./multLibs/EQ_Const/2               CC2-Hybrid: equiv    ,0.1454   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.2959   (Solve) ,,0.063  	KleeCLEVER: equiv    ,0.0899  
+./multLibs/EQ_Const/3               CC2-Hybrid: equiv    ,0.1577   (Solve) ,,0.024  	CC2-Concurrent: equiv    ,0.3077   (Solve) ,,0.057  	KleeCLEVER: equiv    ,0.0987  
+./multLibs/EQ_Const/4               CC2-Hybrid: equiv    ,0.1674   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.3013   (Solve) ,,0.058  	KleeCLEVER: equiv    ,0.0948  
+./multLibs/EQ_Const/5               CC2-Hybrid: equiv    ,0.1949   (Solve) ,,0.033  	CC2-Concurrent: equiv    ,0.2926   (Solve) ,,0.043  	KleeCLEVER: equiv    ,0.0907  
+./multLibs/EQ_Const/6               CC2-Hybrid: equiv    ,0.2113   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.3549   (Solve) ,,0.063  	KleeCLEVER: equiv    ,0.0914  
+./multLibs/EQ_Const/7               CC2-Hybrid: equiv    ,0.2266   (Solve) ,,0.025  	CC2-Concurrent: equiv    ,0.4055   (Solve) ,,0.078  	KleeCLEVER: equiv    ,0.0972  
+./multLibs/EQ_Const/8               CC2-Hybrid: equiv    ,0.2531   (Solve) ,,0.030  	CC2-Concurrent: equiv    ,0.3631   (Solve) ,,0.048  	KleeCLEVER: equiv    ,0.0955  
+./multLibs/EQ_Const/9               CC2-Hybrid: equiv    ,0.2772   (Solve) ,,0.024  	CC2-Concurrent: equiv    ,0.3920   (Solve) ,,0.057  	KleeCLEVER: equiv    ,0.0942  
+./multLibs/EQ_LoopMult20/1          CC2-Hybrid: equiv    ,1.3307   (Solve) ,,0.646  	CC2-Concurrent: equiv    ,1.3440   (Solve) ,,0.651  	KleeCLEVER: equiv    ,0.2645  
+./multLibs/EQ_LoopMult20/10         CC2-Hybrid: equiv    ,3.3860   (Solve) ,,1.459  	CC2-Concurrent: equiv    ,3.5946   (Solve) ,,1.561  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopMult20/11         CC2-Hybrid: equiv    ,4.0203   (Solve) ,,1.657  	CC2-Concurrent: equiv    ,4.2312   (Solve) ,,1.737  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopMult20/12         CC2-Hybrid: equiv    ,4.7526   (Solve) ,,1.881  	CC2-Concurrent: equiv    ,5.0046   (Solve) ,,1.974  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopMult20/2          CC2-Hybrid: equiv    ,0.6095   (Solve) ,,0.396  	CC2-Concurrent: equiv    ,0.7882   (Solve) ,,0.499  	KleeCLEVER: equiv    ,0.5869  
+./multLibs/EQ_LoopMult20/3          CC2-Hybrid: equiv    ,0.8342   (Solve) ,,0.559  	CC2-Concurrent: equiv    ,1.0743   (Solve) ,,0.666  	KleeCLEVER: equiv    ,1.8201  
+./multLibs/EQ_LoopMult20/4          CC2-Hybrid: equiv    ,1.0374   (Solve) ,,0.646  	CC2-Concurrent: equiv    ,1.2504   (Solve) ,,0.727  	KleeCLEVER: equiv    ,8.6205  
+./multLibs/EQ_LoopMult20/5          CC2-Hybrid: equiv    ,1.2735   (Solve) ,,0.739  	CC2-Concurrent: equiv    ,1.4488   (Solve) ,,0.784  	KleeCLEVER: equiv    ,50.1528 
+./multLibs/EQ_LoopMult20/6          CC2-Hybrid: equiv    ,1.5716   (Solve) ,,0.839  	CC2-Concurrent: equiv    ,1.7835   (Solve) ,,0.966  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopMult20/7          CC2-Hybrid: equiv    ,1.9078   (Solve) ,,0.968  	CC2-Concurrent: equiv    ,2.1365   (Solve) ,,1.082  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopMult20/8          CC2-Hybrid: equiv    ,2.3122   (Solve) ,,1.118  	CC2-Concurrent: equiv    ,2.5521   (Solve) ,,1.203  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopMult20/9          CC2-Hybrid: equiv    ,2.8487   (Solve) ,,1.286  	CC2-Concurrent: equiv    ,3.0694   (Solve) ,,1.374  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopUnreach2/1        CC2-Hybrid: equiv    ,0.9231   (Solve) ,,0.235  	CC2-Concurrent: equiv    ,0.9415   (Solve) ,,0.253  	KleeCLEVER: equiv    ,0.0942  
+./multLibs/EQ_LoopUnreach2/10       CC2-Hybrid: equiv    ,3.5874   (Solve) ,,1.300  	CC2-Concurrent: equiv    ,6.2710   (Solve) ,,2.012  	KleeCLEVER: equiv    ,0.1033  
+./multLibs/EQ_LoopUnreach2/11       CC2-Hybrid: equiv    ,3.6886   (Solve) ,,1.329  	CC2-Concurrent: equiv    ,6.3223   (Solve) ,,1.968  	KleeCLEVER: equiv    ,0.1077  
+./multLibs/EQ_LoopUnreach2/12       CC2-Hybrid: equiv    ,3.7765   (Solve) ,,1.342  	CC2-Concurrent: equiv    ,6.4992   (Solve) ,,2.036  	KleeCLEVER: equiv    ,0.1135  
+./multLibs/EQ_LoopUnreach2/2        CC2-Hybrid: equiv    ,3.1898   (Solve) ,,1.273  	CC2-Concurrent: equiv    ,5.4835   (Solve) ,,1.961  	KleeCLEVER: equiv    ,0.0939  
+./multLibs/EQ_LoopUnreach2/3        CC2-Hybrid: equiv    ,3.2454   (Solve) ,,1.297  	CC2-Concurrent: equiv    ,5.7252   (Solve) ,,2.036  	KleeCLEVER: equiv    ,0.0949  
+./multLibs/EQ_LoopUnreach2/4        CC2-Hybrid: equiv    ,3.2775   (Solve) ,,1.262  	CC2-Concurrent: equiv    ,5.8126   (Solve) ,,2.013  	KleeCLEVER: equiv    ,0.1027  
+./multLibs/EQ_LoopUnreach2/5        CC2-Hybrid: equiv    ,3.3094   (Solve) ,,1.275  	CC2-Concurrent: equiv    ,5.7185   (Solve) ,,1.990  	KleeCLEVER: equiv    ,0.0992  
+./multLibs/EQ_LoopUnreach2/6        CC2-Hybrid: equiv    ,3.3786   (Solve) ,,1.281  	CC2-Concurrent: equiv    ,5.9072   (Solve) ,,1.939  	KleeCLEVER: equiv    ,0.0987  
+./multLibs/EQ_LoopUnreach2/7        CC2-Hybrid: equiv    ,3.4047   (Solve) ,,1.269  	CC2-Concurrent: equiv    ,6.0198   (Solve) ,,1.952  	KleeCLEVER: equiv    ,0.0999  
+./multLibs/EQ_LoopUnreach2/8        CC2-Hybrid: equiv    ,3.5103   (Solve) ,,1.306  	CC2-Concurrent: equiv    ,6.1482   (Solve) ,,2.014  	KleeCLEVER: equiv    ,0.1020  
+./multLibs/EQ_LoopUnreach2/9        CC2-Hybrid: equiv    ,3.5786   (Solve) ,,1.317  	CC2-Concurrent: equiv    ,6.0882   (Solve) ,,1.916  	KleeCLEVER: equiv    ,0.1004  
+./multLibs/EQ_LoopUnreach20/1       CC2-Hybrid: equiv    ,1.0095   (Solve) ,,0.310  	CC2-Concurrent: equiv    ,0.9826   (Solve) ,,0.297  	KleeCLEVER: equiv    ,0.1194  
+./multLibs/EQ_LoopUnreach20/10      CC2-Hybrid: equiv    ,3.1311   (Solve) ,,1.199  	CC2-Concurrent: equiv    ,3.4477   (Solve) ,,1.318  	KleeCLEVER: equiv    ,68.4657 
+./multLibs/EQ_LoopUnreach20/11      CC2-Hybrid: equiv    ,3.7542   (Solve) ,,1.425  	CC2-Concurrent: equiv    ,3.9995   (Solve) ,,1.518  	KleeCLEVER: equiv    ,263.7444
+./multLibs/EQ_LoopUnreach20/12      CC2-Hybrid: equiv    ,4.5567   (Solve) ,,1.663  	CC2-Concurrent: equiv    ,4.6877   (Solve) ,,1.714  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_LoopUnreach20/2       CC2-Hybrid: equiv    ,0.2777   (Solve) ,,0.064  	CC2-Concurrent: equiv    ,0.4054   (Solve) ,,0.094  	KleeCLEVER: equiv    ,0.1456  
+./multLibs/EQ_LoopUnreach20/3       CC2-Hybrid: equiv    ,0.5207   (Solve) ,,0.248  	CC2-Concurrent: equiv    ,0.7076   (Solve) ,,0.337  	KleeCLEVER: equiv    ,0.1641  
+./multLibs/EQ_LoopUnreach20/4       CC2-Hybrid: equiv    ,0.7126   (Solve) ,,0.327  	CC2-Concurrent: equiv    ,0.9320   (Solve) ,,0.403  	KleeCLEVER: equiv    ,0.1991  
+./multLibs/EQ_LoopUnreach20/5       CC2-Hybrid: equiv    ,0.9655   (Solve) ,,0.440  	CC2-Concurrent: equiv    ,1.1570   (Solve) ,,0.506  	KleeCLEVER: equiv    ,0.2710  
+./multLibs/EQ_LoopUnreach20/6       CC2-Hybrid: equiv    ,1.2751   (Solve) ,,0.550  	CC2-Concurrent: equiv    ,1.4962   (Solve) ,,0.640  	KleeCLEVER: equiv    ,0.4992  
+./multLibs/EQ_LoopUnreach20/7       CC2-Hybrid: equiv    ,1.6362   (Solve) ,,0.682  	CC2-Concurrent: equiv    ,1.8965   (Solve) ,,0.780  	KleeCLEVER: equiv    ,1.3865  
+./multLibs/EQ_LoopUnreach20/8       CC2-Hybrid: equiv    ,2.0635   (Solve) ,,0.835  	CC2-Concurrent: equiv    ,2.3054   (Solve) ,,0.937  	KleeCLEVER: equiv    ,4.7518  
+./multLibs/EQ_LoopUnreach20/9       CC2-Hybrid: equiv    ,2.5521   (Solve) ,,1.003  	CC2-Concurrent: equiv    ,2.8120   (Solve) ,,1.107  	KleeCLEVER: equiv    ,17.9140 
+./multLibs/EQ_UnchLoop/1            CC2-Hybrid: equiv    ,30.3459  (Solve) ,,30.195 	CC2-Concurrent: equiv    ,30.3361  (Solve) ,,30.210 	KleeCLEVER: equiv    ,0.0961  
+./multLibs/EQ_UnchLoop/10           CC2-Hybrid: equiv    ,30.5014  (Solve) ,,30.201 	CC2-Concurrent: equiv    ,31.0568  (Solve) ,,30.434 	KleeCLEVER: equiv    ,0.1644  
+./multLibs/EQ_UnchLoop/11           CC2-Hybrid: equiv    ,30.9111  (Solve) ,,30.294 	CC2-Concurrent: equiv    ,31.3440  (Solve) ,,30.464 	KleeCLEVER: equiv    ,0.1737  
+./multLibs/EQ_UnchLoop/12           CC2-Hybrid: equiv    ,31.0660  (Solve) ,,30.352 	CC2-Concurrent: equiv    ,31.7040  (Solve) ,,30.770 	KleeCLEVER: equiv    ,0.3834  
+./multLibs/EQ_UnchLoop/2            CC2-Hybrid: equiv    ,31.3476  (Solve) ,,30.865 	CC2-Concurrent: equiv    ,31.6195  (Solve) ,,30.880 	KleeCLEVER: equiv    ,0.3583  
+./multLibs/EQ_UnchLoop/3            CC2-Hybrid: equiv    ,31.4534  (Solve) ,,30.839 	CC2-Concurrent: equiv    ,31.4992  (Solve) ,,30.845 	KleeCLEVER: equiv    ,0.3741  
+./multLibs/EQ_UnchLoop/4            CC2-Hybrid: equiv    ,31.3824  (Solve) ,,30.800 	CC2-Concurrent: equiv    ,31.7104  (Solve) ,,30.952 	KleeCLEVER: equiv    ,0.4185  
+./multLibs/EQ_UnchLoop/5            CC2-Hybrid: equiv    ,31.6987  (Solve) ,,30.862 	CC2-Concurrent: equiv    ,31.8183  (Solve) ,,30.989 	KleeCLEVER: equiv    ,0.3738  
+./multLibs/EQ_UnchLoop/6            CC2-Hybrid: equiv    ,31.6634  (Solve) ,,30.776 	CC2-Concurrent: equiv    ,32.0706  (Solve) ,,30.923 	KleeCLEVER: equiv    ,0.4035  
+./multLibs/EQ_UnchLoop/7            CC2-Hybrid: equiv    ,31.7218  (Solve) ,,30.874 	CC2-Concurrent: equiv    ,32.0204  (Solve) ,,30.843 	KleeCLEVER: equiv    ,0.3934  
+./multLibs/EQ_UnchLoop/8            CC2-Hybrid: equiv    ,31.9911  (Solve) ,,30.877 	CC2-Concurrent: equiv    ,31.9362  (Solve) ,,30.788 	KleeCLEVER: equiv    ,0.4309  
+./multLibs/EQ_UnchLoop/9            CC2-Hybrid: equiv    ,32.0395  (Solve) ,,30.834 	CC2-Concurrent: equiv    ,32.0251  (Solve) ,,30.851 	KleeCLEVER: equiv    ,0.4192  
+./multLibs/EQ_divide/1              CC2-Hybrid: equiv    ,0.5840   (Solve) ,,0.138  	CC2-Concurrent: equiv    ,0.6629   (Solve) ,,0.147  	KleeCLEVER: equiv    ,0.4610  
+./multLibs/EQ_divide/10             CC2-Hybrid: equiv    ,10.0668  (Solve) ,,2.747  	CC2-Concurrent: equiv    ,11.0110  (Solve) ,,3.391  	KleeCLEVER: equiv    ,4.3119  
+./multLibs/EQ_divide/11             CC2-Hybrid: equiv    ,12.0455  (Solve) ,,3.258  	CC2-Concurrent: equiv    ,12.9678  (Solve) ,,2.917  	KleeCLEVER: equiv    ,9.2325  
+./multLibs/EQ_divide/12             CC2-Hybrid: equiv    ,15.6332  (Solve) ,,3.551  	CC2-Concurrent: equiv    ,14.8618  (Solve) ,,3.422  	KleeCLEVER: equiv    ,20.0199 
+./multLibs/EQ_divide/2              CC2-Hybrid: equiv    ,0.9591   (Solve) ,,0.180  	CC2-Concurrent: equiv    ,0.9623   (Solve) ,,0.156  	KleeCLEVER: equiv    ,0.4562  
+./multLibs/EQ_divide/3              CC2-Hybrid: equiv    ,1.0329   (Solve) ,,0.210  	CC2-Concurrent: equiv    ,1.3849   (Solve) ,,0.209  	KleeCLEVER: equiv    ,0.5315  
+./multLibs/EQ_divide/4              CC2-Hybrid: equiv    ,1.8344   (Solve) ,,0.207  	CC2-Concurrent: equiv    ,1.8638   (Solve) ,,0.270  	KleeCLEVER: equiv    ,0.4101  
+./multLibs/EQ_divide/5              CC2-Hybrid: equiv    ,3.4556   (Solve) ,,1.512  	CC2-Concurrent: equiv    ,3.4707   (Solve) ,,1.429  	KleeCLEVER: equiv    ,0.5158  
+./multLibs/EQ_divide/6              CC2-Hybrid: equiv    ,4.7741   (Solve) ,,2.124  	CC2-Concurrent: equiv    ,4.7583   (Solve) ,,2.001  	KleeCLEVER: equiv    ,0.6470  
+./multLibs/EQ_divide/7              CC2-Hybrid: equiv    ,4.7493   (Solve) ,,1.259  	CC2-Concurrent: equiv    ,5.0314   (Solve) ,,1.327  	KleeCLEVER: equiv    ,0.9761  
+./multLibs/EQ_divide/8              CC2-Hybrid: equiv    ,6.7085   (Solve) ,,2.272  	CC2-Concurrent: equiv    ,7.1539   (Solve) ,,2.814  	KleeCLEVER: equiv    ,1.1118  
+./multLibs/EQ_divide/9              CC2-Hybrid: equiv    ,8.2424   (Solve) ,,2.983  	CC2-Concurrent: equiv    ,9.2162   (Solve) ,,2.891  	KleeCLEVER: equiv    ,2.1762  
+./multLibs/EQ_getSign2/1            CC2-Hybrid: equiv    ,3.5685   (Solve) ,,1.047  	CC2-Concurrent: equiv    ,3.6408   (Solve) ,,1.117  	KleeCLEVER: equiv    ,0.4560  
+./multLibs/EQ_getSign2/10           CC2-Hybrid: equiv    ,6.2884   (Solve) ,,0.864  	CC2-Concurrent: equiv    ,6.3227   (Solve) ,,0.781  	KleeCLEVER: equiv    ,4.1271  
+./multLibs/EQ_getSign2/11           CC2-Hybrid: equiv    ,7.2651   (Solve) ,,0.753  	CC2-Concurrent: equiv    ,7.0526   (Solve) ,,0.711  	KleeCLEVER: equiv    ,7.7909  
+./multLibs/EQ_getSign2/12           CC2-Hybrid: equiv    ,7.5693   (Solve) ,,0.750  	CC2-Concurrent: equiv    ,7.7103   (Solve) ,,0.815  	KleeCLEVER: equiv    ,16.9452 
+./multLibs/EQ_getSign2/2            CC2-Hybrid: equiv    ,0.6969   (Solve) ,,0.200  	CC2-Concurrent: equiv    ,1.1418   (Solve) ,,0.336  	KleeCLEVER: equiv    ,0.5144  
+./multLibs/EQ_getSign2/3            CC2-Hybrid: equiv    ,1.1998   (Solve) ,,0.351  	CC2-Concurrent: equiv    ,1.5277   (Solve) ,,0.377  	KleeCLEVER: equiv    ,0.6179  
+./multLibs/EQ_getSign2/4            CC2-Hybrid: equiv    ,1.7575   (Solve) ,,0.544  	CC2-Concurrent: equiv    ,2.3326   (Solve) ,,0.678  	KleeCLEVER: equiv    ,0.8232  
+./multLibs/EQ_getSign2/5            CC2-Hybrid: equiv    ,2.1893   (Solve) ,,0.767  	CC2-Concurrent: equiv    ,2.5606   (Solve) ,,0.870  	KleeCLEVER: equiv    ,0.8836  
+./multLibs/EQ_getSign2/6            CC2-Hybrid: equiv    ,2.6302   (Solve) ,,0.737  	CC2-Concurrent: equiv    ,3.0390   (Solve) ,,0.690  	KleeCLEVER: equiv    ,0.9896  
+./multLibs/EQ_getSign2/7            CC2-Hybrid: equiv    ,2.9022   (Solve) ,,0.632  	CC2-Concurrent: equiv    ,3.1037   (Solve) ,,0.660  	KleeCLEVER: equiv    ,1.3133  
+./multLibs/EQ_getSign2/8            CC2-Hybrid: equiv    ,3.3561   (Solve) ,,0.673  	CC2-Concurrent: equiv    ,3.7013   (Solve) ,,0.652  	KleeCLEVER: equiv    ,1.3114  
+./multLibs/EQ_getSign2/9            CC2-Hybrid: equiv    ,4.4007   (Solve) ,,0.701  	CC2-Concurrent: equiv    ,3.9091   (Solve) ,,0.667  	KleeCLEVER: equiv    ,2.1389  
+./multLibs/EQ_is_prime1/1           CC2-Hybrid: equiv    ,2.2600   (Solve) ,,1.771  	CC2-Concurrent: equiv    ,2.1549   (Solve) ,,1.633  	KleeCLEVER: equiv    ,0.3813  
+./multLibs/EQ_is_prime1/10          CC2-Hybrid: equiv    ,3.0662   (Solve) ,,1.848  	CC2-Concurrent: equiv    ,3.0128   (Solve) ,,1.785  	KleeCLEVER: equiv    ,0.4535  
+./multLibs/EQ_is_prime1/11          CC2-Hybrid: equiv    ,3.0684   (Solve) ,,1.792  	CC2-Concurrent: equiv    ,3.0972   (Solve) ,,1.622  	KleeCLEVER: equiv    ,0.4265  
+./multLibs/EQ_is_prime1/12          CC2-Hybrid: equiv    ,3.0433   (Solve) ,,1.859  	CC2-Concurrent: equiv    ,3.7031   (Solve) ,,2.248  	KleeCLEVER: equiv    ,0.3772  
+./multLibs/EQ_is_prime1/2           CC2-Hybrid: equiv    ,2.5111   (Solve) ,,1.971  	CC2-Concurrent: equiv    ,2.7437   (Solve) ,,2.046  	KleeCLEVER: equiv    ,0.3537  
+./multLibs/EQ_is_prime1/3           CC2-Hybrid: equiv    ,2.4623   (Solve) ,,1.824  	CC2-Concurrent: equiv    ,2.6515   (Solve) ,,1.953  	KleeCLEVER: equiv    ,0.4171  
+./multLibs/EQ_is_prime1/4           CC2-Hybrid: equiv    ,2.6006   (Solve) ,,1.926  	CC2-Concurrent: equiv    ,2.8093   (Solve) ,,2.058  	KleeCLEVER: equiv    ,0.4180  
+./multLibs/EQ_is_prime1/5           CC2-Hybrid: equiv    ,2.5500   (Solve) ,,1.793  	CC2-Concurrent: equiv    ,2.4429   (Solve) ,,1.729  	KleeCLEVER: equiv    ,0.2519  
+./multLibs/EQ_is_prime1/6           CC2-Hybrid: equiv    ,2.0236   (Solve) ,,1.489  	CC2-Concurrent: equiv    ,2.3701   (Solve) ,,1.735  	KleeCLEVER: equiv    ,0.2270  
+./multLibs/EQ_is_prime1/7           CC2-Hybrid: equiv    ,2.5501   (Solve) ,,1.931  	CC2-Concurrent: equiv    ,2.6060   (Solve) ,,1.782  	KleeCLEVER: equiv    ,0.2183  
+./multLibs/EQ_is_prime1/8           CC2-Hybrid: equiv    ,2.4639   (Solve) ,,1.713  	CC2-Concurrent: equiv    ,3.1361   (Solve) ,,1.772  	KleeCLEVER: equiv    ,0.2404  
+./multLibs/EQ_is_prime1/9           CC2-Hybrid: equiv    ,2.6294   (Solve) ,,1.692  	CC2-Concurrent: equiv    ,2.8650   (Solve) ,,1.849  	KleeCLEVER: equiv    ,0.2344  
+./multLibs/EQ_is_prime2/1           CC2-Hybrid: equiv    ,1.7973   (Solve) ,,1.473  	CC2-Concurrent: equiv    ,2.2111   (Solve) ,,1.775  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/10          CC2-Hybrid: equiv    ,5.7961   (Solve) ,,1.397  	CC2-Concurrent: equiv    ,6.0993   (Solve) ,,1.495  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/11          CC2-Hybrid: equiv    ,7.0893   (Solve) ,,1.412  	CC2-Concurrent: equiv    ,7.1488   (Solve) ,,1.490  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/12          CC2-Hybrid: equiv    ,7.9937   (Solve) ,,1.444  	CC2-Concurrent: equiv    ,8.2978   (Solve) ,,1.539  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/2           CC2-Hybrid: equiv    ,1.0259   (Solve) ,,0.715  	CC2-Concurrent: equiv    ,1.1836   (Solve) ,,0.771  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/3           CC2-Hybrid: equiv    ,1.2545   (Solve) ,,0.767  	CC2-Concurrent: equiv    ,1.4041   (Solve) ,,0.816  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/4           CC2-Hybrid: equiv    ,1.5008   (Solve) ,,0.776  	CC2-Concurrent: equiv    ,1.7360   (Solve) ,,0.849  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/5           CC2-Hybrid: equiv    ,2.1013   (Solve) ,,1.047  	CC2-Concurrent: equiv    ,2.3605   (Solve) ,,1.142  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/6           CC2-Hybrid: equiv    ,2.6263   (Solve) ,,1.140  	CC2-Concurrent: equiv    ,2.8043   (Solve) ,,1.228  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/7           CC2-Hybrid: equiv    ,3.2006   (Solve) ,,1.189  	CC2-Concurrent: equiv    ,3.3988   (Solve) ,,1.295  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/8           CC2-Hybrid: equiv    ,3.8593   (Solve) ,,1.238  	CC2-Concurrent: equiv    ,4.1552   (Solve) ,,1.344  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_is_prime2/9           CC2-Hybrid: equiv    ,4.7852   (Solve) ,,1.288  	CC2-Concurrent: equiv    ,4.8755   (Solve) ,,1.350  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_ltfive/1              CC2-Hybrid: not equiv ,0.4736   (Solve) ,,0.181  	CC2-Concurrent: not equiv ,0.7496   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1520  
+./multLibs/EQ_ltfive/10             CC2-Hybrid: not equiv ,25.1375  (Solve) ,,19.230 	CC2-Concurrent: not equiv ,25.8303  (Solve) ,,0.000  	KleeCLEVER: not equiv ,250.7491
+./multLibs/EQ_ltfive/11             CC2-Hybrid: not equiv ,21.8509  (Solve) ,,14.533 	CC2-Concurrent: not equiv ,22.6734  (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_ltfive/12             CC2-Hybrid: equiv    ,39.3889  (Solve) ,,30.539 	CC2-Concurrent: equiv    ,40.0251  (Solve) ,,30.665 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_ltfive/2              CC2-Hybrid: equiv    ,0.4611   (Solve) ,,0.134  	CC2-Concurrent: equiv    ,0.5859   (Solve) ,,0.177  	KleeCLEVER: not equiv ,0.2122  
+Disagreement error: ./multLibs/EQ_ltfive/2
+./multLibs/EQ_ltfive/3              CC2-Hybrid: not equiv ,7.6199   (Solve) ,,6.261  	CC2-Concurrent: not equiv ,8.1224   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3531  
+./multLibs/EQ_ltfive/4              CC2-Hybrid: not equiv ,3.5743   (Solve) ,,2.469  	CC2-Concurrent: not equiv ,4.0203   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6776  
+./multLibs/EQ_ltfive/5              CC2-Hybrid: not equiv ,6.2525   (Solve) ,,4.698  	CC2-Concurrent: not equiv ,6.7593   (Solve) ,,0.000  	KleeCLEVER: not equiv ,1.2241  
+./multLibs/EQ_ltfive/6              CC2-Hybrid: not equiv ,12.3368  (Solve) ,,9.555  	CC2-Concurrent: not equiv ,13.7230  (Solve) ,,0.000  	KleeCLEVER: not equiv ,6.2697  
+./multLibs/EQ_ltfive/7              CC2-Hybrid: not equiv ,19.1784  (Solve) ,,16.397 	CC2-Concurrent: not equiv ,19.7859  (Solve) ,,0.000  	KleeCLEVER: not equiv ,28.2101 
+./multLibs/EQ_ltfive/8              CC2-Hybrid: not equiv ,15.5381  (Solve) ,,11.866 	CC2-Concurrent: not equiv ,15.9700  (Solve) ,,0.000  	KleeCLEVER: not equiv ,132.3620
+./multLibs/EQ_ltfive/9              CC2-Hybrid: not equiv ,26.1812  (Solve) ,,21.496 	CC2-Concurrent: not equiv ,26.9324  (Solve) ,,0.000  	KleeCLEVER: not equiv ,148.6272
+./multLibs/EQ_ltfiveBound/1         CC2-Hybrid: equiv    ,1.1058   (Solve) ,,0.357  	CC2-Concurrent: equiv    ,1.8476   (Solve) ,,0.580  	KleeCLEVER: equiv    ,0.1505  
+./multLibs/EQ_ltfiveBound/10        CC2-Hybrid: equiv    ,14.7522  (Solve) ,,7.209  	CC2-Concurrent: equiv    ,15.1799  (Solve) ,,7.406  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_ltfiveBound/11        CC2-Hybrid: equiv    ,17.1177  (Solve) ,,7.675  	CC2-Concurrent: equiv    ,17.8271  (Solve) ,,7.970  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_ltfiveBound/12        CC2-Hybrid: equiv    ,19.8309  (Solve) ,,7.933  	CC2-Concurrent: equiv    ,20.2121  (Solve) ,,8.117  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_ltfiveBound/2         CC2-Hybrid: equiv    ,1.0054   (Solve) ,,0.604  	CC2-Concurrent: equiv    ,1.2196   (Solve) ,,0.717  	KleeCLEVER: equiv    ,0.2041  
+./multLibs/EQ_ltfiveBound/3         CC2-Hybrid: equiv    ,2.4695   (Solve) ,,1.724  	CC2-Concurrent: equiv    ,2.6435   (Solve) ,,1.816  	KleeCLEVER: equiv    ,0.2912  
+./multLibs/EQ_ltfiveBound/4         CC2-Hybrid: equiv    ,3.1354   (Solve) ,,1.997  	CC2-Concurrent: equiv    ,3.4265   (Solve) ,,2.118  	KleeCLEVER: equiv    ,0.4208  
+./multLibs/EQ_ltfiveBound/5         CC2-Hybrid: equiv    ,4.9899   (Solve) ,,3.281  	CC2-Concurrent: equiv    ,5.4329   (Solve) ,,3.527  	KleeCLEVER: equiv    ,0.8392  
+./multLibs/EQ_ltfiveBound/6         CC2-Hybrid: equiv    ,6.2426   (Solve) ,,3.763  	CC2-Concurrent: equiv    ,6.4882   (Solve) ,,3.897  	KleeCLEVER: equiv    ,3.1078  
+./multLibs/EQ_ltfiveBound/7         CC2-Hybrid: equiv    ,7.8878   (Solve) ,,4.434  	CC2-Concurrent: equiv    ,8.1973   (Solve) ,,4.534  	KleeCLEVER: equiv    ,15.5855 
+./multLibs/EQ_ltfiveBound/8         CC2-Hybrid: equiv    ,9.9540   (Solve) ,,5.314  	CC2-Concurrent: equiv    ,10.1620  (Solve) ,,5.465  	KleeCLEVER: equiv    ,84.4108 
+./multLibs/EQ_ltfiveBound/9         CC2-Hybrid: equiv    ,12.5079  (Solve) ,,6.495  	CC2-Concurrent: equiv    ,13.1101  (Solve) ,,6.809  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_multiple/1            CC2-Hybrid: not equiv ,0.4884   (Solve) ,,0.208  	CC2-Concurrent: not equiv ,0.4669   (Solve) ,,0.212  	KleeCLEVER: not equiv ,0.2435  
+./multLibs/EQ_multiple/10           CC2-Hybrid: not equiv ,8.4029   (Solve) ,,5.780  	CC2-Concurrent: not equiv ,9.0609   (Solve) ,,0.000  	KleeCLEVER: not equiv ,192.9533
+./multLibs/EQ_multiple/11           CC2-Hybrid: not equiv ,9.6636   (Solve) ,,6.448  	CC2-Concurrent: not equiv ,10.2857  (Solve) ,,0.000  	KleeCLEVER: not equiv ,227.6970
+./multLibs/EQ_multiple/12           CC2-Hybrid: not equiv ,7.8782   (Solve) ,,4.083  	CC2-Concurrent: not equiv ,8.4789   (Solve) ,,0.000  	KleeCLEVER: not equiv ,269.9987
+./multLibs/EQ_multiple/2            CC2-Hybrid: not equiv ,0.8175   (Solve) ,,0.442  	CC2-Concurrent: not equiv ,1.1615   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3493  
+./multLibs/EQ_multiple/3            CC2-Hybrid: not equiv ,1.4547   (Solve) ,,0.987  	CC2-Concurrent: not equiv ,1.8427   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.4363  
+./multLibs/EQ_multiple/4            CC2-Hybrid: not equiv ,1.7187   (Solve) ,,1.101  	CC2-Concurrent: not equiv ,2.1483   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6215  
+./multLibs/EQ_multiple/5            CC2-Hybrid: not equiv ,3.3702   (Solve) ,,2.539  	CC2-Concurrent: not equiv ,3.9441   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.8622  
+./multLibs/EQ_multiple/6            CC2-Hybrid: not equiv ,2.6605   (Solve) ,,1.596  	CC2-Concurrent: not equiv ,3.1450   (Solve) ,,0.000  	KleeCLEVER: not equiv ,1.4851  
+./multLibs/EQ_multiple/7            CC2-Hybrid: not equiv ,3.6322   (Solve) ,,2.281  	CC2-Concurrent: not equiv ,4.1208   (Solve) ,,0.000  	KleeCLEVER: not equiv ,4.0073  
+./multLibs/EQ_multiple/8            CC2-Hybrid: not equiv ,4.3860   (Solve) ,,2.673  	CC2-Concurrent: not equiv ,4.9116   (Solve) ,,0.000  	KleeCLEVER: not equiv ,15.8388 
+./multLibs/EQ_multiple/9            CC2-Hybrid: not equiv ,6.7187   (Solve) ,,4.605  	CC2-Concurrent: not equiv ,7.2690   (Solve) ,,0.000  	KleeCLEVER: not equiv ,70.8633 
+./multLibs/EQ_multipleBound/1       CC2-Hybrid: equiv    ,1.1123   (Solve) ,,0.398  	CC2-Concurrent: equiv    ,1.0805   (Solve) ,,0.386  	KleeCLEVER: equiv    ,0.2715  
+./multLibs/EQ_multipleBound/10      CC2-Hybrid: equiv    ,5.9908   (Solve) ,,2.629  	CC2-Concurrent: equiv    ,6.3529   (Solve) ,,2.727  	KleeCLEVER: equiv    ,74.0452 
+./multLibs/EQ_multipleBound/11      CC2-Hybrid: equiv    ,6.9076   (Solve) ,,2.773  	CC2-Concurrent: equiv    ,7.2954   (Solve) ,,2.908  	KleeCLEVER: equiv    ,244.1299
+./multLibs/EQ_multipleBound/12      CC2-Hybrid: equiv    ,8.0300   (Solve) ,,2.975  	CC2-Concurrent: equiv    ,8.4010   (Solve) ,,3.092  	KleeCLEVER: equiv    ,265.7441
+./multLibs/EQ_multipleBound/2       CC2-Hybrid: equiv    ,0.6129   (Solve) ,,0.348  	CC2-Concurrent: equiv    ,0.7532   (Solve) ,,0.394  	KleeCLEVER: equiv    ,0.3936  
+./multLibs/EQ_multipleBound/3       CC2-Hybrid: equiv    ,0.9732   (Solve) ,,0.587  	CC2-Concurrent: equiv    ,1.1672   (Solve) ,,0.638  	KleeCLEVER: equiv    ,0.6334  
+./multLibs/EQ_multipleBound/4       CC2-Hybrid: equiv    ,1.1666   (Solve) ,,0.559  	CC2-Concurrent: equiv    ,1.2953   (Solve) ,,0.603  	KleeCLEVER: equiv    ,0.7979  
+./multLibs/EQ_multipleBound/5       CC2-Hybrid: equiv    ,2.5655   (Solve) ,,1.684  	CC2-Concurrent: equiv    ,2.7808   (Solve) ,,1.779  	KleeCLEVER: equiv    ,1.0369  
+./multLibs/EQ_multipleBound/6       CC2-Hybrid: equiv    ,3.1815   (Solve) ,,2.010  	CC2-Concurrent: equiv    ,3.4147   (Solve) ,,2.085  	KleeCLEVER: equiv    ,1.4414  
+./multLibs/EQ_multipleBound/7       CC2-Hybrid: equiv    ,3.9130   (Solve) ,,2.309  	CC2-Concurrent: equiv    ,4.1949   (Solve) ,,2.427  	KleeCLEVER: equiv    ,2.5550  
+./multLibs/EQ_multipleBound/8       CC2-Hybrid: equiv    ,4.3816   (Solve) ,,2.268  	CC2-Concurrent: equiv    ,4.5971   (Solve) ,,2.364  	KleeCLEVER: equiv    ,6.1575  
+./multLibs/EQ_multipleBound/9       CC2-Hybrid: equiv    ,4.8401   (Solve) ,,2.209  	CC2-Concurrent: equiv    ,5.0914   (Solve) ,,2.297  	KleeCLEVER: equiv    ,19.6392 
+./multLibs/EQ_odd/1                 CC2-Hybrid: equiv    ,2.5133   (Solve) ,,1.780  	CC2-Concurrent: equiv    ,2.5086   (Solve) ,,1.806  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/10                CC2-Hybrid: timeout  ,300.0000 (Solve) ,,0.000  	CC2-Concurrent: timeout  ,300.0000 (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/11                CC2-Hybrid: timeout  ,300.0000 (Solve) ,,0.000  	CC2-Concurrent: timeout  ,300.0000 (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/12                CC2-Hybrid: timeout  ,300.0000 (Solve) ,,0.000  	CC2-Concurrent: timeout  ,300.0000 (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/2                 CC2-Hybrid: equiv    ,3.1481   (Solve) ,,2.920  	CC2-Concurrent: timeout  ,300.0000 (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/3                 CC2-Hybrid: equiv    ,6.9303   (Solve) ,,6.629  	CC2-Concurrent: equiv    ,0.8756   (Solve) ,,0.478  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/4                 CC2-Hybrid: equiv    ,0.8395   (Solve) ,,0.467  	CC2-Concurrent: equiv    ,1.0567   (Solve) ,,0.524  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/5                 CC2-Hybrid: equiv    ,19.2783  (Solve) ,,18.716 	CC2-Concurrent: equiv    ,17.8332  (Solve) ,,17.078 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/6                 CC2-Hybrid: equiv    ,38.6296  (Solve) ,,37.888 	CC2-Concurrent: equiv    ,31.9841  (Solve) ,,31.045 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/7                 CC2-Hybrid: equiv    ,63.8582  (Solve) ,,62.864 	CC2-Concurrent: equiv    ,229.1309 (Solve) ,,227.922	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/8                 CC2-Hybrid: equiv    ,194.0828 (Solve) ,,192.845	CC2-Concurrent: equiv    ,157.0579 (Solve) ,,155.588	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_odd/9                 CC2-Hybrid: equiv    ,243.8576 (Solve) ,,242.317	CC2-Concurrent: equiv    ,263.1008 (Solve) ,,261.295	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_one/1                 CC2-Hybrid: not equiv ,0.3939   (Solve) ,,0.110  	CC2-Concurrent: not equiv ,0.7625   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1437  
+./multLibs/EQ_one/10                CC2-Hybrid: not equiv ,4.4934   (Solve) ,,0.759  	CC2-Concurrent: not equiv ,5.0059   (Solve) ,,0.000  	KleeCLEVER: not equiv ,6.7545  
+./multLibs/EQ_one/11                CC2-Hybrid: not equiv ,5.3934   (Solve) ,,0.800  	CC2-Concurrent: not equiv ,5.8853   (Solve) ,,0.000  	KleeCLEVER: not equiv ,15.8051 
+./multLibs/EQ_one/12                CC2-Hybrid: not equiv ,6.7100   (Solve) ,,0.949  	CC2-Concurrent: not equiv ,7.0452   (Solve) ,,0.000  	KleeCLEVER: not equiv ,40.2078 
+./multLibs/EQ_one/2                 CC2-Hybrid: not equiv ,0.6281   (Solve) ,,0.221  	CC2-Concurrent: not equiv ,0.9677   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1847  
+./multLibs/EQ_one/3                 CC2-Hybrid: not equiv ,0.8338   (Solve) ,,0.286  	CC2-Concurrent: not equiv ,1.2086   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2184  
+./multLibs/EQ_one/4                 CC2-Hybrid: not equiv ,1.0907   (Solve) ,,0.354  	CC2-Concurrent: not equiv ,1.4826   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2524  
+./multLibs/EQ_one/5                 CC2-Hybrid: not equiv ,1.5946   (Solve) ,,0.555  	CC2-Concurrent: not equiv ,1.9952   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3047  
+./multLibs/EQ_one/6                 CC2-Hybrid: not equiv ,1.9564   (Solve) ,,0.548  	CC2-Concurrent: not equiv ,2.4100   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.4127  
+./multLibs/EQ_one/7                 CC2-Hybrid: not equiv ,2.5503   (Solve) ,,0.690  	CC2-Concurrent: not equiv ,2.9772   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6664  
+./multLibs/EQ_one/8                 CC2-Hybrid: not equiv ,3.0558   (Solve) ,,0.706  	CC2-Concurrent: not equiv ,3.4679   (Solve) ,,0.000  	KleeCLEVER: not equiv ,1.2148  
+./multLibs/EQ_one/9                 CC2-Hybrid: not equiv ,3.7371   (Solve) ,,0.731  	CC2-Concurrent: not equiv ,4.2573   (Solve) ,,0.000  	KleeCLEVER: not equiv ,2.8979  
+./multLibs/EQ_oneBound/1            CC2-Hybrid: equiv    ,1.7125   (Solve) ,,0.585  	CC2-Concurrent: equiv    ,3.0734   (Solve) ,,1.005  	KleeCLEVER: equiv    ,0.1600  
+./multLibs/EQ_oneBound/10           CC2-Hybrid: equiv    ,5.8061   (Solve) ,,0.328  	CC2-Concurrent: equiv    ,5.8503   (Solve) ,,0.357  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_oneBound/11           CC2-Hybrid: equiv    ,7.2478   (Solve) ,,0.345  	CC2-Concurrent: equiv    ,7.2777   (Solve) ,,0.422  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_oneBound/12           CC2-Hybrid: equiv    ,8.8322   (Solve) ,,0.353  	CC2-Concurrent: equiv    ,8.9159   (Solve) ,,0.422  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_oneBound/2            CC2-Hybrid: equiv    ,0.5106   (Solve) ,,0.189  	CC2-Concurrent: equiv    ,0.6541   (Solve) ,,0.263  	KleeCLEVER: equiv    ,0.2585  
+./multLibs/EQ_oneBound/3            CC2-Hybrid: equiv    ,0.7002   (Solve) ,,0.209  	CC2-Concurrent: equiv    ,0.9636   (Solve) ,,0.323  	KleeCLEVER: equiv    ,0.6795  
+./multLibs/EQ_oneBound/4            CC2-Hybrid: equiv    ,1.1234   (Solve) ,,0.234  	CC2-Concurrent: equiv    ,1.2929   (Solve) ,,0.335  	KleeCLEVER: equiv    ,3.0909  
+./multLibs/EQ_oneBound/5            CC2-Hybrid: equiv    ,1.4935   (Solve) ,,0.264  	CC2-Concurrent: equiv    ,1.6227   (Solve) ,,0.340  	KleeCLEVER: equiv    ,17.8984 
+./multLibs/EQ_oneBound/6            CC2-Hybrid: equiv    ,2.0520   (Solve) ,,0.273  	CC2-Concurrent: equiv    ,2.2918   (Solve) ,,0.378  	KleeCLEVER: equiv    ,113.9049
+./multLibs/EQ_oneBound/7            CC2-Hybrid: equiv    ,2.7146   (Solve) ,,0.284  	CC2-Concurrent: equiv    ,2.9230   (Solve) ,,0.389  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_oneBound/8            CC2-Hybrid: equiv    ,3.5710   (Solve) ,,0.289  	CC2-Concurrent: equiv    ,3.7977   (Solve) ,,0.386  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_oneBound/9            CC2-Hybrid: equiv    ,4.4945   (Solve) ,,0.316  	CC2-Concurrent: equiv    ,4.8223   (Solve) ,,0.426  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_oneN2/1               CC2-Hybrid: not equiv ,0.4304   (Solve) ,,0.142  	CC2-Concurrent: not equiv ,0.7770   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1419  
+./multLibs/EQ_oneN2/10              CC2-Hybrid: not equiv ,5.1923   (Solve) ,,1.406  	CC2-Concurrent: not equiv ,5.6065   (Solve) ,,0.000  	KleeCLEVER: not equiv ,133.7323
+./multLibs/EQ_oneN2/11              CC2-Hybrid: not equiv ,6.3031   (Solve) ,,1.609  	CC2-Concurrent: not equiv ,6.8055   (Solve) ,,0.000  	KleeCLEVER: not equiv ,135.8223
+./multLibs/EQ_oneN2/12              CC2-Hybrid: not equiv ,7.4987   (Solve) ,,1.791  	CC2-Concurrent: not equiv ,7.9328   (Solve) ,,0.000  	KleeCLEVER: not equiv ,147.6519
+./multLibs/EQ_oneN2/2               CC2-Hybrid: not equiv ,0.6724   (Solve) ,,0.245  	CC2-Concurrent: not equiv ,1.0264   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1919  
+./multLibs/EQ_oneN2/3               CC2-Hybrid: not equiv ,0.9514   (Solve) ,,0.404  	CC2-Concurrent: not equiv ,1.3063   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2460  
+./multLibs/EQ_oneN2/4               CC2-Hybrid: not equiv ,1.2311   (Solve) ,,0.482  	CC2-Concurrent: not equiv ,1.6189   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2845  
+./multLibs/EQ_oneN2/5               CC2-Hybrid: not equiv ,1.6623   (Solve) ,,0.601  	CC2-Concurrent: not equiv ,2.0387   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.5409  
+./multLibs/EQ_oneN2/6               CC2-Hybrid: not equiv ,2.0954   (Solve) ,,0.698  	CC2-Concurrent: not equiv ,2.5499   (Solve) ,,0.000  	KleeCLEVER: not equiv ,1.3512  
+./multLibs/EQ_oneN2/7               CC2-Hybrid: not equiv ,2.7608   (Solve) ,,0.879  	CC2-Concurrent: not equiv ,3.2152   (Solve) ,,0.000  	KleeCLEVER: not equiv ,4.4153  
+./multLibs/EQ_oneN2/8               CC2-Hybrid: not equiv ,3.4076   (Solve) ,,0.995  	CC2-Concurrent: not equiv ,3.8216   (Solve) ,,0.000  	KleeCLEVER: not equiv ,14.4652 
+./multLibs/EQ_oneN2/9               CC2-Hybrid: not equiv ,4.2044   (Solve) ,,1.202  	CC2-Concurrent: not equiv ,4.6895   (Solve) ,,0.000  	KleeCLEVER: not equiv ,49.8683 
+./multLibs/EQ_pos/1                 CC2-Hybrid: equiv    ,1.5605   (Solve) ,,0.830  	CC2-Concurrent: equiv    ,2.6010   (Solve) ,,1.217  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/10                CC2-Hybrid: equiv    ,171.1532 (Solve) ,,167.053	CC2-Concurrent: equiv    ,187.9526 (Solve) ,,183.539	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/11                CC2-Hybrid: equiv    ,237.1127 (Solve) ,,232.026	CC2-Concurrent: equiv    ,228.0924 (Solve) ,,222.667	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/12                CC2-Hybrid: timeout  ,300.0000 (Solve) ,,0.000  	CC2-Concurrent: timeout  ,300.0000 (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/2                 CC2-Hybrid: equiv    ,3.8948   (Solve) ,,3.606  	CC2-Concurrent: equiv    ,4.2227   (Solve) ,,3.741  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/3                 CC2-Hybrid: equiv    ,9.0804   (Solve) ,,8.626  	CC2-Concurrent: equiv    ,9.3806   (Solve) ,,8.747  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/4                 CC2-Hybrid: equiv    ,16.8886  (Solve) ,,16.203 	CC2-Concurrent: equiv    ,17.6417  (Solve) ,,16.737 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/5                 CC2-Hybrid: equiv    ,28.7413  (Solve) ,,27.730 	CC2-Concurrent: equiv    ,29.7199  (Solve) ,,28.534 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/6                 CC2-Hybrid: equiv    ,48.1702  (Solve) ,,46.776 	CC2-Concurrent: equiv    ,48.0357  (Solve) ,,46.384 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/7                 CC2-Hybrid: equiv    ,59.3440  (Solve) ,,57.462 	CC2-Concurrent: equiv    ,63.5674  (Solve) ,,61.425 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/8                 CC2-Hybrid: equiv    ,94.8087  (Solve) ,,92.357 	CC2-Concurrent: equiv    ,91.6091  (Solve) ,,88.856 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos/9                 CC2-Hybrid: equiv    ,136.0541 (Solve) ,,132.865	CC2-Concurrent: equiv    ,108.3062 (Solve) ,,104.855	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/1                CC2-Hybrid: equiv    ,31.4480  (Solve) ,,31.274 	CC2-Concurrent: equiv    ,31.7794  (Solve) ,,31.432 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/10               CC2-Hybrid: equiv    ,82.8858  (Solve) ,,78.726 	CC2-Concurrent: equiv    ,84.2343  (Solve) ,,79.797 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/11               CC2-Hybrid: equiv    ,88.8953  (Solve) ,,83.774 	CC2-Concurrent: equiv    ,89.0734  (Solve) ,,83.646 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/12               CC2-Hybrid: equiv    ,94.2524  (Solve) ,,87.983 	CC2-Concurrent: equiv    ,95.1107  (Solve) ,,88.483 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/2                CC2-Hybrid: equiv    ,43.1859  (Solve) ,,42.892 	CC2-Concurrent: equiv    ,43.6505  (Solve) ,,43.187 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/3                CC2-Hybrid: equiv    ,63.6390  (Solve) ,,63.175 	CC2-Concurrent: equiv    ,64.0284  (Solve) ,,63.354 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/4                CC2-Hybrid: equiv    ,73.2527  (Solve) ,,72.566 	CC2-Concurrent: equiv    ,73.7184  (Solve) ,,72.820 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/5                CC2-Hybrid: equiv    ,81.0479  (Solve) ,,80.046 	CC2-Concurrent: equiv    ,81.3487  (Solve) ,,80.092 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/6                CC2-Hybrid: equiv    ,90.6939  (Solve) ,,89.275 	CC2-Concurrent: equiv    ,91.0745  (Solve) ,,89.428 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/7                CC2-Hybrid: equiv    ,70.7347  (Solve) ,,68.861 	CC2-Concurrent: equiv    ,71.3193  (Solve) ,,69.183 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/8                CC2-Hybrid: equiv    ,74.2233  (Solve) ,,71.726 	CC2-Concurrent: equiv    ,74.8475  (Solve) ,,72.101 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos2/9                CC2-Hybrid: equiv    ,77.9171  (Solve) ,,74.720 	CC2-Concurrent: equiv    ,78.7171  (Solve) ,,75.184 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EQ_pos3/1                CC2-Hybrid: not equiv ,1.1680   (Solve) ,,0.342  	CC2-Concurrent: not equiv ,1.1576   (Solve) ,,0.339  	KleeCLEVER: equiv    ,0.1117  
+Disagreement error: ./multLibs/EQ_pos3/1
+./multLibs/EQ_pos3/10               CC2-Hybrid: equiv    ,3.0912   (Solve) ,,1.382  	CC2-Concurrent: equiv    ,3.3156   (Solve) ,,1.438  	KleeCLEVER: equiv    ,0.7880  
+./multLibs/EQ_pos3/11               CC2-Hybrid: equiv    ,3.6939   (Solve) ,,1.596  	CC2-Concurrent: equiv    ,4.0110   (Solve) ,,1.654  	KleeCLEVER: equiv    ,1.6700  
+./multLibs/EQ_pos3/12               CC2-Hybrid: equiv    ,4.3158   (Solve) ,,1.785  	CC2-Concurrent: equiv    ,4.5446   (Solve) ,,1.875  	KleeCLEVER: equiv    ,3.9345  
+./multLibs/EQ_pos3/2                CC2-Hybrid: equiv    ,0.2373   (Solve) ,,0.043  	CC2-Concurrent: equiv    ,0.3657   (Solve) ,,0.082  	KleeCLEVER: equiv    ,0.1164  
+./multLibs/EQ_pos3/3                CC2-Hybrid: equiv    ,0.2835   (Solve) ,,0.046  	CC2-Concurrent: equiv    ,0.4519   (Solve) ,,0.068  	KleeCLEVER: equiv    ,0.1240  
+./multLibs/EQ_pos3/4                CC2-Hybrid: equiv    ,0.3959   (Solve) ,,0.053  	CC2-Concurrent: equiv    ,0.5610   (Solve) ,,0.105  	KleeCLEVER: equiv    ,0.1409  
+./multLibs/EQ_pos3/5                CC2-Hybrid: equiv    ,1.0864   (Solve) ,,0.628  	CC2-Concurrent: equiv    ,1.3069   (Solve) ,,0.726  	KleeCLEVER: equiv    ,0.1528  
+./multLibs/EQ_pos3/6                CC2-Hybrid: equiv    ,1.3302   (Solve) ,,0.701  	CC2-Concurrent: equiv    ,1.5657   (Solve) ,,0.780  	KleeCLEVER: equiv    ,0.1711  
+./multLibs/EQ_pos3/7                CC2-Hybrid: equiv    ,1.7090   (Solve) ,,0.864  	CC2-Concurrent: equiv    ,1.8872   (Solve) ,,0.930  	KleeCLEVER: equiv    ,0.2179  
+./multLibs/EQ_pos3/8                CC2-Hybrid: equiv    ,2.1291   (Solve) ,,1.047  	CC2-Concurrent: equiv    ,2.3149   (Solve) ,,1.133  	KleeCLEVER: equiv    ,0.2899  
+./multLibs/EQ_pos3/9                CC2-Hybrid: equiv    ,2.5914   (Solve) ,,1.166  	CC2-Concurrent: equiv    ,2.7833   (Solve) ,,1.282  	KleeCLEVER: equiv    ,0.4354  
+./multLibs/EXTRAS_prime_sum/1       CC2-Hybrid: equiv    ,3.1197   (Solve) ,,2.358  	CC2-Concurrent: equiv    ,3.1371   (Solve) ,,2.362  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/10      CC2-Hybrid: equiv    ,49.0153  (Solve) ,,23.583 	CC2-Concurrent: equiv    ,33.1400  (Solve) ,,33.650 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/11      CC2-Hybrid: equiv    ,60.4926  (Solve) ,,25.975 	CC2-Concurrent: equiv    ,42.6038  (Solve) ,,37.189 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/12      CC2-Hybrid: equiv    ,76.5313  (Solve) ,,28.399 	CC2-Concurrent: equiv    ,54.2517  (Solve) ,,42.543 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/2       CC2-Hybrid: equiv    ,6.3090   (Solve) ,,4.760  	CC2-Concurrent: equiv    ,4.7299   (Solve) ,,5.797  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/3       CC2-Hybrid: equiv    ,9.5514   (Solve) ,,7.083  	CC2-Concurrent: equiv    ,5.3391   (Solve) ,,9.366  	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/4       CC2-Hybrid: equiv    ,13.0624  (Solve) ,,9.440  	CC2-Concurrent: equiv    ,6.5046   (Solve) ,,14.123 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/5       CC2-Hybrid: equiv    ,16.9059  (Solve) ,,11.936 	CC2-Concurrent: equiv    ,10.5440  (Solve) ,,16.773 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/6       CC2-Hybrid: equiv    ,21.3387  (Solve) ,,14.281 	CC2-Concurrent: equiv    ,12.6458  (Solve) ,,19.608 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/7       CC2-Hybrid: equiv    ,26.2213  (Solve) ,,16.487 	CC2-Concurrent: equiv    ,15.5074  (Solve) ,,24.049 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/8       CC2-Hybrid: equiv    ,32.3872  (Solve) ,,19.105 	CC2-Concurrent: equiv    ,19.4467  (Solve) ,,27.995 	KleeCLEVER: timeout  ,300.0000
+./multLibs/EXTRAS_prime_sum/9       CC2-Hybrid: equiv    ,39.5031  (Solve) ,,21.245 	CC2-Concurrent: equiv    ,26.0494  (Solve) ,,31.171 	KleeCLEVER: timeout  ,300.0000
+./multLibs/NEQ_LoopMult20/1         CC2-Hybrid: not equiv ,1.7796   (Solve) ,,0.929  	CC2-Concurrent: not equiv ,1.7435   (Solve) ,,0.919  	KleeCLEVER: not equiv ,0.2316  
+./multLibs/NEQ_LoopMult20/10        CC2-Hybrid: not equiv ,6.2964   (Solve) ,,4.140  	CC2-Concurrent: not equiv ,7.0622   (Solve) ,,0.000  	KleeCLEVER: not equiv ,4.8074  
+./multLibs/NEQ_LoopMult20/11        CC2-Hybrid: not equiv ,8.1598   (Solve) ,,5.603  	CC2-Concurrent: not equiv ,7.3479   (Solve) ,,0.000  	KleeCLEVER: not equiv ,11.7538 
+./multLibs/NEQ_LoopMult20/12        CC2-Hybrid: not equiv ,8.7497   (Solve) ,,5.540  	CC2-Concurrent: not equiv ,8.8782   (Solve) ,,0.000  	KleeCLEVER: not equiv ,26.6173 
+./multLibs/NEQ_LoopMult20/2         CC2-Hybrid: not equiv ,0.8072   (Solve) ,,0.447  	CC2-Concurrent: not equiv ,1.1783   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2859  
+./multLibs/NEQ_LoopMult20/3         CC2-Hybrid: not equiv ,1.4582   (Solve) ,,1.020  	CC2-Concurrent: not equiv ,1.8278   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3568  
+./multLibs/NEQ_LoopMult20/4         CC2-Hybrid: not equiv ,1.9183   (Solve) ,,1.358  	CC2-Concurrent: not equiv ,2.2909   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.4147  
+./multLibs/NEQ_LoopMult20/5         CC2-Hybrid: not equiv ,2.3311   (Solve) ,,1.598  	CC2-Concurrent: not equiv ,2.9349   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.5435  
+./multLibs/NEQ_LoopMult20/6         CC2-Hybrid: not equiv ,2.8851   (Solve) ,,1.963  	CC2-Concurrent: not equiv ,3.2784   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6604  
+./multLibs/NEQ_LoopMult20/7         CC2-Hybrid: not equiv ,3.4703   (Solve) ,,2.304  	CC2-Concurrent: not equiv ,3.9590   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.9023  
+./multLibs/NEQ_LoopMult20/8         CC2-Hybrid: not equiv ,4.7176   (Solve) ,,3.278  	CC2-Concurrent: not equiv ,5.0830   (Solve) ,,0.000  	KleeCLEVER: not equiv ,1.3220  
+./multLibs/NEQ_LoopMult20/9         CC2-Hybrid: not equiv ,4.9279   (Solve) ,,3.147  	CC2-Concurrent: not equiv ,5.7582   (Solve) ,,0.000  	KleeCLEVER: not equiv ,2.4782  
+./multLibs/NEQ_LoopUnreach20/1      CC2-Hybrid: not equiv ,0.4150   (Solve) ,,0.125  	CC2-Concurrent: not equiv ,0.3912   (Solve) ,,0.121  	KleeCLEVER: not equiv ,0.1288  
+./multLibs/NEQ_LoopUnreach20/10     CC2-Hybrid: not equiv ,3.9706   (Solve) ,,1.810  	CC2-Concurrent: not equiv ,4.4487   (Solve) ,,0.000  	KleeCLEVER: not equiv ,3.9890  
+./multLibs/NEQ_LoopUnreach20/11     CC2-Hybrid: not equiv ,4.7289   (Solve) ,,2.109  	CC2-Concurrent: not equiv ,5.1794   (Solve) ,,0.000  	KleeCLEVER: not equiv ,10.8501 
+./multLibs/NEQ_LoopUnreach20/12     CC2-Hybrid: not equiv ,5.5817   (Solve) ,,2.448  	CC2-Concurrent: not equiv ,6.1113   (Solve) ,,0.000  	KleeCLEVER: not equiv ,28.7506 
+./multLibs/NEQ_LoopUnreach20/2      CC2-Hybrid: not equiv ,0.5438   (Solve) ,,0.168  	CC2-Concurrent: not equiv ,0.8953   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1488  
+./multLibs/NEQ_LoopUnreach20/3      CC2-Hybrid: not equiv ,0.6346   (Solve) ,,0.204  	CC2-Concurrent: not equiv ,0.9645   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1725  
+./multLibs/NEQ_LoopUnreach20/4      CC2-Hybrid: not equiv ,1.1163   (Solve) ,,0.568  	CC2-Concurrent: not equiv ,1.5485   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2004  
+./multLibs/NEQ_LoopUnreach20/5      CC2-Hybrid: not equiv ,1.4233   (Solve) ,,0.720  	CC2-Concurrent: not equiv ,1.8263   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2277  
+./multLibs/NEQ_LoopUnreach20/6      CC2-Hybrid: not equiv ,1.8044   (Solve) ,,0.888  	CC2-Concurrent: not equiv ,2.2302   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2961  
+./multLibs/NEQ_LoopUnreach20/7      CC2-Hybrid: not equiv ,2.4294   (Solve) ,,1.266  	CC2-Concurrent: not equiv ,2.7978   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.4390  
+./multLibs/NEQ_LoopUnreach20/8      CC2-Hybrid: not equiv ,2.7634   (Solve) ,,1.313  	CC2-Concurrent: not equiv ,3.1833   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.8081  
+./multLibs/NEQ_LoopUnreach20/9      CC2-Hybrid: not equiv ,3.3066   (Solve) ,,1.545  	CC2-Concurrent: not equiv ,3.8026   (Solve) ,,0.000  	KleeCLEVER: not equiv ,1.7495  
+./multLibs/NEQ_getSign/1            CC2-Hybrid: not equiv ,0.3981   (Solve) ,,0.135  	CC2-Concurrent: not equiv ,0.3783   (Solve) ,,0.139  	KleeCLEVER: not equiv ,0.1251  
+./multLibs/NEQ_getSign/10           CC2-Hybrid: not equiv ,0.6129   (Solve) ,,0.166  	CC2-Concurrent: not equiv ,0.9655   (Solve) ,,0.000  	KleeCLEVER: not equiv ,3.5965  
+./multLibs/NEQ_getSign/11           CC2-Hybrid: not equiv ,0.6746   (Solve) ,,0.163  	CC2-Concurrent: not equiv ,0.9256   (Solve) ,,0.000  	KleeCLEVER: not equiv ,9.5553  
+./multLibs/NEQ_getSign/12           CC2-Hybrid: not equiv ,0.6952   (Solve) ,,0.167  	CC2-Concurrent: not equiv ,1.0015   (Solve) ,,0.000  	KleeCLEVER: not equiv ,19.7354 
+./multLibs/NEQ_getSign/2            CC2-Hybrid: not equiv ,0.4160   (Solve) ,,0.131  	CC2-Concurrent: not equiv ,0.7094   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1521  
+./multLibs/NEQ_getSign/3            CC2-Hybrid: not equiv ,0.4181   (Solve) ,,0.142  	CC2-Concurrent: not equiv ,0.7706   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1844  
+./multLibs/NEQ_getSign/4            CC2-Hybrid: not equiv ,0.4379   (Solve) ,,0.143  	CC2-Concurrent: not equiv ,0.7431   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1889  
+./multLibs/NEQ_getSign/5            CC2-Hybrid: not equiv ,0.4673   (Solve) ,,0.143  	CC2-Concurrent: not equiv ,0.7959   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2367  
+./multLibs/NEQ_getSign/6            CC2-Hybrid: not equiv ,0.4880   (Solve) ,,0.146  	CC2-Concurrent: not equiv ,0.7971   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2854  
+./multLibs/NEQ_getSign/7            CC2-Hybrid: not equiv ,0.5070   (Solve) ,,0.152  	CC2-Concurrent: not equiv ,0.8111   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3938  
+./multLibs/NEQ_getSign/8            CC2-Hybrid: not equiv ,0.5406   (Solve) ,,0.157  	CC2-Concurrent: not equiv ,0.8908   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6891  
+./multLibs/NEQ_getSign/9            CC2-Hybrid: not equiv ,0.5905   (Solve) ,,0.150  	CC2-Concurrent: not equiv ,0.9401   (Solve) ,,0.000  	KleeCLEVER: not equiv ,1.4715  
