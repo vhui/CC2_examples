@@ -39,9 +39,3 @@ int client(int x, int n_copy1)
   return ret + sum_copy1;
 }
 
-int main()
-{
-  int x = -10;
-  return client(x);
-}
-

@@ -22,9 +22,3 @@ int clientmain(int x, int x_copy1)
   return ret + ret_copy1;
 }
 
-int main()
-{
-  int x;
-  return client(x);
-}
-

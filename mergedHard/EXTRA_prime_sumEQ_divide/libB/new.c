@@ -35,10 +35,3 @@ int client(int n, int c_copy1, int d_copy1)
   return sum + ret_copy1;
 }
 
-int main()
-{
-  int a;
-  int b;
-  return client(a, b);
-}
-

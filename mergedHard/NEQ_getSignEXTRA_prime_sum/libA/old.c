@@ -27,9 +27,3 @@ int client(int x, int n_copy1)
   return lib(x) + sum_copy1;
 }
 
-int main()
-{
-  int x;
-  return client(x);
-}
-

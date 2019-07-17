@@ -15,9 +15,3 @@ int client(int x)
   return lib(x) + lib(5);
 }
 
-int main()
-{
-  int x;
-  return client(x);
-}
-

@@ -18,9 +18,3 @@ int client(int x, unsigned int x_copy1)
   return ret + lib(x_copy1);
 }
 
-int main()
-{
-  int x;
-  return client(x);
-}
-

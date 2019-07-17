@@ -18,9 +18,3 @@ int client(int x, int x_copy1)
   return lib(x) + ret_copy1;
 }
 
-int main()
-{
-  int x;
-  return client(x);
-}
-

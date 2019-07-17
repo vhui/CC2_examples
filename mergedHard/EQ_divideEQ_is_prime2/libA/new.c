@@ -33,10 +33,3 @@ int client(int c, int d, unsigned int x_copy1)
   return ret + ret_copy1;
 }
 
-int main()
-{
-  int a;
-  int b;
-  return client(a, b);
-}
-

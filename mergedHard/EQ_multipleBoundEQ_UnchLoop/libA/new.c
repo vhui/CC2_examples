@@ -27,9 +27,3 @@ int client(int x)
   return ret + lib(5);
 }
 
-int main()
-{
-  int x = -10;
-  return client(x);
-}
-

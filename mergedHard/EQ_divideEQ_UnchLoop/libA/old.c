@@ -18,10 +18,3 @@ int client(int c, int d)
   return ret + lib(5, 900);
 }
 
-int main()
-{
-  int a;
-  int b;
-  return client(a, b);
-}
-

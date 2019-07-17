@@ -8,11 +8,15 @@ int lib(unsigned int x, int b)
   }
   else
   {
+    int done = 0;
     for (int i = 0; i < 8; i++)
     {
       int mod = x % primes[i];
-      if (mod == 0)
+      if ((!done) && (mod == 0))
+      {
         ret = 0;
+        done = 1;
+      }
 
     }
 
@@ -36,11 +40,5 @@ int client(unsigned int x, int n_copy1)
   }
 
   return lib(x, 0) + sum_copy1;
-}
-
-int main()
-{
-  unsigned int x;
-  return client(x);
 }
 

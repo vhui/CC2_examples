@@ -35,9 +35,3 @@ int client(int x, int c_copy1, int d_copy1)
   return ret + ret_copy1;
 }
 
-int main()
-{
-  int x;
-  return client(x);
-}
-
