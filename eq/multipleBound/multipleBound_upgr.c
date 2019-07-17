@@ -16,8 +16,3 @@ int client(int x){
   }
   return ret;
 }
-
-int main() {
-	int x = -10;
-	return client(x);
-}

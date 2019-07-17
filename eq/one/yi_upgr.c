@@ -18,7 +18,3 @@ int client(int x){
   return ret;
 }
 
-int main() {
-    int x;//=2659237091;
-    return client(x);
-}

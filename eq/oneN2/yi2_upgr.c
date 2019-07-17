@@ -19,8 +19,3 @@ int client(int x){
 		ret = lib(x);
   return ret;
 }
-
-int main() {
-    int x;//=2147483648;
-    return client(x);
-}

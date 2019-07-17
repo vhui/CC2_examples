@@ -10,8 +10,3 @@ int lib(int x) {
 int client(int x){
   return lib(x);
 }
-
-int main() {
-	int x;
-	return client(x);
-}

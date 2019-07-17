@@ -14,8 +14,3 @@ int client(int x){
   }
   return ret;
 }
-
-int main() {
-	int x;
-	return client(x);
-}
