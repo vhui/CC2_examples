@@ -14,7 +14,7 @@ int lib(unsigned int x, int b)
       int mod = x % primes[i];
       if ((!done) && (mod == 0))
       {
-        ret = 0;
+        ret = x == primes[i];
         done = 1;
       }
 
