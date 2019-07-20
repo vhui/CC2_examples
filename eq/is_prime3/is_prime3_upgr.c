@@ -16,7 +16,7 @@ int lib(unsigned int x, int b) {
     for (int i = 0; i < NUMPRIMES; i++) {
       int mod = x % primes[i];
       if (!done && mod == 0) {
-        ret = 0;
+        ret = (x == primes[i]);
         done = TRUE;
       }
     }
