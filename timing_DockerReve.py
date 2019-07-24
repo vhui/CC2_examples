@@ -43,10 +43,10 @@ for dirpath, dnames, fnames in os.walk("./"):
     #print(dirpath)
     if len(dirpath.split("/")) != 4: #not inside gen folder!
         continue
-    if "reve_mergedHard_CallMerge" not in dirpath:
+    if "reve_mergedHard" not in dirpath:
         continue
-    #if "mergedHard_CallMerge" in dirpath:
-    #    continue
+    if "mergedHard_CallMerge" in dirpath:
+        continue
     if "EXTRA_prime_sum" in dirpath:
         continue
     #if "eq/" not in dirpath and "extras" not in dirpath:
@@ -187,11 +187,11 @@ for dirpath, dnames, fnames in os.walk("./"):
       args0 = shlex.split("../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s"
                        % (c_client, old_c_filename, new_c_filename))
       proc0 = subprocess.Popen(args0, stdout=PIPE, stderr=PIPE)
-      import pdb; pdb.set_trace()
       args = shlex.split("time -p z3 -in")
       proc = subprocess.Popen(args, stdin=proc0.stdout, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
       
+      #import pdb; pdb.set_trace()
       #out0, err0 = proc0.communicate(timeout=TIMEOUT)
       #out0_lines = out0.decode('utf8').split('\n')
       #err0_lines = err0.decode('utf8').split('\n')
@@ -219,7 +219,7 @@ for dirpath, dnames, fnames in os.walk("./"):
                   CC2_SEA_RESULT = NEQ
               elif "unchanged TRUE" in out_lines[num+2]:
                   CC2_SEA_RESULT = EQ"""
-      import pdb; pdb.set_trace()
+      #import pdb; pdb.set_trace()
 
     except TimeoutExpired:
         proc.kill()
@@ -387,7 +387,7 @@ for dirpath, dnames, fnames in os.walk("./"):
 
 
     print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tllReve: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, CC2_SEA_RESULT, CC2_SEA_TIME))    
-    with open("reveTimingJul22SeqMerge.csv", 'a') as f:
+    with open("reveTimingJul23SeqMerge.csv", 'a') as f:
         f.write("%-20s: %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_SEA_RESULT, CC2_SEA_TIME))
     #if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout":
     #    print("Disagreement error: %s" % dirpath)
