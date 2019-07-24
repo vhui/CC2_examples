@@ -1,6 +1,6 @@
 import os, sys
 import shlex, subprocess
-from subprocess import PIPE, TimeoutExpired
+from subprocess import PIPE, TimeoutExpired #python3
 
 #import matplotlib.pyplot as plt
 #import numpy as np
@@ -160,14 +160,41 @@ for dirpath, dnames, fnames in os.walk("./"):
 
 
     try:
+      """out0_lines = None; err0_lines = None; out_lines = None; err_lines = None
+        args0 = shlex.split("../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s"
+                         % (c_client, old_c_filename, new_c_filename))
+        proc0 = subprocess.Popen(args0, stdout=PIPE, stderr=PIPE)
+        timer = Timer(TIMEOUT, proc0.kill)
+        try:
+            timer.start()
+            out0, err0 = proc.communicate()
+            out0_lines = out0.decode('utf8').split('\n')
+            err0_lines = err0.decode('utf8').split('\n')
+        finally:
+            timer.cancel()
+
+        args = shlex.split("time -p z3 -in")
+        proc = subprocess.Popen(args, stdin=proc0.stdout, stdout=PIPE, stderr=PIPE)
+        timer = Timer(TIMEOUT, proc.kill)
+        try:
+            timer.start()
+            out, err = proc.communicate()
+            out_lines = out0.decode('utf8').split('\n')
+            err_lines = err0.decode('utf8').split('\n')
+        finally:
+            timer.cancel()"""
+      
       args0 = shlex.split("../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s"
                        % (c_client, old_c_filename, new_c_filename))
       proc0 = subprocess.Popen(args0, stdout=PIPE, stderr=PIPE)
-      out0, err0 = proc0.communicate(timeout=TIMEOUT)
-      args = shlex.split("time z3 -in")
+      import pdb; pdb.set_trace()
+      args = shlex.split("time -p z3 -in")
       proc = subprocess.Popen(args, stdin=proc0.stdout, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
       
+      #out0, err0 = proc0.communicate(timeout=TIMEOUT)
+      #out0_lines = out0.decode('utf8').split('\n')
+      #err0_lines = err0.decode('utf8').split('\n')
       out_lines = out.decode('utf8').split('\n')
       err_lines = err.decode('utf8').split('\n')
       
@@ -192,7 +219,7 @@ for dirpath, dnames, fnames in os.walk("./"):
                   CC2_SEA_RESULT = NEQ
               elif "unchanged TRUE" in out_lines[num+2]:
                   CC2_SEA_RESULT = EQ"""
-      #import pdb; pdb.set_trace()
+      import pdb; pdb.set_trace()
 
     except TimeoutExpired:
         proc.kill()
