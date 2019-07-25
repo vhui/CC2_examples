@@ -1,13 +1,16 @@
 int lib(int x)
 {
+  int ret;
   if (x == 0)
-    return 0;
-
-  if (x < 0)
-    return -1;
+    ret = 0;
   else
-    return 1;
+    if (x < 0)
+    ret = -1;
+  else
+    ret = 1;
 
+
+  return ret;
 }
 
 int client(unsigned int x)
