@@ -1,0 +1,529 @@
+./mergedHard/EQ_AddEQ_UnchLoop/libA: equiv,0.1513   ; unknown,0.0000   ; equiv,0.0739  
+./mergedHard/EQ_AddEQ_UnchLoop/libB: equiv,40.2475  ; unknown,0.0000   ; equiv,0.0935  
+./mergedHard/EQ_AddEQ_is_prime2/libA: equiv,0.2029   ; unknown,0.0000   ; equiv,0.1016  
+./mergedHard/EQ_AddEQ_is_prime2/libB: not equiv,1.0823   ; unknown,0.0000   ; not equiv,0.6085  
+./mergedHard/EQ_AddEQ_odd/libA: equiv,0.1735   ; unknown,0.0000   ; equiv,0.1022  
+./mergedHard/EQ_AddEQ_odd/libB: equiv,11.6529  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_AddEQ_pos/libA: equiv,0.2250   ; unknown,0.0000   ; equiv,0.1005  
+./mergedHard/EQ_AddEQ_pos/libB: not equiv,0.4843   ; unknown,0.0000   ; not equiv,0.1824  
+./mergedHard/EQ_AddEQ_pos2/libA: equiv,0.1994   ; unknown,0.0000   ; equiv,0.0998  
+./mergedHard/EQ_AddEQ_pos2/libB: equiv,12.8828  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_AddEXTRA_ultra_prime_sum/libA: equiv,0.4146   ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_AddEXTRA_ultra_prime_sum/libB: not equiv,44.7831  ; unknown,0.0000   ; not equiv,0.1375  
+./mergedHard/EQ_ConstEQ_UnchLoop/libA: equiv,0.1251   ; unknown,0.0000   ; equiv,0.0728  
+./mergedHard/EQ_ConstEQ_UnchLoop/libB: equiv,40.2375  ; unknown,0.0000   ; equiv,0.0934  
+./mergedHard/EQ_ConstEQ_is_prime2/libA: equiv,0.2060   ; unknown,0.0000   ; equiv,0.1030  
+./mergedHard/EQ_ConstEQ_is_prime2/libB: not equiv,0.9856   ; unknown,0.0000   ; not equiv,0.6164  
+./mergedHard/EQ_ConstEQ_odd/libA: equiv,0.1769   ; unknown,0.0000   ; equiv,0.1025  
+./mergedHard/EQ_ConstEQ_odd/libB: equiv,11.6560  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ConstEQ_pos/libA: equiv,0.2397   ; unknown,0.0000   ; equiv,0.0989  
+./mergedHard/EQ_ConstEQ_pos/libB: not equiv,0.4870   ; unknown,0.0000   ; not equiv,0.1844  
+./mergedHard/EQ_ConstEQ_pos2/libA: equiv,0.1995   ; unknown,0.0000   ; equiv,0.1002  
+./mergedHard/EQ_ConstEQ_pos2/libB: equiv,12.8882  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ConstEXTRA_ultra_prime_sum/libA: equiv,0.4183   ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ConstEXTRA_ultra_prime_sum/libB: not equiv,44.5559  ; unknown,0.0000   ; not equiv,0.1362  
+./mergedHard/EQ_LoopMult20EQ_UnchLoop/libA: equiv,0.4759   ; unknown,0.0000   ; equiv,0.3823  
+./mergedHard/EQ_LoopMult20EQ_UnchLoop/libB: equiv,0.4069   ; unknown,0.0000   ; equiv,0.3305  
+./mergedHard/EQ_LoopMult20EQ_is_prime2/libA: equiv,12.0274  ; unknown,0.0000   ; not equiv,0.1699  
+./mergedHard/EQ_LoopMult20EQ_is_prime2/libB: not equiv,1.6486   ; unknown,0.0000   ; not equiv,0.9108  
+./mergedHard/EQ_LoopMult20EQ_odd/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_LoopMult20EQ_odd/libB: not equiv,3.8299   ; unknown,0.0000   ; not equiv,3.1680  
+./mergedHard/EQ_LoopMult20EQ_pos/libA: equiv,0.5566   ; unknown,0.0000   ; equiv,0.3958  
+./mergedHard/EQ_LoopMult20EQ_pos/libB: not equiv,0.7234   ; unknown,0.0000   ; not equiv,0.3430  
+./mergedHard/EQ_LoopMult20EQ_pos2/libA: equiv,0.5263   ; unknown,0.0000   ; equiv,0.3984  
+./mergedHard/EQ_LoopMult20EQ_pos2/libB: equiv,17.8061  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_LoopMult20EXTRA_ultra_prime_sum/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_LoopMult20EXTRA_ultra_prime_sum/libB: not equiv,17.1004  ; unknown,0.0000   ; not equiv,3.6307  
+./mergedHard/EQ_LoopUnreach20EQ_UnchLoop/libA: equiv,0.2195   ; unknown,0.0000   ; equiv,0.1221  
+./mergedHard/EQ_LoopUnreach20EQ_UnchLoop/libB: equiv,0.4083   ; unknown,0.0000   ; equiv,0.3302  
+./mergedHard/EQ_LoopUnreach20EQ_is_prime2/libA: equiv,0.2711   ; unknown,0.0000   ; not equiv,0.1578  
+./mergedHard/EQ_LoopUnreach20EQ_is_prime2/libB: not equiv,1.6657   ; unknown,0.0000   ; not equiv,0.9085  
+./mergedHard/EQ_LoopUnreach20EQ_odd/libA: equiv,0.2631   ; unknown,0.0000   ; equiv,0.1450  
+./mergedHard/EQ_LoopUnreach20EQ_odd/libB: not equiv,3.8166   ; unknown,0.0000   ; not equiv,3.1507  
+./mergedHard/EQ_LoopUnreach20EQ_pos/libA: equiv,0.3254   ; unknown,0.0000   ; equiv,0.1736  
+./mergedHard/EQ_LoopUnreach20EQ_pos/libB: not equiv,0.7252   ; unknown,0.0000   ; not equiv,0.3412  
+./mergedHard/EQ_LoopUnreach20EQ_pos2/libA: equiv,0.3049   ; unknown,0.0000   ; equiv,0.1745  
+./mergedHard/EQ_LoopUnreach20EQ_pos2/libB: equiv,17.6916  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_LoopUnreach20EXTRA_ultra_prime_sum/libA: equiv,2.8138   ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_LoopUnreach20EXTRA_ultra_prime_sum/libB: not equiv,17.1416  ; unknown,0.0000   ; not equiv,3.6275  
+./mergedHard/EQ_UnchLoopEQ_Add/libA: equiv,40.2540  ; unknown,0.0000   ; equiv,0.0937  
+./mergedHard/EQ_UnchLoopEQ_Add/libB: equiv,0.1253   ; unknown,0.0000   ; equiv,0.0752  
+./mergedHard/EQ_UnchLoopEQ_Const/libA: equiv,40.2375  ; unknown,0.0000   ; equiv,0.0985  
+./mergedHard/EQ_UnchLoopEQ_Const/libB: equiv,0.1375   ; unknown,0.0000   ; equiv,0.0826  
+./mergedHard/EQ_UnchLoopEQ_LoopMult20/libA: equiv,0.4781   ; unknown,0.0000   ; equiv,0.3926  
+./mergedHard/EQ_UnchLoopEQ_LoopMult20/libB: equiv,0.5633   ; unknown,0.0000   ; equiv,0.4810  
+./mergedHard/EQ_UnchLoopEQ_LoopUnreach20/libA: equiv,0.4989   ; unknown,0.0000   ; equiv,0.3988  
+./mergedHard/EQ_UnchLoopEQ_LoopUnreach20/libB: equiv,0.2238   ; unknown,0.0000   ; equiv,0.1398  
+./mergedHard/EQ_UnchLoopEQ_UnchLoop/libA: equiv,40.2707  ; unknown,0.0000   ; equiv,0.1249  
+./mergedHard/EQ_UnchLoopEQ_UnchLoop/libB: equiv,40.5581  ; unknown,0.0000   ; equiv,0.2759  
+./mergedHard/EQ_UnchLoopEQ_divide/libA: equiv,42.3314  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_divide/libB: equiv,0.2085   ; unknown,0.0000   ; equiv,0.1008  
+./mergedHard/EQ_UnchLoopEQ_getSign2/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_getSign2/libB: equiv,0.2136   ; unknown,0.0000   ; equiv,0.1272  
+./mergedHard/EQ_UnchLoopEQ_is_prime1/libA: equiv,40.2321  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_is_prime1/libB: not equiv,2.2974   ; unknown,0.0000   ; not equiv,0.0966  
+./mergedHard/EQ_UnchLoopEQ_is_prime2/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_is_prime2/libB: not equiv,0.9357   ; unknown,0.0000   ; not equiv,0.5803  
+./mergedHard/EQ_UnchLoopEQ_is_prime3/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_is_prime3/libB: not equiv,2.3395   ; unknown,0.0000   ; not equiv,0.1856  
+./mergedHard/EQ_UnchLoopEQ_ltfive/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_ltfive/libB: not equiv,0.6527   ; unknown,0.0000   ; not equiv,0.1763  
+./mergedHard/EQ_UnchLoopEQ_ltfiveBound/libA: timeout,300.0000 ; unknown,0.0000   ; equiv,24.3596 
+./mergedHard/EQ_UnchLoopEQ_ltfiveBound/libB: equiv,0.3351   ; unknown,0.0000   ; equiv,0.1731  
+./mergedHard/EQ_UnchLoopEQ_multiple/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_multiple/libB: not equiv,0.5521   ; unknown,0.0000   ; not equiv,0.2133  
+./mergedHard/EQ_UnchLoopEQ_multipleBound/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_multipleBound/libB: not equiv,0.6051   ; unknown,0.0000   ; not equiv,0.2164  
+./mergedHard/EQ_UnchLoopEQ_odd/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_odd/libB: equiv,11.5492  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_one/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_one/libB: not equiv,0.4680   ; unknown,0.0000   ; not equiv,0.1537  
+./mergedHard/EQ_UnchLoopEQ_oneBound/libA: equiv,3.6494   ; unknown,0.0000   ; equiv,3.5143  
+./mergedHard/EQ_UnchLoopEQ_oneBound/libB: not equiv,0.4764   ; unknown,0.0000   ; not equiv,0.1446  
+./mergedHard/EQ_UnchLoopEQ_oneN2/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_oneN2/libB: not equiv,0.4679   ; unknown,0.0000   ; not equiv,0.1539  
+./mergedHard/EQ_UnchLoopEQ_pos/libA: equiv,0.2199   ; unknown,0.0000   ; equiv,0.1111  
+./mergedHard/EQ_UnchLoopEQ_pos/libB: not equiv,0.4877   ; unknown,0.0000   ; not equiv,0.1840  
+./mergedHard/EQ_UnchLoopEQ_pos2/libA: equiv,0.2197   ; unknown,0.0000   ; equiv,0.1124  
+./mergedHard/EQ_UnchLoopEQ_pos2/libB: equiv,12.8959  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEQ_pos3/libA: equiv,0.2074   ; unknown,0.0000   ; equiv,0.1099  
+./mergedHard/EQ_UnchLoopEQ_pos3/libB: equiv,10.6598  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEXTRA_ultra_prime_sum/libA: equiv,120.8569 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopEXTRA_ultra_prime_sum/libB: not equiv,44.6337  ; unknown,0.0000   ; not equiv,0.1376  
+./mergedHard/EQ_UnchLoopNEQ_LoopMult20/libA: equiv,0.4066   ; unknown,0.0000   ; equiv,0.3334  
+./mergedHard/EQ_UnchLoopNEQ_LoopMult20/libB: not equiv,0.6139   ; unknown,0.0000   ; not equiv,0.1306  
+./mergedHard/EQ_UnchLoopNEQ_LoopUnreach20/libA: equiv,0.4086   ; unknown,0.0000   ; equiv,0.3327  
+./mergedHard/EQ_UnchLoopNEQ_LoopUnreach20/libB: not equiv,0.3872   ; unknown,0.0000   ; not equiv,0.1255  
+./mergedHard/EQ_UnchLoopNEQ_getSign/libA: equiv,40.2532  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_UnchLoopNEQ_getSign/libB: not equiv,0.3558   ; unknown,0.0000   ; not equiv,0.1303  
+./mergedHard/EQ_divideEQ_UnchLoop/libA: equiv,0.1750   ; unknown,0.0000   ; equiv,0.1001  
+./mergedHard/EQ_divideEQ_UnchLoop/libB: equiv,41.5468  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_divideEQ_is_prime2/libA: equiv,0.2670   ; unknown,0.0000   ; equiv,0.1140  
+./mergedHard/EQ_divideEQ_is_prime2/libB: not equiv,1.6884   ; unknown,0.0000   ; not equiv,1.2198  
+./mergedHard/EQ_divideEQ_odd/libA: equiv,0.2612   ; unknown,0.0000   ; equiv,0.1452  
+./mergedHard/EQ_divideEQ_odd/libB: not equiv,1.8166   ; unknown,0.0000   ; not equiv,1.7087  
+./mergedHard/EQ_divideEQ_pos/libA: equiv,0.2812   ; unknown,0.0000   ; equiv,0.1337  
+./mergedHard/EQ_divideEQ_pos/libB: not equiv,0.6851   ; unknown,0.0000   ; not equiv,0.3828  
+./mergedHard/EQ_divideEQ_pos2/libA: equiv,0.2612   ; unknown,0.0000   ; equiv,0.1346  
+./mergedHard/EQ_divideEQ_pos2/libB: equiv,17.8765  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_divideEXTRA_ultra_prime_sum/libA: equiv,0.4922   ; unknown,0.0000   ; equiv,0.1145  
+./mergedHard/EQ_divideEXTRA_ultra_prime_sum/libB: not equiv,120.4104 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_getSign2EQ_UnchLoop/libA: equiv,0.2149   ; unknown,0.0000   ; equiv,0.1275  
+./mergedHard/EQ_getSign2EQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_getSign2EQ_is_prime2/libA: equiv,0.3041   ; unknown,0.0000   ; equiv,0.1814  
+./mergedHard/EQ_getSign2EQ_is_prime2/libB: not equiv,1.8007   ; unknown,0.0000   ; not equiv,1.2961  
+./mergedHard/EQ_getSign2EQ_odd/libA: not equiv,0.4863   ; unknown,0.0000   ; not equiv,0.1728  
+./mergedHard/EQ_getSign2EQ_odd/libB: not equiv,3.3389   ; unknown,0.0000   ; not equiv,4.1551  
+./mergedHard/EQ_getSign2EQ_pos/libA: not equiv,0.5468   ; unknown,0.0000   ; not equiv,0.2001  
+./mergedHard/EQ_getSign2EQ_pos/libB: not equiv,0.5822   ; unknown,0.0000   ; not equiv,0.2701  
+./mergedHard/EQ_getSign2EQ_pos2/libA: not equiv,0.5262   ; unknown,0.0000   ; not equiv,0.1990  
+./mergedHard/EQ_getSign2EQ_pos2/libB: equiv,17.6877  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_getSign2EXTRA_ultra_prime_sum/libA: not equiv,2.3675   ; unknown,0.0000   ; not equiv,0.1543  
+./mergedHard/EQ_getSign2EXTRA_ultra_prime_sum/libB: not equiv,132.0530 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime1EQ_UnchLoop/libA: not equiv,2.3446   ; unknown,0.0000   ; not equiv,0.0980  
+./mergedHard/EQ_is_prime1EQ_UnchLoop/libB: equiv,40.2573  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime1EQ_is_prime2/libA: not equiv,1.2489   ; unknown,0.0000   ; not equiv,0.6631  
+./mergedHard/EQ_is_prime1EQ_is_prime2/libB: not equiv,1.2244   ; unknown,0.0000   ; not equiv,0.6587  
+./mergedHard/EQ_is_prime1EQ_odd/libA: not equiv,0.9346   ; unknown,0.0000   ; not equiv,0.6150  
+./mergedHard/EQ_is_prime1EQ_odd/libB: not equiv,2.8625   ; unknown,0.0000   ; not equiv,0.6416  
+./mergedHard/EQ_is_prime1EQ_pos/libA: equiv,1.4155   ; unknown,0.0000   ; equiv,1.2791  
+./mergedHard/EQ_is_prime1EQ_pos/libB: not equiv,0.5965   ; unknown,0.0000   ; not equiv,0.2686  
+./mergedHard/EQ_is_prime1EQ_pos2/libA: equiv,1.4216   ; unknown,0.0000   ; equiv,1.2822  
+./mergedHard/EQ_is_prime1EQ_pos2/libB: equiv,18.5765  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime1EXTRA_ultra_prime_sum/libA: equiv,18.1452  ; unknown,0.0000   ; not equiv,0.3750  
+./mergedHard/EQ_is_prime1EXTRA_ultra_prime_sum/libB: not equiv,163.1807 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime2EQ_Add/libA: not equiv,0.8975   ; unknown,0.0000   ; not equiv,0.5914  
+./mergedHard/EQ_is_prime2EQ_Add/libB: equiv,0.1956   ; unknown,0.0000   ; equiv,0.1007  
+./mergedHard/EQ_is_prime2EQ_Const/libA: not equiv,0.8769   ; unknown,0.0000   ; not equiv,0.5885  
+./mergedHard/EQ_is_prime2EQ_Const/libB: equiv,0.2001   ; unknown,0.0000   ; equiv,0.0997  
+./mergedHard/EQ_is_prime2EQ_LoopMult20/libA: not equiv,1.4311   ; unknown,0.0000   ; not equiv,0.9645  
+./mergedHard/EQ_is_prime2EQ_LoopMult20/libB: timeout,300.0000 ; unknown,0.0000   ; not equiv,0.1706  
+./mergedHard/EQ_is_prime2EQ_LoopUnreach20/libA: not equiv,1.4255   ; unknown,0.0000   ; not equiv,0.9638  
+./mergedHard/EQ_is_prime2EQ_LoopUnreach20/libB: equiv,0.2983   ; unknown,0.0000   ; not equiv,0.1582  
+./mergedHard/EQ_is_prime2EQ_UnchLoop/libA: not equiv,0.8776   ; unknown,0.0000   ; not equiv,0.5939  
+./mergedHard/EQ_is_prime2EQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime2EQ_divide/libA: not equiv,1.5647   ; unknown,0.0000   ; not equiv,1.1491  
+./mergedHard/EQ_is_prime2EQ_divide/libB: equiv,0.2653   ; unknown,0.0000   ; equiv,0.1145  
+./mergedHard/EQ_is_prime2EQ_getSign2/libA: not equiv,1.5397   ; unknown,0.0000   ; not equiv,1.1680  
+./mergedHard/EQ_is_prime2EQ_getSign2/libB: equiv,0.3127   ; unknown,0.0000   ; equiv,0.1777  
+./mergedHard/EQ_is_prime2EQ_is_prime1/libA: not equiv,1.1726   ; unknown,0.0000   ; not equiv,0.6694  
+./mergedHard/EQ_is_prime2EQ_is_prime1/libB: not equiv,1.1649   ; unknown,0.0000   ; not equiv,0.6656  
+./mergedHard/EQ_is_prime2EQ_is_prime2/libA: not equiv,1.8385   ; unknown,0.0000   ; not equiv,1.3084  
+./mergedHard/EQ_is_prime2EQ_is_prime2/libB: not equiv,1.8738   ; unknown,0.0000   ; not equiv,1.3112  
+./mergedHard/EQ_is_prime2EQ_is_prime3/libA: not equiv,4.3646   ; unknown,0.0000   ; not equiv,1.4519  
+./mergedHard/EQ_is_prime2EQ_is_prime3/libB: not equiv,4.3553   ; unknown,0.0000   ; not equiv,1.4564  
+./mergedHard/EQ_is_prime2EQ_ltfive/libA: not equiv,3.9912   ; unknown,0.0000   ; not equiv,3.3732  
+./mergedHard/EQ_is_prime2EQ_ltfive/libB: not equiv,0.6446   ; unknown,0.0000   ; not equiv,0.2179  
+./mergedHard/EQ_is_prime2EQ_ltfiveBound/libA: not equiv,1.6619   ; unknown,0.0000   ; not equiv,1.1588  
+./mergedHard/EQ_is_prime2EQ_ltfiveBound/libB: equiv,0.4281   ; unknown,0.0000   ; not equiv,0.1953  
+./mergedHard/EQ_is_prime2EQ_multiple/libA: timeout,300.0000 ; unknown,0.0000   ; not equiv,0.6389  
+./mergedHard/EQ_is_prime2EQ_multiple/libB: not equiv,0.7438   ; unknown,0.0000   ; not equiv,0.2968  
+./mergedHard/EQ_is_prime2EQ_multipleBound/libA: not equiv,1.3146   ; unknown,0.0000   ; not equiv,0.8873  
+./mergedHard/EQ_is_prime2EQ_multipleBound/libB: not equiv,0.7144   ; unknown,0.0000   ; not equiv,0.2932  
+./mergedHard/EQ_is_prime2EQ_odd/libA: not equiv,1.5235   ; unknown,0.0000   ; not equiv,1.1454  
+./mergedHard/EQ_is_prime2EQ_odd/libB: not equiv,0.6604   ; unknown,0.0000   ; not equiv,0.4055  
+./mergedHard/EQ_is_prime2EQ_one/libA: not equiv,6.5386   ; unknown,0.0000   ; not equiv,6.2680  
+./mergedHard/EQ_is_prime2EQ_one/libB: not equiv,0.5594   ; unknown,0.0000   ; not equiv,0.1783  
+./mergedHard/EQ_is_prime2EQ_oneBound/libA: not equiv,2.5386   ; unknown,0.0000   ; not equiv,2.3508  
+./mergedHard/EQ_is_prime2EQ_oneBound/libB: equiv,0.4122   ; unknown,0.0000   ; not equiv,0.2098  
+./mergedHard/EQ_is_prime2EQ_oneN2/libA: not equiv,6.4701   ; unknown,0.0000   ; not equiv,6.2322  
+./mergedHard/EQ_is_prime2EQ_oneN2/libB: not equiv,0.6035   ; unknown,0.0000   ; not equiv,0.2102  
+./mergedHard/EQ_is_prime2EQ_pos/libA: not equiv,8.8412   ; unknown,0.0000   ; not equiv,8.1856  
+./mergedHard/EQ_is_prime2EQ_pos/libB: not equiv,0.6305   ; unknown,0.0000   ; not equiv,0.2611  
+./mergedHard/EQ_is_prime2EQ_pos2/libA: not equiv,9.2211   ; unknown,0.0000   ; not equiv,8.2273  
+./mergedHard/EQ_is_prime2EQ_pos2/libB: equiv,16.6537  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime2EQ_pos3/libA: not equiv,1.9666   ; unknown,0.0000   ; not equiv,1.5492  
+./mergedHard/EQ_is_prime2EQ_pos3/libB: not equiv,0.5826   ; unknown,0.0000   ; not equiv,0.2042  
+./mergedHard/EQ_is_prime2EXTRA_ultra_prime_sum/libA: not equiv,16.5468  ; unknown,0.0000   ; not equiv,0.8111  
+./mergedHard/EQ_is_prime2EXTRA_ultra_prime_sum/libB: not equiv,43.1574  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime2NEQ_LoopMult20/libA: not equiv,1.4574   ; unknown,0.0000   ; not equiv,0.9681  
+./mergedHard/EQ_is_prime2NEQ_LoopMult20/libB: not equiv,0.6756   ; unknown,0.0000   ; not equiv,0.1500  
+./mergedHard/EQ_is_prime2NEQ_LoopUnreach20/libA: not equiv,1.4450   ; unknown,0.0000   ; not equiv,0.9722  
+./mergedHard/EQ_is_prime2NEQ_LoopUnreach20/libB: not equiv,0.5098   ; unknown,0.0000   ; not equiv,0.1491  
+./mergedHard/EQ_is_prime2NEQ_getSign/libA: not equiv,1.5018   ; unknown,0.0000   ; not equiv,1.1319  
+./mergedHard/EQ_is_prime2NEQ_getSign/libB: not equiv,0.5150   ; unknown,0.0000   ; not equiv,0.1668  
+./mergedHard/EQ_is_prime3EQ_UnchLoop/libA: not equiv,2.3466   ; unknown,0.0000   ; not equiv,0.1880  
+./mergedHard/EQ_is_prime3EQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime3EQ_is_prime2/libA: not equiv,7.9995   ; unknown,0.0000   ; not equiv,1.1284  
+./mergedHard/EQ_is_prime3EQ_is_prime2/libB: not equiv,8.2642   ; unknown,0.0000   ; not equiv,1.1276  
+./mergedHard/EQ_is_prime3EQ_odd/libA: not equiv,4.3547   ; unknown,0.0000   ; not equiv,0.7073  
+./mergedHard/EQ_is_prime3EQ_odd/libB: not equiv,55.7724  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime3EQ_pos/libA: equiv,25.3152  ; unknown,0.0000   ; equiv,2.4324  
+./mergedHard/EQ_is_prime3EQ_pos/libB: not equiv,1.6639   ; unknown,0.0000   ; not equiv,38.2046 
+./mergedHard/EQ_is_prime3EQ_pos2/libA: equiv,17.5729  ; unknown,0.0000   ; equiv,2.4853  
+./mergedHard/EQ_is_prime3EQ_pos2/libB: equiv,49.5324  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_is_prime3EXTRA_ultra_prime_sum/libA: not equiv,38.9027  ; unknown,0.0000   ; not equiv,1.0009  
+./mergedHard/EQ_is_prime3EXTRA_ultra_prime_sum/libB: not equiv,170.5216 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ltfiveBoundEQ_UnchLoop/libA: equiv,0.3354   ; unknown,0.0000   ; equiv,0.1694  
+./mergedHard/EQ_ltfiveBoundEQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; equiv,24.5914 
+./mergedHard/EQ_ltfiveBoundEQ_is_prime2/libA: equiv,0.4299   ; unknown,0.0000   ; not equiv,0.1945  
+./mergedHard/EQ_ltfiveBoundEQ_is_prime2/libB: not equiv,1.5924   ; unknown,0.0000   ; not equiv,1.0034  
+./mergedHard/EQ_ltfiveBoundEQ_odd/libA: not equiv,0.6297   ; unknown,0.0000   ; not equiv,0.2029  
+./mergedHard/EQ_ltfiveBoundEQ_odd/libB: not equiv,11.5571  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ltfiveBoundEQ_pos/libA: not equiv,0.6854   ; unknown,0.0000   ; not equiv,0.2050  
+./mergedHard/EQ_ltfiveBoundEQ_pos/libB: not equiv,0.9978   ; unknown,0.0000   ; not equiv,0.6628  
+./mergedHard/EQ_ltfiveBoundEQ_pos2/libA: not equiv,0.6577   ; unknown,0.0000   ; not equiv,0.2065  
+./mergedHard/EQ_ltfiveBoundEQ_pos2/libB: equiv,25.8987  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ltfiveBoundEXTRA_ultra_prime_sum/libA: not equiv,3.5822   ; unknown,0.0000   ; not equiv,0.1861  
+./mergedHard/EQ_ltfiveBoundEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; not equiv,145.1692
+./mergedHard/EQ_ltfiveEQ_UnchLoop/libA: not equiv,0.7097   ; unknown,0.0000   ; not equiv,0.1748  
+./mergedHard/EQ_ltfiveEQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ltfiveEQ_is_prime2/libA: not equiv,0.7035   ; unknown,0.0000   ; not equiv,0.2210  
+./mergedHard/EQ_ltfiveEQ_is_prime2/libB: not equiv,2.9872   ; unknown,0.0000   ; not equiv,2.4465  
+./mergedHard/EQ_ltfiveEQ_odd/libA: not equiv,0.6382   ; unknown,0.0000   ; not equiv,0.2300  
+./mergedHard/EQ_ltfiveEQ_odd/libB: not equiv,12.1317  ; unknown,0.0000   ; not equiv,12.5468 
+./mergedHard/EQ_ltfiveEQ_pos/libA: not equiv,0.6851   ; unknown,0.0000   ; not equiv,0.2276  
+./mergedHard/EQ_ltfiveEQ_pos/libB: not equiv,0.9901   ; unknown,0.0000   ; not equiv,0.3967  
+./mergedHard/EQ_ltfiveEQ_pos2/libA: not equiv,0.6533   ; unknown,0.0000   ; not equiv,0.2305  
+./mergedHard/EQ_ltfiveEQ_pos2/libB: equiv,26.1719  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_ltfiveEXTRA_ultra_prime_sum/libA: not equiv,1.1551   ; unknown,0.0000   ; not equiv,0.2243  
+./mergedHard/EQ_ltfiveEXTRA_ultra_prime_sum/libB: not equiv,117.3331 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleBoundEQ_UnchLoop/libA: not equiv,0.6024   ; unknown,0.0000   ; not equiv,0.2191  
+./mergedHard/EQ_multipleBoundEQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleBoundEQ_is_prime2/libA: not equiv,0.7122   ; unknown,0.0000   ; not equiv,0.3666  
+./mergedHard/EQ_multipleBoundEQ_is_prime2/libB: not equiv,1.2906   ; unknown,0.0000   ; not equiv,0.7488  
+./mergedHard/EQ_multipleBoundEQ_odd/libA: not equiv,0.8824   ; unknown,0.0000   ; not equiv,0.3454  
+./mergedHard/EQ_multipleBoundEQ_odd/libB: equiv,12.7971  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleBoundEQ_pos/libA: not equiv,0.7960   ; unknown,0.0000   ; not equiv,0.4622  
+./mergedHard/EQ_multipleBoundEQ_pos/libB: not equiv,1.2484   ; unknown,0.0000   ; not equiv,0.8840  
+./mergedHard/EQ_multipleBoundEQ_pos2/libA: not equiv,0.8049   ; unknown,0.0000   ; not equiv,0.4654  
+./mergedHard/EQ_multipleBoundEQ_pos2/libB: equiv,18.0122  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleBoundEXTRA_ultra_prime_sum/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleBoundEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleEQ_UnchLoop/libA: not equiv,0.5629   ; unknown,0.0000   ; not equiv,0.2165  
+./mergedHard/EQ_multipleEQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleEQ_is_prime2/libA: not equiv,0.6855   ; unknown,0.0000   ; not equiv,0.2609  
+./mergedHard/EQ_multipleEQ_is_prime2/libB: not equiv,1.9407   ; unknown,0.0000   ; not equiv,0.6381  
+./mergedHard/EQ_multipleEQ_odd/libA: not equiv,0.8880   ; unknown,0.0000   ; not equiv,0.3703  
+./mergedHard/EQ_multipleEQ_odd/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleEQ_pos/libA: not equiv,0.7531   ; unknown,0.0000   ; not equiv,0.3032  
+./mergedHard/EQ_multipleEQ_pos/libB: not equiv,0.6505   ; unknown,0.0000   ; not equiv,0.3392  
+./mergedHard/EQ_multipleEQ_pos2/libA: not equiv,0.7312   ; unknown,0.0000   ; not equiv,0.3018  
+./mergedHard/EQ_multipleEQ_pos2/libB: equiv,17.7944  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_multipleEXTRA_ultra_prime_sum/libA: not equiv,1.1740   ; unknown,0.0000   ; not equiv,0.2664  
+./mergedHard/EQ_multipleEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_Add/libA: equiv,11.5628  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_Add/libB: equiv,0.1929   ; unknown,0.0000   ; equiv,0.1015  
+./mergedHard/EQ_oddEQ_Const/libA: equiv,11.5247  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_Const/libB: equiv,0.1929   ; unknown,0.0000   ; equiv,0.1019  
+./mergedHard/EQ_oddEQ_LoopMult20/libA: not equiv,0.9660   ; unknown,0.0000   ; not equiv,0.5036  
+./mergedHard/EQ_oddEQ_LoopMult20/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_LoopUnreach20/libA: not equiv,0.9784   ; unknown,0.0000   ; not equiv,0.5043  
+./mergedHard/EQ_oddEQ_LoopUnreach20/libB: equiv,0.2488   ; unknown,0.0000   ; equiv,0.1467  
+./mergedHard/EQ_oddEQ_UnchLoop/libA: equiv,11.5367  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_divide/libA: not equiv,0.9368   ; unknown,0.0000   ; not equiv,0.6980  
+./mergedHard/EQ_oddEQ_divide/libB: equiv,0.2402   ; unknown,0.0000   ; equiv,0.1464  
+./mergedHard/EQ_oddEQ_getSign2/libA: not equiv,1.1703   ; unknown,0.0000   ; not equiv,0.7549  
+./mergedHard/EQ_oddEQ_getSign2/libB: not equiv,0.4566   ; unknown,0.0000   ; not equiv,0.1658  
+./mergedHard/EQ_oddEQ_is_prime1/libA: not equiv,2.6788   ; unknown,0.0000   ; not equiv,0.6404  
+./mergedHard/EQ_oddEQ_is_prime1/libB: not equiv,1.0013   ; unknown,0.0000   ; not equiv,0.6712  
+./mergedHard/EQ_oddEQ_is_prime2/libA: not equiv,0.7815   ; unknown,0.0000   ; not equiv,0.4460  
+./mergedHard/EQ_oddEQ_is_prime2/libB: not equiv,1.9321   ; unknown,0.0000   ; not equiv,1.2920  
+./mergedHard/EQ_oddEQ_is_prime3/libA: not equiv,25.5075  ; unknown,0.0000   ; not equiv,16.3132 
+./mergedHard/EQ_oddEQ_is_prime3/libB: not equiv,2.4363   ; unknown,0.0000   ; not equiv,0.7395  
+./mergedHard/EQ_oddEQ_ltfive/libA: not equiv,3.8599   ; unknown,0.0000   ; not equiv,2.8208  
+./mergedHard/EQ_oddEQ_ltfive/libB: not equiv,0.7686   ; unknown,0.0000   ; not equiv,0.2375  
+./mergedHard/EQ_oddEQ_ltfiveBound/libA: not equiv,3.0847   ; unknown,0.0000   ; not equiv,2.2592  
+./mergedHard/EQ_oddEQ_ltfiveBound/libB: not equiv,0.6413   ; unknown,0.0000   ; not equiv,0.2096  
+./mergedHard/EQ_oddEQ_multiple/libA: equiv,12.8487  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_multiple/libB: not equiv,0.9070   ; unknown,0.0000   ; not equiv,0.3576  
+./mergedHard/EQ_oddEQ_multipleBound/libA: equiv,13.3521  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_multipleBound/libB: not equiv,0.9044   ; unknown,0.0000   ; not equiv,0.3219  
+./mergedHard/EQ_oddEQ_odd/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_odd/libB: equiv,12.7553  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_one/libA: not equiv,1.7868   ; unknown,0.0000   ; not equiv,1.2147  
+./mergedHard/EQ_oddEQ_one/libB: not equiv,0.5494   ; unknown,0.0000   ; not equiv,0.1892  
+./mergedHard/EQ_oddEQ_oneBound/libA: not equiv,1.6439   ; unknown,0.0000   ; not equiv,1.0730  
+./mergedHard/EQ_oddEQ_oneBound/libB: not equiv,0.5892   ; unknown,0.0000   ; not equiv,0.2071  
+./mergedHard/EQ_oddEQ_oneN2/libA: not equiv,1.7842   ; unknown,0.0000   ; not equiv,1.2227  
+./mergedHard/EQ_oddEQ_oneN2/libB: not equiv,0.5898   ; unknown,0.0000   ; not equiv,0.2298  
+./mergedHard/EQ_oddEQ_pos/libA: not equiv,1.2213   ; unknown,0.0000   ; not equiv,0.8146  
+./mergedHard/EQ_oddEQ_pos/libB: not equiv,0.6607   ; unknown,0.0000   ; not equiv,0.3127  
+./mergedHard/EQ_oddEQ_pos2/libA: not equiv,1.2124   ; unknown,0.0000   ; not equiv,0.8110  
+./mergedHard/EQ_oddEQ_pos2/libB: equiv,17.6987  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEQ_pos3/libA: not equiv,1.2306   ; unknown,0.0000   ; not equiv,0.8604  
+./mergedHard/EQ_oddEQ_pos3/libB: equiv,12.6854  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEXTRA_ultra_prime_sum/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oddNEQ_LoopMult20/libA: not equiv,0.9888   ; unknown,0.0000   ; not equiv,0.5054  
+./mergedHard/EQ_oddNEQ_LoopMult20/libB: not equiv,1.0636   ; unknown,0.0000   ; not equiv,0.4938  
+./mergedHard/EQ_oddNEQ_LoopUnreach20/libA: not equiv,0.9646   ; unknown,0.0000   ; not equiv,0.5065  
+./mergedHard/EQ_oddNEQ_LoopUnreach20/libB: not equiv,0.4442   ; unknown,0.0000   ; not equiv,0.1500  
+./mergedHard/EQ_oddNEQ_getSign/libA: not equiv,0.8788   ; unknown,0.0000   ; not equiv,0.6364  
+./mergedHard/EQ_oddNEQ_getSign/libB: not equiv,0.4539   ; unknown,0.0000   ; not equiv,0.1544  
+./mergedHard/EQ_oneBoundEQ_UnchLoop/libA: not equiv,0.4501   ; unknown,0.0000   ; not equiv,0.1464  
+./mergedHard/EQ_oneBoundEQ_UnchLoop/libB: equiv,3.6434   ; unknown,0.0000   ; equiv,3.5016  
+./mergedHard/EQ_oneBoundEQ_is_prime2/libA: equiv,0.4061   ; unknown,0.0000   ; not equiv,0.1990  
+./mergedHard/EQ_oneBoundEQ_is_prime2/libB: not equiv,2.3787   ; unknown,0.0000   ; not equiv,1.7560  
+./mergedHard/EQ_oneBoundEQ_odd/libA: not equiv,0.6156   ; unknown,0.0000   ; not equiv,0.2064  
+./mergedHard/EQ_oneBoundEQ_odd/libB: not equiv,9.3735   ; unknown,0.0000   ; not equiv,15.2587 
+./mergedHard/EQ_oneBoundEQ_pos/libA: not equiv,0.6171   ; unknown,0.0000   ; not equiv,0.1978  
+./mergedHard/EQ_oneBoundEQ_pos/libB: equiv,14.5153  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneBoundEQ_pos2/libA: not equiv,0.6205   ; unknown,0.0000   ; not equiv,0.1993  
+./mergedHard/EQ_oneBoundEQ_pos2/libB: equiv,26.0866  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneBoundEXTRA_ultra_prime_sum/libA: not equiv,4.6509   ; unknown,0.0000   ; not equiv,0.1803  
+./mergedHard/EQ_oneBoundEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneEQ_UnchLoop/libA: not equiv,0.4758   ; unknown,0.0000   ; not equiv,0.1564  
+./mergedHard/EQ_oneEQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneEQ_is_prime2/libA: not equiv,0.5866   ; unknown,0.0000   ; not equiv,0.1823  
+./mergedHard/EQ_oneEQ_is_prime2/libB: not equiv,2.8797   ; unknown,0.0000   ; not equiv,2.0451  
+./mergedHard/EQ_oneEQ_odd/libA: not equiv,0.5578   ; unknown,0.0000   ; not equiv,0.1802  
+./mergedHard/EQ_oneEQ_odd/libB: not equiv,2.6624   ; unknown,0.0000   ; not equiv,1.8230  
+./mergedHard/EQ_oneEQ_pos/libA: not equiv,0.6056   ; unknown,0.0000   ; not equiv,0.1906  
+./mergedHard/EQ_oneEQ_pos/libB: equiv,14.4620  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneEQ_pos2/libA: not equiv,0.5951   ; unknown,0.0000   ; not equiv,0.1893  
+./mergedHard/EQ_oneEQ_pos2/libB: equiv,25.8238  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneEXTRA_ultra_prime_sum/libA: not equiv,3.3257   ; unknown,0.0000   ; not equiv,0.2007  
+./mergedHard/EQ_oneEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneN2EQ_UnchLoop/libA: not equiv,0.4825   ; unknown,0.0000   ; not equiv,0.1646  
+./mergedHard/EQ_oneN2EQ_UnchLoop/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneN2EQ_is_prime2/libA: not equiv,0.6073   ; unknown,0.0000   ; not equiv,0.2023  
+./mergedHard/EQ_oneN2EQ_is_prime2/libB: not equiv,3.2757   ; unknown,0.0000   ; not equiv,2.9796  
+./mergedHard/EQ_oneN2EQ_odd/libA: not equiv,0.6830   ; unknown,0.0000   ; not equiv,0.2529  
+./mergedHard/EQ_oneN2EQ_odd/libB: not equiv,2.7628   ; unknown,0.0000   ; not equiv,2.0440  
+./mergedHard/EQ_oneN2EQ_pos/libA: not equiv,0.6686   ; unknown,0.0000   ; not equiv,0.2109  
+./mergedHard/EQ_oneN2EQ_pos/libB: equiv,14.4047  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneN2EQ_pos2/libA: not equiv,0.6408   ; unknown,0.0000   ; not equiv,0.2080  
+./mergedHard/EQ_oneN2EQ_pos2/libB: equiv,25.9568  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_oneN2EXTRA_ultra_prime_sum/libA: not equiv,1.7251   ; unknown,0.0000   ; not equiv,0.1913  
+./mergedHard/EQ_oneN2EXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_Add/libA: equiv,12.9150  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_Add/libB: equiv,0.2237   ; unknown,0.0000   ; equiv,0.1034  
+./mergedHard/EQ_pos2EQ_Const/libA: equiv,12.9106  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_Const/libB: equiv,0.2286   ; unknown,0.0000   ; equiv,0.1043  
+./mergedHard/EQ_pos2EQ_LoopMult20/libA: equiv,17.8529  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_LoopMult20/libB: equiv,0.5581   ; unknown,0.0000   ; equiv,0.4038  
+./mergedHard/EQ_pos2EQ_LoopUnreach20/libA: equiv,17.7669  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_LoopUnreach20/libB: equiv,0.3362   ; unknown,0.0000   ; equiv,0.1780  
+./mergedHard/EQ_pos2EQ_UnchLoop/libA: equiv,12.8860  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_UnchLoop/libB: equiv,0.2422   ; unknown,0.0000   ; equiv,0.1144  
+./mergedHard/EQ_pos2EQ_divide/libA: equiv,17.9145  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_divide/libB: equiv,0.2945   ; unknown,0.0000   ; equiv,0.1368  
+./mergedHard/EQ_pos2EQ_getSign2/libA: equiv,17.8364  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_getSign2/libB: not equiv,0.5606   ; unknown,0.0000   ; not equiv,0.2052  
+./mergedHard/EQ_pos2EQ_is_prime1/libA: equiv,18.5906  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_is_prime1/libB: equiv,1.4975   ; unknown,0.0000   ; equiv,1.3812  
+./mergedHard/EQ_pos2EQ_is_prime2/libA: equiv,18.5709  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_is_prime2/libB: not equiv,2.7767   ; unknown,0.0000   ; not equiv,2.0452  
+./mergedHard/EQ_pos2EQ_is_prime3/libA: equiv,33.3448  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_is_prime3/libB: equiv,6.4729   ; unknown,0.0000   ; equiv,2.4895  
+./mergedHard/EQ_pos2EQ_ltfive/libA: equiv,26.9854  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_ltfive/libB: not equiv,0.6767   ; unknown,0.0000   ; not equiv,0.2314  
+./mergedHard/EQ_pos2EQ_ltfiveBound/libA: equiv,25.7309  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_ltfiveBound/libB: not equiv,0.6511   ; unknown,0.0000   ; not equiv,0.2075  
+./mergedHard/EQ_pos2EQ_multiple/libA: equiv,17.9938  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_multiple/libB: not equiv,0.9055   ; unknown,0.0000   ; not equiv,0.2972  
+./mergedHard/EQ_pos2EQ_multipleBound/libA: equiv,18.1615  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_multipleBound/libB: not equiv,0.7775   ; unknown,0.0000   ; not equiv,0.2816  
+./mergedHard/EQ_pos2EQ_odd/libA: equiv,17.9154  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_odd/libB: not equiv,1.7160   ; unknown,0.0000   ; not equiv,1.4682  
+./mergedHard/EQ_pos2EQ_one/libA: equiv,25.9205  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_one/libB: not equiv,0.5940   ; unknown,0.0000   ; not equiv,0.1915  
+./mergedHard/EQ_pos2EQ_oneBound/libA: equiv,26.0494  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_oneBound/libB: not equiv,0.6333   ; unknown,0.0000   ; not equiv,0.2088  
+./mergedHard/EQ_pos2EQ_oneN2/libA: equiv,25.8756  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_oneN2/libB: not equiv,0.6154   ; unknown,0.0000   ; not equiv,0.1988  
+./mergedHard/EQ_pos2EQ_pos/libA: equiv,23.5705  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_pos/libB: equiv,13.6429  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_pos2/libA: equiv,23.5675  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_pos2/libB: equiv,23.6007  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_pos3/libA: equiv,18.0092  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EQ_pos3/libB: equiv,0.2903   ; unknown,0.0000   ; equiv,0.1562  
+./mergedHard/EQ_pos2EXTRA_ultra_prime_sum/libA: equiv,44.2219  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2EXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2NEQ_LoopMult20/libA: equiv,17.8890  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2NEQ_LoopMult20/libB: not equiv,0.9252   ; unknown,0.0000   ; not equiv,0.3335  
+./mergedHard/EQ_pos2NEQ_LoopUnreach20/libA: equiv,17.8014  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2NEQ_LoopUnreach20/libB: not equiv,0.5654   ; unknown,0.0000   ; not equiv,0.1826  
+./mergedHard/EQ_pos2NEQ_getSign/libA: equiv,18.5749  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos2NEQ_getSign/libB: not equiv,0.5593   ; unknown,0.0000   ; not equiv,0.1939  
+./mergedHard/EQ_pos3EQ_UnchLoop/libA: equiv,10.6612  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos3EQ_UnchLoop/libB: equiv,0.2119   ; unknown,0.0000   ; equiv,0.1161  
+./mergedHard/EQ_pos3EQ_is_prime2/libA: not equiv,0.5400   ; unknown,0.0000   ; not equiv,0.1975  
+./mergedHard/EQ_pos3EQ_is_prime2/libB: not equiv,1.9048   ; unknown,0.0000   ; not equiv,1.2248  
+./mergedHard/EQ_pos3EQ_odd/libA: equiv,14.6997  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos3EQ_odd/libB: not equiv,1.5509   ; unknown,0.0000   ; not equiv,1.6837  
+./mergedHard/EQ_pos3EQ_pos/libA: equiv,0.2855   ; unknown,0.0000   ; equiv,0.1547  
+./mergedHard/EQ_pos3EQ_pos/libB: equiv,12.2898  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos3EQ_pos2/libA: equiv,0.2848   ; unknown,0.0000   ; equiv,0.1562  
+./mergedHard/EQ_pos3EQ_pos2/libB: equiv,17.8570  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos3EXTRA_ultra_prime_sum/libA: equiv,23.9873  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_pos3EXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_Add/libA: not equiv,0.5297   ; unknown,0.0000   ; not equiv,0.1905  
+./mergedHard/EQ_posEQ_Add/libB: equiv,0.2026   ; unknown,0.0000   ; equiv,0.1049  
+./mergedHard/EQ_posEQ_Const/libA: not equiv,0.4994   ; unknown,0.0000   ; not equiv,0.1890  
+./mergedHard/EQ_posEQ_Const/libB: equiv,0.2028   ; unknown,0.0000   ; equiv,0.1050  
+./mergedHard/EQ_posEQ_LoopMult20/libA: not equiv,0.6239   ; unknown,0.0000   ; not equiv,0.3079  
+./mergedHard/EQ_posEQ_LoopMult20/libB: equiv,0.5368   ; unknown,0.0000   ; equiv,0.4013  
+./mergedHard/EQ_posEQ_LoopUnreach20/libA: not equiv,0.6247   ; unknown,0.0000   ; not equiv,0.3038  
+./mergedHard/EQ_posEQ_LoopUnreach20/libB: equiv,0.3179   ; unknown,0.0000   ; equiv,0.1817  
+./mergedHard/EQ_posEQ_UnchLoop/libA: not equiv,0.4932   ; unknown,0.0000   ; not equiv,0.1883  
+./mergedHard/EQ_posEQ_UnchLoop/libB: equiv,0.2226   ; unknown,0.0000   ; equiv,0.1163  
+./mergedHard/EQ_posEQ_divide/libA: not equiv,0.7110   ; unknown,0.0000   ; not equiv,0.3374  
+./mergedHard/EQ_posEQ_divide/libB: equiv,0.2693   ; unknown,0.0000   ; equiv,0.1391  
+./mergedHard/EQ_posEQ_getSign2/libA: not equiv,0.6012   ; unknown,0.0000   ; not equiv,0.2656  
+./mergedHard/EQ_posEQ_getSign2/libB: not equiv,0.5446   ; unknown,0.0000   ; not equiv,0.2044  
+./mergedHard/EQ_posEQ_is_prime1/libA: not equiv,0.5762   ; unknown,0.0000   ; not equiv,0.2735  
+./mergedHard/EQ_posEQ_is_prime1/libB: equiv,1.4798   ; unknown,0.0000   ; equiv,1.3836  
+./mergedHard/EQ_posEQ_is_prime2/libA: not equiv,0.6421   ; unknown,0.0000   ; not equiv,0.2771  
+./mergedHard/EQ_posEQ_is_prime2/libB: not equiv,2.8268   ; unknown,0.0000   ; not equiv,2.0569  
+./mergedHard/EQ_posEQ_is_prime3/libA: not equiv,23.8560  ; unknown,0.0000   ; not equiv,1.5141  
+./mergedHard/EQ_posEQ_is_prime3/libB: equiv,6.5453   ; unknown,0.0000   ; equiv,2.4959  
+./mergedHard/EQ_posEQ_ltfive/libA: not equiv,0.8704   ; unknown,0.0000   ; not equiv,0.4321  
+./mergedHard/EQ_posEQ_ltfive/libB: not equiv,0.6569   ; unknown,0.0000   ; not equiv,0.2297  
+./mergedHard/EQ_posEQ_ltfiveBound/libA: not equiv,0.8225   ; unknown,0.0000   ; not equiv,0.3730  
+./mergedHard/EQ_posEQ_ltfiveBound/libB: not equiv,0.6310   ; unknown,0.0000   ; not equiv,0.2069  
+./mergedHard/EQ_posEQ_multiple/libA: not equiv,0.7033   ; unknown,0.0000   ; not equiv,0.3184  
+./mergedHard/EQ_posEQ_multiple/libB: not equiv,0.8431   ; unknown,0.0000   ; not equiv,0.2992  
+./mergedHard/EQ_posEQ_multipleBound/libA: not equiv,0.8266   ; unknown,0.0000   ; not equiv,0.5322  
+./mergedHard/EQ_posEQ_multipleBound/libB: not equiv,0.7913   ; unknown,0.0000   ; not equiv,0.2801  
+./mergedHard/EQ_posEQ_odd/libA: not equiv,0.6608   ; unknown,0.0000   ; not equiv,0.3063  
+./mergedHard/EQ_posEQ_odd/libB: not equiv,1.8934   ; unknown,0.0000   ; not equiv,1.4855  
+./mergedHard/EQ_posEQ_one/libA: equiv,14.1975  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_one/libB: not equiv,0.6011   ; unknown,0.0000   ; not equiv,0.1909  
+./mergedHard/EQ_posEQ_oneBound/libA: equiv,14.2788  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_oneBound/libB: not equiv,0.6288   ; unknown,0.0000   ; not equiv,0.2101  
+./mergedHard/EQ_posEQ_oneN2/libA: equiv,14.2240  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_oneN2/libB: not equiv,0.6149   ; unknown,0.0000   ; not equiv,0.2011  
+./mergedHard/EQ_posEQ_pos/libA: equiv,13.6721  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_pos/libB: equiv,13.6783  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_pos2/libA: equiv,13.6389  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_pos2/libB: equiv,23.4303  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_pos3/libA: equiv,12.2962  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEQ_pos3/libB: equiv,0.2959   ; unknown,0.0000   ; equiv,0.1569  
+./mergedHard/EQ_posEXTRA_ultra_prime_sum/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EQ_posNEQ_LoopMult20/libA: not equiv,0.6506   ; unknown,0.0000   ; not equiv,0.3125  
+./mergedHard/EQ_posNEQ_LoopMult20/libB: not equiv,0.9037   ; unknown,0.0000   ; not equiv,0.3330  
+./mergedHard/EQ_posNEQ_LoopUnreach20/libA: not equiv,0.6214   ; unknown,0.0000   ; not equiv,0.3243  
+./mergedHard/EQ_posNEQ_LoopUnreach20/libB: not equiv,0.5316   ; unknown,0.0000   ; not equiv,0.1839  
+./mergedHard/EQ_posNEQ_getSign/libA: not equiv,0.5720   ; unknown,0.0000   ; not equiv,0.2725  
+./mergedHard/EQ_posNEQ_getSign/libB: not equiv,0.5354   ; unknown,0.0000   ; not equiv,0.1942  
+./mergedHard/EXTRA_ultra_prime_sumEQ_Add/libA: not equiv,50.9598  ; unknown,0.0000   ; not equiv,0.1411  
+./mergedHard/EXTRA_ultra_prime_sumEQ_Add/libB: equiv,0.4129   ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_Const/libA: not equiv,50.8634  ; unknown,0.0000   ; not equiv,0.1416  
+./mergedHard/EXTRA_ultra_prime_sumEQ_Const/libB: equiv,0.4176   ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_LoopMult20/libA: timeout,300.0000 ; unknown,0.0000   ; not equiv,3.5884  
+./mergedHard/EXTRA_ultra_prime_sumEQ_LoopMult20/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_LoopUnreach20/libA: timeout,300.0000 ; unknown,0.0000   ; not equiv,3.5893  
+./mergedHard/EXTRA_ultra_prime_sumEQ_LoopUnreach20/libB: equiv,1.5123   ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_UnchLoop/libA: not equiv,50.7628  ; unknown,0.0000   ; not equiv,0.1450  
+./mergedHard/EXTRA_ultra_prime_sumEQ_UnchLoop/libB: equiv,120.8435 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_divide/libA: not equiv,210.2080 ; unknown,0.0000   ; not equiv,112.7723
+./mergedHard/EXTRA_ultra_prime_sumEQ_divide/libB: equiv,0.5980   ; unknown,0.0000   ; equiv,0.1216  
+./mergedHard/EXTRA_ultra_prime_sumEQ_getSign2/libA: not equiv,213.9745 ; unknown,0.0000   ; not equiv,179.8425
+./mergedHard/EXTRA_ultra_prime_sumEQ_getSign2/libB: not equiv,2.0145   ; unknown,0.0000   ; not equiv,0.1611  
+./mergedHard/EXTRA_ultra_prime_sumEQ_is_prime1/libA: not equiv,179.9624 ; unknown,0.0000   ; not equiv,252.7047
+./mergedHard/EXTRA_ultra_prime_sumEQ_is_prime1/libB: equiv,18.3543  ; unknown,0.0000   ; not equiv,0.3741  
+./mergedHard/EXTRA_ultra_prime_sumEQ_is_prime2/libA: not equiv,105.7571 ; unknown,0.0000   ; not equiv,275.9635
+./mergedHard/EXTRA_ultra_prime_sumEQ_is_prime2/libB: equiv,19.5037  ; unknown,0.0000   ; not equiv,0.7737  
+./mergedHard/EXTRA_ultra_prime_sumEQ_is_prime3/libA: not equiv,96.9136  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_is_prime3/libB: equiv,21.7833  ; unknown,0.0000   ; not equiv,1.5069  
+./mergedHard/EXTRA_ultra_prime_sumEQ_ltfive/libA: not equiv,221.7244 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_ltfive/libB: not equiv,3.6768   ; unknown,0.0000   ; not equiv,0.2249  
+./mergedHard/EXTRA_ultra_prime_sumEQ_ltfiveBound/libA: timeout,300.0000 ; unknown,0.0000   ; not equiv,125.0975
+./mergedHard/EXTRA_ultra_prime_sumEQ_ltfiveBound/libB: not equiv,3.2570   ; unknown,0.0000   ; not equiv,0.1922  
+./mergedHard/EXTRA_ultra_prime_sumEQ_multiple/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_multiple/libB: timeout,300.0000 ; unknown,0.0000   ; not equiv,0.3074  
+./mergedHard/EXTRA_ultra_prime_sumEQ_multipleBound/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_multipleBound/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_odd/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_odd/libB: equiv,53.4662  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_one/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_one/libB: not equiv,4.1133   ; unknown,0.0000   ; not equiv,0.2071  
+./mergedHard/EXTRA_ultra_prime_sumEQ_oneBound/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_oneBound/libB: not equiv,2.0788   ; unknown,0.0000   ; not equiv,0.1854  
+./mergedHard/EXTRA_ultra_prime_sumEQ_oneN2/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_oneN2/libB: not equiv,2.1469   ; unknown,0.0000   ; not equiv,0.2065  
+./mergedHard/EXTRA_ultra_prime_sumEQ_pos/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_pos/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_pos2/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_pos2/libB: equiv,61.5441  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_pos3/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEQ_pos3/libB: equiv,40.3608  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEXTRA_ultra_prime_sum/libA: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumEXTRA_ultra_prime_sum/libB: timeout,300.0000 ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/EXTRA_ultra_prime_sumNEQ_LoopMult20/libA: timeout,300.0000 ; unknown,0.0000   ; not equiv,3.5914  
+./mergedHard/EXTRA_ultra_prime_sumNEQ_LoopMult20/libB: timeout,300.0000 ; unknown,0.0000   ; not equiv,0.4021  
+./mergedHard/EXTRA_ultra_prime_sumNEQ_LoopUnreach20/libA: not equiv,292.3881 ; unknown,0.0000   ; not equiv,3.5721  
+./mergedHard/EXTRA_ultra_prime_sumNEQ_LoopUnreach20/libB: not equiv,1.0715   ; unknown,0.0000   ; not equiv,0.1709  
+./mergedHard/EXTRA_ultra_prime_sumNEQ_getSign/libA: not equiv,180.3021 ; unknown,0.0000   ; not equiv,256.4242
+./mergedHard/EXTRA_ultra_prime_sumNEQ_getSign/libB: not equiv,1.8916   ; unknown,0.0000   ; not equiv,0.1736  
+./mergedHard/NEQ_LoopMult20EQ_UnchLoop/libA: not equiv,0.6344   ; unknown,0.0000   ; not equiv,0.1385  
+./mergedHard/NEQ_LoopMult20EQ_UnchLoop/libB: equiv,0.4159   ; unknown,0.0000   ; equiv,0.3415  
+./mergedHard/NEQ_LoopMult20EQ_is_prime2/libA: not equiv,0.7017   ; unknown,0.0000   ; not equiv,0.1567  
+./mergedHard/NEQ_LoopMult20EQ_is_prime2/libB: not equiv,1.6717   ; unknown,0.0000   ; not equiv,0.9136  
+./mergedHard/NEQ_LoopMult20EQ_odd/libA: not equiv,1.2495   ; unknown,0.0000   ; not equiv,0.7568  
+./mergedHard/NEQ_LoopMult20EQ_odd/libB: not equiv,4.2945   ; unknown,0.0000   ; not equiv,2.9750  
+./mergedHard/NEQ_LoopMult20EQ_pos/libA: not equiv,0.9419   ; unknown,0.0000   ; not equiv,0.3602  
+./mergedHard/NEQ_LoopMult20EQ_pos/libB: not equiv,0.7384   ; unknown,0.0000   ; not equiv,0.3537  
+./mergedHard/NEQ_LoopMult20EQ_pos2/libA: not equiv,0.9247   ; unknown,0.0000   ; not equiv,0.3593  
+./mergedHard/NEQ_LoopMult20EQ_pos2/libB: equiv,17.7992  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/NEQ_LoopMult20EXTRA_ultra_prime_sum/libA: not equiv,3.1070   ; unknown,0.0000   ; not equiv,0.4187  
+./mergedHard/NEQ_LoopMult20EXTRA_ultra_prime_sum/libB: not equiv,17.1236  ; unknown,0.0000   ; not equiv,3.6383  
+./mergedHard/NEQ_LoopUnreach20EQ_UnchLoop/libA: not equiv,0.4258   ; unknown,0.0000   ; not equiv,0.1360  
+./mergedHard/NEQ_LoopUnreach20EQ_UnchLoop/libB: equiv,0.4152   ; unknown,0.0000   ; equiv,0.3404  
+./mergedHard/NEQ_LoopUnreach20EQ_is_prime2/libA: not equiv,0.4955   ; unknown,0.0000   ; not equiv,0.1588  
+./mergedHard/NEQ_LoopUnreach20EQ_is_prime2/libB: not equiv,1.6899   ; unknown,0.0000   ; not equiv,0.9164  
+./mergedHard/NEQ_LoopUnreach20EQ_odd/libA: not equiv,0.4829   ; unknown,0.0000   ; not equiv,0.1586  
+./mergedHard/NEQ_LoopUnreach20EQ_odd/libB: not equiv,4.2036   ; unknown,0.0000   ; not equiv,3.1722  
+./mergedHard/NEQ_LoopUnreach20EQ_pos/libA: not equiv,0.5545   ; unknown,0.0000   ; not equiv,0.1863  
+./mergedHard/NEQ_LoopUnreach20EQ_pos/libB: not equiv,0.7496   ; unknown,0.0000   ; not equiv,0.3530  
+./mergedHard/NEQ_LoopUnreach20EQ_pos2/libA: not equiv,0.5338   ; unknown,0.0000   ; not equiv,0.1865  
+./mergedHard/NEQ_LoopUnreach20EQ_pos2/libB: equiv,17.7277  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/NEQ_LoopUnreach20EXTRA_ultra_prime_sum/libA: not equiv,0.9138   ; unknown,0.0000   ; not equiv,0.1593  
+./mergedHard/NEQ_LoopUnreach20EXTRA_ultra_prime_sum/libB: not equiv,17.1277  ; unknown,0.0000   ; not equiv,3.6366  
+./mergedHard/NEQ_getSignEQ_UnchLoop/libA: not equiv,0.3687   ; unknown,0.0000   ; not equiv,0.1303  
+./mergedHard/NEQ_getSignEQ_UnchLoop/libB: equiv,40.2588  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/NEQ_getSignEQ_is_prime2/libA: not equiv,0.5102   ; unknown,0.0000   ; not equiv,0.1832  
+./mergedHard/NEQ_getSignEQ_is_prime2/libB: not equiv,1.5571   ; unknown,0.0000   ; not equiv,1.1568  
+./mergedHard/NEQ_getSignEQ_odd/libA: not equiv,0.5019   ; unknown,0.0000   ; not equiv,0.1650  
+./mergedHard/NEQ_getSignEQ_odd/libB: not equiv,0.9856   ; unknown,0.0000   ; not equiv,0.6536  
+./mergedHard/NEQ_getSignEQ_pos/libA: not equiv,0.5516   ; unknown,0.0000   ; not equiv,0.1998  
+./mergedHard/NEQ_getSignEQ_pos/libB: not equiv,0.6012   ; unknown,0.0000   ; not equiv,0.2771  
+./mergedHard/NEQ_getSignEQ_pos2/libA: not equiv,0.5458   ; unknown,0.0000   ; not equiv,0.1995  
+./mergedHard/NEQ_getSignEQ_pos2/libB: equiv,18.5509  ; unknown,0.0000   ; timeout,300.0000
+./mergedHard/NEQ_getSignEXTRA_ultra_prime_sum/libA: not equiv,1.8820   ; unknown,0.0000   ; not equiv,0.1856  
+./mergedHard/NEQ_getSignEXTRA_ultra_prime_sum/libB: not equiv,162.5852 ; unknown,0.0000   ; timeout,300.0000
+
