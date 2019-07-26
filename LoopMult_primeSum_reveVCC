@@ -1,0 +1,788 @@
+(set-option
+   :int-real-coercions
+   false)
+(declare-var
+   c.i.0$1_0_old_1
+   Int)
+(declare-var
+   c.i.0$2_0_old_1
+   Int)
+(declare-var
+   c.i15.0$1_0_old_1
+   Int)
+(declare-var
+   c.i15.0$2_0_old_1
+   Int)
+(declare-var
+   c.i25.0$1_0_old_1
+   Int)
+(declare-var
+   c.i25.0$2_0_old_1
+   Int)
+(declare-var
+   i.i.0$1_0_old_1
+   Int)
+(declare-var
+   i.i.0$2_0_old_1
+   Int)
+(declare-var
+   i.i16.0$1_0_old_1
+   Int)
+(declare-var
+   i.i16.0$2_0_old_1
+   Int)
+(declare-var
+   i.i26.0$1_0_old_1
+   Int)
+(declare-var
+   i.i26.0$2_0_old_1
+   Int)
+(declare-var
+   i_copy1.0$1_0_old_1
+   Int)
+(declare-var
+   i_copy1.0$2_0_old_1
+   Int)
+(declare-var
+   n_copy1$1_0_old_1
+   Int)
+(declare-var
+   n_copy1$2_0_old_1
+   Int)
+(declare-var
+   ret.0$1_0_old_1
+   Int)
+(declare-var
+   ret.0$2_0_old_1
+   Int)
+(declare-var
+   sum_copy1.0$1_0_old_1
+   Int)
+(declare-var
+   sum_copy1.0$2_0_old_1
+   Int)
+(declare-var
+   x$1_0_old_1
+   Int)
+(declare-var
+   x$2_0_old_1
+   Int)
+(declare-rel
+   END_QUERY
+   ())
+(define-fun
+   IN_INV
+   ((x$1_0 Int)
+    (n_copy1$1_0 Int)
+    (x$2_0 Int)
+    (n_copy1$2_0 Int))
+   Bool
+   (and
+      (= x$1_0 x$2_0)
+      (= n_copy1$1_0 n_copy1$2_0)))
+(define-fun
+   OUT_INV
+   ((result$1 Int)
+    (result$2 Int))
+   Bool
+   (= result$1 result$2))
+; :annot (INV_MAIN_1 c.i25.0$1_0 i.i26.0$1_0 ret.0$1_0 sum_copy1.0$1_0 c.i25.0$2_0 i.i26.0$2_0 ret.0$2_0 sum_copy1.0$2_0)
+(declare-rel
+   INV_MAIN_1
+   (Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int))
+; :annot (INV_MAIN_2 c.i15.0$1_0 i.i16.0$1_0 i_copy1.0$1_0 n_copy1$1_0 ret.0$1_0 sum_copy1.0$1_0 c.i15.0$2_0 i.i16.0$2_0 i_copy1.0$2_0 n_copy1$2_0 ret.0$2_0 sum_copy1.0$2_0)
+(declare-rel
+   INV_MAIN_2
+   (Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int))
+; :annot (INV_MAIN_3 i_copy1.0$1_0 n_copy1$1_0 ret.0$1_0 sum_copy1.0$1_0 i_copy1.0$2_0 n_copy1$2_0 ret.0$2_0 sum_copy1.0$2_0)
+(declare-rel
+   INV_MAIN_3
+   (Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int))
+; :annot (INV_MAIN_4 c.i.0$1_0 i.i.0$1_0 n_copy1$1_0 x$1_0 c.i.0$2_0 i.i.0$2_0 n_copy1$2_0 x$2_0)
+(declare-rel
+   INV_MAIN_4
+   (Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int
+    Int))
+(rule
+   (let
+      ((x$1_0_1 x$1_0_old_1))
+      (let
+         ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+          (cmp$1_0_1 (>= x$1_0_1 18))
+          (cmp1$1_0_1 (< x$1_0_1 22)))
+         (let
+            ((or.cond$1_0_1 (and
+                                cmp$1_0_1
+                                cmp1$1_0_1)))
+            (let
+               ((ret.0$1_0_1 0)
+                (sum_copy1.0$1_0_1 0)
+                (i_copy1.0$1_0_1 0)
+                (x$2_0_1 x$2_0_old_1))
+               (let
+                  ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                   (cmp$2_0_1 (>= x$2_0_1 18))
+                   (cmp1$2_0_1 (< x$2_0_1 22)))
+                  (let
+                     ((or.cond$2_0_1 (and
+                                         cmp$2_0_1
+                                         cmp1$2_0_1)))
+                     (=>
+                        (and
+                           (IN_INV x$1_0_old_1 n_copy1$1_0_old_1 x$2_0_old_1 n_copy1$2_0_old_1)
+                           (not or.cond$1_0_1)
+                           or.cond$2_0_1)
+                        END_QUERY))))))))
+(rule
+   (let
+      ((x$1_0_1 x$1_0_old_1))
+      (let
+         ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+          (cmp$1_0_1 (>= x$1_0_1 18))
+          (cmp1$1_0_1 (< x$1_0_1 22)))
+         (let
+            ((or.cond$1_0_1 (and
+                                cmp$1_0_1
+                                cmp1$1_0_1)))
+            (let
+               ((i.i.0$1_0_1 1)
+                (c.i.0$1_0_1 0)
+                (x$2_0_1 x$2_0_old_1))
+               (let
+                  ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                   (cmp$2_0_1 (>= x$2_0_1 18))
+                   (cmp1$2_0_1 (< x$2_0_1 22)))
+                  (let
+                     ((or.cond$2_0_1 (and
+                                         cmp$2_0_1
+                                         cmp1$2_0_1)))
+                     (=>
+                        (and
+                           (IN_INV x$1_0_old_1 n_copy1$1_0_old_1 x$2_0_old_1 n_copy1$2_0_old_1)
+                           or.cond$1_0_1
+                           (not or.cond$2_0_1))
+                        END_QUERY))))))))
+(rule
+   (let
+      ((x$1_0_1 x$1_0_old_1))
+      (let
+         ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+          (cmp$1_0_1 (>= x$1_0_1 18))
+          (cmp1$1_0_1 (< x$1_0_1 22)))
+         (let
+            ((or.cond$1_0_1 (and
+                                cmp$1_0_1
+                                cmp1$1_0_1)))
+            (let
+               ((ret.0$1_0_1 0)
+                (sum_copy1.0$1_0_1 0)
+                (i_copy1.0$1_0_1 0)
+                (x$2_0_1 x$2_0_old_1))
+               (let
+                  ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                   (cmp$2_0_1 (>= x$2_0_1 18))
+                   (cmp1$2_0_1 (< x$2_0_1 22)))
+                  (let
+                     ((or.cond$2_0_1 (and
+                                         cmp$2_0_1
+                                         cmp1$2_0_1)))
+                     (let
+                        ((ret.0$2_0_1 0)
+                         (sum_copy1.0$2_0_1 0)
+                         (i_copy1.0$2_0_1 0))
+                        (=>
+                           (and
+                              (IN_INV x$1_0_old_1 n_copy1$1_0_old_1 x$2_0_old_1 n_copy1$2_0_old_1)
+                              (not or.cond$1_0_1)
+                              (not or.cond$2_0_1))
+                           (INV_MAIN_3 i_copy1.0$1_0_1 n_copy1$1_0_1 ret.0$1_0_1 sum_copy1.0$1_0_1 i_copy1.0$2_0_1 n_copy1$2_0_1 ret.0$2_0_1 sum_copy1.0$2_0_1))))))))))
+(rule
+   (let
+      ((x$1_0_1 x$1_0_old_1))
+      (let
+         ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+          (cmp$1_0_1 (>= x$1_0_1 18))
+          (cmp1$1_0_1 (< x$1_0_1 22)))
+         (let
+            ((or.cond$1_0_1 (and
+                                cmp$1_0_1
+                                cmp1$1_0_1)))
+            (let
+               ((i.i.0$1_0_1 1)
+                (c.i.0$1_0_1 0)
+                (x$2_0_1 x$2_0_old_1))
+               (let
+                  ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                   (cmp$2_0_1 (>= x$2_0_1 18))
+                   (cmp1$2_0_1 (< x$2_0_1 22)))
+                  (let
+                     ((or.cond$2_0_1 (and
+                                         cmp$2_0_1
+                                         cmp1$2_0_1)))
+                     (let
+                        ((i.i.0$2_0_1 1)
+                         (c.i.0$2_0_1 0))
+                        (=>
+                           (and
+                              (IN_INV x$1_0_old_1 n_copy1$1_0_old_1 x$2_0_old_1 n_copy1$2_0_old_1)
+                              or.cond$1_0_1
+                              or.cond$2_0_1)
+                           (INV_MAIN_4 c.i.0$1_0_1 i.i.0$1_0_1 n_copy1$1_0_1 x$1_0_1 c.i.0$2_0_1 i.i.0$2_0_1 n_copy1$2_0_1 x$2_0_1))))))))))
+(rule
+   (let
+      ((c.i25.0$1_0_1 c.i25.0$1_0_old_1)
+       (i.i26.0$1_0_1 i.i26.0$1_0_old_1)
+       (ret.0$1_0_1 ret.0$1_0_old_1)
+       (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1))
+      (let
+         ((cmp.i27$1_0_1 (<= i.i26.0$1_0_1 sum_copy1.0$1_0_1)))
+         (let
+            ((cmp11$1_0_1 (= c.i25.0$1_0_1 0)))
+            (let
+               ((conv$1_0_1 (ite cmp11$1_0_1 1 0)))
+               (let
+                  ((add12$1_0_1 (+ ret.0$1_0_1 conv$1_0_1)))
+                  (let
+                     ((result$1_1 add12$1_0_1)
+                      (c.i25.0$2_0_1 c.i25.0$2_0_old_1)
+                      (i.i26.0$2_0_1 i.i26.0$2_0_old_1)
+                      (ret.0$2_0_1 ret.0$2_0_old_1)
+                      (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1))
+                     (let
+                        ((cmp.i27$2_0_1 (<= i.i26.0$2_0_1 sum_copy1.0$2_0_1)))
+                        (let
+                           ((cmp11$2_0_1 (= c.i25.0$2_0_1 0)))
+                           (let
+                              ((conv$2_0_1 (ite cmp11$2_0_1 1 0)))
+                              (let
+                                 ((add12$2_0_1 (+ ret.0$2_0_1 conv$2_0_1)))
+                                 (let
+                                    ((result$2_1 add12$2_0_1))
+                                    (=>
+                                       (and
+                                          (INV_MAIN_1 c.i25.0$1_0_old_1 i.i26.0$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i25.0$2_0_old_1 i.i26.0$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                                          (not cmp.i27$1_0_1)
+                                          (not cmp.i27$2_0_1)
+                                          (not (OUT_INV result$1_1 result$2_1)))
+                                       END_QUERY)))))))))))))
+(rule
+   (let
+      ((c.i25.0$1_0_1 c.i25.0$1_0_old_1)
+       (i.i26.0$1_0_1 i.i26.0$1_0_old_1)
+       (ret.0$1_0_1 ret.0$1_0_old_1)
+       (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1))
+      (let
+         ((cmp.i27$1_0_1 (<= i.i26.0$1_0_1 sum_copy1.0$1_0_1)))
+         (let
+            ((add.i29$1_0_1 (+ c.i25.0$1_0_1 sum_copy1.0$1_0_1))
+             (inc.i31$1_0_1 (+ i.i26.0$1_0_1 1)))
+            (let
+               ((c.i25.0$1_0_2 add.i29$1_0_1)
+                (i.i26.0$1_0_2 inc.i31$1_0_1)
+                (c.i25.0$2_0_1 c.i25.0$2_0_old_1)
+                (i.i26.0$2_0_1 i.i26.0$2_0_old_1)
+                (ret.0$2_0_1 ret.0$2_0_old_1)
+                (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1))
+               (let
+                  ((cmp.i27$2_0_1 (<= i.i26.0$2_0_1 sum_copy1.0$2_0_1)))
+                  (let
+                     ((add.i29$2_0_1 (+ c.i25.0$2_0_1 sum_copy1.0$2_0_1))
+                      (inc.i31$2_0_1 (+ i.i26.0$2_0_1 1)))
+                     (let
+                        ((c.i25.0$2_0_2 add.i29$2_0_1)
+                         (i.i26.0$2_0_2 inc.i31$2_0_1))
+                        (=>
+                           (and
+                              (INV_MAIN_1 c.i25.0$1_0_old_1 i.i26.0$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i25.0$2_0_old_1 i.i26.0$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                              cmp.i27$1_0_1
+                              cmp.i27$2_0_1)
+                           (INV_MAIN_1 c.i25.0$1_0_2 i.i26.0$1_0_2 ret.0$1_0_1 sum_copy1.0$1_0_1 c.i25.0$2_0_2 i.i26.0$2_0_2 ret.0$2_0_1 sum_copy1.0$2_0_1))))))))))
+(rule
+   (let
+      ((c.i25.0$1_0_1 c.i25.0$1_0_old_1)
+       (i.i26.0$1_0_1 i.i26.0$1_0_old_1)
+       (ret.0$1_0_1 ret.0$1_0_old_1)
+       (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1))
+      (let
+         ((cmp.i27$1_0_1 (<= i.i26.0$1_0_1 sum_copy1.0$1_0_1)))
+         (let
+            ((add.i29$1_0_1 (+ c.i25.0$1_0_1 sum_copy1.0$1_0_1))
+             (inc.i31$1_0_1 (+ i.i26.0$1_0_1 1)))
+            (let
+               ((c.i25.0$1_0_2 add.i29$1_0_1)
+                (i.i26.0$1_0_2 inc.i31$1_0_1))
+               (=>
+                  (and
+                     (INV_MAIN_1 c.i25.0$1_0_old_1 i.i26.0$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i25.0$2_0_old_1 i.i26.0$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                     cmp.i27$1_0_1
+                     (let
+                        ((c.i25.0$2_0_1 c.i25.0$2_0_old_1)
+                         (i.i26.0$2_0_1 i.i26.0$2_0_old_1)
+                         (ret.0$2_0_1 ret.0$2_0_old_1)
+                         (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1))
+                        (let
+                           ((cmp.i27$2_0_1 (<= i.i26.0$2_0_1 sum_copy1.0$2_0_1)))
+                           (=>
+                              cmp.i27$2_0_1
+                              (let
+                                 ((add.i29$2_0_1 (+ c.i25.0$2_0_1 sum_copy1.0$2_0_1))
+                                  (inc.i31$2_0_1 (+ i.i26.0$2_0_1 1)))
+                                 (let
+                                    ((c.i25.0$2_0_2 add.i29$2_0_1)
+                                     (i.i26.0$2_0_2 inc.i31$2_0_1))
+                                    false))))))
+                  (INV_MAIN_1 c.i25.0$1_0_2 i.i26.0$1_0_2 ret.0$1_0_1 sum_copy1.0$1_0_1 c.i25.0$2_0_old_1 i.i26.0$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)))))))
+(rule
+   (let
+      ((c.i25.0$2_0_1 c.i25.0$2_0_old_1)
+       (i.i26.0$2_0_1 i.i26.0$2_0_old_1)
+       (ret.0$2_0_1 ret.0$2_0_old_1)
+       (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1))
+      (let
+         ((cmp.i27$2_0_1 (<= i.i26.0$2_0_1 sum_copy1.0$2_0_1)))
+         (let
+            ((add.i29$2_0_1 (+ c.i25.0$2_0_1 sum_copy1.0$2_0_1))
+             (inc.i31$2_0_1 (+ i.i26.0$2_0_1 1)))
+            (let
+               ((c.i25.0$2_0_2 add.i29$2_0_1)
+                (i.i26.0$2_0_2 inc.i31$2_0_1))
+               (=>
+                  (and
+                     (INV_MAIN_1 c.i25.0$1_0_old_1 i.i26.0$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i25.0$2_0_old_1 i.i26.0$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                     cmp.i27$2_0_1
+                     (let
+                        ((c.i25.0$1_0_1 c.i25.0$1_0_old_1)
+                         (i.i26.0$1_0_1 i.i26.0$1_0_old_1)
+                         (ret.0$1_0_1 ret.0$1_0_old_1)
+                         (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1))
+                        (let
+                           ((cmp.i27$1_0_1 (<= i.i26.0$1_0_1 sum_copy1.0$1_0_1)))
+                           (=>
+                              cmp.i27$1_0_1
+                              (let
+                                 ((add.i29$1_0_1 (+ c.i25.0$1_0_1 sum_copy1.0$1_0_1))
+                                  (inc.i31$1_0_1 (+ i.i26.0$1_0_1 1)))
+                                 (let
+                                    ((c.i25.0$1_0_2 add.i29$1_0_1)
+                                     (i.i26.0$1_0_2 inc.i31$1_0_1))
+                                    false))))))
+                  (INV_MAIN_1 c.i25.0$1_0_old_1 i.i26.0$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i25.0$2_0_2 i.i26.0$2_0_2 ret.0$2_0_1 sum_copy1.0$2_0_1)))))))
+(rule
+   (let
+      ((c.i15.0$1_0_1 c.i15.0$1_0_old_1)
+       (i.i16.0$1_0_1 i.i16.0$1_0_old_1)
+       (i_copy1.0$1_0_1 i_copy1.0$1_0_old_1))
+      (let
+         ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+          (ret.0$1_0_1 ret.0$1_0_old_1)
+          (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+          (cmp.i17$1_0_1 (<= i.i16.0$1_0_1 i_copy1.0$1_0_1)))
+         (let
+            ((add.i19$1_0_1 (+ c.i15.0$1_0_1 i_copy1.0$1_0_1))
+             (inc.i21$1_0_1 (+ i.i16.0$1_0_1 1)))
+            (let
+               ((c.i15.0$1_0_2 add.i19$1_0_1)
+                (i.i16.0$1_0_2 inc.i21$1_0_1)
+                (c.i15.0$2_0_1 c.i15.0$2_0_old_1)
+                (i.i16.0$2_0_1 i.i16.0$2_0_old_1)
+                (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1))
+               (let
+                  ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                   (ret.0$2_0_1 ret.0$2_0_old_1)
+                   (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+                   (cmp.i17$2_0_1 (<= i.i16.0$2_0_1 i_copy1.0$2_0_1)))
+                  (let
+                     ((add.i19$2_0_1 (+ c.i15.0$2_0_1 i_copy1.0$2_0_1))
+                      (inc.i21$2_0_1 (+ i.i16.0$2_0_1 1)))
+                     (let
+                        ((c.i15.0$2_0_2 add.i19$2_0_1)
+                         (i.i16.0$2_0_2 inc.i21$2_0_1))
+                        (=>
+                           (and
+                              (INV_MAIN_2 c.i15.0$1_0_old_1 i.i16.0$1_0_old_1 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i15.0$2_0_old_1 i.i16.0$2_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                              cmp.i17$1_0_1
+                              cmp.i17$2_0_1)
+                           (INV_MAIN_2 c.i15.0$1_0_2 i.i16.0$1_0_2 i_copy1.0$1_0_1 n_copy1$1_0_1 ret.0$1_0_1 sum_copy1.0$1_0_1 c.i15.0$2_0_2 i.i16.0$2_0_2 i_copy1.0$2_0_1 n_copy1$2_0_1 ret.0$2_0_1 sum_copy1.0$2_0_1))))))))))
+(rule
+   (let
+      ((c.i15.0$1_0_1 c.i15.0$1_0_old_1)
+       (i.i16.0$1_0_1 i.i16.0$1_0_old_1)
+       (i_copy1.0$1_0_1 i_copy1.0$1_0_old_1))
+      (let
+         ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+          (ret.0$1_0_1 ret.0$1_0_old_1)
+          (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+          (cmp.i17$1_0_1 (<= i.i16.0$1_0_1 i_copy1.0$1_0_1)))
+         (let
+            ((add.i19$1_0_1 (+ c.i15.0$1_0_1 i_copy1.0$1_0_1))
+             (inc.i21$1_0_1 (+ i.i16.0$1_0_1 1)))
+            (let
+               ((c.i15.0$1_0_2 add.i19$1_0_1)
+                (i.i16.0$1_0_2 inc.i21$1_0_1))
+               (=>
+                  (and
+                     (INV_MAIN_2 c.i15.0$1_0_old_1 i.i16.0$1_0_old_1 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i15.0$2_0_old_1 i.i16.0$2_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                     cmp.i17$1_0_1
+                     (let
+                        ((c.i15.0$2_0_1 c.i15.0$2_0_old_1)
+                         (i.i16.0$2_0_1 i.i16.0$2_0_old_1)
+                         (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1))
+                        (let
+                           ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                            (ret.0$2_0_1 ret.0$2_0_old_1)
+                            (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+                            (cmp.i17$2_0_1 (<= i.i16.0$2_0_1 i_copy1.0$2_0_1)))
+                           (=>
+                              cmp.i17$2_0_1
+                              (let
+                                 ((add.i19$2_0_1 (+ c.i15.0$2_0_1 i_copy1.0$2_0_1))
+                                  (inc.i21$2_0_1 (+ i.i16.0$2_0_1 1)))
+                                 (let
+                                    ((c.i15.0$2_0_2 add.i19$2_0_1)
+                                     (i.i16.0$2_0_2 inc.i21$2_0_1))
+                                    false))))))
+                  (INV_MAIN_2 c.i15.0$1_0_2 i.i16.0$1_0_2 i_copy1.0$1_0_1 n_copy1$1_0_1 ret.0$1_0_1 sum_copy1.0$1_0_1 c.i15.0$2_0_old_1 i.i16.0$2_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)))))))
+(rule
+   (let
+      ((c.i15.0$2_0_1 c.i15.0$2_0_old_1)
+       (i.i16.0$2_0_1 i.i16.0$2_0_old_1)
+       (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1))
+      (let
+         ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+          (ret.0$2_0_1 ret.0$2_0_old_1)
+          (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+          (cmp.i17$2_0_1 (<= i.i16.0$2_0_1 i_copy1.0$2_0_1)))
+         (let
+            ((add.i19$2_0_1 (+ c.i15.0$2_0_1 i_copy1.0$2_0_1))
+             (inc.i21$2_0_1 (+ i.i16.0$2_0_1 1)))
+            (let
+               ((c.i15.0$2_0_2 add.i19$2_0_1)
+                (i.i16.0$2_0_2 inc.i21$2_0_1))
+               (=>
+                  (and
+                     (INV_MAIN_2 c.i15.0$1_0_old_1 i.i16.0$1_0_old_1 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i15.0$2_0_old_1 i.i16.0$2_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                     cmp.i17$2_0_1
+                     (let
+                        ((c.i15.0$1_0_1 c.i15.0$1_0_old_1)
+                         (i.i16.0$1_0_1 i.i16.0$1_0_old_1)
+                         (i_copy1.0$1_0_1 i_copy1.0$1_0_old_1))
+                        (let
+                           ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+                            (ret.0$1_0_1 ret.0$1_0_old_1)
+                            (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+                            (cmp.i17$1_0_1 (<= i.i16.0$1_0_1 i_copy1.0$1_0_1)))
+                           (=>
+                              cmp.i17$1_0_1
+                              (let
+                                 ((add.i19$1_0_1 (+ c.i15.0$1_0_1 i_copy1.0$1_0_1))
+                                  (inc.i21$1_0_1 (+ i.i16.0$1_0_1 1)))
+                                 (let
+                                    ((c.i15.0$1_0_2 add.i19$1_0_1)
+                                     (i.i16.0$1_0_2 inc.i21$1_0_1))
+                                    false))))))
+                  (INV_MAIN_2 c.i15.0$1_0_old_1 i.i16.0$1_0_old_1 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i15.0$2_0_2 i.i16.0$2_0_2 i_copy1.0$2_0_1 n_copy1$2_0_1 ret.0$2_0_1 sum_copy1.0$2_0_1)))))))
+(rule
+   (let
+      ((c.i15.0$1_0_1 c.i15.0$1_0_old_1)
+       (i.i16.0$1_0_1 i.i16.0$1_0_old_1)
+       (i_copy1.0$1_0_1 i_copy1.0$1_0_old_1))
+      (let
+         ((n_copy1$1_0_1 n_copy1$1_0_old_1)
+          (ret.0$1_0_1 ret.0$1_0_old_1)
+          (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+          (cmp.i17$1_0_1 (<= i.i16.0$1_0_1 i_copy1.0$1_0_1)))
+         (let
+            ((cmp6$1_0_1 (= c.i15.0$1_0_1 0))
+             (add$1_0_1 (+ sum_copy1.0$1_0_1 i_copy1.0$1_0_1)))
+            (let
+               ((add.sum_copy1.0$1_0_1 (ite cmp6$1_0_1 add$1_0_1 sum_copy1.0$1_0_1))
+                (inc$1_0_1 (+ i_copy1.0$1_0_1 1)))
+               (let
+                  ((sum_copy1.0$1_0_2 add.sum_copy1.0$1_0_1)
+                   (i_copy1.0$1_0_2 inc$1_0_1)
+                   (c.i15.0$2_0_1 c.i15.0$2_0_old_1)
+                   (i.i16.0$2_0_1 i.i16.0$2_0_old_1)
+                   (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1))
+                  (let
+                     ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                      (ret.0$2_0_1 ret.0$2_0_old_1)
+                      (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+                      (cmp.i17$2_0_1 (<= i.i16.0$2_0_1 i_copy1.0$2_0_1)))
+                     (let
+                        ((cmp6$2_0_1 (= c.i15.0$2_0_1 0))
+                         (add$2_0_1 (+ sum_copy1.0$2_0_1 i_copy1.0$2_0_1)))
+                        (let
+                           ((add.sum_copy1.0$2_0_1 (ite cmp6$2_0_1 add$2_0_1 sum_copy1.0$2_0_1))
+                            (inc$2_0_1 (+ i_copy1.0$2_0_1 1)))
+                           (let
+                              ((sum_copy1.0$2_0_2 add.sum_copy1.0$2_0_1)
+                               (i_copy1.0$2_0_2 inc$2_0_1))
+                              (=>
+                                 (and
+                                    (INV_MAIN_2 c.i15.0$1_0_old_1 i.i16.0$1_0_old_1 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 c.i15.0$2_0_old_1 i.i16.0$2_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                                    (not cmp.i17$1_0_1)
+                                    (not cmp.i17$2_0_1))
+                                 (INV_MAIN_3 i_copy1.0$1_0_2 n_copy1$1_0_1 ret.0$1_0_1 sum_copy1.0$1_0_2 i_copy1.0$2_0_2 n_copy1$2_0_1 ret.0$2_0_1 sum_copy1.0$2_0_2))))))))))))
+(rule
+   (let
+      ((i_copy1.0$1_0_1 i_copy1.0$1_0_old_1)
+       (n_copy1$1_0_1 n_copy1$1_0_old_1))
+      (let
+         ((ret.0$1_0_1 ret.0$1_0_old_1)
+          (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+          (cmp3$1_0_1 (<= i_copy1.0$1_0_1 n_copy1$1_0_1)))
+         (let
+            ((c.i25.0$1_0_1 0)
+             (i.i26.0$1_0_1 1)
+             (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1)
+             (n_copy1$2_0_1 n_copy1$2_0_old_1))
+            (let
+               ((ret.0$2_0_1 ret.0$2_0_old_1)
+                (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+                (cmp3$2_0_1 (<= i_copy1.0$2_0_1 n_copy1$2_0_1)))
+               (=>
+                  (and
+                     (INV_MAIN_3 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                     (not cmp3$1_0_1)
+                     cmp3$2_0_1)
+                  END_QUERY))))))
+(rule
+   (let
+      ((i_copy1.0$1_0_1 i_copy1.0$1_0_old_1)
+       (n_copy1$1_0_1 n_copy1$1_0_old_1))
+      (let
+         ((ret.0$1_0_1 ret.0$1_0_old_1)
+          (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+          (cmp3$1_0_1 (<= i_copy1.0$1_0_1 n_copy1$1_0_1)))
+         (let
+            ((c.i15.0$1_0_1 0)
+             (i.i16.0$1_0_1 1)
+             (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1)
+             (n_copy1$2_0_1 n_copy1$2_0_old_1))
+            (let
+               ((ret.0$2_0_1 ret.0$2_0_old_1)
+                (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+                (cmp3$2_0_1 (<= i_copy1.0$2_0_1 n_copy1$2_0_1)))
+               (=>
+                  (and
+                     (INV_MAIN_3 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                     cmp3$1_0_1
+                     (not cmp3$2_0_1))
+                  END_QUERY))))))
+(rule
+   (let
+      ((i_copy1.0$1_0_1 i_copy1.0$1_0_old_1)
+       (n_copy1$1_0_1 n_copy1$1_0_old_1))
+      (let
+         ((ret.0$1_0_1 ret.0$1_0_old_1)
+          (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+          (cmp3$1_0_1 (<= i_copy1.0$1_0_1 n_copy1$1_0_1)))
+         (let
+            ((c.i25.0$1_0_1 0)
+             (i.i26.0$1_0_1 1)
+             (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1)
+             (n_copy1$2_0_1 n_copy1$2_0_old_1))
+            (let
+               ((ret.0$2_0_1 ret.0$2_0_old_1)
+                (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+                (cmp3$2_0_1 (<= i_copy1.0$2_0_1 n_copy1$2_0_1)))
+               (let
+                  ((c.i25.0$2_0_1 0)
+                   (i.i26.0$2_0_1 1))
+                  (=>
+                     (and
+                        (INV_MAIN_3 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                        (not cmp3$1_0_1)
+                        (not cmp3$2_0_1))
+                     (INV_MAIN_1 c.i25.0$1_0_1 i.i26.0$1_0_1 ret.0$1_0_1 sum_copy1.0$1_0_1 c.i25.0$2_0_1 i.i26.0$2_0_1 ret.0$2_0_1 sum_copy1.0$2_0_1))))))))
+(rule
+   (let
+      ((i_copy1.0$1_0_1 i_copy1.0$1_0_old_1)
+       (n_copy1$1_0_1 n_copy1$1_0_old_1))
+      (let
+         ((ret.0$1_0_1 ret.0$1_0_old_1)
+          (sum_copy1.0$1_0_1 sum_copy1.0$1_0_old_1)
+          (cmp3$1_0_1 (<= i_copy1.0$1_0_1 n_copy1$1_0_1)))
+         (let
+            ((c.i15.0$1_0_1 0)
+             (i.i16.0$1_0_1 1)
+             (i_copy1.0$2_0_1 i_copy1.0$2_0_old_1)
+             (n_copy1$2_0_1 n_copy1$2_0_old_1))
+            (let
+               ((ret.0$2_0_1 ret.0$2_0_old_1)
+                (sum_copy1.0$2_0_1 sum_copy1.0$2_0_old_1)
+                (cmp3$2_0_1 (<= i_copy1.0$2_0_1 n_copy1$2_0_1)))
+               (let
+                  ((c.i15.0$2_0_1 0)
+                   (i.i16.0$2_0_1 1))
+                  (=>
+                     (and
+                        (INV_MAIN_3 i_copy1.0$1_0_old_1 n_copy1$1_0_old_1 ret.0$1_0_old_1 sum_copy1.0$1_0_old_1 i_copy1.0$2_0_old_1 n_copy1$2_0_old_1 ret.0$2_0_old_1 sum_copy1.0$2_0_old_1)
+                        cmp3$1_0_1
+                        cmp3$2_0_1)
+                     (INV_MAIN_2 c.i15.0$1_0_1 i.i16.0$1_0_1 i_copy1.0$1_0_1 n_copy1$1_0_1 ret.0$1_0_1 sum_copy1.0$1_0_1 c.i15.0$2_0_1 i.i16.0$2_0_1 i_copy1.0$2_0_1 n_copy1$2_0_1 ret.0$2_0_1 sum_copy1.0$2_0_1))))))))
+(rule
+   (let
+      ((c.i.0$1_0_1 c.i.0$1_0_old_1)
+       (i.i.0$1_0_1 i.i.0$1_0_old_1)
+       (n_copy1$1_0_1 n_copy1$1_0_old_1)
+       (x$1_0_1 x$1_0_old_1))
+      (let
+         ((cmp.i$1_0_1 (<= i.i.0$1_0_1 x$1_0_1)))
+         (let
+            ((ret.0$1_0_1 c.i.0$1_0_1)
+             (sum_copy1.0$1_0_1 0)
+             (i_copy1.0$1_0_1 0)
+             (c.i.0$2_0_1 c.i.0$2_0_old_1)
+             (i.i.0$2_0_1 i.i.0$2_0_old_1))
+            (let
+               ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                (x$2_0_1 x$2_0_old_1)
+                (cmp.i$2_0_1 (<= i.i.0$2_0_1 20)))
+               (let
+                  ((ret.0$2_0_1 c.i.0$2_0_1)
+                   (sum_copy1.0$2_0_1 0)
+                   (i_copy1.0$2_0_1 0))
+                  (=>
+                     (and
+                        (INV_MAIN_4 c.i.0$1_0_old_1 i.i.0$1_0_old_1 n_copy1$1_0_old_1 x$1_0_old_1 c.i.0$2_0_old_1 i.i.0$2_0_old_1 n_copy1$2_0_old_1 x$2_0_old_1)
+                        (not cmp.i$1_0_1)
+                        (not cmp.i$2_0_1))
+                     (INV_MAIN_3 i_copy1.0$1_0_1 n_copy1$1_0_1 ret.0$1_0_1 sum_copy1.0$1_0_1 i_copy1.0$2_0_1 n_copy1$2_0_1 ret.0$2_0_1 sum_copy1.0$2_0_1))))))))
+(rule
+   (let
+      ((c.i.0$1_0_1 c.i.0$1_0_old_1)
+       (i.i.0$1_0_1 i.i.0$1_0_old_1)
+       (n_copy1$1_0_1 n_copy1$1_0_old_1)
+       (x$1_0_1 x$1_0_old_1))
+      (let
+         ((cmp.i$1_0_1 (<= i.i.0$1_0_1 x$1_0_1)))
+         (let
+            ((add.i$1_0_1 (+ c.i.0$1_0_1 20))
+             (inc.i$1_0_1 (+ i.i.0$1_0_1 1)))
+            (let
+               ((i.i.0$1_0_2 inc.i$1_0_1)
+                (c.i.0$1_0_2 add.i$1_0_1)
+                (c.i.0$2_0_1 c.i.0$2_0_old_1)
+                (i.i.0$2_0_1 i.i.0$2_0_old_1))
+               (let
+                  ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                   (x$2_0_1 x$2_0_old_1)
+                   (cmp.i$2_0_1 (<= i.i.0$2_0_1 20)))
+                  (let
+                     ((add.i$2_0_1 (+ c.i.0$2_0_1 x$2_0_1))
+                      (inc.i$2_0_1 (+ i.i.0$2_0_1 1)))
+                     (let
+                        ((i.i.0$2_0_2 inc.i$2_0_1)
+                         (c.i.0$2_0_2 add.i$2_0_1))
+                        (=>
+                           (and
+                              (INV_MAIN_4 c.i.0$1_0_old_1 i.i.0$1_0_old_1 n_copy1$1_0_old_1 x$1_0_old_1 c.i.0$2_0_old_1 i.i.0$2_0_old_1 n_copy1$2_0_old_1 x$2_0_old_1)
+                              cmp.i$1_0_1
+                              cmp.i$2_0_1)
+                           (INV_MAIN_4 c.i.0$1_0_2 i.i.0$1_0_2 n_copy1$1_0_1 x$1_0_1 c.i.0$2_0_2 i.i.0$2_0_2 n_copy1$2_0_1 x$2_0_1))))))))))
+(rule
+   (let
+      ((c.i.0$1_0_1 c.i.0$1_0_old_1)
+       (i.i.0$1_0_1 i.i.0$1_0_old_1)
+       (n_copy1$1_0_1 n_copy1$1_0_old_1)
+       (x$1_0_1 x$1_0_old_1))
+      (let
+         ((cmp.i$1_0_1 (<= i.i.0$1_0_1 x$1_0_1)))
+         (let
+            ((add.i$1_0_1 (+ c.i.0$1_0_1 20))
+             (inc.i$1_0_1 (+ i.i.0$1_0_1 1)))
+            (let
+               ((i.i.0$1_0_2 inc.i$1_0_1)
+                (c.i.0$1_0_2 add.i$1_0_1))
+               (=>
+                  (and
+                     (INV_MAIN_4 c.i.0$1_0_old_1 i.i.0$1_0_old_1 n_copy1$1_0_old_1 x$1_0_old_1 c.i.0$2_0_old_1 i.i.0$2_0_old_1 n_copy1$2_0_old_1 x$2_0_old_1)
+                     cmp.i$1_0_1
+                     (let
+                        ((c.i.0$2_0_1 c.i.0$2_0_old_1)
+                         (i.i.0$2_0_1 i.i.0$2_0_old_1))
+                        (let
+                           ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+                            (x$2_0_1 x$2_0_old_1)
+                            (cmp.i$2_0_1 (<= i.i.0$2_0_1 20)))
+                           (=>
+                              cmp.i$2_0_1
+                              (let
+                                 ((add.i$2_0_1 (+ c.i.0$2_0_1 x$2_0_1))
+                                  (inc.i$2_0_1 (+ i.i.0$2_0_1 1)))
+                                 (let
+                                    ((i.i.0$2_0_2 inc.i$2_0_1)
+                                     (c.i.0$2_0_2 add.i$2_0_1))
+                                    false))))))
+                  (INV_MAIN_4 c.i.0$1_0_2 i.i.0$1_0_2 n_copy1$1_0_1 x$1_0_1 c.i.0$2_0_old_1 i.i.0$2_0_old_1 n_copy1$2_0_old_1 x$2_0_old_1)))))))
+(rule
+   (let
+      ((c.i.0$2_0_1 c.i.0$2_0_old_1)
+       (i.i.0$2_0_1 i.i.0$2_0_old_1))
+      (let
+         ((n_copy1$2_0_1 n_copy1$2_0_old_1)
+          (x$2_0_1 x$2_0_old_1)
+          (cmp.i$2_0_1 (<= i.i.0$2_0_1 20)))
+         (let
+            ((add.i$2_0_1 (+ c.i.0$2_0_1 x$2_0_1))
+             (inc.i$2_0_1 (+ i.i.0$2_0_1 1)))
+            (let
+               ((i.i.0$2_0_2 inc.i$2_0_1)
+                (c.i.0$2_0_2 add.i$2_0_1))
+               (=>
+                  (and
+                     (INV_MAIN_4 c.i.0$1_0_old_1 i.i.0$1_0_old_1 n_copy1$1_0_old_1 x$1_0_old_1 c.i.0$2_0_old_1 i.i.0$2_0_old_1 n_copy1$2_0_old_1 x$2_0_old_1)
+                     cmp.i$2_0_1
+                     (let
+                        ((c.i.0$1_0_1 c.i.0$1_0_old_1)
+                         (i.i.0$1_0_1 i.i.0$1_0_old_1)
+                         (n_copy1$1_0_1 n_copy1$1_0_old_1)
+                         (x$1_0_1 x$1_0_old_1))
+                        (let
+                           ((cmp.i$1_0_1 (<= i.i.0$1_0_1 x$1_0_1)))
+                           (=>
+                              cmp.i$1_0_1
+                              (let
+                                 ((add.i$1_0_1 (+ c.i.0$1_0_1 20))
+                                  (inc.i$1_0_1 (+ i.i.0$1_0_1 1)))
+                                 (let
+                                    ((i.i.0$1_0_2 inc.i$1_0_1)
+                                     (c.i.0$1_0_2 add.i$1_0_1))
+                                    false))))))
+                  (INV_MAIN_4 c.i.0$1_0_old_1 i.i.0$1_0_old_1 n_copy1$1_0_old_1 x$1_0_old_1 c.i.0$2_0_2 i.i.0$2_0_2 n_copy1$2_0_1 x$2_0_1)))))))
+(query
+   END_QUERY
+   :print-certificate
+   true)
