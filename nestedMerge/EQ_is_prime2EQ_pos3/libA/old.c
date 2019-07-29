@@ -1,7 +1,7 @@
 int client(unsigned int x)
 {
-  int INLINED_RET_1;
   int INLINED_RET_0;
+  int INLINED_RET_1;
   int ret;
   if (x < 19)
   {
