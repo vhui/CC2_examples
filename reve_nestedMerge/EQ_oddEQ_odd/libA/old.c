@@ -1,3 +1,5 @@
+extern int __inlineCall(int);
+
 int client(int x)
 {
   int INLINED_RET_0;
@@ -14,7 +16,7 @@ int client(int x)
   }
 
   INLINED_RET_0 = ret_copy0;
-  if (__inlineCall(INLINED_RET_0) == 0)
+  if (INLINED_RET_0 == 0)
   {
     ret = 1;
   }

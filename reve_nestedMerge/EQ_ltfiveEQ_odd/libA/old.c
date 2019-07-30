@@ -1,3 +1,5 @@
+extern int __inlineCall(int);
+
 int client(int x)
 {
   int INLINED_RET_1;
@@ -17,7 +19,7 @@ int client(int x)
     }
 
     INLINED_RET_0 = ret_copy0;
-    ret = (-__inlineCall(INLINED_RET_0)) / 5;
+    ret = (-INLINED_RET_0) / 5;
   }
   else
   {
@@ -33,7 +35,7 @@ int client(int x)
     }
 
     INLINED_RET_1 = ret_copy1;
-    ret = (__inlineCall(INLINED_RET_1) / 5) - 1;
+    ret = (INLINED_RET_1 / 5) - 1;
   }
 
   return ret;

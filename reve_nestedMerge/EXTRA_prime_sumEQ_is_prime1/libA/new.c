@@ -1,3 +1,5 @@
+extern int __inlineCall(int);
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -7,7 +9,7 @@ int client(int n)
   {
     unsigned int x_copy0 = i;
     INLINED_RET_0 = __inlineCall(lib(x_copy0, 0));
-    if (__inlineCall(INLINED_RET_0) == 0)
+    if (INLINED_RET_0 == 0)
     {
       sum += i;
     }

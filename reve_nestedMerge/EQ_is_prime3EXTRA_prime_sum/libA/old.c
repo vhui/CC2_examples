@@ -1,3 +1,5 @@
+extern int __inlineCall(int);
+
 int client(unsigned int x)
 {
   int INLINED_RET_0;
@@ -30,7 +32,7 @@ int client(unsigned int x)
     }
 
     INLINED_RET_0 = sum_copy0;
-    ret = __inlineCall(INLINED_RET_0);
+    ret = INLINED_RET_0;
   }
 
   return ret;

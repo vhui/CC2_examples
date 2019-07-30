@@ -1,3 +1,5 @@
+extern int __inlineCall(int);
+
 int client(int n)
 {
   int INLINED_RET_1;
@@ -20,7 +22,7 @@ int client(int n)
     }
 
     INLINED_RET_0 = __inlineCall(lib(sum_copy0)) == 0;
-    if (__inlineCall(INLINED_RET_0) == 0)
+    if (INLINED_RET_0 == 0)
     {
       sum += i;
     }
@@ -42,7 +44,7 @@ int client(int n)
   }
 
   INLINED_RET_1 = __inlineCall(lib(sum_copy1)) == 0;
-  return __inlineCall(INLINED_RET_1) == 0;
+  return INLINED_RET_1 == 0;
 }
 
 int lib(int a)

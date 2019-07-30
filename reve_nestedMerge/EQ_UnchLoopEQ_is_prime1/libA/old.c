@@ -1,9 +1,11 @@
+extern int __inlineCall(int);
+
 int clientmain()
 {
   int INLINED_RET_0;
   unsigned int x_copy0 = 5;
   INLINED_RET_0 = __inlineCall(lib(x_copy0, 0));
-  return __inlineCall(INLINED_RET_0);
+  return INLINED_RET_0;
 }
 
 int lib(unsigned int x, int b)
