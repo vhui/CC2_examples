@@ -2,15 +2,18 @@ extern int __inlineCall(int);
 
 
 int lib(int x) {
+	int ret;
 	if (x < 0){
-		return -x;
+		ret = -x;
+	} else {
+		int counter = 0;
+		while (x > 0) {
+		    x += 1;
+			counter += 1;
+		}
+		ret = counter;
 	}
-	int counter = 0;
-	while (x > 0) {
-	    x += 1;
-		counter += 1;
-	}
-	return counter;
+	return ret;
 }
 
 int client(int x){

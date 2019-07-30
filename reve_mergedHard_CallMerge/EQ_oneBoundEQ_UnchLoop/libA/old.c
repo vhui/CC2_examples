@@ -1,11 +1,13 @@
 extern int __inlineCall(int);
 int lib(int x)
 {
+  int ret;
   if (x > 10)
-    return 11;
+    ret = 11;
   else
-    return x;
+    ret = x;
 
+  return ret;
 }
 
 int client(int x)

@@ -1,15 +1,17 @@
 extern int __inlineCall(int);
 int lib(int x)
 {
+  int ret;
   if (x < 0)
   {
-    return -x;
+    ret = -x;
   }
   else
   {
-    return x;
+    ret = x;
   }
 
+  return ret;
 }
 
 int clientmain(int x, int x_copy1)

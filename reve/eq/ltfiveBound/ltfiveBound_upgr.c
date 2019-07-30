@@ -1,10 +1,12 @@
 extern int __inlineCall(int);
 
 int lib(int x) {
+  int ret;
 	if (x < 0)
-		return 0;
+		ret = 0;
 	else
-		return x;
+		ret = x;
+  return ret;
 }
 
 int client(int x){
