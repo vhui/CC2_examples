@@ -1,4 +1,32 @@
 extern int __inlineCall(int);
+int client(int n)
+{
+  int i = 0;
+  int sum = 0;
+  while (i <= n)
+  {
+    if (__inlineCall(lib(i)) == 0)
+    {
+      sum += i;
+    }
+
+    i++;
+  }
+
+  int x_copy1 = __inlineCall(lib(sum)) == 0;
+  int ret_copy1;
+  if (x_copy1 < 19)
+  {
+    ret_copy1 = __inlineCall(lib(20));
+  }
+  else
+  {
+    ret_copy1 = __inlineCall(lib(x_copy1));
+  }
+
+  return ret_copy1;
+}
+
 int lib(int a)
 {
   int i = 2;
@@ -14,33 +42,5 @@ int lib(int a)
   }
 
   return count;
-}
-
-int client(int n)
-{
-  int i = 0;
-  int sum = 0;
-  while (i <= n)
-  {
-    if (__inlineCall(lib(i)) == 0)
-    {
-      sum += i;
-    }
-
-    i++;
-  }
-
-  unsigned int x_copy1 = __inlineCall(lib(sum)) == 0;
-  int ret_copy1;
-  if (x_copy1 < 19)
-  {
-    ret_copy1 = __inlineCall(lib(20));
-  }
-  else
-  {
-    ret_copy1 = __inlineCall(lib(x_copy1));
-  }
-
-  return ret_copy1;
 }
 

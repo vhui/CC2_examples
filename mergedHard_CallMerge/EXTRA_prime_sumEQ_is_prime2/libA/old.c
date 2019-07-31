@@ -12,7 +12,7 @@ int client(int n)
     i++;
   }
 
-  unsigned int x_copy1 = sum;
+  int x_copy1 = sum;
   int ret_copy1;
   if (x_copy1 < 19)
   {

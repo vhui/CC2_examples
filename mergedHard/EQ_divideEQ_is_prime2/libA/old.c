@@ -3,7 +3,7 @@ int lib(int x, int y)
   return x / y;
 }
 
-int client(int c, int d, unsigned int x_copy1)
+int client(int c, int d, int x_copy1)
 {
   int ret;
   if (d == 0)

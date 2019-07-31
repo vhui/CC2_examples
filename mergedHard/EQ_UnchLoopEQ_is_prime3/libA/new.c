@@ -1,5 +1,5 @@
 int foo(int a, int b);
-int clientmain(unsigned int x_copy1)
+int clientmain(int x_copy1)
 {
   int ret_copy1;
   unsigned int primes_copy1[8] = {2, 3, 5, 7, 11, 13, 17, 19};

@@ -4,7 +4,7 @@ int lib(int x, int y)
   return x / y;
 }
 
-int client(unsigned int x, int c_copy1, int d_copy1)
+int client(int x, int c_copy1, int d_copy1)
 {
   int ret;
   if (x < 19)

@@ -1,6 +1,6 @@
 extern int __inlineCall(int);
 int foo(int a, int b);
-int clientmain(unsigned int x_copy1)
+int clientmain(int x_copy1)
 {
   return __inlineCall(foo(5, 900)) + __inlineCall(foo(x_copy1, 0));
 }

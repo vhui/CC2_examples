@@ -3,7 +3,7 @@ int lib(int x)
   return x % 5;
 }
 
-int client(unsigned int x)
+int client(int x)
 {
   int ret;
   if (x < 19)

@@ -4,7 +4,7 @@ int lib(int x)
   return (x + 1) % 2;
 }
 
-int client(unsigned int x, int x_copy1)
+int client(int x, int x_copy1)
 {
   int ret_copy1;
   if (__inlineCall(lib(x_copy1)) == 0)

@@ -3,7 +3,7 @@ int lib(int x)
   return (x + 1) % 2;
 }
 
-int client(unsigned int x, int x_copy1)
+int client(int x, int x_copy1)
 {
   int ret;
   unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};

@@ -1,4 +1,4 @@
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
   unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
@@ -27,7 +27,7 @@ int lib(unsigned int x, int b)
 
 int client(int x)
 {
-  unsigned int x_copy1 = lib(x, x);
+  int x_copy1 = lib(x, x);
   int ret_copy1;
   if (x_copy1 < 19)
   {

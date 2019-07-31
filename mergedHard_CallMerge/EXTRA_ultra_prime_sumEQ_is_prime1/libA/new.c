@@ -12,7 +12,7 @@ int client(int n)
     i++;
   }
 
-  unsigned int x_copy1 = lib(sum) == 0;
+  int x_copy1 = lib(sum) == 0;
   return lib(x_copy1);
 }
 

@@ -20,7 +20,7 @@ int lib(int x)
   return ret;
 }
 
-int client(unsigned int x)
+int client(int x)
 {
   int ret;
   if (x < 19)

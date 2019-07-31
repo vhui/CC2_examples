@@ -1,4 +1,4 @@
-int client(unsigned int x, int n_copy1)
+int client(int x, int n_copy1)
 {
   int i_copy1 = 0;
   int sum_copy1 = 0;

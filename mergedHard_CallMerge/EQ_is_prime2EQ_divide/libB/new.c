@@ -8,7 +8,7 @@ int lib(int x, int y)
   return x / y;
 }
 
-int client(unsigned int x)
+int client(int x)
 {
   int ret;
   if (x < 19)

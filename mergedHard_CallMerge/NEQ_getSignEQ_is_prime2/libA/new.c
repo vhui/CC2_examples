@@ -1,15 +1,17 @@
 int lib(int x)
 {
+  int ret;
   if (x <= 0)
-    return -1;
+    ret = -1;
   else
-    return 1;
+    ret = 1;
 
+  return ret;
 }
 
 int client(int x)
 {
-  unsigned int x_copy1 = lib(x);
+  int x_copy1 = lib(x);
   int ret_copy1;
   if (x_copy1 < 19)
   {

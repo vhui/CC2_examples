@@ -6,7 +6,7 @@ int clientmain(int x)
   if ((x >= 18) && (x < 22))
     ret = __inlineCall(foo(x, 20));
 
-  unsigned int x_copy1 = ret;
+  int x_copy1 = ret;
   int ret_copy1;
   if (x_copy1 < 19)
   {

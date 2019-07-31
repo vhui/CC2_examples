@@ -11,7 +11,7 @@ int lib(int x)
   return counter;
 }
 
-int client(int x, unsigned int x_copy1)
+int client(int x, int x_copy1)
 {
   int ret;
   if (x > 0)

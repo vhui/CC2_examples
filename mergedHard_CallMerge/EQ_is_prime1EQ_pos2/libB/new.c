@@ -18,7 +18,7 @@ int lib(int x)
   return ret;
 }
 
-int client(unsigned int x)
+int client(int x)
 {
   int x_copy1 = lib(x);
   int ret_copy1;

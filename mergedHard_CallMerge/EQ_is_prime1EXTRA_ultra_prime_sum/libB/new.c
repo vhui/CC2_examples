@@ -1,4 +1,4 @@
-int client(unsigned int x)
+int client(int x)
 {
   int n_copy1 = lib(x);
   int i_copy1 = 0;

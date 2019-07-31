@@ -16,7 +16,7 @@ int client(int x)
     ret = 0;
   }
 
-  unsigned int x_copy1 = ret;
+  int x_copy1 = ret;
   return __inlineCall(lib(x_copy1));
 }
 

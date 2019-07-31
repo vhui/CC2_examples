@@ -22,7 +22,7 @@ int client(int x)
     ret = 0;
   }
 
-  unsigned int x_copy1 = ret;
+  int x_copy1 = ret;
   return lib(x_copy1);
 }
 

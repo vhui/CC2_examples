@@ -1,6 +1,6 @@
 extern int __inlineCall(int);
 int foo(int a, int b);
-int clientmain(int x, unsigned int x_copy1)
+int clientmain(int x, int x_copy1)
 {
   int ret = 0;
   if ((x >= 18) && (x < 22))

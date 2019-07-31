@@ -2,7 +2,7 @@ extern int __inlineCall(int);
 int foo(int a, int b);
 int clientmain()
 {
-  unsigned int x_copy1 = __inlineCall(foo(5, 900));
+  int x_copy1 = __inlineCall(foo(5, 900));
   return __inlineCall(foo(x_copy1, 0));
 }
 

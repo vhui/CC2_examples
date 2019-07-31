@@ -21,7 +21,7 @@ int client(int x)
     ret = (lib((x + 1) * 5) / 5) - 1;
   }
 
-  unsigned int x_copy1 = ret;
+  int x_copy1 = ret;
   int ret_copy1;
   if (x_copy1 < 19)
   {

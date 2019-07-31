@@ -2,7 +2,7 @@ extern int __inlineCall(int);
 int foo(int a, int b);
 int clientmain()
 {
-  unsigned int x_copy1 = __inlineCall(foo(5, 900));
+  int x_copy1 = __inlineCall(foo(5, 900));
   int ret_copy1;
   unsigned int primes_copy1[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   int done_copy1 = 0;

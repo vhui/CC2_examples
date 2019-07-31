@@ -1,4 +1,4 @@
-int client(unsigned int x)
+int client(int x)
 {
   int ret;
   unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};

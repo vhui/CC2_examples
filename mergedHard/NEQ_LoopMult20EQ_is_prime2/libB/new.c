@@ -1,4 +1,4 @@
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
   unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
@@ -25,7 +25,7 @@ int lib(unsigned int x, int b)
   return ret;
 }
 
-int clientmain(int x, unsigned int x_copy1)
+int clientmain(int x, int x_copy1)
 {
   int ret = 0;
   if ((x >= 18) && (x < 22))

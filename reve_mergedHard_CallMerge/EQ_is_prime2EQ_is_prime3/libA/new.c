@@ -1,5 +1,5 @@
 extern int __inlineCall(int);
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
   unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
@@ -26,7 +26,7 @@ int lib(unsigned int x, int b)
   return ret;
 }
 
-int client(unsigned int x)
+int client(int x)
 {
   int ret;
   if (x < 19)
@@ -38,7 +38,7 @@ int client(unsigned int x)
     ret = __inlineCall(lib(x, 1));
   }
 
-  unsigned int x_copy1 = ret;
+  int x_copy1 = ret;
   int ret_copy1;
   unsigned int primes_copy1[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   int done_copy1 = 0;

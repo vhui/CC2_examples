@@ -3,7 +3,7 @@ int lib(int x)
   return x % 5;
 }
 
-int client(int x, unsigned int x_copy1)
+int client(int x, int x_copy1)
 {
   int ret;
   x = (x * 5) * 6;
