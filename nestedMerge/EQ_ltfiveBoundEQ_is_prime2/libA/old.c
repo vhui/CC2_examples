@@ -11,7 +11,7 @@ int client(int x)
   {
     if (x < 0)
     {
-      unsigned int x_copy0 = (-x) * 5;
+      int x_copy0 = (-x) * 5;
       int ret_copy0;
       if (x_copy0 < 19)
       {
@@ -27,7 +27,7 @@ int client(int x)
     }
     else
     {
-      unsigned int x_copy1 = (x + 1) * 5;
+      int x_copy1 = (x + 1) * 5;
       int ret_copy1;
       if (x_copy1 < 19)
       {
@@ -47,10 +47,10 @@ int client(int x)
   return ret;
 }
 
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
-  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     ret = 0;

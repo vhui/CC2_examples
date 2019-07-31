@@ -7,7 +7,7 @@ int client(int n)
   int sum = 0;
   while (i <= n)
   {
-    unsigned int x_copy0 = i;
+    int x_copy0 = i;
     int ret_copy0;
     unsigned int primes_copy0[8] = {2, 3, 5, 7, 11, 13, 17, 19};
     int done_copy0 = 0;
@@ -38,10 +38,10 @@ int client(int n)
   return sum;
 }
 
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
-  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     ret = 0;

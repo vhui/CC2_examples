@@ -5,13 +5,13 @@ int client(int x)
   int ret;
   if (x > 0)
   {
-    unsigned int x_copy0 = -x;
+    int x_copy0 = -x;
     INLINED_RET_0 = lib(x_copy0, 0);
     ret = -INLINED_RET_0;
   }
   else
   {
-    unsigned int x_copy1 = x;
+    int x_copy1 = x;
     INLINED_RET_1 = lib(x_copy1, 0);
     ret = INLINED_RET_1;
   }
@@ -19,10 +19,10 @@ int client(int x)
   return ret;
 }
 
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
-  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     ret = 0;

@@ -1,6 +1,6 @@
 extern int __inlineCall(int);
 
-int client(unsigned int x)
+int client(int x)
 {
   int INLINED_RET_0;
   int n_copy0 = x;

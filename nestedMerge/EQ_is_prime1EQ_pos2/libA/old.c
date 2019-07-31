@@ -1,4 +1,4 @@
-int client(unsigned int x)
+int client(int x)
 {
   int INLINED_RET_0;
   int x_copy0 = x;

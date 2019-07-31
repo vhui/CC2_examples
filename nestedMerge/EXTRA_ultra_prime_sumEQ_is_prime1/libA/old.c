@@ -1,12 +1,12 @@
 int client(int n)
 {
-  int INLINED_RET_1;
   int INLINED_RET_0;
+  int INLINED_RET_1;
   int i = 0;
   int sum = 0;
   while (i <= n)
   {
-    unsigned int x_copy0 = i;
+    int x_copy0 = i;
     INLINED_RET_0 = lib(x_copy0, 0);
     if (INLINED_RET_0 == 0)
     {
@@ -16,15 +16,15 @@ int client(int n)
     i++;
   }
 
-  unsigned int x_copy1 = sum;
+  int x_copy1 = sum;
   INLINED_RET_1 = lib(x_copy1, 0);
   return INLINED_RET_1 == 0;
 }
 
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
-  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     ret = 0;
