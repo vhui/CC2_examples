@@ -1,0 +1,280 @@
+./nestedMerge/EQ_AddEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_AddEQ_is_prime2/libA CC2-Hybrid: equiv    ,0.9761   (Solve) ,,0.387  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0869  
+./nestedMerge/EQ_AddEQ_odd/libA     CC2-Hybrid: equiv    ,0.7788   (Solve) ,,0.276  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0766  
+./nestedMerge/EQ_AddEQ_pos/libA     CC2-Hybrid: equiv    ,0.7229   (Solve) ,,0.211  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0774  
+./nestedMerge/EQ_AddEQ_pos2/libA    CC2-Hybrid: equiv    ,11.3100  (Solve) ,,11.181 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1298  
+./nestedMerge/EQ_AddEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,78.3132  (Solve) ,,77.216 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1038  
+./nestedMerge/EQ_ConstEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_ConstEQ_is_prime2/libA CC2-Hybrid: equiv    ,0.9435   (Solve) ,,0.382  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0850  
+./nestedMerge/EQ_ConstEQ_odd/libA   CC2-Hybrid: equiv    ,0.7709   (Solve) ,,0.269  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0762  
+./nestedMerge/EQ_ConstEQ_pos/libA   CC2-Hybrid: equiv    ,0.7220   (Solve) ,,0.214  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0766  
+./nestedMerge/EQ_ConstEQ_pos2/libA  CC2-Hybrid: equiv    ,11.2945  (Solve) ,,11.167 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0990  
+./nestedMerge/EQ_ConstEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,78.2150  (Solve) ,,77.122 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1115  
+./nestedMerge/EQ_LoopMult20EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_LoopMult20EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0960   (Solve) ,,0.506  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3939  
+Disagreement error: ./nestedMerge/EQ_LoopMult20EQ_is_prime2/libA
+./nestedMerge/EQ_LoopMult20EQ_odd/libA CC2-Hybrid: equiv    ,1.0372   (Solve) ,,0.521  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2359  
+./nestedMerge/EQ_LoopMult20EQ_pos/libA CC2-Hybrid: equiv    ,1.1436   (Solve) ,,0.608  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3943  
+./nestedMerge/EQ_LoopMult20EQ_pos2/libA CC2-Hybrid: equiv    ,11.3111  (Solve) ,,11.166 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.4146  
+./nestedMerge/EQ_LoopMult20EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.4483  (Solve) ,,41.855 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3721  
+./nestedMerge/EQ_LoopUnreach20EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_LoopUnreach20EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0856   (Solve) ,,0.501  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3855  
+Disagreement error: ./nestedMerge/EQ_LoopUnreach20EQ_is_prime2/libA
+./nestedMerge/EQ_LoopUnreach20EQ_odd/libA CC2-Hybrid: equiv    ,1.0412   (Solve) ,,0.524  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2354  
+./nestedMerge/EQ_LoopUnreach20EQ_pos/libA CC2-Hybrid: equiv    ,1.1921   (Solve) ,,0.616  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3951  
+./nestedMerge/EQ_LoopUnreach20EQ_pos2/libA CC2-Hybrid: equiv    ,11.3149  (Solve) ,,11.170 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.4239  
+./nestedMerge/EQ_LoopUnreach20EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.3791  (Solve) ,,41.785 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3718  
+./nestedMerge/EQ_UnchLoopEQ_Add/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_UnchLoopEQ_Const/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_UnchLoopEQ_LoopMult20/libA CC2-Hybrid: equiv    ,0.8103   (Solve) ,,0.276  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0777  
+./nestedMerge/EQ_UnchLoopEQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,0.7803   (Solve) ,,0.271  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0787  
+./nestedMerge/EQ_UnchLoopEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_UnchLoopEQ_divide/libA CC2-Hybrid: equiv    ,0.1480   (Solve) ,,0.046  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0797  
+./nestedMerge/EQ_UnchLoopEQ_getSign2/libA CC2-Hybrid: equiv    ,0.7596   (Solve) ,,0.229  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0769  
+./nestedMerge/EQ_UnchLoopEQ_is_prime1/libA CC2-Hybrid: equiv    ,0.9040   (Solve) ,,0.386  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0832  
+./nestedMerge/EQ_UnchLoopEQ_is_prime2/libA CC2-Hybrid: equiv    ,0.9343   (Solve) ,,0.377  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0853  
+./nestedMerge/EQ_UnchLoopEQ_is_prime3/libA CC2-Hybrid: equiv    ,1.1558   (Solve) ,,0.430  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0908  
+./nestedMerge/EQ_UnchLoopEQ_ltfive/libA CC2-Hybrid: equiv    ,0.7458   (Solve) ,,0.215  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0781  
+./nestedMerge/EQ_UnchLoopEQ_ltfiveBound/libA CC2-Hybrid: equiv    ,0.7542   (Solve) ,,0.211  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0804  
+./nestedMerge/EQ_UnchLoopEQ_multiple/libA CC2-Hybrid: equiv    ,0.7267   (Solve) ,,0.244  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0770  
+./nestedMerge/EQ_UnchLoopEQ_multipleBound/libA CC2-Hybrid: equiv    ,0.7447   (Solve) ,,0.246  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0777  
+./nestedMerge/EQ_UnchLoopEQ_odd/libA CC2-Hybrid: equiv    ,0.7532   (Solve) ,,0.262  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0768  
+./nestedMerge/EQ_UnchLoopEQ_one/libA CC2-Hybrid: not equiv ,0.3194   (Solve) ,,0.107  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0804  
+Disagreement error: ./nestedMerge/EQ_UnchLoopEQ_one/libA
+./nestedMerge/EQ_UnchLoopEQ_oneBound/libA CC2-Hybrid: equiv    ,1.2265   (Solve) ,,0.423  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0785  
+./nestedMerge/EQ_UnchLoopEQ_oneN2/libA CC2-Hybrid: equiv    ,1.2094   (Solve) ,,0.428  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0771  
+./nestedMerge/EQ_UnchLoopEQ_pos/libA CC2-Hybrid: equiv    ,0.7245   (Solve) ,,0.214  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0780  
+./nestedMerge/EQ_UnchLoopEQ_pos2/libA CC2-Hybrid: equiv    ,11.2893  (Solve) ,,11.161 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1058  
+./nestedMerge/EQ_UnchLoopEQ_pos3/libA CC2-Hybrid: equiv    ,0.7032   (Solve) ,,0.207  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0788  
+./nestedMerge/EQ_UnchLoopEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,78.6139  (Solve) ,,77.503 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1042  
+./nestedMerge/EQ_UnchLoopNEQ_LoopMult20/libA CC2-Hybrid: equiv    ,0.7797   (Solve) ,,0.270  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0791  
+./nestedMerge/EQ_UnchLoopNEQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,0.6815   (Solve) ,,0.176  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0790  
+./nestedMerge/EQ_UnchLoopNEQ_getSign/libA CC2-Hybrid: equiv    ,0.6922   (Solve) ,,0.219  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0755  
+./nestedMerge/EQ_divideEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_divideEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0643   (Solve) ,,0.475  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.7199  
+Disagreement error: ./nestedMerge/EQ_divideEQ_is_prime2/libA
+./nestedMerge/EQ_divideEQ_odd/libA  CC2-Hybrid: equiv    ,12.2410  (Solve) ,,11.703 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_divideEQ_pos/libA  CC2-Hybrid: equiv    ,11.3035  (Solve) ,,10.729 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_divideEQ_pos2/libA CC2-Hybrid: equiv    ,11.3386  (Solve) ,,11.170 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_divideEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.3888  (Solve) ,,41.768 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_getSign2EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_getSign2EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0814   (Solve) ,,0.483  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.7003  
+Disagreement error: ./nestedMerge/EQ_getSign2EQ_is_prime2/libA
+./nestedMerge/EQ_getSign2EQ_odd/libA CC2-Hybrid: equiv    ,11.0436  (Solve) ,,10.526 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,15.0186 
+./nestedMerge/EQ_getSign2EQ_pos/libA CC2-Hybrid: equiv    ,11.2540  (Solve) ,,10.682 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_getSign2EQ_pos2/libA CC2-Hybrid: equiv    ,11.3738  (Solve) ,,11.212 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_getSign2EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.3950  (Solve) ,,41.782 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime1EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_is_prime1EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0297   (Solve) ,,0.448  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6717  
+Disagreement error: ./nestedMerge/EQ_is_prime1EQ_is_prime2/libA
+./nestedMerge/EQ_is_prime1EQ_odd/libA CC2-Hybrid: equiv    ,0.6916   (Solve) ,,0.216  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime1EQ_pos/libA CC2-Hybrid: equiv    ,11.2596  (Solve) ,,10.706 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime1EQ_pos2/libA CC2-Hybrid: equiv    ,11.3190  (Solve) ,,11.168 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime1EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,83.9818  (Solve) ,,82.851 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime2EQ_Add/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_is_prime2EQ_Const/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_is_prime2EQ_LoopMult20/libA CC2-Hybrid: equiv    ,1.5076   (Solve) ,,0.890  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3788  
+./nestedMerge/EQ_is_prime2EQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,1.0487   (Solve) ,,0.453  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1412  
+./nestedMerge/EQ_is_prime2EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_is_prime2EQ_divide/libA CC2-Hybrid: equiv    ,0.2082   (Solve) ,,0.046  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1101  
+./nestedMerge/EQ_is_prime2EQ_getSign2/libA CC2-Hybrid: equiv    ,0.9382   (Solve) ,,0.367  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1459  
+./nestedMerge/EQ_is_prime2EQ_is_prime1/libA CC2-Hybrid: equiv    ,1.0209   (Solve) ,,0.439  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1123  
+./nestedMerge/EQ_is_prime2EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.1036   (Solve) ,,0.420  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6803  
+Disagreement error: ./nestedMerge/EQ_is_prime2EQ_is_prime2/libA
+./nestedMerge/EQ_is_prime2EQ_is_prime3/libA CC2-Hybrid: equiv    ,2.3519   (Solve) ,,1.403  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.6473  
+./nestedMerge/EQ_is_prime2EQ_ltfive/libA CC2-Hybrid: not equiv ,0.5414   (Solve) ,,0.210  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1961  
+./nestedMerge/EQ_is_prime2EQ_ltfiveBound/libA CC2-Hybrid: equiv    ,1.1436   (Solve) ,,0.431  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1935  
+./nestedMerge/EQ_is_prime2EQ_multiple/libA CC2-Hybrid: equiv    ,0.7788   (Solve) ,,0.236  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2408  
+Disagreement error: ./nestedMerge/EQ_is_prime2EQ_multiple/libA
+./nestedMerge/EQ_is_prime2EQ_multipleBound/libA CC2-Hybrid: equiv    ,0.8391   (Solve) ,,0.258  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3430  
+./nestedMerge/EQ_is_prime2EQ_odd/libA CC2-Hybrid: equiv    ,0.7942   (Solve) ,,0.249  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,16.4337 
+./nestedMerge/EQ_is_prime2EQ_one/libA CC2-Hybrid: not equiv ,0.4344   (Solve) ,,0.123  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1632  
+./nestedMerge/EQ_is_prime2EQ_oneBound/libA CC2-Hybrid: equiv    ,1.1490   (Solve) ,,0.475  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1831  
+./nestedMerge/EQ_is_prime2EQ_oneN2/libA CC2-Hybrid: equiv    ,1.0541   (Solve) ,,0.434  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1627  
+Disagreement error: ./nestedMerge/EQ_is_prime2EQ_oneN2/libA
+./nestedMerge/EQ_is_prime2EQ_pos/libA CC2-Hybrid: equiv    ,1.1828   (Solve) ,,0.563  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime2EQ_pos2/libA CC2-Hybrid: equiv    ,11.4047  (Solve) ,,11.169 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime2EQ_pos3/libA CC2-Hybrid: equiv    ,0.9104   (Solve) ,,0.313  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1184  
+./nestedMerge/EQ_is_prime2EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,109.5213 (Solve) ,,107.817	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime2NEQ_LoopMult20/libA CC2-Hybrid: not equiv ,2.1139   (Solve) ,,1.396  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3076  
+./nestedMerge/EQ_is_prime2NEQ_LoopUnreach20/libA CC2-Hybrid: not equiv ,0.4038   (Solve) ,,0.137  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1442  
+./nestedMerge/EQ_is_prime2NEQ_getSign/libA CC2-Hybrid: equiv    ,0.8665   (Solve) ,,0.337  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1431  
+./nestedMerge/EQ_is_prime3EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_is_prime3EQ_is_prime2/libA CC2-Hybrid: equiv    ,3.2035   (Solve) ,,2.326  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.7269  
+./nestedMerge/EQ_is_prime3EQ_odd/libA CC2-Hybrid: equiv    ,0.8219   (Solve) ,,0.242  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime3EQ_pos/libA CC2-Hybrid: timeout  ,300.0000 (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime3EQ_pos2/libA CC2-Hybrid: equiv    ,22.3594  (Solve) ,,21.984 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_is_prime3EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.4995  (Solve) ,,41.799 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_ltfiveBoundEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_ltfiveBoundEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.3229   (Solve) ,,0.586  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.4118  
+./nestedMerge/EQ_ltfiveBoundEQ_odd/libA CC2-Hybrid: equiv    ,1.8749   (Solve) ,,1.234  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,1.4795  
+./nestedMerge/EQ_ltfiveBoundEQ_pos/libA CC2-Hybrid: equiv    ,13.1226  (Solve) ,,12.422 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,30.7001 
+./nestedMerge/EQ_ltfiveBoundEQ_pos2/libA CC2-Hybrid: equiv    ,11.4339  (Solve) ,,11.173 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,30.6158 
+./nestedMerge/EQ_ltfiveBoundEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,109.7658 (Solve) ,,107.981	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,158.8090
+./nestedMerge/EQ_ltfiveEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_ltfiveEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.2766   (Solve) ,,0.556  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,1.5936  
+./nestedMerge/EQ_ltfiveEQ_odd/libA  CC2-Hybrid: equiv    ,11.4355  (Solve) ,,10.812 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,43.4726 
+./nestedMerge/EQ_ltfiveEQ_pos/libA  CC2-Hybrid: equiv    ,13.1312  (Solve) ,,12.449 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_ltfiveEQ_pos2/libA CC2-Hybrid: equiv    ,11.4065  (Solve) ,,11.169 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_ltfiveEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,109.6246 (Solve) ,,107.871	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_multipleBoundEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_multipleBoundEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.1627   (Solve) ,,0.527  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1561  
+./nestedMerge/EQ_multipleBoundEQ_odd/libA CC2-Hybrid: equiv    ,11.9381  (Solve) ,,11.376 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_multipleBoundEQ_pos/libA CC2-Hybrid: equiv    ,11.3762  (Solve) ,,10.779 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,141.2092
+./nestedMerge/EQ_multipleBoundEQ_pos2/libA CC2-Hybrid: equiv    ,11.3561  (Solve) ,,11.173 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_multipleBoundEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.5806  (Solve) ,,41.947 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_multipleEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_multipleEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.1181   (Solve) ,,0.491  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1359  
+./nestedMerge/EQ_multipleEQ_odd/libA CC2-Hybrid: equiv    ,12.2281  (Solve) ,,11.683 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_multipleEQ_pos/libA CC2-Hybrid: equiv    ,11.4497  (Solve) ,,10.874 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_multipleEQ_pos2/libA CC2-Hybrid: equiv    ,11.3340  (Solve) ,,11.159 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_multipleEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,77.1264  (Solve) ,,75.954 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oddEQ_Add/libA     CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_oddEQ_Const/libA   CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_oddEQ_LoopMult20/libA CC2-Hybrid: equiv    ,1.5868   (Solve) ,,1.030  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3383  
+./nestedMerge/EQ_oddEQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,0.9699   (Solve) ,,0.433  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1274  
+./nestedMerge/EQ_oddEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_oddEQ_divide/libA  CC2-Hybrid: equiv    ,0.1617   (Solve) ,,0.047  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1369  
+./nestedMerge/EQ_oddEQ_getSign2/libA CC2-Hybrid: equiv    ,0.8916   (Solve) ,,0.374  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1425  
+./nestedMerge/EQ_oddEQ_is_prime1/libA CC2-Hybrid: equiv    ,0.9646   (Solve) ,,0.416  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.0874  
+./nestedMerge/EQ_oddEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0613   (Solve) ,,0.474  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6742  
+Disagreement error: ./nestedMerge/EQ_oddEQ_is_prime2/libA
+./nestedMerge/EQ_oddEQ_is_prime3/libA CC2-Hybrid: equiv    ,24.0126  (Solve) ,,20.789 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.7226  
+./nestedMerge/EQ_oddEQ_ltfive/libA  CC2-Hybrid: not equiv ,0.4456   (Solve) ,,0.205  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3110  
+./nestedMerge/EQ_oddEQ_ltfiveBound/libA CC2-Hybrid: equiv    ,1.2007   (Solve) ,,0.624  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2683  
+./nestedMerge/EQ_oddEQ_multiple/libA CC2-Hybrid: not equiv ,0.4393   (Solve) ,,0.231  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2185  
+./nestedMerge/EQ_oddEQ_multipleBound/libA CC2-Hybrid: equiv    ,1.0069   (Solve) ,,0.480  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3214  
+./nestedMerge/EQ_oddEQ_odd/libA     CC2-Hybrid: equiv    ,12.2906  (Solve) ,,11.671 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oddEQ_one/libA     CC2-Hybrid: not equiv ,0.3608   (Solve) ,,0.115  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1879  
+./nestedMerge/EQ_oddEQ_oneBound/libA CC2-Hybrid: equiv    ,1.1272   (Solve) ,,0.562  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2233  
+./nestedMerge/EQ_oddEQ_oneN2/libA   CC2-Hybrid: equiv    ,1.0445   (Solve) ,,0.493  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1951  
+./nestedMerge/EQ_oddEQ_pos/libA     CC2-Hybrid: equiv    ,11.2432  (Solve) ,,10.691 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oddEQ_pos2/libA    CC2-Hybrid: equiv    ,11.3289  (Solve) ,,11.170 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oddEQ_pos3/libA    CC2-Hybrid: equiv    ,0.9848   (Solve) ,,0.382  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1248  
+./nestedMerge/EQ_oddEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,78.3499  (Solve) ,,77.204 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oddNEQ_LoopMult20/libA CC2-Hybrid: equiv    ,1.5856   (Solve) ,,1.030  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3381  
+./nestedMerge/EQ_oddNEQ_LoopUnreach20/libA CC2-Hybrid: not equiv ,0.3587   (Solve) ,,0.134  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1307  
+./nestedMerge/EQ_oddNEQ_getSign/libA CC2-Hybrid: not equiv ,0.3437   (Solve) ,,0.141  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1263  
+./nestedMerge/EQ_oneBoundEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_oneBoundEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.3785   (Solve) ,,0.671  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,1.9166  
+./nestedMerge/EQ_oneBoundEQ_odd/libA CC2-Hybrid: equiv    ,12.2272  (Solve) ,,11.564 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneBoundEQ_pos/libA CC2-Hybrid: equiv    ,6.1178   (Solve) ,,5.443  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,14.8891 
+./nestedMerge/EQ_oneBoundEQ_pos2/libA CC2-Hybrid: equiv    ,11.4012  (Solve) ,,11.159 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneBoundEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,151.2429 (Solve) ,,148.691	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,6.7212  
+./nestedMerge/EQ_oneEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_oneEQ_is_prime2/libA CC2-Hybrid: equiv    ,17.0069  (Solve) ,,16.148 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,2.1554  
+./nestedMerge/EQ_oneEQ_odd/libA     CC2-Hybrid: equiv    ,13.5130  (Solve) ,,13.276 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneEQ_pos/libA     CC2-Hybrid: equiv    ,14.2787  (Solve) ,,13.950 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneEQ_pos2/libA    CC2-Hybrid: equiv    ,25.9034  (Solve) ,,25.566 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,151.6593 (Solve) ,,149.060	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneN2EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_oneN2EQ_is_prime2/libA CC2-Hybrid: equiv    ,17.7812  (Solve) ,,16.916 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,2.1635  
+./nestedMerge/EQ_oneN2EQ_odd/libA   CC2-Hybrid: equiv    ,13.5302  (Solve) ,,13.285 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneN2EQ_pos/libA   CC2-Hybrid: equiv    ,14.3526  (Solve) ,,14.024 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneN2EQ_pos2/libA  CC2-Hybrid: equiv    ,25.7061  (Solve) ,,25.364 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_oneN2EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,145.5884 (Solve) ,,142.990	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_pos2EQ_Add/libA    CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_pos2EQ_Const/libA  CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_pos2EQ_LoopMult20/libA CC2-Hybrid: equiv    ,1.0039   (Solve) ,,0.388  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1311  
+./nestedMerge/EQ_pos2EQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,0.9917   (Solve) ,,0.385  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1304  
+./nestedMerge/EQ_pos2EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_pos2EQ_divide/libA CC2-Hybrid: equiv    ,0.2099   (Solve) ,,0.047  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1305  
+./nestedMerge/EQ_pos2EQ_getSign2/libA CC2-Hybrid: equiv    ,0.8457   (Solve) ,,0.276  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1181  
+./nestedMerge/EQ_pos2EQ_is_prime1/libA CC2-Hybrid: equiv    ,1.1410   (Solve) ,,0.471  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1144  
+./nestedMerge/EQ_pos2EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.1686   (Solve) ,,0.488  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,1.3070  
+./nestedMerge/EQ_pos2EQ_is_prime3/libA CC2-Hybrid: equiv    ,4.0273   (Solve) ,,3.044  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,1.3835  
+./nestedMerge/EQ_pos2EQ_ltfive/libA CC2-Hybrid: not equiv ,0.6581   (Solve) ,,0.306  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2253  
+./nestedMerge/EQ_pos2EQ_ltfiveBound/libA CC2-Hybrid: equiv    ,1.3893   (Solve) ,,0.671  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2415  
+./nestedMerge/EQ_pos2EQ_multiple/libA CC2-Hybrid: not equiv ,0.4711   (Solve) ,,0.214  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3919  
+./nestedMerge/EQ_pos2EQ_multipleBound/libA CC2-Hybrid: equiv    ,1.3043   (Solve) ,,0.685  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.4487  
+./nestedMerge/EQ_pos2EQ_odd/libA    CC2-Hybrid: equiv    ,11.3925  (Solve) ,,10.805 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_pos2EQ_one/libA    CC2-Hybrid: not equiv ,0.4426   (Solve) ,,0.131  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1778  
+./nestedMerge/EQ_pos2EQ_oneBound/libA CC2-Hybrid: equiv    ,1.2374   (Solve) ,,0.567  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2319  
+./nestedMerge/EQ_pos2EQ_oneN2/libA  CC2-Hybrid: equiv    ,1.1352   (Solve) ,,0.500  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1967  
+Disagreement error: ./nestedMerge/EQ_pos2EQ_oneN2/libA
+./nestedMerge/EQ_pos2EQ_pos/libA    CC2-Hybrid: equiv    ,0.9398   (Solve) ,,0.314  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_pos2EQ_pos2/libA   CC2-Hybrid: equiv    ,11.3925  (Solve) ,,11.163 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_pos2EQ_pos3/libA   CC2-Hybrid: equiv    ,0.9890   (Solve) ,,0.390  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1293  
+./nestedMerge/EQ_pos2EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,109.5066 (Solve) ,,107.802	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1682  
+./nestedMerge/EQ_pos2NEQ_LoopMult20/libA CC2-Hybrid: equiv    ,0.9729   (Solve) ,,0.377  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1300  
+./nestedMerge/EQ_pos2NEQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,0.8781   (Solve) ,,0.287  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1307  
+./nestedMerge/EQ_pos2NEQ_getSign/libA CC2-Hybrid: not equiv ,0.3746   (Solve) ,,0.146  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1658  
+./nestedMerge/EQ_pos3EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_pos3EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0173   (Solve) ,,0.435  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.7499  
+./nestedMerge/EQ_pos3EQ_odd/libA    CC2-Hybrid: equiv    ,11.2590  (Solve) ,,10.742 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,27.5841 
+./nestedMerge/EQ_pos3EQ_pos/libA    CC2-Hybrid: equiv    ,0.8353   (Solve) ,,0.279  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_pos3EQ_pos2/libA   CC2-Hybrid: equiv    ,11.3319  (Solve) ,,11.169 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_pos3EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.4293  (Solve) ,,41.812 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1431  
+./nestedMerge/EQ_posEQ_Add/libA     CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_posEQ_Const/libA   CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_posEQ_LoopMult20/libA CC2-Hybrid: equiv    ,0.9704   (Solve) ,,0.379  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1319  
+./nestedMerge/EQ_posEQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,0.9733   (Solve) ,,0.378  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1304  
+./nestedMerge/EQ_posEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EQ_posEQ_divide/libA  CC2-Hybrid: equiv    ,0.2088   (Solve) ,,0.047  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1302  
+./nestedMerge/EQ_posEQ_getSign2/libA CC2-Hybrid: equiv    ,0.8438   (Solve) ,,0.274  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1180  
+./nestedMerge/EQ_posEQ_is_prime1/libA CC2-Hybrid: equiv    ,1.0349   (Solve) ,,0.452  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1132  
+./nestedMerge/EQ_posEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.1525   (Solve) ,,0.481  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,1.2947  
+./nestedMerge/EQ_posEQ_is_prime3/libA CC2-Hybrid: equiv    ,3.4832   (Solve) ,,2.500  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,1.3826  
+./nestedMerge/EQ_posEQ_ltfive/libA  CC2-Hybrid: not equiv ,0.6600   (Solve) ,,0.304  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2250  
+./nestedMerge/EQ_posEQ_ltfiveBound/libA CC2-Hybrid: equiv    ,1.3913   (Solve) ,,0.674  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2411  
+./nestedMerge/EQ_posEQ_multiple/libA CC2-Hybrid: not equiv ,0.4736   (Solve) ,,0.216  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3921  
+./nestedMerge/EQ_posEQ_multipleBound/libA CC2-Hybrid: equiv    ,1.2937   (Solve) ,,0.679  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.4485  
+./nestedMerge/EQ_posEQ_odd/libA     CC2-Hybrid: equiv    ,11.3762  (Solve) ,,10.797 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_posEQ_one/libA     CC2-Hybrid: not equiv ,0.4374   (Solve) ,,0.127  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1793  
+./nestedMerge/EQ_posEQ_oneBound/libA CC2-Hybrid: equiv    ,1.2345   (Solve) ,,0.565  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2315  
+./nestedMerge/EQ_posEQ_oneN2/libA   CC2-Hybrid: equiv    ,1.1266   (Solve) ,,0.498  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1964  
+Disagreement error: ./nestedMerge/EQ_posEQ_oneN2/libA
+./nestedMerge/EQ_posEQ_pos/libA     CC2-Hybrid: equiv    ,0.9299   (Solve) ,,0.311  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_posEQ_pos2/libA    CC2-Hybrid: equiv    ,11.4023  (Solve) ,,11.175 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EQ_posEQ_pos3/libA    CC2-Hybrid: equiv    ,1.0059   (Solve) ,,0.400  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1295  
+./nestedMerge/EQ_posEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,114.8765 (Solve) ,,113.163	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1991  
+./nestedMerge/EQ_posNEQ_LoopMult20/libA CC2-Hybrid: equiv    ,0.9861   (Solve) ,,0.384  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1301  
+./nestedMerge/EQ_posNEQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,0.8874   (Solve) ,,0.298  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.1302  
+./nestedMerge/EQ_posNEQ_getSign/libA CC2-Hybrid: not equiv ,0.3754   (Solve) ,,0.147  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1678  
+./nestedMerge/EXTRA_ultra_prime_sumEQ_Add/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EXTRA_ultra_prime_sumEQ_Const/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EXTRA_ultra_prime_sumEQ_LoopMult20/libA CC2-Hybrid: equiv    ,3.3270   (Solve) ,,2.124  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_LoopUnreach20/libA CC2-Hybrid: equiv    ,2.1047   (Solve) ,,0.892  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/EXTRA_ultra_prime_sumEQ_divide/libA CC2-Hybrid: equiv    ,0.4521   (Solve) ,,0.097  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_getSign2/libA CC2-Hybrid: equiv    ,1.9092   (Solve) ,,0.745  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_is_prime1/libA CC2-Hybrid: equiv    ,2.0577   (Solve) ,,0.826  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_is_prime2/libA CC2-Hybrid: equiv    ,3.3360   (Solve) ,,1.439  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6476  
+Disagreement error: ./nestedMerge/EXTRA_ultra_prime_sumEQ_is_prime2/libA
+./nestedMerge/EXTRA_ultra_prime_sumEQ_is_prime3/libA CC2-Hybrid: equiv    ,3.7873   (Solve) ,,2.056  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_ltfive/libA CC2-Hybrid: equiv    ,89.1541  (Solve) ,,87.991 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_ltfiveBound/libA CC2-Hybrid: equiv    ,3.7266   (Solve) ,,1.646  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_multiple/libA CC2-Hybrid: timeout  ,300.0000 (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_multipleBound/libA CC2-Hybrid: equiv    ,1.9583   (Solve) ,,0.756  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_odd/libA CC2-Hybrid: equiv    ,24.1563  (Solve) ,,22.929 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_one/libA CC2-Hybrid: not equiv ,1.2177   (Solve) ,,0.522  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1254  
+./nestedMerge/EXTRA_ultra_prime_sumEQ_oneBound/libA CC2-Hybrid: equiv    ,3.6680   (Solve) ,,1.782  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_oneN2/libA CC2-Hybrid: equiv    ,3.3799   (Solve) ,,1.588  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_pos/libA CC2-Hybrid: equiv    ,33.7847  (Solve) ,,31.906 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_pos2/libA CC2-Hybrid: equiv    ,33.4161  (Solve) ,,32.825 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEQ_pos3/libA CC2-Hybrid: equiv    ,1.9403   (Solve) ,,0.763  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumEXTRA_ultra_prime_sum/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumNEQ_LoopMult20/libA CC2-Hybrid: equiv    ,58.5660  (Solve) ,,57.188 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/EXTRA_ultra_prime_sumNEQ_LoopUnreach20/libA CC2-Hybrid: not equiv ,4.0615   (Solve) ,,2.427  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.2531  
+./nestedMerge/EXTRA_ultra_prime_sumNEQ_getSign/libA CC2-Hybrid: not equiv ,0.8996   (Solve) ,,0.425  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.1204  
+./nestedMerge/NEQ_LoopMult20EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/NEQ_LoopMult20EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.1006   (Solve) ,,0.509  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3862  
+Disagreement error: ./nestedMerge/NEQ_LoopMult20EQ_is_prime2/libA
+./nestedMerge/NEQ_LoopMult20EQ_odd/libA CC2-Hybrid: equiv    ,1.0600   (Solve) ,,0.537  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2387  
+./nestedMerge/NEQ_LoopMult20EQ_pos/libA CC2-Hybrid: equiv    ,1.1659   (Solve) ,,0.627  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3976  
+./nestedMerge/NEQ_LoopMult20EQ_pos2/libA CC2-Hybrid: equiv    ,11.3156  (Solve) ,,11.170 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.4260  
+./nestedMerge/NEQ_LoopMult20EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.5764  (Solve) ,,41.975 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3753  
+./nestedMerge/NEQ_LoopUnreach20EQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/NEQ_LoopUnreach20EQ_is_prime2/libA CC2-Hybrid: equiv    ,1.1049   (Solve) ,,0.513  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.3843  
+Disagreement error: ./nestedMerge/NEQ_LoopUnreach20EQ_is_prime2/libA
+./nestedMerge/NEQ_LoopUnreach20EQ_odd/libA CC2-Hybrid: equiv    ,1.0531   (Solve) ,,0.528  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.2394  
+./nestedMerge/NEQ_LoopUnreach20EQ_pos/libA CC2-Hybrid: equiv    ,1.1734   (Solve) ,,0.630  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3964  
+./nestedMerge/NEQ_LoopUnreach20EQ_pos2/libA CC2-Hybrid: equiv    ,11.3173  (Solve) ,,11.170 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.4187  
+./nestedMerge/NEQ_LoopUnreach20EXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,42.5671  (Solve) ,,41.967 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: equiv    ,0.3740  
+./nestedMerge/NEQ_getSignEQ_UnchLoop/libA CC2-Hybrid: unknown  ,0.0000   (Solve) ,,0.000  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: unknown  ,0.0000  
+./nestedMerge/NEQ_getSignEQ_is_prime2/libA CC2-Hybrid: equiv    ,1.0341   (Solve) ,,0.465  	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: not equiv ,0.6767  
+Disagreement error: ./nestedMerge/NEQ_getSignEQ_is_prime2/libA
+./nestedMerge/NEQ_getSignEQ_odd/libA CC2-Hybrid: equiv    ,12.1930  (Solve) ,,11.675 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/NEQ_getSignEQ_pos/libA CC2-Hybrid: equiv    ,11.2508  (Solve) ,,10.701 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/NEQ_getSignEQ_pos2/libA CC2-Hybrid: equiv    ,11.3056  (Solve) ,,11.157 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
+./nestedMerge/NEQ_getSignEXTRA_ultra_prime_sum/libA CC2-Hybrid: equiv    ,78.4634  (Solve) ,,77.331 	CC2-Concurrent: unknown  ,0.0000   (Solve) ,,0.000  	KleeCLEVER: timeout  ,300.0000
