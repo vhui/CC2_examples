@@ -15,12 +15,14 @@ NEQ     = 'not equiv'
 UNKNOWN = 'unknown'
 ERROR   = 'error'
 TIMEOUT   = 300
+REVE_RESULT = UNKNOWN
 CC2_RESULT = UNKNOWN
 CC2_CBMC_RESULT = UNKNOWN
 CC2_SEA_RESULT = UNKNOWN
 CC2_KLEE_RESULT = UNKNOWN
 CLEVER_RESULT = UNKNOWN
 KLEECLEVER_RESULT = UNKNOWN
+REVE_TIME = 0
 CC2_TIME = 0
 CC2_CBMC_TIME = 0
 CC2_SEA_TIME = 0
@@ -43,10 +45,14 @@ for dirpath, dnames, fnames in os.walk("./"):
     #print(dirpath)
     if len(dirpath.split("/")) != 4: #not inside gen folder!
         continue
-    if "mergedHard" not in dirpath:
+    if "/libB" not in dirpath:
+        continue
+    if "/mergedHard" not in dirpath:
         continue
     if "mergedHard_CallMerge" in dirpath:
         continue
+    """if "/mergedHard_CallMerge" not in dirpath:
+        continue"""
     if "EXTRA_prime_sum" in dirpath:
         continue
     #if "eq/" not in dirpath and "extras" not in dirpath:
@@ -108,6 +114,7 @@ for dirpath, dnames, fnames in os.walk("./"):
     #import pdb; pdb.set_trace()
     continue"""
 
+    REVE_RESULT = UNKNOWN
     CC2_RESULT = UNKNOWN
     CC2_SEA_RESULT = UNKNOWN
     CC2_CBMC_RESULT = UNKNOWN
@@ -121,6 +128,7 @@ for dirpath, dnames, fnames in os.walk("./"):
     CC2_CONC_TIME = 0
     CLEVER_TIME = 0
     KLEECLEVER_TIME = 0
+    REVE_TIME = 0
     CC2_KLEE_TIME = 0
     CC2_SOLVE_TIME = 0
     CC2_SEA_SOLVE_TIME = 0
@@ -380,9 +388,60 @@ for dirpath, dnames, fnames in os.walk("./"):
         CLEVER_RESULT = "timeout"
         CLEVER_TIME = TIMEOUT"""
 
-    print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))    
-    with open("timingJul23SeqMerge.csv", 'a') as f:
-        f.write("%-20s: %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
+    try:
+        args0 = shlex.split("../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s" % 
+                            (c_client, old_c_filename.replace("mergedHard", "reve_mergedHard"),
+                                new_c_filename.replace("mergedHard", "reve_mergedHard")) )
+        proc0 = subprocess.Popen(args0, stdout=PIPE, stderr=PIPE)
+        args = shlex.split("time -p z3 -in")
+        proc = subprocess.Popen(args, stdin=proc0.stdout, stdout=PIPE, stderr=PIPE)
+        out, err = proc.communicate(timeout=TIMEOUT)
+
+        #import pdb; pdb.set_trace()
+        #out0, err0 = proc0.communicate(timeout=TIMEOUT)
+        #out0_lines = out0.decode('utf8').split('\n')
+        #err0_lines = err0.decode('utf8').split('\n')
+        out_lines = out.decode('utf8').split('\n')
+        err_lines = err.decode('utf8').split('\n')
+
+        if "real " in err_lines[-4]: #more robust?
+          REVE_TIME = float(err_lines[-4].split()[1])
+
+        """for line in out_lines:
+          if "time: " in line:
+              CC2_SEA_TIME = float(line.lstrip("time: ").rstrip())"""
+        for line in out_lines:
+          if "unsat" in line:
+              REVE_RESULT = EQ
+              break
+          if "sat" in line:
+              REVE_RESULT = NEQ
+        for line in out_lines:
+          if "Segmentation" in line:
+              REVE_RESULT = ERROR
+        for line in err_lines:
+          if "Segmentation" in line:
+              REVE_RESULT = ERROR
+        """for num, line in enumerate(out_lines):
+          if ("/** %s" % c_client) in line:
+              if "unchanged FALSE" in out_lines[num+2]:
+                  REVE_RESULT = NEQ
+              elif "unchanged TRUE" in out_lines[num+2]:
+                  REVE_RESULT = EQ"""
+        #import pdb; pdb.set_trace()
+    except TimeoutExpired:
+        proc.kill()
+        #out, err = proc.communicate()
+        args = shlex.split("./kill_procs.sh") 
+        kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
+        out, err = kill.communicate(timeout=TIMEOUT)
+        REVE_RESULT = "timeout"
+        REVE_TIME   = TIMEOUT
+
+
+    print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f\tllReve: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, REVE_RESULT, REVE_TIME))    
+    with open("timingJul31SeqMerge.csv_libB", 'a') as f:
+        f.write("%-20s: %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, REVE_RESULT, REVE_TIME))
     if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout":
         print("Disagreement error: %s" % dirpath)
     

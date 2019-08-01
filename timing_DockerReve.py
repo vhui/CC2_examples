@@ -43,10 +43,10 @@ for dirpath, dnames, fnames in os.walk("./"):
     #print(dirpath)
     if len(dirpath.split("/")) != 4: #not inside gen folder!
         continue
-    if "reve_mergedHard" not in dirpath:
+    if "reve_nestedMerge" not in dirpath:
         continue
-    if "mergedHard_CallMerge" in dirpath:
-        continue
+    #if "mergedHard_CallMerge" in dirpath:
+    #    continue
     if "EXTRA_prime_sum" in dirpath:
         continue
     #if "eq/" not in dirpath and "extras" not in dirpath:
@@ -387,7 +387,7 @@ for dirpath, dnames, fnames in os.walk("./"):
 
 
     print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tllReve: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, CC2_SEA_RESULT, CC2_SEA_TIME))    
-    with open("reveTimingJul23SeqMerge.csv", 'a') as f:
+    with open("reveTimingJul30NestMerge.csv", 'a') as f:
         f.write("%-20s: %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_SEA_RESULT, CC2_SEA_TIME))
     #if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout":
     #    print("Disagreement error: %s" % dirpath)
