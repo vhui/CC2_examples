@@ -1,3 +1,8 @@
+int lib(int x, int y)
+{
+  return x / y;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -27,11 +32,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int lib(int x, int y)
-{
-  return x / y;
 }
 
 

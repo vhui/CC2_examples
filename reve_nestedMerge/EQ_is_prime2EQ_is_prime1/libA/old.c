@@ -1,26 +1,5 @@
 extern int __inlineCall(int);
 
-int client(int x)
-{
-  int INLINED_RET_0;
-  int INLINED_RET_1;
-  int ret;
-  if (x < 19)
-  {
-    int x_copy0 = 20;
-    INLINED_RET_0 = __inlineCall(lib(x_copy0, 0));
-    ret = INLINED_RET_0;
-  }
-  else
-  {
-    int x_copy1 = x;
-    INLINED_RET_1 = __inlineCall(lib(x_copy1, 0));
-    ret = INLINED_RET_1;
-  }
-
-  return ret;
-}
-
 int lib(int x, int b)
 {
   int ret = 1;
@@ -43,6 +22,27 @@ int lib(int x, int b)
 
     }
 
+  }
+
+  return ret;
+}
+
+int client(int x)
+{
+  int INLINED_RET_0;
+  int INLINED_RET_1;
+  int ret;
+  if (x < 19)
+  {
+    int x_copy0 = 20;
+    INLINED_RET_0 = __inlineCall(lib(x_copy0, 0));
+    ret = INLINED_RET_0;
+  }
+  else
+  {
+    int x_copy1 = x;
+    INLINED_RET_1 = __inlineCall(lib(x_copy1, 0));
+    ret = INLINED_RET_1;
   }
 
   return ret;

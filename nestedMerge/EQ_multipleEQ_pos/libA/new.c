@@ -1,3 +1,18 @@
+int lib(int x)
+{
+  int ret;
+  if (x < 0)
+  {
+    ret = -x;
+  }
+  else
+  {
+    ret = x;
+  }
+
+  return ret;
+}
+
 int client(int x)
 {
   int INLINED_RET_0;
@@ -22,21 +37,6 @@ int client(int x)
   else
   {
     ret = 0;
-  }
-
-  return ret;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x < 0)
-  {
-    ret = -x;
-  }
-  else
-  {
-    ret = x;
   }
 
   return ret;

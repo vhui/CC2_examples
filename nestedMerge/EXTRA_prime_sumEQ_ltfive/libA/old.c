@@ -1,3 +1,14 @@
+int lib(int x)
+{
+  int ret;
+  if (x < 5)
+    ret = 5;
+  else
+    ret = x;
+
+  return ret;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -26,17 +37,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x < 5)
-    ret = 5;
-  else
-    ret = x;
-
-  return ret;
 }
 
 

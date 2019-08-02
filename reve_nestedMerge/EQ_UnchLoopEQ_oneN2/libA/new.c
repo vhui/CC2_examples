@@ -1,5 +1,16 @@
 extern int __inlineCall(int);
 
+int lib(int x)
+{
+  int ret;
+  if (x > 11)
+    ret = 11;
+  else
+    ret = x - 1;
+
+  return ret;
+}
+
 int clientmain()
 {
   int INLINED_RET_0;
@@ -16,17 +27,6 @@ int clientmain()
 
   INLINED_RET_0 = ret_copy0;
   return INLINED_RET_0;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x > 11)
-    ret = 11;
-  else
-    ret = x - 1;
-
-  return ret;
 }
 
 

@@ -1,3 +1,8 @@
+int lib(int x)
+{
+  return (x + 1) % 2;
+}
+
 int client(int x)
 {
   int INLINED_RET_1;
@@ -37,11 +42,6 @@ int client(int x)
   }
 
   return ret;
-}
-
-int lib(int x)
-{
-  return (x + 1) % 2;
 }
 
 

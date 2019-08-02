@@ -1,3 +1,10 @@
+int foo(int a, int b)
+{
+  const int d = 3;
+  int c = b + a;
+  return c + d;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -15,13 +22,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int foo(int a, int b)
-{
-  const int d = 3;
-  int c = b + a;
-  return c + d;
 }
 
 

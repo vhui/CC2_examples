@@ -1,5 +1,15 @@
 extern int __inlineCall(int);
 
+int lib(int x, int y)
+{
+  if (y == 0)
+  {
+    return 0;
+  }
+
+  return x / y;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -29,16 +39,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int lib(int x, int y)
-{
-  if (y == 0)
-  {
-    return 0;
-  }
-
-  return x / y;
 }
 
 

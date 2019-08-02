@@ -1,27 +1,3 @@
-int client(int x)
-{
-  int INLINED_RET_0;
-  int ret = x;
-  if (x > 0)
-  {
-    int x_copy0 = x;
-    int ret_copy0;
-    if (x_copy0 < 19)
-    {
-      ret_copy0 = lib(20, 1);
-    }
-    else
-    {
-      ret_copy0 = lib(x_copy0, 1);
-    }
-
-    INLINED_RET_0 = ret_copy0;
-    ret = INLINED_RET_0;
-  }
-
-  return ret;
-}
-
 int lib(int x, int b)
 {
   int ret = 1;
@@ -44,6 +20,30 @@ int lib(int x, int b)
 
     }
 
+  }
+
+  return ret;
+}
+
+int client(int x)
+{
+  int INLINED_RET_0;
+  int ret = x;
+  if (x > 0)
+  {
+    int x_copy0 = x;
+    int ret_copy0;
+    if (x_copy0 < 19)
+    {
+      ret_copy0 = lib(20, 1);
+    }
+    else
+    {
+      ret_copy0 = lib(x_copy0, 1);
+    }
+
+    INLINED_RET_0 = ret_copy0;
+    ret = INLINED_RET_0;
   }
 
   return ret;

@@ -1,3 +1,15 @@
+int lib(int x)
+{
+  int counter = 0;
+  while ((x % 2) == 0)
+  {
+    x = x / 2;
+    counter++;
+  }
+
+  return counter;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -26,18 +38,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int lib(int x)
-{
-  int counter = 0;
-  while ((x % 2) == 0)
-  {
-    x = x / 2;
-    counter++;
-  }
-
-  return counter;
 }
 
 

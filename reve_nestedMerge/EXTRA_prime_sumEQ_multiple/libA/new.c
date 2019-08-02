@@ -1,5 +1,10 @@
 extern int __inlineCall(int);
 
+int lib(int x)
+{
+  return x % 6;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -29,11 +34,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int lib(int x)
-{
-  return x % 6;
 }
 
 

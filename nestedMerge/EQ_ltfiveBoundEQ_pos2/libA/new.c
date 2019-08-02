@@ -1,7 +1,27 @@
+int lib(int x)
+{
+  int ret;
+  if (x < 0)
+  {
+    ret = -x;
+  }
+  else
+  {
+    while (x >= 0)
+    {
+      x = x;
+    }
+
+    ret = x;
+  }
+
+  return ret;
+}
+
 int client(int x)
 {
-  int INLINED_RET_0;
   int INLINED_RET_1;
+  int INLINED_RET_0;
   int ret;
   if ((x < (-100)) || (x > 100))
   {
@@ -42,26 +62,6 @@ int client(int x)
       ret = (INLINED_RET_1 / 5) - 1;
     }
 
-  }
-
-  return ret;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x < 0)
-  {
-    ret = -x;
-  }
-  else
-  {
-    while (x >= 0)
-    {
-      x = x;
-    }
-
-    ret = x;
   }
 
   return ret;

@@ -1,5 +1,14 @@
 extern int __inlineCall(int);
 
+int foo(int a, int b)
+{
+  int c = 0;
+  for (int i = 1; i <= a; ++i)
+    c += b;
+
+  return c;
+}
+
 int client(int n)
 {
   int INLINED_RET_1;
@@ -33,15 +42,6 @@ int client(int n)
 
   INLINED_RET_1 = ret_copy1;
   return INLINED_RET_1 == 0;
-}
-
-int foo(int a, int b)
-{
-  int c = 0;
-  for (int i = 1; i <= a; ++i)
-    c += b;
-
-  return c;
 }
 
 

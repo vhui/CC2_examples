@@ -1,12 +1,5 @@
 extern int __inlineCall(int);
 
-int client(int x)
-{
-  int INLINED_RET_0;
-  INLINED_RET_0 = __inlineCall(foo(5, 900));
-  return INLINED_RET_0;
-}
-
 int foo(int a, int b)
 {
   int c = 1;
@@ -16,6 +9,13 @@ int foo(int a, int b)
   }
 
   return c;
+}
+
+int client(int x)
+{
+  int INLINED_RET_0;
+  INLINED_RET_0 = __inlineCall(foo(5, 900));
+  return INLINED_RET_0;
 }
 
 

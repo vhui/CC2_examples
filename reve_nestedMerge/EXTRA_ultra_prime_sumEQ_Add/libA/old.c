@@ -1,9 +1,15 @@
 extern int __inlineCall(int);
 
+int foo(int a, int b)
+{
+  int c = a + b;
+  return c;
+}
+
 int client(int n)
 {
-  int INLINED_RET_0;
   int INLINED_RET_1;
+  int INLINED_RET_0;
   int i = 0;
   int sum = 0;
   while (i <= n)
@@ -19,12 +25,6 @@ int client(int n)
 
   INLINED_RET_1 = __inlineCall(foo(5, 900));
   return INLINED_RET_1 == 0;
-}
-
-int foo(int a, int b)
-{
-  int c = a + b;
-  return c;
 }
 
 

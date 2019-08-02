@@ -1,3 +1,12 @@
+int foo(int a, int b)
+{
+  int c = 0;
+  for (int i = 1; i <= a; ++i)
+    c += b;
+
+  return c;
+}
+
 int clientmain()
 {
   int INLINED_RET_0;
@@ -10,15 +19,6 @@ int clientmain()
 
   INLINED_RET_0 = ret_copy0;
   return INLINED_RET_0;
-}
-
-int foo(int a, int b)
-{
-  int c = 0;
-  for (int i = 1; i <= a; ++i)
-    c += b;
-
-  return c;
 }
 
 

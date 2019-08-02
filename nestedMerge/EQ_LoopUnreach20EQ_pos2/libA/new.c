@@ -1,3 +1,23 @@
+int lib(int x)
+{
+  int ret;
+  if (x < 0)
+  {
+    ret = -x;
+  }
+  else
+  {
+    while (x >= 0)
+    {
+      x = x;
+    }
+
+    ret = x;
+  }
+
+  return ret;
+}
+
 int clientmain(int x)
 {
   int INLINED_RET_0;
@@ -17,26 +37,6 @@ int clientmain(int x)
 
     INLINED_RET_0 = ret_copy0;
     ret = INLINED_RET_0;
-  }
-
-  return ret;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x < 0)
-  {
-    ret = -x;
-  }
-  else
-  {
-    while (x >= 0)
-    {
-      x = x;
-    }
-
-    ret = x;
   }
 
   return ret;

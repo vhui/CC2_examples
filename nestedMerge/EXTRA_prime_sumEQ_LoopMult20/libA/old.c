@@ -1,3 +1,12 @@
+int foo(int a, int b)
+{
+  int c = 0;
+  for (int i = 1; i <= b; ++i)
+    c += a;
+
+  return c;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -22,15 +31,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int foo(int a, int b)
-{
-  int c = 0;
-  for (int i = 1; i <= b; ++i)
-    c += a;
-
-  return c;
 }
 
 

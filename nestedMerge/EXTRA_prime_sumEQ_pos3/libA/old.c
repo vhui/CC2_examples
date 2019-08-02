@@ -1,3 +1,25 @@
+int lib(int x)
+{
+  int ret;
+  if (x < 0)
+  {
+    ret = -x;
+  }
+  else
+  {
+    int counter = 0;
+    while (x > 0)
+    {
+      x += 1;
+      counter += 1;
+    }
+
+    ret = counter;
+  }
+
+  return ret;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -22,28 +44,6 @@ int client(int n)
   }
 
   return sum;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x < 0)
-  {
-    ret = -x;
-  }
-  else
-  {
-    int counter = 0;
-    while (x > 0)
-    {
-      x += 1;
-      counter += 1;
-    }
-
-    ret = counter;
-  }
-
-  return ret;
 }
 
 

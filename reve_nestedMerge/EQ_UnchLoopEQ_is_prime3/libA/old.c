@@ -1,31 +1,5 @@
 extern int __inlineCall(int);
 
-int clientmain()
-{
-  int INLINED_RET_0;
-  int x_copy0 = 5;
-  int ret_copy0;
-  int primes_copy0[8] = {2, 3, 5, 7, 11, 13, 17, 19};
-  int done_copy0 = 0;
-  for (int i_copy0 = 0; i_copy0 < 8; i_copy0++)
-  {
-    if ((!done_copy0) && (x_copy0 == primes_copy0[i_copy0]))
-    {
-      ret_copy0 = 1;
-      done_copy0 = 1;
-    }
-
-  }
-
-  if (!done_copy0)
-  {
-    ret_copy0 = __inlineCall(lib(x_copy0, 1));
-  }
-
-  INLINED_RET_0 = ret_copy0;
-  return INLINED_RET_0;
-}
-
 int lib(int x, int b)
 {
   int ret = 1;
@@ -51,6 +25,32 @@ int lib(int x, int b)
   }
 
   return ret;
+}
+
+int clientmain()
+{
+  int INLINED_RET_0;
+  int x_copy0 = 5;
+  int ret_copy0;
+  int primes_copy0[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int done_copy0 = 0;
+  for (int i_copy0 = 0; i_copy0 < 8; i_copy0++)
+  {
+    if ((!done_copy0) && (x_copy0 == primes_copy0[i_copy0]))
+    {
+      ret_copy0 = 1;
+      done_copy0 = 1;
+    }
+
+  }
+
+  if (!done_copy0)
+  {
+    ret_copy0 = __inlineCall(lib(x_copy0, 1));
+  }
+
+  INLINED_RET_0 = ret_copy0;
+  return INLINED_RET_0;
 }
 
 

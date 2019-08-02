@@ -1,5 +1,22 @@
 extern int __inlineCall(int);
 
+int lib(int a)
+{
+  int i = 2;
+  int count = 0;
+  while (i < a)
+  {
+    if ((a % i) != 0)
+    {
+      count = 1;
+    }
+
+    i++;
+  }
+
+  return count;
+}
+
 int client(int n)
 {
   int INLINED_RET_0;
@@ -45,23 +62,6 @@ int client(int n)
 
   INLINED_RET_1 = __inlineCall(lib(sum_copy1)) == 0;
   return INLINED_RET_1 == 0;
-}
-
-int lib(int a)
-{
-  int i = 2;
-  int count = 0;
-  while (i < a)
-  {
-    if ((a % i) != 0)
-    {
-      count = 1;
-    }
-
-    i++;
-  }
-
-  return count;
 }
 
 

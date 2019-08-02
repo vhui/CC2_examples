@@ -1,3 +1,14 @@
+int lib(int x)
+{
+  int ret;
+  if (x > 10)
+    ret = 12;
+  else
+    ret = x + 1;
+
+  return ret;
+}
+
 int client(int x)
 {
   int INLINED_RET_1;
@@ -35,17 +46,6 @@ int client(int x)
     INLINED_RET_1 = ret_copy1;
     ret = INLINED_RET_1;
   }
-
-  return ret;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x > 10)
-    ret = 12;
-  else
-    ret = x + 1;
 
   return ret;
 }

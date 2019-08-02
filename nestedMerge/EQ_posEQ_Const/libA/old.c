@@ -1,3 +1,9 @@
+int foo(int a, int b)
+{
+  int c = a + b;
+  return c + 3;
+}
+
 int client(int x)
 {
   int INLINED_RET_0;
@@ -15,12 +21,6 @@ int client(int x)
   }
 
   return ret;
-}
-
-int foo(int a, int b)
-{
-  int c = a + b;
-  return c + 3;
 }
 
 

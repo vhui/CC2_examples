@@ -1,5 +1,17 @@
 extern int __inlineCall(int);
 
+int lib(int x)
+{
+  int counter = 0;
+  while ((x % 2) == 0)
+  {
+    x = x / 2;
+    counter++;
+  }
+
+  return counter;
+}
+
 int client(int x)
 {
   int INLINED_RET_0;
@@ -39,18 +51,6 @@ int client(int x)
   }
 
   return ret;
-}
-
-int lib(int x)
-{
-  int counter = 0;
-  while ((x % 2) == 0)
-  {
-    x = x / 2;
-    counter++;
-  }
-
-  return counter;
 }
 
 

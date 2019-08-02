@@ -1,11 +1,3 @@
-int clientmain()
-{
-  int INLINED_RET_0;
-  int x_copy0 = 5;
-  INLINED_RET_0 = lib(x_copy0);
-  return INLINED_RET_0;
-}
-
 int lib(int x)
 {
   int ret;
@@ -15,6 +7,14 @@ int lib(int x)
     ret = 1;
 
   return ret;
+}
+
+int clientmain()
+{
+  int INLINED_RET_0;
+  int x_copy0 = 5;
+  INLINED_RET_0 = lib(x_copy0);
+  return INLINED_RET_0;
 }
 
 

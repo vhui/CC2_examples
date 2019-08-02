@@ -1,9 +1,20 @@
 extern int __inlineCall(int);
 
+int lib(int x)
+{
+  int ret;
+  if (x > 10)
+    ret = 11;
+  else
+    ret = x;
+
+  return ret;
+}
+
 int client(int x)
 {
-  int INLINED_RET_0;
   int INLINED_RET_1;
+  int INLINED_RET_0;
   int ret;
   if (x < 19)
   {
@@ -53,17 +64,6 @@ int client(int x)
     INLINED_RET_1 = ret_copy1;
     ret = INLINED_RET_1;
   }
-
-  return ret;
-}
-
-int lib(int x)
-{
-  int ret;
-  if (x > 10)
-    ret = 11;
-  else
-    ret = x;
 
   return ret;
 }

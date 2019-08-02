@@ -1,3 +1,8 @@
+int lib(int x)
+{
+  return (x + 1) % 2;
+}
+
 int client(int x)
 {
   int INLINED_RET_0;
@@ -14,11 +19,6 @@ int client(int x)
 
   INLINED_RET_0 = ret_copy0;
   return INLINED_RET_0;
-}
-
-int lib(int x)
-{
-  return (x + 1) % 2;
 }
 
 

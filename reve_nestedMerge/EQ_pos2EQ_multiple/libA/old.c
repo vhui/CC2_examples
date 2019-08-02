@@ -1,9 +1,14 @@
 extern int __inlineCall(int);
 
+int lib(int x)
+{
+  return x % 5;
+}
+
 int client(int x)
 {
-  int INLINED_RET_1;
   int INLINED_RET_0;
+  int INLINED_RET_1;
   int ret;
   if (x > 0)
   {
@@ -41,11 +46,6 @@ int client(int x)
   }
 
   return ret;
-}
-
-int lib(int x)
-{
-  return x % 5;
 }
 
 
