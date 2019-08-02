@@ -1,3 +1,20 @@
+int lib(int a)
+{
+  int i = 2;
+  int count = 0;
+  while (i < a)
+  {
+    if ((a % i) != 0)
+    {
+      count++;
+    }
+
+    i++;
+  }
+
+  return count;
+}
+
 int client(int x, int n_copy1)
 {
   int ret;
@@ -23,22 +40,5 @@ int client(int x, int n_copy1)
   }
 
   return ret + (lib(sum_copy1) == 0);
-}
-
-int lib(int a)
-{
-  int i = 2;
-  int count = 0;
-  while (i < a)
-  {
-    if ((a % i) != 0)
-    {
-      count++;
-    }
-
-    i++;
-  }
-
-  return count;
 }
 

@@ -1,7 +1,7 @@
 int client(int n)
 {
-  int INLINED_RET_0;
   int INLINED_RET_1;
+  int INLINED_RET_0;
   int i = 0;
   int sum = 0;
   while (i <= n)
