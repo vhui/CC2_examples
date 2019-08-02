@@ -2,7 +2,7 @@ int client(int x)
 {
   int INLINED_RET_0;
   int ret;
-  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   int done = 0;
   for (int i = 0; i < 8; i++)
   {

@@ -8,7 +8,7 @@ int client(int n)
   {
     int x_copy0 = i;
     int ret_copy0;
-    unsigned int primes_copy0[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+    int primes_copy0[8] = {2, 3, 5, 7, 11, 13, 17, 19};
     int done_copy0 = 0;
     for (int i_copy0 = 0; i_copy0 < 8; i_copy0++)
     {
@@ -36,7 +36,7 @@ int client(int n)
 
   int x_copy1 = sum;
   int ret_copy1;
-  unsigned int primes_copy1[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes_copy1[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   int done_copy1 = 0;
   for (int i_copy1 = 0; i_copy1 < 8; i_copy1++)
   {
@@ -60,7 +60,7 @@ int client(int n)
 int lib(int x, int b)
 {
   int ret = 1;
-  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     ret = 0;
