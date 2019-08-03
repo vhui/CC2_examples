@@ -11,8 +11,8 @@ int foo(int a, int b)
 
 int client(int x)
 {
-  int INLINED_RET_1;
   int INLINED_RET_0;
+  int INLINED_RET_1;
   int ret;
   INLINED_RET_0 = foo(5, 900);
   if (x > INLINED_RET_0)
