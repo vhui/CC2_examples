@@ -19,8 +19,8 @@ int lib(int a)
 
 int client(int x)
 {
-  int INLINED_RET_0;
   int INLINED_RET_1;
+  int INLINED_RET_0;
   int ret;
   int n_copy0 = x;
   int i_copy0 = 0;
