@@ -128,10 +128,3 @@ int client(int c, int d, int c_copy1, int d_copy1, int c_copy2, int d_copy2, int
   return ((((((((((ret + ret_copy1) + ret_copy2) + ret_copy3) + ret_copy4) + ret_copy5) + ret_copy6) + ret_copy7) + ret_copy8) + ret_copy9) + ret_copy10) + ret_copy11;
 }
 
-int main()
-{
-  int a;
-  int b;
-  return client(a, b);
-}
-

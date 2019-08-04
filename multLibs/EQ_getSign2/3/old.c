@@ -1,13 +1,16 @@
 int lib(int x)
 {
+  int ret;
   if (x == 0)
-    return 0;
-
-  if (x < 0)
-    return -1;
+    ret = 0;
   else
-    return 1;
+    if (x < 0)
+    ret = -1;
+  else
+    ret = 1;
 
+
+  return ret;
 }
 
 int client(int x, int x_copy1, int x_copy2)
@@ -31,11 +34,5 @@ int client(int x, int x_copy1, int x_copy2)
   }
 
   return (ret + ret_copy1) + ret_copy2;
-}
-
-int main()
-{
-  int x;
-  return client(x);
 }
 

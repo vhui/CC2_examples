@@ -1,10 +1,12 @@
 int lib(int x)
 {
+  int ret;
   if (x > 11)
-    return 11;
+    ret = 11;
   else
-    return x - 1;
+    ret = x - 1;
 
+  return ret;
 }
 
 int client(int x, int x_copy1, int x_copy2, int x_copy3, int x_copy4, int x_copy5, int x_copy6, int x_copy7, int x_copy8, int x_copy9, int x_copy10)
@@ -164,11 +166,5 @@ int client(int x, int x_copy1, int x_copy2, int x_copy3, int x_copy4, int x_copy
   }
 
   return (((((((((ret + ret_copy1) + ret_copy2) + ret_copy3) + ret_copy4) + ret_copy5) + ret_copy6) + ret_copy7) + ret_copy8) + ret_copy9) + ret_copy10;
-}
-
-int main()
-{
-  int x;
-  return client(x);
 }
 

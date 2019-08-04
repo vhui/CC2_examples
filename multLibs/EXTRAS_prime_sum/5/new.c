@@ -1,3 +1,20 @@
+int lib(int a)
+{
+  int i = 2;
+  int count = 0;
+  while (i < a)
+  {
+    if ((a % i) != 0)
+    {
+      count = 1;
+    }
+
+    i++;
+  }
+
+  return count;
+}
+
 int client(int n, int n_copy1, int n_copy2, int n_copy3, int n_copy4)
 {
   int i = 0;
@@ -61,22 +78,5 @@ int client(int n, int n_copy1, int n_copy2, int n_copy3, int n_copy4)
   }
 
   return (((sum + sum_copy1) + sum_copy2) + sum_copy3) + sum_copy4;
-}
-
-int lib(int a)
-{
-  int i = 2;
-  int count = 0;
-  while (i < a)
-  {
-    if ((a % i) != 0)
-    {
-      count = 1;
-    }
-
-    i++;
-  }
-
-  return count;
 }
 

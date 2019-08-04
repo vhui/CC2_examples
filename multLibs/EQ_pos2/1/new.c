@@ -1,8 +1,9 @@
 int lib(int x)
 {
+  int ret;
   if (x < 0)
   {
-    return -x;
+    ret = -x;
   }
   else
   {
@@ -11,9 +12,10 @@ int lib(int x)
       x = x;
     }
 
-    return x;
+    ret = x;
   }
 
+  return ret;
 }
 
 int client(int x)
@@ -29,11 +31,5 @@ int client(int x)
   }
 
   return ret;
-}
-
-int main()
-{
-  int x;
-  return client(x);
 }
 

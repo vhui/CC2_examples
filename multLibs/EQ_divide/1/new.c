@@ -23,10 +23,3 @@ int client(int c, int d)
   return ret;
 }
 
-int main()
-{
-  int a;
-  int b;
-  return client(a, b);
-}
-

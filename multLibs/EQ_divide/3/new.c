@@ -43,10 +43,3 @@ int client(int c, int d, int c_copy1, int d_copy1, int c_copy2, int d_copy2)
   return (ret + ret_copy1) + ret_copy2;
 }
 
-int main()
-{
-  int a;
-  int b;
-  return client(a, b);
-}
-

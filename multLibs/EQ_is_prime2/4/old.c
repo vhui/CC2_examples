@@ -1,18 +1,22 @@
-int lib(unsigned int x, int b)
+int lib(int x, int b)
 {
   int ret = 1;
-  unsigned int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
+  int primes[8] = {2, 3, 5, 7, 11, 13, 17, 19};
   if (b == 0)
   {
     ret = 0;
   }
   else
   {
+    int done = 0;
     for (int i = 0; i < 8; i++)
     {
       int mod = x % primes[i];
-      if (mod == 0)
-        ret = x == primes[i];
+      if ((!done) && (mod == 0))
+      {
+        ret = 0;
+        done = 1;
+      }
 
     }
 
@@ -21,7 +25,7 @@ int lib(unsigned int x, int b)
   return ret;
 }
 
-int client(unsigned int x, unsigned int x_copy1, unsigned int x_copy2, unsigned int x_copy3)
+int client(int x, int x_copy1, int x_copy2, int x_copy3)
 {
   int ret;
   if (x < 19)
@@ -64,11 +68,5 @@ int client(unsigned int x, unsigned int x_copy1, unsigned int x_copy2, unsigned 
   }
 
   return ((ret + ret_copy1) + ret_copy2) + ret_copy3;
-}
-
-int main()
-{
-  unsigned int x = 2;
-  return client(x);
 }
 

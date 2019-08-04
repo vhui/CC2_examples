@@ -1,20 +1,3 @@
-int client(int n)
-{
-  int i = 0;
-  int sum = 0;
-  while (i <= n)
-  {
-    if (lib(i) == 0)
-    {
-      sum += i;
-    }
-
-    i++;
-  }
-
-  return sum;
-}
-
 int lib(int a)
 {
   int i = 2;
@@ -30,5 +13,22 @@ int lib(int a)
   }
 
   return count;
+}
+
+int client(int n)
+{
+  int i = 0;
+  int sum = 0;
+  while (i <= n)
+  {
+    if (lib(i) == 0)
+    {
+      sum += i;
+    }
+
+    i++;
+  }
+
+  return sum;
 }
 
