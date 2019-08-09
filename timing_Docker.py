@@ -45,20 +45,22 @@ for dirpath, dnames, fnames in os.walk("./"):
     #print(dirpath)
     if len(dirpath.split("/")) != 4: #not inside gen folder!
         continue
-    if "/libA" not in dirpath:
-        continue
-    if "/mergedHard" not in dirpath:
+    #if "/libA" not in dirpath:
+    #    continue
+    if "/multLibs" not in dirpath:
         continue
     if "mergedHard_CallMerge" in dirpath:
         continue
     """if "/mergedHard_CallMerge" not in dirpath:
         continue"""
-    if "EXTRA_prime_sum" in dirpath:
-        continue
+    #if "EXTRA_prime_sum" in dirpath:
+    #    continue
     #if "eq/" not in dirpath and "extras" not in dirpath:
     #    continue
-    #if "EQ_oneN2" in dirpath: start = True
-    #if not start: continue
+    if "EQ_ltfive" in dirpath: start = True
+    if not start: continue
+    if "13" in dirpath or "14" in dirpath or "15" in dirpath:
+        continue
     dirname = dirpath.split("/")[-1]
     """if "loopmult" not in dirpath and "LoopMult" not in dirpath and "loopunreach" not in dirpath and "LoopUnreach" not in dirpath:
         continue"""
@@ -137,14 +139,18 @@ for dirpath, dnames, fnames in os.walk("./"):
     CC2_CONC_SOLVE_TIME = 0
 
     try:    
+      #args = shlex.split("runlim -t 350 -s 3000 time -p CC2 --old %s --new %s \
+      #           --client %s --lib %s --hybrid-solving=True" 
+      #            % (old_c_filename, new_c_filename, c_client, c_lib))
       #TODO: WARNING - STATIC PATH ARGUMENT
-      args = shlex.split("time -p CC2 --old %s --new %s \
+      args = shlex.split("runlim -t 350 -s 10000 -o loggingOut/%s.runlimCC2 time -p CC2 --old %s --new %s \
                  --client %s --lib %s --hybrid-solving=True" 
-                  % (old_c_filename, new_c_filename, c_client, c_lib))
+                  % (dirpath.split("/")[-2]+dirpath.split("/")[-1], old_c_filename, new_c_filename, c_client, c_lib))
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
       out_lines = out.decode('utf8').split('\n')
       err_lines = err.decode('utf8').split('\n')
+      #print(proc.pid)
       for line in out_lines:
           if "error" in line:
               CC2_RESULT = ERROR
@@ -343,9 +349,9 @@ for dirpath, dnames, fnames in os.walk("./"):
 
     try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
-      args = shlex.split("time -p CLEVERC --old %s \
+      args = shlex.split("runlim -t 350 -s 10000 -o loggingOut/%s.runlimCLEVER time -p CLEVERC --old %s \
                 --new %s --client %s --lib %s" % 
-                            (old_c_filename, new_c_filename, c_client, c_lib))
+                            (dirpath.split("/")[-2]+dirpath.split("/")[-1], old_c_filename, new_c_filename, c_client, c_lib))
       proc = subprocess.Popen(args, stdout=PIPE, stderr=PIPE)
       out, err = proc.communicate(timeout=TIMEOUT)
       out_lines = out.decode('utf8').split('\n')
@@ -402,8 +408,8 @@ for dirpath, dnames, fnames in os.walk("./"):
         #args0 = shlex.split("../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s" % 
         #                    (c_client, old_c_filename.replace("mergedHard", "reve_mergedHard"),
         #                        new_c_filename.replace("mergedHard", "reve_mergedHard")) )
-        args0 = shlex.split("../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s" % 
-                            (c_client, old_c_filename.replace("./", "./reve_"),
+        args0 = shlex.split("runlim -t 350 -s 10000 -o loggingOut/%s.runlimREVE  ../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s" % 
+                            (dirpath.split("/")[-2]+dirpath.split("/")[-1], c_client, old_c_filename.replace("./", "./reve_"),
                                 new_c_filename.replace("./", "./reve_")) )
         proc0 = subprocess.Popen(args0, stdout=PIPE, stderr=PIPE)
         args = shlex.split("time -p z3 -in")
@@ -453,7 +459,7 @@ for dirpath, dnames, fnames in os.walk("./"):
 
 
     print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f\tllReve: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, REVE_RESULT, REVE_TIME))    
-    with open("timingAug5SeqMergeNew.csv", 'a') as f:
+    with open("timingAug10MultCall.csv_483z3", 'a') as f:
         f.write("%-20s: %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, REVE_RESULT, REVE_TIME))
     if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout":
         print("Disagreement error: %s" % dirpath)
