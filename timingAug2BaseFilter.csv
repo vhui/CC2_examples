@@ -1,0 +1,25 @@
+./eq/Add            : equiv,0.1376   ; unknown,0.0000   ; equiv,0.0759   ; equiv,0.0200  
+./eq/Const          : equiv,0.1180   ; unknown,0.0000   ; equiv,0.0768   ; equiv,0.0200  
+./eq/LoopMult20     : equiv,1.5009   ; unknown,0.0000   ; equiv,0.3680   ; timeout,300.0000 
+./eq/LoopUnreach20  : equiv,0.8978   ; unknown,0.0000   ; equiv,0.1223   ; equiv,0.0300  
+./eq/UnchLoop       : equiv,40.2358  ; unknown,0.0000   ; equiv,0.0937   ; equiv,1.0700  
+./eq/divide         : equiv,0.1645   ; unknown,0.0000   ; equiv,0.1050   ; equiv,0.0200  
+./eq/getSign2       : equiv,0.8285   ; unknown,0.0000   ; equiv,0.1344   ; equiv,0.0200  
+./eq/is_prime1      : equiv,0.9272   ; unknown,0.0000   ; equiv,0.0846   ; unknown,0.0200  
+./eq/is_prime2      : not equiv,1.3655   ; unknown,0.0000   ; not equiv,0.6937   ; unknown,0.0200  
+./eq/is_prime3      : equiv,3.8637   ; unknown,0.0000   ; equiv,0.7806   ; unknown,0.0200  
+./eq/ltfive         : not equiv,0.6133   ; unknown,0.0000   ; not equiv,0.1885   ; equiv,0.0300  
+./eq/ltfiveBound    : equiv,0.4032   ; unknown,0.0000   ; equiv,0.2478   ; equiv,0.0400  
+./eq/multiple       : not equiv,0.4325   ; unknown,0.0000   ; not equiv,0.2280   ; equiv,0.0200  
+./eq/multipleBound  : equiv,0.9961   ; unknown,0.0000   ; equiv,0.3111   ; equiv,0.0300  
+./eq/odd            : equiv,12.3431  ; unknown,0.0000   ; timeout,300.0000 ; unknown,0.0200  
+./eq/one            : not equiv,0.5758   ; unknown,0.0000   ; not equiv,0.1549   ; not equiv,0.0200  
+./eq/oneBound       : equiv,0.3694   ; unknown,0.0000   ; equiv,0.1804   ; equiv,0.0400  
+./eq/oneN2          : not equiv,0.5396   ; unknown,0.0000   ; not equiv,0.1644   ; equiv,0.0200  
+./eq/pos            : equiv,11.0328  ; unknown,0.0000   ; timeout,300.0000 ; unknown,0.0200  
+./eq/pos2           : equiv,0.2085   ; unknown,0.0000   ; timeout,300.0000 ; not equiv,0.0400  
+./eq/pos3           : equiv,0.8070   ; unknown,0.0000   ; equiv,0.0992   ; equiv,0.0200  
+./extras/ultra_prime_sum: equiv,84.2622  ; unknown,0.0000   ; timeout,300.0000 ; unknown,0.0300  
+./neq/LoopMult20    : not equiv,2.0264   ; unknown,0.0000   ; not equiv,0.3063   ; not equiv,0.1700 
+./neq/LoopUnreach20 : not equiv,0.3324   ; unknown,0.0000   ; not equiv,0.1260   ; not equiv,0.0300  
+./neq/getSign       : not equiv,0.3204   ; unknown,0.0000   ; not equiv,0.1216   ; not equiv,0.0200  
