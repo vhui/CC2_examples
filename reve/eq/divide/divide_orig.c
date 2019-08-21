@@ -6,7 +6,7 @@ int client(int c, int d) {
   int ret;
   if (d == 0) {
     ret = 0;
-  } else { ret = lib(c, d);
+  } else { ret = __inlineCall(lib(c, d));
   }
   return ret;
 }

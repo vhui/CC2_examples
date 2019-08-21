@@ -15,9 +15,9 @@ int client(int x){
 		ret = x;
 	} else {
 	  if (x < 0){
-		  ret = -lib((-x)*5)/5;
+		  ret = -__inlineCall(lib((-x)*5))/5;
 	  }else{
-		  ret = lib((x+1)*5)/5 - 1;
+		  ret = __inlineCall(lib((x+1)*5))/5 - 1;
 	  }
   }
   return ret;

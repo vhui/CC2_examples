@@ -14,10 +14,10 @@ int client(int x) {
   if (x < -100 || x > 100) {
     ret = x;
   } else {
-    if (x > lib(x))
+    if (x > __inlineCall(lib(x)))
       ret = x;
     else
-      ret = lib(x);
+      ret = __inlineCall(lib(x));
   }
   return ret;
 }

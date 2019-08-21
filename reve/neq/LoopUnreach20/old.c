@@ -5,7 +5,7 @@ int foo(int a, int b);
 int clientmain(int x) {
   int ret = 0;
 	if (x>=18 && x<22)
-		ret = foo(x,20);
+		ret = __inlineCall(foo(x,20));
 	return ret;
 }
 
