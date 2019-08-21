@@ -6,7 +6,7 @@
 
 int lib(int x, int b) {
   int ret = 1;
-  unsigned int primes[8] = {
+  int primes[8] = {
         2,     3,     5,     7,    11,    13,    17,    19};
   if (b == 0) {
     ret = 0;
@@ -26,7 +26,7 @@ int lib(int x, int b) {
 
 int client(int x){
   int ret;
-  unsigned int primes[8] = {
+  int primes[8] = {
         2,     3,     5,     7,    11,    13,    17,    19};
   int done = FALSE;
   for (int i = 0; i < NUMPRIMES; i++) {
