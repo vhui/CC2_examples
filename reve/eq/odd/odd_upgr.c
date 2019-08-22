@@ -6,7 +6,7 @@ int lib(int x) {
 
 int client(int x){
   int ret;
-	if (lib(x)==0){
+	if (__inlineCall(lib(x))==0){
 	   	ret = 1;
 	}else{
 		ret = 0;

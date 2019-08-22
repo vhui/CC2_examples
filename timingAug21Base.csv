@@ -1,0 +1,42 @@
+./eq/Add            : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0100  
+./eq/Const          : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0100  
+./eq/LoopMult10     : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./eq/LoopMult15     : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./eq/LoopMult2      : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./eq/LoopMult20     : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,43.2200 
+./eq/LoopMult5      : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./eq/LoopUnreach10  : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./eq/LoopUnreach15  : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./eq/LoopUnreach2   : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./eq/LoopUnreach20  : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0200  
+./eq/LoopUnreach5   : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./eq/UnchLoop       : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.2100  
+./eq/divide         : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0200  
+./eq/getSign2       : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0200  
+./eq/is_prime1      : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./eq/is_prime2      : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0200  
+./eq/is_prime3      : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0200  
+./eq/ltfive         : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0200  
+./eq/ltfiveBound    : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0300  
+./eq/multiple       : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0200  
+./eq/multipleBound  : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0200  
+./eq/odd            : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./eq/one            : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; not equiv,0.0300  
+./eq/oneBound       : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0400  
+./eq/oneN2          : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0300  
+./eq/pos            : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./eq/pos2           : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; not equiv,0.0300  
+./eq/pos3           : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,0.0300  
+./extras/prime_sum  : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; equiv,251.5400
+./extras/ultra_prime_sum: unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,1.5300  
+./neq/LoopMult10    : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./neq/LoopMult15    : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./neq/LoopMult2     : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./neq/LoopMult20    : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; not equiv,0.5800  
+./neq/LoopMult5     : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./neq/LoopUnreach10 : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./neq/LoopUnreach15 : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./neq/LoopUnreach2  : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./neq/LoopUnreach20 : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; not equiv,0.0200  
+./neq/LoopUnreach5  : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; unknown,0.0100  
+./neq/getSign       : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000   ; not equiv,0.0200  

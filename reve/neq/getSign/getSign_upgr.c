@@ -10,5 +10,5 @@ int lib(int x) {
 }
 
 int client(int x){
-  return lib(x);
+  return __inlineCall(lib(x));
 }

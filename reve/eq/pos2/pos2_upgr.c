@@ -17,9 +17,9 @@ int lib(int x) {
 int client(int x){
   int ret;
 	if (x > 0) {
-		ret = -lib(-x);
+		ret = -__inlineCall(lib(-x));
 	}else{
-		ret = lib(x);
+		ret = __inlineCall(lib(x));
 	}
   return ret;
 }
