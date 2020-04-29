@@ -1,3 +1,5 @@
+/*TODO: Not changed YET*/
+
 extern int __mark(int);
 
 int equalize(int *a, int n) {
