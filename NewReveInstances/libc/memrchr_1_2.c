@@ -15,8 +15,8 @@ void *memrchr(const void *s, int c, size_t n) {
 }
 
 
-#include <hurd.h>
-#include <hurd/lookup.h>
+#include "hurd.h"
+#include "hurd/lookup.h"
 #include <string.h>
 #include <fcntl.h>
 

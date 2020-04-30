@@ -40,14 +40,14 @@
 #include <linux/cdrom.h>
 #include <linux/errno.h>
 #include <linux/string.h>
-#include <linux/bcd.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+//#include <linux/bcd.h>
+//#include <linux/blkdev.h>
+//#include <linux/slab.h>
 
 #include <scsi/scsi.h>
-#include <scsi/scsi_cmnd.h>
-#include <scsi/scsi_device.h>
-#include <scsi/scsi_host.h>
+//#include <scsi/scsi_cmnd.h>
+//#include <scsi/scsi_device.h>
+//#include <scsi/scsi_host.h>
 #include <scsi/scsi_ioctl.h>
 
 #include "sr.h"
