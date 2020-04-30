@@ -36,8 +36,9 @@ void *sbrk(ptrdiff_t increment) {
 
 //#include "dl-tunables.h"
 //#include <not-errno.h>
+extern void _dl_fatal_printf(const char*);
 
-static char *
+char *
 tunables_strdup (const char *in)
 {
   size_t i = 0;

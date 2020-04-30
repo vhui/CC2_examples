@@ -86,7 +86,7 @@ void* memset(void * dst, int s, size_t count) {
 
 
 /* Prototypes for local functions.  */
-static int first_wday (int year, int mon, int wday);
+int first_wday (int year, int mon, int wday);
 static int check_mday (int year, int mon, int mday);
 
 /* Set to one of the following values to indicate an error.

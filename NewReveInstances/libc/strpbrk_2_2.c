@@ -11,6 +11,11 @@ char *strpbrk(const char *s, const char *accept) {
 
 #include <nss.h>
 #include <string.h>
+# define NSS_INVALID_FIELD_CHARACTERS ":\n"
+const char __nss_invalid_field_characters[] = NSS_INVALID_FIELD_CHARACTERS;
+//extern const char __nss_invalid_field_characters[] attribute_hidden;
+extern char * __strdup (const char *s); 
+
 
 /* Rewrite VALUE to a valid field value in the NSS database.  Invalid
    characters are replaced with a single space character ' '.  If

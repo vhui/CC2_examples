@@ -46,7 +46,7 @@ static struct charclass {
 };
 
 /* look for "class:]" in pattern */
-static struct charclass *charclass_lookup(const char *pattern) {
+struct charclass *charclass_lookup(const char *pattern) {
   unsigned int i;
 
   for (i = 0; i< sizeof(allclasses)/sizeof(*allclasses); i++) {

@@ -40,7 +40,7 @@ char *strchr(register const char *t, int c) {
 
 static int is_printable(uint32_t value);
 */
-#include <limits.h>
+#include <stdint.h>
 
 /* Return 1 if the character is permitted in a PrintableString */
 int is_printable(uint32_t value) //static

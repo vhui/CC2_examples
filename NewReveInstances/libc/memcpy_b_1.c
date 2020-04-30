@@ -1,4 +1,6 @@
 extern int __mark(int);
+extern int strnlen(const char*, size_t);
+
 
 void _memcpy(int *dest, int *src, int size) {
    int i = 0;

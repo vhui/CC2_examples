@@ -144,7 +144,7 @@ char *CC;
 char *INC;
 
 
-static int
+int
 check_header (const char *file_name, const char **except)
 {
   char line[BUFSIZ], *command;

@@ -17,6 +17,13 @@ size_t strcspn(const char *s, const char *reject) {
 
 //////////////////////////////////////
 #include <string.h>
+#define __builtin_expect(foo,bar) (foo)
+#define __expect(foo,bar) __builtin_expect((long)(foo),bar)
+
+/* idea for these macros taken from Linux kernel */
+#define __likely(foo) __expect((foo),1)
+#define __unlikely(foo) __expect((foo),0)
+
 
 char*strtok_r(char*s,const char*delim,char**ptrptr) {
   char*tmp=0;

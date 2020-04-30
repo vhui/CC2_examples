@@ -182,7 +182,7 @@ sync_method; */
 typedef unsigned long long int hp_timing_t;
 
 
-static hp_timing_t
+hp_timing_t
 get_clockfreq (void)
 {
   /* We read the information from the /proc filesystem.  It contains at
