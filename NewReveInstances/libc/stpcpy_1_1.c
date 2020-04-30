@@ -47,6 +47,11 @@ static struct dll {
 } *dlls, dllroot;
 
 
+extern int __loadlibrary(const char* fn);
+extern ssize_t __write1(const char* s);
+extern size_t _strlen(const char* s);
+extern int _strcmp(const void* str1,const void* str2);
+
 static int loadlibrary(const char* fn) {
   char lp[200];
   int r;
