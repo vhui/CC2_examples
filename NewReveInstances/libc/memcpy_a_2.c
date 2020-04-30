@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
-#include "dietstdio.h"
+//#include "dietstdio.h"
 
 struct str_data {
   char* str;
@@ -11,14 +11,27 @@ struct str_data {
   size_t size;
 };
 
-static int swrite(const void*ptr, size_t nmemb, void* cookie) {
+
+extern int __mark(int);
+
+int _memcpy(int *dest, int *src, int size) {
+   int *start = src;
+   while(__mark(42) & (src - start < size)) {
+      *dest = *src;
+      dest++;
+      src++;
+   }
+   return 1;
+}
+
+int swrite(const void*ptr, size_t nmemb, void* cookie) {
   struct str_data* sd=cookie;
   size_t tmp=sd->size-sd->len;
   if (tmp>0) {
     size_t len=nmemb;
     if (len>tmp) len=tmp;
     if (sd->str) {
-      memcpy(sd->str+sd->len,ptr,len);
+      _memcpy(sd->str+sd->len,ptr,len);
       sd->str[sd->len+len]=0;
     }   
     sd->len+=len;
@@ -28,14 +41,3 @@ static int swrite(const void*ptr, size_t nmemb, void* cookie) {
 
 
 
-extern int __mark(int);
-
-int memcpy(int *dest, int *src, int size) {
-   int *start = src;
-   while(__mark(42) & (src - start < size)) {
-      *dest = *src;
-      dest++;
-      src++;
-   }
-   return 1;
-}

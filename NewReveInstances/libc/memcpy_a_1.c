@@ -35,7 +35,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
-#include "dietstdio.h"
+//#include "dietstdio.h"
 
 struct str_data {
   char* str;
@@ -43,26 +43,10 @@ struct str_data {
   size_t size;
 };
 
-static int swrite(const void*ptr, size_t nmemb, void* cookie) {
-  struct str_data* sd=cookie;
-  size_t tmp=sd->size-sd->len;
-  if (tmp>0) {
-    size_t len=nmemb;
-    if (len>tmp) len=tmp;
-    if (sd->str) {
-      memcpy(sd->str+sd->len,ptr,len);
-      sd->str[sd->len+len]=0;
-    }   
-    sd->len+=len;
-  }
-  return nmemb;
-}
-
-
 
 extern int __mark(int);
 
-int memcpy(int *dest, int *src, int size) {
+int _memcpy(int *dest, int *src, int size) {
    int i = 0;
    while(__mark(42) & (i < size)) {
       dest[i] = src[i];
@@ -70,6 +54,23 @@ int memcpy(int *dest, int *src, int size) {
    }
    return 1;
 }
+
+
+int swrite(const void*ptr, size_t nmemb, void* cookie) {
+  struct str_data* sd=cookie;
+  size_t tmp=sd->size-sd->len;
+  if (tmp>0) {
+    size_t len=nmemb;
+    if (len>tmp) len=tmp;
+    if (sd->str) {
+      _memcpy(sd->str+sd->len,ptr,len);
+      sd->str[sd->len+len]=0;
+    }   
+    sd->len+=len;
+  }
+  return nmemb;
+}
+
 
 
 /*#include <stdarg.h>

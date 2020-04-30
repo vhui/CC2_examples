@@ -52,7 +52,18 @@ extern ssize_t __write1(const char* s);
 extern size_t _strlen(const char* s);
 extern int _strcmp(const void* str1,const void* str2);
 
-static int loadlibrary(const char* fn) {
+
+/* openbsd */
+extern int __mark(int);
+char *
+stpcpy(char *to, const char *from)
+{
+	for (; __mark(0) & ((*to = *from) != '\0'); ++from, ++to);
+	return(to);
+}
+
+
+int loadlibrary(const char* fn) {
   char lp[200];
   int r;
   char* c;
@@ -93,7 +104,7 @@ again:
 	  lp[i]='/';
 	  stpcpy(lp+i+1,fn);
 	  r=__loadlibrary(lp);
-	  if (r==0) return;
+	  if (r==0) return 0; //MODIFIED
 	}
 	if (c[i]==0) break;
 	c+=i+1; i=0; goto again;
@@ -104,12 +115,3 @@ again:
   return r;
 }
 
-
-/* openbsd */
-extern int __mark(int);
-char *
-stpcpy(char *to, const char *from)
-{
-	for (; __mark(0) & ((*to = *from) != '\0'); ++from, ++to);
-	return(to);
-}
