@@ -12,3 +12,38 @@ char *strpbrk(const char *s, const char *accept) {
 
     return NULL;
 }
+
+#include <nss.h>
+#include <string.h>
+
+/* Rewrite VALUE to a valid field value in the NSS database.  Invalid
+   characters are replaced with a single space character ' '.  If
+   VALUE is NULL, the empty string is returned.  *TO_BE_FREED is
+   overwritten with a pointer the caller has to free if the function
+   returns successfully.  On failure, return NULL.  */
+const char *
+__nss_rewrite_field (const char *value, char **to_be_freed)
+{
+  *to_be_freed = NULL;
+  if (value == NULL)
+    return "";
+
+  /* Search for non-allowed characters.  */
+  const char *p = strpbrk (value, __nss_invalid_field_characters);
+  if (p == NULL)
+    return value;
+  *to_be_freed = __strdup (value);
+  if (*to_be_freed == NULL)
+    return NULL;
+
+  /* Switch pointer to freshly-allocated buffer.  */
+  char *bad = *to_be_freed + (p - value);
+  do
+    {
+      *bad = ' ';
+      bad = strpbrk (bad + 1, __nss_invalid_field_characters);
+    }
+  while (bad != NULL);
+
+  return *to_be_freed;
+}

@@ -1,10 +1,26 @@
+/* openbsd */
+#include <stddef.h>
+
+extern int __mark(int);
+void *memrchr(const void *s, int c, size_t n) {
+    const unsigned char *cp;
+
+    if (n != 0) {
+        cp = (unsigned char *)s + n;
+        do {
+            if (*(--cp) == (unsigned char)c)
+                return ((void *)cp);
+        } while (__mark(0) & (--n != 0));
+    }
+    return (NULL);
+}
+
+
 #include <hurd.h>
 #include <hurd/lookup.h>
 #include <string.h>
 #include <fcntl.h>
 
-/* openbsd */
-#include <stddef.h>
 
 /* This is the same as hurd_file_name_split, except that it ignores
    trailing slashes (so *NAME is never "").  */
@@ -68,18 +84,4 @@ __hurd_directory_name_split (error_t (*use_init_port)
       *name = (char *) file_name;
       return (*use_init_port) (INIT_PORT_CWDIR, &addref);
     }
-}
-
-extern int __mark(int);
-void *memrchr(const void *s, int c, size_t n) {
-    const unsigned char *cp;
-
-    if (n != 0) {
-        cp = (unsigned char *)s + n;
-        do {
-            if (*(--cp) == (unsigned char)c)
-                return ((void *)cp);
-        } while (__mark(0) & (--n != 0));
-    }
-    return (NULL);
 }

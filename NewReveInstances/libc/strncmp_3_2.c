@@ -1,6 +1,25 @@
 /* dietlibc */
 #include <stddef.h>
 
+extern int __mark(int);
+int strncmp(const char *s1, const char *s2, size_t n) {
+    register const unsigned char *a = (const unsigned char *)s1;
+    register const unsigned char *b = (const unsigned char *)s2;
+    register const unsigned char *fini = a + n;
+    while (a != fini) {
+        register int res = *a - *b;
+        if (res)
+            return res;
+        if (!*a)
+            return 0;
+        ++a;
+        ++b;
+        __mark(42);
+    }
+    return 0;
+}
+
+
 /////////////////////////////////////////////////////
 #ifndef _GNU_SOURCE
 # define _GNU_SOURCE 1
@@ -232,21 +251,3 @@ check_header (const char *file_name, const char **except)
   return result;
 }
 /////////////////////////////////////////////////////
-
-extern int __mark(int);
-int strncmp(const char *s1, const char *s2, size_t n) {
-    register const unsigned char *a = (const unsigned char *)s1;
-    register const unsigned char *b = (const unsigned char *)s2;
-    register const unsigned char *fini = a + n;
-    while (a != fini) {
-        register int res = *a - *b;
-        if (res)
-            return res;
-        if (!*a)
-            return 0;
-        ++a;
-        ++b;
-        __mark(42);
-    }
-    return 0;
-}

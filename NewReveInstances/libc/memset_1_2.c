@@ -1,6 +1,17 @@
 /* dietlibc */
 #include <stddef.h>
 
+extern int __mark(int);
+void* memset(void * dst, int s, size_t count) {
+    register char * a = dst;
+    count++;	/* this actually creates smaller code than using count-- */
+    while (--count) {
+        *a++ = s;
+        __mark(0);
+    }
+    return dst;
+}
+
 /////////////////////////////
 /* Copyright (C) 2002-2020 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -93,7 +104,7 @@ int getdate_err;
 
 
 /* Returns the first weekday WDAY of month MON in the year YEAR.  */
-static int
+int
 first_wday (int year, int mon, int wday)
 {
   struct tm tm;
@@ -112,14 +123,3 @@ first_wday (int year, int mon, int wday)
 
 
 ///////////////////////////////////////////////
-
-extern int __mark(int);
-void* memset(void * dst, int s, size_t count) {
-    register char * a = dst;
-    count++;	/* this actually creates smaller code than using count-- */
-    while (--count) {
-        *a++ = s;
-        __mark(0);
-    }
-    return dst;
-}

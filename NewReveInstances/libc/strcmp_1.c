@@ -1,5 +1,23 @@
 //https://github.com/torvalds/linux/blob/master/lib/string.c#L722
 
+
+extern int __mark(int);
+int strcmp(const char *p1, const char *p2) {
+    const unsigned char *s1 = (const unsigned char *)p1;
+    const unsigned char *s2 = (const unsigned char *)p2;
+    unsigned char c1, c2;
+
+    do {
+        c1 = (unsigned char)*s1++;
+        c2 = (unsigned char)*s2++;
+        if (c1 == '\0')
+            return c1 - c2;
+    } while ((c1 == c2) && __mark(42));
+
+    return c1 - c2;
+}
+
+
 #include <linux/types.h>
 #include <linux/string.h>
 //#include <linux/ctype.h>
@@ -45,20 +63,4 @@ int match_string(const char * const *array, size_t n, const char *string)
 	}
 
 	return -EINVAL;
-}
-
-extern int __mark(int);
-int strcmp(const char *p1, const char *p2) {
-    const unsigned char *s1 = (const unsigned char *)p1;
-    const unsigned char *s2 = (const unsigned char *)p2;
-    unsigned char c1, c2;
-
-    do {
-        c1 = (unsigned char)*s1++;
-        c2 = (unsigned char)*s2++;
-        if (c1 == '\0')
-            return c1 - c2;
-    } while ((c1 == c2) && __mark(42));
-
-    return c1 - c2;
 }

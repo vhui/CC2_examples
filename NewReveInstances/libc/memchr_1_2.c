@@ -1,5 +1,22 @@
 #include <stddef.h>
 
+// openbsd
+extern int __mark(int);
+void *
+memchr(const void *s, int c, size_t n)
+{
+	if (n != 0) {
+		const unsigned char *p = s;
+
+		do {
+			if (*p++ == (unsigned char)c)
+				return ((void *)(p - 1));
+		} while (__mark(42) & (--n != 0));
+	}
+	return (NULL);
+}
+
+
 ////////////////////////
 /*	$OpenBSD: memmem.c,v 1.4 2015/08/31 02:53:57 guenther Exp $ */
 /*-
@@ -66,20 +83,4 @@ memmem(const void *l, size_t l_len, const void *s, size_t s_len)
 	return NULL;
 }
 //DEF_WEAK(memmem);
-///////////////////////////////////
-
-// openbsd
-extern int __mark(int);
-void *
-memchr(const void *s, int c, size_t n)
-{
-	if (n != 0) {
-		const unsigned char *p = s;
-
-		do {
-			if (*p++ == (unsigned char)c)
-				return ((void *)(p - 1));
-		} while (__mark(42) & (--n != 0));
-	}
-	return (NULL);
-}
+//////////////////////////////////
