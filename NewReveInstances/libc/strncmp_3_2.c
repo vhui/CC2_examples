@@ -19,235 +19,98 @@ int strncmp(const char *s1, const char *s2, size_t n) {
     return 0;
 }
 
-
 /////////////////////////////////////////////////////
-#ifndef _GNU_SOURCE
-# define _GNU_SOURCE 1
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <arpa/inet.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <resolv.h>
+#include <net/if.h>
+#include "dietfeatures.h"
+
+int __dns_fd=-1;
+#ifdef WANT_IPV6_DNS
+int __dns_fd6=-1;
 #endif
 
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+/* the ad-hoc internal API from hell ;-) */
+void __dns_make_fd(void);
+void __dns_make_fd6(void);
+void __dns_readstartfiles(void);
+int __dns_decodename(const unsigned char *packet,unsigned int offset,unsigned char *dest,
+		     unsigned int maxlen,const unsigned char* behindpacket)
 
-#define HEADER_MAX          256
+#ifdef WANT_FULL_RESOLV_CONF
+unsigned int __dns_search;
+char *__dns_domains[8];
+#endif
 
-static char macrofile[] = "/tmp/isomac.XXXXXX";
-
-/* ISO C header names including Amendment 1 (without ".h" suffix).  */
-static char *header[] =
-{
-  "assert", "ctype", "errno", "float", "iso646", "limits", "locale",
-  "math", "setjmp", "signal", "stdarg", "stddef", "stdio", "stdlib",
-  "string", "time", "wchar", "wctype"
-};
-
-/* Macros with these prefixes are considered okay.  */
-static char *prefix[] =
-{
-  "_", "E", "is", "str", "mem", "SIG", "FLT_", "DBL_", "LDBL_",
-  "LC_", "wmem", "wcs"
-};
-
-/* Macros with these suffixes are considered okay.  Will not work for
-   parametrized macros with arguments.  */
-static char *suffix[] =
-{
-  "_MAX", "_MIN"
-};
-
-/* These macros are considered okay. In fact, these are just more prefixes.  */
-static char *macros[] =
-{
-  "BUFSIZ", "CHAR_BIT", "CHAR_MAX", "CHAR_MIN", "CLOCKS_PER_SEC",
-  "DBL_DIG", "DBL_EPSILON", "DBL_MANT_DIG", "DBL_MAX",
-  "DBL_MAX_10_EXP", "DBL_MAX_EXP", "DBL_MIN", "DBL_MIN_10_EXP",
-  "DBL_MIN_EXP", "EDOM", "EILSEQ", "EOF", "ERANGE", "EXIT_FAILURE",
-  "EXIT_SUCCESS", "FILENAME_MAX", "FLT_DIG", "FLT_EPSILON",
-  "FLT_MANT_DIG", "FLT_MAX", "FLT_MAX_10_EXP", "FLT_MAX_EXP",
-  "FLT_MIN", "FLT_MIN_10_EXP", "FLT_MIN_EXP", "FLT_RADIX",
-  "FLT_ROUNDS", "FOPEN_MAX", "HUGE_VAL", "INT_MAX", "INT_MIN",
-  "LC_ALL", "LC_COLLATE", "LC_CTYPE", "LC_MONETARY", "LC_NUMERIC",
-  "LC_TIME", "LDBL_DIG", "LDBL_EPSILON", "LDBL_MANT_DIG", "LDBL_MAX",
-  "LDBL_MAX_10_EXP", "LDBL_MAX_EXP", "LDBL_MIN", "LDBL_MIN_10_EXP",
-  "LDBL_MIN_EXP", "LONG_MAX", "LONG_MIN", "L_tmpnam", "MB_CUR_MAX",
-  "MB_LEN_MAX", "NDEBUG", "NULL", "RAND_MAX", "SCHAR_MAX",
-  "SCHAR_MIN", "SEEK_CUR", "SEEK_END", "SEEK_SET", "SHRT_MAX",
-  "SHRT_MIN", "SIGABRT", "SIGFPE", "SIGILL", "SIGINT", "SIGSEGV",
-  "SIGTERM", "SIG_DFL", "SIG_ERR", "SIG_IGN", "TMP_MAX", "UCHAR_MAX",
-  "UINT_MAX", "ULONG_MAX", "USHRT_MAX", "WCHAR_MAX", "WCHAR_MIN",
-  "WEOF", "_IOFBF", "_IOLBF", "_IONBF", "abort", "abs", "acos",
-  "acosf", "acosl", "and", "and_eq", "asctime", "asin", "asinf",
-  "asinl", "assert", "atan", "atan2", "atan2f", "atan2l", "atanf",
-  "atanl", "atexit", "atof", "atoi", "atol", "bitand", "bitor",
-  "bsearch", "btowc", "calloc", "ceil", "ceilf", "ceill", "clearerr",
-  "clock", "clock_t", "compl", "cos", "cosf", "cosh", "coshf",
-  "coshl", "cosl", "ctime", "difftime", "div", "div_t", "errno",
-  "exit", "exp", "expf", "expl", "fabs", "fabsf", "fabsl", "fclose",
-  "feof", "ferror", "fflush", "fgetc", "fgetpos", "fgets", "fgetwc",
-  "fgetws", "floor", "floorf", "floorl", "fmod", "fmodf", "fmodl",
-  "fopen", "fprintf", "fputc", "fputs", "fputwc", "fputws", "fread",
-  "free", "freopen", "frexp", "frexpf", "frexpl", "fscanf", "fseek",
-  "fsetpos", "ftell", "fwide", "fwprintf", "fwrite", "fwscanf",
-  "getc", "getchar", "getenv", "gets", "getwc", "getwchar", "gmtime",
-  "isalnum", "isalpha", "iscntrl", "isdigit", "isgraph", "islower",
-  "isprint", "ispunct", "isspace", "isupper", "iswalnum", "iswalpha",
-  "iswcntrl", "iswctype", "iswdigit", "iswgraph", "iswlower",
-  "iswprint", "iswpunct", "iswspace", "iswupper", "iswxdigit",
-  "isxdigit", "labs", "ldexp", "ldexpf", "ldexpl", "ldiv", "ldiv_t",
-  "localeconv", "localtime", "log", "log10", "log10f", "log10l",
-  "logf", "logl", "longjmp", "malloc", "mblen", "mbrlen", "mbrtowc",
-  "mbsinit", "mbsrtowcs", "mbstate_t", "mbstowcs", "mbtowc", "memchr",
-  "memcmp", "memcpy", "memmove", "memset", "mktime", "modf", "modff",
-  "modfl", "not", "not_eq", "offsetof", "or", "or_eq", "perror",
-  "pow", "powf", "powl", "printf", "ptrdiff_t", "putc", "putchar",
-  "puts", "putwc", "putwchar", "qsort", "raise", "rand", "realloc",
-  "remove", "rename", "rewind", "scanf", "setbuf", "setjmp",
-  "setlocale", "setvbuf", "sig_atomic_t", "signal", "sin", "sinf",
-  "sinh", "sinhf", "sinhl", "sinl", "size_t", "sprintf", "sqrt",
-  "sqrtf", "sqrtl", "srand", "sscanf", "stderr", "stdin", "stdout",
-  "strcat", "strchr", "strcmp", "strcoll", "strcpy", "strcspn",
-  "strerror", "strftime", "strlen", "strncat", "strncmp", "strncpy",
-  "strpbrk", "strrchr", "strspn", "strstr", "strtod", "strtok",
-  "strtol", "strtoul", "strxfrm", "swprintf", "swscanf", "system",
-  "tan", "tanf", "tanh", "tanhf", "tanhl", "tanl", "time", "time_t",
-  "tmpfile", "tmpnam", "tolower", "toupper", "towctrans", "towlower",
-  "towupper", "ungetc", "ungetwc", "va_arg", "va_copy", "va_end", "va_start",
-  "vfprintf", "vfwprintf", "vprintf", "vsprintf", "vswprintf",
-  "vwprintf", "wchar_t", "wcrtomb", "wcscat", "wcschr", "wcscmp",
-  "wcscoll", "wcscpy", "wcscspn", "wcsftime", "wcslen", "wcsncat",
-  "wcsncmp", "wcsncpy", "wcspbrk", "wcsrchr", "wcsrtombs", "wcsspn",
-  "wcsstr", "wcstod", "wcstok", "wcstol", "wcstombs", "wcstoul",
-  "wcsxfrm", "wctob", "wctomb", "wctrans", "wctrans_t", "wctype",
-  "wctype_t", "wint_t", "wmemchr", "wmemcmp", "wmemcpy", "wmemmove",
-  "wmemset", "wprintf", "wscanf", "xor", "xor_eq"
-};
-
-#define NUMBER_OF_HEADERS              (sizeof header / sizeof *header)
-#define NUMBER_OF_PREFIXES             (sizeof prefix / sizeof *prefix)
-#define NUMBER_OF_SUFFIXES             (sizeof suffix / sizeof *suffix)
-#define NUMBER_OF_MACROS               (sizeof macros / sizeof *macros)
-
-
-/* Format string to build command to invoke compiler.  */
-static const char fmt[] = "\
-echo \"#include <%s>\" |\
-%s -E -dM -ansi -pedantic %s -D_LIBC -D_ISOMAC \
--DIN_MODULE=MODULE_extramodules -I. \
--isystem `%s --print-prog-name=include` - 2> /dev/null > %s";
-
-
-/* The compiler we use (given on the command line).  */
-char *CC;
-/* The -I parameters for CC to find all headers.  */
-char *INC;
-
-
-int
-check_header (const char *file_name, const char **except)
-{
-  char line[BUFSIZ], *command;
-  FILE *input;
-  int result = 0;
-
-  command = malloc (sizeof fmt + strlen (file_name) + 2 * strlen (CC)
-		    + strlen (INC) + strlen (macrofile));
-
-  if (command == NULL)
-    {
-      puts ("No more memory.");
-      exit (1);
-    }
-
-  puts (file_name);
-  sprintf (command, fmt, file_name, CC, INC, CC, macrofile);
-
-  if (system (command))
-    {
-      puts ("system() returned nonzero");
-      result = 1;
-    }
-  free (command);
-  input = fopen (macrofile, "r");
-
-  if (input == NULL)
-    {
-      printf ("Could not read %s: ", macrofile);
-      perror (NULL);
-      return 1;
-    }
-
-  while (fgets (line, sizeof line, input) != NULL)
-    {
-      int i, okay = 0;
-      size_t endmac;
-      const char **cpp;
-      if (strlen (line) < 9 || line[7] != ' ')
-	{ /* "#define A" */
-	  printf ("Malformed input, expected '#define MACRO'\ngot '%s'\n",
-		  line);
-	  result = 1;
-	  continue;
-	}
-      for (i = 0; i < NUMBER_OF_PREFIXES; ++i)
-	{
-	  if (!strncmp (line+8, prefix[i], strlen (prefix[i]))) {
-	    ++okay;
-	    break;
-	  }
-	}
-      if (okay)
-	continue;
-      for (i = 0; i < NUMBER_OF_MACROS; ++i)
-	{
-	  if (!strncmp (line + 8, macros[i], strlen (macros[i])))
-	    {
-	      ++okay;
-	      break;
-	    }
-	}
-      if (okay)
-	continue;
-      /* Find next char after the macro identifier; this can be either
-	 a space or an open parenthesis.  */
-      endmac = strcspn (line + 8, " (");
-      if (line[8+endmac] == '\0')
-	{
-	  printf ("malformed input, expected '#define MACRO VALUE'\n"
-		  "got '%s'\n", line);
-	  result = 1;
-	  continue;
-	}
-      for (i = 0; i < NUMBER_OF_SUFFIXES; ++i)
-	{
-	  size_t len = strlen (suffix[i]);
-	  if (!strncmp (line + 8 + endmac - len, suffix[i], len))
-	    {
-	      ++okay;
-	      break;
-	    }
-	}
-      if (okay)
-	continue;
-      if (except != NULL)
-	for (cpp = except; *cpp != NULL; ++cpp)
+void __dns_readstartfiles(void) {
+  int fd;
+  char __buf[4096];
+  char *buf=__buf;
+  int len;
+  if (_res.nscount>0) return;
+  {
+    char *cacheip=getenv("DNSCACHEIP");
+#ifdef WANT_FULL_RESOLV_CONF
+    __dns_search=0;
+#endif
+    if (cacheip)
+      if (parsesockaddr(cacheip,_res.nsaddr_list))
+	++_res.nscount;
+  }
+  _res.options=RES_RECURSE;
+  if ((fd=open("/etc/resolv.conf",O_RDONLY))<0) return;
+  len=read(fd,buf,4096);
+  close(fd);
+  {
+    char *last=buf+len;
+    for (; buf<last;) {
+      if (!strncmp(buf,"nameserver",10)) {
+	buf+=10;
+	while (buf<last && *buf!='\n') {
+	  while (buf<last && isblank(*buf)) ++buf;
 	  {
-	    size_t len = strlen (*cpp);
-	    if (!strncmp (line + 8, *cpp, len) && isspace (line[8 + len]))
-	      {
-		++okay;
-		break;
-	      }
+	    char *tmp=buf;
+	    struct sockaddr_in i;
+	    char save;
+	    while (buf<last && !isspace(*buf)) ++buf;
+	    if (buf>=last) break;
+	    save=*buf;
+	    *buf=0;
+	    if (parsesockaddr(tmp,&_res.nsaddr_list[_res.nscount]))
+	      if (_res.nscount<MAXNS) ++_res.nscount;
+	    *buf=save;
 	  }
-      if (!okay)
-	{
-	  fputs (line, stdout);
-	  result = 2;
 	}
+      }
+#ifdef WANT_FULL_RESOLV_CONF
+      else if ((!strncmp(buf,"search",6) || !strncmp(buf,"domain",6)) &&
+	       (__dns_search < sizeof(__dns_domains)/sizeof(__dns_domains[0]))) {
+	buf+=6;
+	while (buf<last && *buf!='\n') {
+	  char save;
+	  while (buf<last && (*buf==',' || isblank(*buf))) ++buf;
+	  __dns_domains[__dns_search]=buf;
+	  while (buf<last && (*buf=='.' || *buf=='-' || isalnum(*buf))) ++buf;
+	  save=*buf;
+	  if (buf<last) *buf=0;
+	  if (__dns_domains[__dns_search]<buf &&
+	      (__dns_domains[__dns_search]=strdup(__dns_domains[__dns_search])))
+	    ++__dns_search;
+	  if (buf<last) *buf=save;
+	}
+	continue;
+      }
+#endif
+      while (buf<last && *buf!='\n') ++buf;
+      while (buf<last && *buf=='\n') ++buf;
     }
-  fclose (input);
-
-  return result;
+  }
 }
-/////////////////////////////////////////////////////

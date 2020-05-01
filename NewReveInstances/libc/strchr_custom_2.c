@@ -1,7 +1,7 @@
 /* openbsd strchr */
 #include <string.h>
 
-//__weak_alias(index, strchr);
+/*__weak_alias(index, strchr);
 __attribute__((always_inline))
 
 char *
@@ -13,9 +13,34 @@ strchr(const char *p, int ch)
 		if (!*p)
 			return((char *)NULL);
 	}
-	/* NOTREACHED */
+	// NOTREACHED 
 }
-//DEF_STRONG(strchr);
+DEF_STRONG(strchr);*/ //ORIGINAL
+
+char *strchr(register const char *t, int c) {
+    register char ch;
+
+    ch = c;
+    for (;__mark(42);) {
+        if (*t == ch)
+            break;
+        if (!*t)
+            return 0;
+        ++t;
+        if (*t == ch)
+            break;
+        if (!*t)
+            return 0;
+        ++t;
+        if (*t == ch)
+            break;
+        if (!*t)
+            return 0;
+        ++t;
+    }
+    return (char *)t;
+}
+
 
 /* glibc */
 /*@ rel_in

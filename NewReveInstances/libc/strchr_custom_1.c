@@ -12,7 +12,7 @@
 extern int __mark(int);
 extern char* __inlineCall(char*);
 
-static char *strchr(register const char *t, int c) {
+/*static char *strchr(register const char *t, int c) {
     register char ch;
 
     ch = c;
@@ -24,7 +24,34 @@ static char *strchr(register const char *t, int c) {
         ++t;
     }
     return (char *)t;
+} */    //ORIGINAL!
+
+char *strchr(const char *s, int c_in) {
+    unsigned char c;
+
+    c = (unsigned char)c_in;
+
+    for (;__mark(42);) {
+        if (*s == c)
+            return (char *)s;
+        else if (*s == '\0')
+            return NULL;
+        if (*++s == c)
+            return (char *)s;
+        else if (*s == '\0')
+            return NULL;
+        if (*++s == c)
+            return (char *)s;
+        else if (*s == '\0')
+            return NULL;
+        if (*++s == c)
+            return (char *)s;
+        else if (*s == '\0')
+            return NULL;
+    }
+    return NULL;
 }
+
 
 size_t strcspn(const char *s, const char *reject) {
     size_t count = 0;
