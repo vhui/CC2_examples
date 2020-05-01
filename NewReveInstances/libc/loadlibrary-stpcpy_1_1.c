@@ -56,7 +56,7 @@ extern int _strcmp(const void* str1,const void* str2);
 /* dietlibc */
 extern int __mark(int);
 char *stpcpy(char *dst, const char *src) {
-    while (__mark(0) & (*dst++ = *src++))
+    while (__mark(0) && (*dst++ = *src++))
         ;
     return (dst - 1);
 }
