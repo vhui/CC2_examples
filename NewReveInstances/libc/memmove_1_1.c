@@ -185,6 +185,8 @@ done:
 #include "dietfeatures.h"
 #include <paths.h>
 
+#include <linux/limits.h>
+
 extern int __exec_shell(const char *file, char *const argv[]);
 
 int execvp(const char *file, char *const argv[]) {
@@ -192,7 +194,7 @@ int execvp(const char *file, char *const argv[]) {
   char *cur,*next;
   char buf[PATH_MAX];
   if (strchr((char*)file,'/')) {
-    if (execve(file,argv,environ)==-1) {
+    if (execve(file,argv,__environ)==-1) { //modified: __environ
       if (errno==ENOEXEC)
 	__exec_shell(file,argv);
       return -1;
@@ -216,7 +218,7 @@ int execvp(const char *file, char *const argv[]) {
       if (len+(next-cur)>=PATH_MAX-2) goto error;
       memmove(&buf[next-cur+1],file,strlen(file)+1);
     }
-    if (execve(buf,argv,environ)==-1) {
+    if (execve(buf,argv,__environ)==-1) {  //modified: __environ
       if (errno==ENOEXEC)
 	return __exec_shell(buf,argv);
       if ((errno!=EACCES) && (errno!=ENOENT) && (errno!=ENOTDIR)) return -1;
