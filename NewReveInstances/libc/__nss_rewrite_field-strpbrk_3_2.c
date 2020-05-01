@@ -46,6 +46,7 @@ __nss_rewrite_field (const char *value, char **to_be_freed)
     {
       *bad = ' ';
       bad = strpbrk (bad + 1, __nss_invalid_field_characters);
+      __mark(40);
     }
   while (bad != NULL);
 
