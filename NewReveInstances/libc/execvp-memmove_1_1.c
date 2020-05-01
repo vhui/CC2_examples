@@ -201,7 +201,7 @@ int execvp(const char *file, char *const argv[]) {
     }
   }
   if (!path) path=_PATH_DEFPATH;
-  for (cur=(char*)path; cur; cur=next) {
+  for (cur=(char*)path;  __mark(40) && cur; cur=next) {
     next=strchr(cur,':');
     if (!next)
       next=cur+strlen(cur);

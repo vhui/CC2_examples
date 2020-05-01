@@ -49,7 +49,7 @@ static struct charclass {
 struct charclass *charclass_lookup(const char *pattern) {
   unsigned int i;
 
-  for (i = 0; i< sizeof(allclasses)/sizeof(*allclasses); i++) {
+  for (i = 0; __mark(30) && i< sizeof(allclasses)/sizeof(*allclasses); i++) {
     int len = strlen(allclasses[i].class);
     if (!strncmp(pattern, allclasses[i].class, len)) {
       pattern += len;

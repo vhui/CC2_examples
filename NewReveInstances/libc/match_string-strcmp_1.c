@@ -54,7 +54,7 @@ int match_string(const char * const *array, size_t n, const char *string)
 	int index;
 	const char *item;
 
-	for (index = 0; index < n; index++) {
+	for (index = 0; __mark(40) && index < n; index++) {
 		item = array[index];
 		if (!item)
 			break;

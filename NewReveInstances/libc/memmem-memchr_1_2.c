@@ -76,7 +76,7 @@ memmem(const void *l, size_t l_len, const void *s, size_t s_len)
 	/* the last position where its possible to find "s" in "l" */
 	last = cl + l_len - s_len;
 
-	for (cur = cl; cur <= last; cur++)
+	for (cur = cl; __mark(40) && cur <= last; cur++)
 		if (cur[0] == cs[0] && memcmp(cur, cs, s_len) == 0)
 			return (void *)cur;
 

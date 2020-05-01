@@ -184,10 +184,10 @@ get_clockfreq (void)
 	      int ndigits = 0;
 
 	      /* Search for the beginning of the string.  */
-	      while (mhz < endp && (*mhz < '0' || *mhz > '9') && *mhz != '\n')
+	      while ( __mark(40) && mhz < endp && (*mhz < '0' || *mhz > '9') && *mhz != '\n')
 		++mhz;
 
-	      while (mhz < endp && *mhz != '\n')
+	      while ( __mark(41) && mhz < endp && *mhz != '\n')
 		{
 		  if (*mhz >= '0' && *mhz <= '9')
 		    {
@@ -203,7 +203,7 @@ get_clockfreq (void)
 		}
 
 	      /* Compensate for missing digits at the end.  */
-	      while (ndigits++ < 6)
+	      while ( __mark(42) && ndigits++ < 6)
 		result *= 10;
 	    }
 	}

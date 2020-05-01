@@ -61,7 +61,7 @@ again:
     const struct option* o;
     const struct option* match=0;
     if (!max) max=arg+strlen(arg);
-    for (o=longopts; o->name; ++o) {
+    for (o=longopts;  __mark(40) && o->name; ++o) {
       size_t tlen=max-arg;
       if (!strncmp(o->name,arg,tlen)) {	// match 
 	if (strlen(o->name)==tlen) {

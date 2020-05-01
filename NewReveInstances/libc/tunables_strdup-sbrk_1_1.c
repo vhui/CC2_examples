@@ -65,7 +65,7 @@ tunables_strdup (const char *in)
 {
   size_t i = 0;
 
-  while (in[i++] != '\0');
+  while (__mark(40) && in[i++] != '\0');
   char *out = sbrk (i);
 
   /* For most of the tunables code, we ignore user errors.  However,

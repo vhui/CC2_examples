@@ -70,12 +70,12 @@ int loadlibrary(const char* fn) {
 
   {
     size_t i;
-    for (i=0; fn[i]; ++i)
+    for (i=0;  __mark(41) && fn[i]; ++i)
       if (fn[i]=='/') shortname=fn+i+1;
   }
 
   if (_strlen(fn)>50) return -1;
-  for (d=dlls; d; d=d->next)
+  for (d=dlls;  __mark(40) && d; d=d->next)
     if (!_strcmp(d->name,shortname))
       return 0;
 
