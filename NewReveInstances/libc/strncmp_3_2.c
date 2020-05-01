@@ -43,7 +43,7 @@ void __dns_make_fd(void);
 void __dns_make_fd6(void);
 void __dns_readstartfiles(void);
 int __dns_decodename(const unsigned char *packet,unsigned int offset,unsigned char *dest,
-		     unsigned int maxlen,const unsigned char* behindpacket)
+		     unsigned int maxlen,const unsigned char* behindpacket);
 
 #ifdef WANT_FULL_RESOLV_CONF
 unsigned int __dns_search;
