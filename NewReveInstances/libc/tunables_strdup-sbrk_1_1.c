@@ -77,7 +77,7 @@ tunables_strdup (const char *in)
 
   i--;
 
-  while (i-- > 0)
+  while (__mark(41) && i-- > 0)
     out[i] = in[i];
 
   return out;

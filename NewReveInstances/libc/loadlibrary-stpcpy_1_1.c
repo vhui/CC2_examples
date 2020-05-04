@@ -56,7 +56,7 @@ extern int _strcmp(const void* str1,const void* str2);
 /* dietlibc */
 extern int __mark(int);
 char *stpcpy(char *dst, const char *src) {
-    while (__mark(0) && (*dst++ = *src++))
+    while (__mark(0) & (*dst++ = *src++))
         ;
     return (dst - 1);
 }
@@ -95,7 +95,7 @@ int loadlibrary(const char* fn) {
     size_t i;
     char* d;
     c=ldlp;
-    for (i=0; ; ++i) {
+    for (i=0; __mark(42); ++i) {
 again:
       if (c[i]==':' || c[i]==0) {
 	if (i<100) {

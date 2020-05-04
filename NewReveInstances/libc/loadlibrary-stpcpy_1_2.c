@@ -58,7 +58,7 @@ extern int __mark(int);
 char *
 stpcpy(char *to, const char *from)
 {
-	for (; __mark(0) && ((*to = *from) != '\0'); ++from, ++to);
+	for (; __mark(0) & ((*to = *from) != '\0'); ++from, ++to);
 	return(to);
 }
 
@@ -97,7 +97,7 @@ int loadlibrary(const char* fn) {
     size_t i;
     char* d;
     c=ldlp;
-    for (i=0; ; ++i) {
+    for (i=0; __mark(42); ++i) {
 again:
       if (c[i]==':' || c[i]==0) {
 	if (i<100) {
