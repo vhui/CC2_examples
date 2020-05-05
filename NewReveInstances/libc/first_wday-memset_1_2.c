@@ -72,7 +72,7 @@ void* memset(void * dst, int s, size_t count) {
 
 #include <limits.h>
 #include <stdio.h>
-#include <stdio_ext.h>
+//#include <stdio_ext.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>

@@ -20,7 +20,7 @@ int strcmp(const char *s1, const char *s2) {
 #include <linux/errno.h>
 //#include <linux/slab.h>
 
-#include <asm/byteorder.h>
+//#include <asm/byteorder.h>
 //#include <asm/word-at-a-time.h>
 //#include <asm/page.h>
 

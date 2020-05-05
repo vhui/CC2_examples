@@ -76,7 +76,7 @@ memset(void *dst, int c, size_t n)
 
 #include <limits.h>
 #include <stdio.h>
-#include <stdio_ext.h>
+//#include <stdio_ext.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
