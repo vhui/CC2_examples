@@ -45,22 +45,22 @@ for dirpath, dnames, fnames in os.walk("./"):
     #print(dirpath)
     if len(dirpath.split("/")) != 4: #not inside gen folder!
         continue
-    #if "/libA" not in dirpath:
-    #    continue
-    if "/multLibs" not in dirpath:
+    if "/libA" not in dirpath:
+        continue
+    if "/mergedHard" not in dirpath and "/nestedMerge" not in dirpath:
         continue
     if "mergedHard_CallMerge" in dirpath:
         continue
     """if "/mergedHard_CallMerge" not in dirpath:
         continue"""
-    #if "EXTRA_prime_sum" in dirpath:
-    #    continue
+    if "EXTRA_prime_sum" in dirpath:
+        continue
     #if "eq/" not in dirpath and "extras" not in dirpath:
     #    continue
-    if "EQ_ltfive" in dirpath: start = True
-    if not start: continue
-    if "13" in dirpath or "14" in dirpath or "15" in dirpath:
-        continue
+    #if "EQ_ltfive" in dirpath: start = True
+    #if not start: continue
+    #if "13" in dirpath or "14" in dirpath or "15" in dirpath:
+    #    continue
     dirname = dirpath.split("/")[-1]
     """if "loopmult" not in dirpath and "LoopMult" not in dirpath and "loopunreach" not in dirpath and "LoopUnreach" not in dirpath:
         continue"""
@@ -138,7 +138,7 @@ for dirpath, dnames, fnames in os.walk("./"):
     CC2_SEA_SOLVE_TIME = 0
     CC2_CONC_SOLVE_TIME = 0
 
-    try:    
+    """try:    
       #args = shlex.split("runlim -t 350 -s 3000 time -p CC2 --old %s --new %s \
       #           --client %s --lib %s --hybrid-solving=True" 
       #            % (old_c_filename, new_c_filename, c_client, c_lib))
@@ -172,7 +172,7 @@ for dirpath, dnames, fnames in os.walk("./"):
         kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
         out, err = kill.communicate(timeout=TIMEOUT)
         CC2_RESULT = "timeout"
-        CC2_TIME   = TIMEOUT
+        CC2_TIME   = TIMEOUT"""
 
 
     """try:
@@ -347,7 +347,7 @@ for dirpath, dnames, fnames in os.walk("./"):
         CC2_CBMC_RESULT = "timeout"
         CC2_CBMC_TIME = TIMEOUT"""
 
-    try:    
+    """try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
       args = shlex.split("runlim -t 350 -s 10000 -o loggingOut/%s.runlimCLEVER time -p CLEVERC --old %s \
                 --new %s --client %s --lib %s" % 
@@ -378,7 +378,7 @@ for dirpath, dnames, fnames in os.walk("./"):
         kill = subprocess.Popen(args, stdout=PIPE, stderr=PIPE, shell=True)
         out, err = kill.communicate(timeout=TIMEOUT)
         KLEECLEVER_RESULT = "timeout"
-        KLEECLEVER_TIME = TIMEOUT
+        KLEECLEVER_TIME = TIMEOUT"""
 
     """try:    
       #TODO: WARNING - STATIC PATH ARGUMENT
@@ -412,7 +412,7 @@ for dirpath, dnames, fnames in os.walk("./"):
                             (dirpath.split("/")[-2]+dirpath.split("/")[-1], c_client, old_c_filename.replace("./", "./reve_"),
                                 new_c_filename.replace("./", "./reve_")) )
         proc0 = subprocess.Popen(args0, stdout=PIPE, stderr=PIPE)
-        args = shlex.split("time -p z3 -in")
+        args = shlex.split("time -p z3 -in -smt2 fixedpoint.engine=duality")
         proc = subprocess.Popen(args, stdin=proc0.stdout, stdout=PIPE, stderr=PIPE)
         out, err = proc.communicate(timeout=TIMEOUT)
 
@@ -459,7 +459,7 @@ for dirpath, dnames, fnames in os.walk("./"):
 
 
     print("%-35s CC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f\tllReve: %-8s ,%-8.4f" % (dirpath, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, REVE_RESULT, REVE_TIME))    
-    with open("timingAug10MultCall.csv_483z3", 'a') as f:
+    with open("timingAug21AllMerged.csv_dualityz3_REVE", 'a') as f:
         f.write("%-20s: %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME, REVE_RESULT, REVE_TIME))
     if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout":
         print("Disagreement error: %s" % dirpath)

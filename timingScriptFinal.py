@@ -14,12 +14,13 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--CC2', action='store_true', default=False, help ="enable CC2 measurements (Docker environment assumed)" )
 parser.add_argument('--CLEVER', action='store_true', default=False, help ="enable CLEVER measurements (Docker environment assumed)" )
 parser.add_argument('--REVE', action='store_true', default=False, help ="enable REVE measurements (Reve Docker environment assumed)" )
+parser.add_argument('--revePath', type=str, dest='revePath', default="../llreve/reve/build/reve/llreve", help = "Path to Docker installed Reve" , required=False)
 
 io_args = parser.parse_args()
 enableCC2 = io_args.CC2
 enableCLEVER = io_args.CLEVER
 enableREVE = io_args.REVE
-
+revePath = io_args.revePath
 
 for dirpath, dnames, fnames in os.walk("./"):
     dnames.sort()
@@ -180,8 +181,8 @@ for dirpath, dnames, fnames in os.walk("./"):
 
     if enableREVE:
         try:
-            args0 = shlex.split("runlim -s 10000 -o loggingOut/%s.runlimREVE  ../llreve/reve/build/reve/llreve -infer-marks -fun=%s -muz %s %s" % 
-                                (dirpath.split("/")[-2]+dirpath.split("/")[-1], c_client, old_c_filename.replace("./", "./reve_"),
+            args0 = shlex.split("runlim -s 10000 -o loggingOut/%s.runlimREVE %s -infer-marks -fun=%s -muz %s %s" % 
+                                (dirpath.split("/")[-2]+dirpath.split("/")[-1], revePath, c_client, old_c_filename.replace("./", "./reve_"),
                                     new_c_filename.replace("./", "./reve_")) )
             proc0 = subprocess.Popen(args0, stdout=PIPE, stderr=PIPE)
             args = shlex.split("time -p z3 -in ") # -smt2 fixedpoint.engine=duality

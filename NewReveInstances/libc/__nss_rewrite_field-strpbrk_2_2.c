@@ -1,20 +1,20 @@
 /* dietlibc */
-extern int __mark(int);
+extern int mark(int);
 char *strpbrk(const char *s, const char *accept) {
     register unsigned int i;
-    for (; __mark(0) & (*s); s++)
-        for (i = 0; __mark(1) & accept[i]; i++)
+    for (; mark(0) & (*s); s++)
+        for (i = 0; mark(1) & accept[i]; i++)
             if (*s == accept[i])
                 return (char *)s;
     return 0;
 }
 
-#include <nss.h>
+//#include <nss.h>
 #include <string.h>
 # define NSS_INVALID_FIELD_CHARACTERS ":\n"
-const char __nss_invalid_field_characters[] = NSS_INVALID_FIELD_CHARACTERS;
-//extern const char __nss_invalid_field_characters[] attribute_hidden;
-extern char * __strdup (const char *s); 
+const char nss_invalid_field_characters[] = NSS_INVALID_FIELD_CHARACTERS;
+//extern const char nss_invalid_field_characters[] attribute_hidden;
+extern char * strdup (const char *s); 
 
 
 /* Rewrite VALUE to a valid field value in the NSS database.  Invalid
@@ -23,17 +23,17 @@ extern char * __strdup (const char *s);
    overwritten with a pointer the caller has to free if the function
    returns successfully.  On failure, return NULL.  */
 const char *
-__nss_rewrite_field (const char *value, char **to_be_freed)
+nss_rewrite_field (const char *value, char **to_be_freed)
 {
   *to_be_freed = NULL;
   if (value == NULL)
     return "";
 
   /* Search for non-allowed characters.  */
-  const char *p = strpbrk (value, __nss_invalid_field_characters);
+  const char *p = strpbrk (value, nss_invalid_field_characters);
   if (p == NULL)
     return value;
-  *to_be_freed = __strdup (value);
+  *to_be_freed = strdup (value);
   if (*to_be_freed == NULL)
     return NULL;
 
@@ -42,7 +42,7 @@ __nss_rewrite_field (const char *value, char **to_be_freed)
   do
     {
       *bad = ' ';
-      bad = strpbrk (bad + 1, __nss_invalid_field_characters);
+      bad = strpbrk (bad + 1, nss_invalid_field_characters);
     }
   while (bad != NULL);
 

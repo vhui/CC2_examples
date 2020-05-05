@@ -378,7 +378,7 @@ for dirpath, dnames, fnames in os.walk("./"):
     
     """print("%-20s CC2-SEA: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Hybrid: %-8s ,%-8.4f (Solve) ,,%-7.3f\tCC2-Concurrent: %-8s ,%-8.4f (Solve) ,,%-7.3f\tKleeCLEVER: %-8s ,%-8.4f" % (dirpath, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_SEA_SOLVE_TIME, CC2_RESULT, CC2_TIME, CC2_SOLVE_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, CC2_CONC_SOLVE_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
     with open("timing2.csv", 'a') as f:
-        f.write("%-20s: %s,%-8.4f, %s,%-8.4f, %s,%-8.4f, %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
+        f.write("%-20s: %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f ; %s,%-8.4f\n" %(dirpath, CC2_RESULT, CC2_TIME, CC2_SEA_RESULT, CC2_SEA_TIME, CC2_CONC_RESULT, CC2_CONC_TIME, KLEECLEVER_RESULT, KLEECLEVER_TIME))
     if CC2_RESULT != KLEECLEVER_RESULT and CC2_RESULT != "timeout" and KLEECLEVER_RESULT != "timeout" or CC2_RESULT != CC2_SEA_RESULT and CC2_SEA_RESULT != "timeout":
         print("Disagreement error: %s" % dirpath)"""
     continue

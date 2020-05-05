@@ -478,3 +478,44 @@
 ./mergedHard/NEQ_getSignEQ_pos2/libB: equiv,18.3936  ; equiv,19.1979  ; timeout,200.0000
 ./mergedHard/NEQ_getSignEXTRA_prime_sum/libA: not equiv,1.8261   ; not equiv,1.7558   ; not equiv,0.1828  
 ./mergedHard/NEQ_getSignEXTRA_prime_sum/libB: not equiv,171.9938 ; not equiv,138.0360 ; not equiv,135.0672
+./eq/Add            : equiv,0.1429   ; equiv,0.1099   ; equiv,0.0724  
+./eq/Const          : equiv,0.1128   ; equiv,0.1125   ; equiv,0.0716  
+./eq/LoopMult10     : equiv,1.2216   ; equiv,1.2203   ; equiv,0.2559  
+./eq/LoopMult15     : equiv,1.3545   ; equiv,1.3430   ; equiv,0.2918  
+./eq/LoopMult2      : equiv,0.8529   ; equiv,0.8527   ; equiv,0.0725  
+./eq/LoopMult20     : equiv,1.4897   ; equiv,1.4955   ; equiv,0.3638  
+./eq/LoopMult5      : equiv,1.1869   ; equiv,1.0737   ; equiv,0.1950  
+./eq/LoopUnreach10  : equiv,0.9175   ; equiv,0.9155   ; equiv,0.1195  
+./eq/LoopUnreach15  : equiv,0.9123   ; equiv,0.9189   ; equiv,0.1202  
+./eq/LoopUnreach2   : equiv,0.8107   ; equiv,0.8147   ; equiv,0.0742  
+./eq/LoopUnreach20  : equiv,0.9507   ; equiv,0.9161   ; equiv,0.1186  
+./eq/LoopUnreach5   : equiv,0.9189   ; equiv,0.9224   ; equiv,0.1198  
+./eq/UnchLoop       : equiv,40.2626  ; equiv,40.2604  ; equiv,0.0985  
+./eq/divide         : equiv,0.1559   ; equiv,0.1551   ; equiv,0.1106  
+./eq/getSign2       : equiv,0.9457   ; equiv,0.9845   ; equiv,0.1624  
+./eq/is_prime1      : equiv,10.1617  ; equiv,10.1839  ; equiv,0.1095  
+./eq/is_prime2      : equiv,10.1944  ; equiv,10.3890  ; timeout,300.0000
+./eq/is_prime3      : unknown,0.0000   ; unknown,0.0000   ; unknown,0.0000  
+./eq/ltfive         : not equiv,0.4355   ; not equiv,0.7912   ; not equiv,0.1784  
+./eq/ltfiveBound    : equiv,0.9967   ; equiv,1.9348   ; equiv,0.1729  
+./eq/multiple       : not equiv,0.4232   ; not equiv,0.4268   ; not equiv,0.2222  
+./eq/multipleBound  : equiv,0.9770   ; equiv,0.9766   ; equiv,0.2978  
+./eq/odd            : equiv,12.1639  ; equiv,12.1706  ; timeout,300.0000
+./eq/one            : not equiv,0.3275   ; not equiv,0.6888   ; not equiv,0.1523  
+./eq/oneBound       : equiv,1.5220   ; equiv,3.1795   ; equiv,0.1840  
+./eq/oneN2          : not equiv,1.0908   ; not equiv,2.3111   ; not equiv,0.1686  
+./eq/pos            : equiv,11.1945  ; equiv,12.4717  ; timeout,300.0000
+./eq/pos2           : equiv,11.2849  ; equiv,11.7141  ; timeout,300.0000
+./eq/pos3           : not equiv,0.9795   ; not equiv,0.9681   ; equiv,0.0981  
+./extras/prime_sum  : equiv,48.5108  ; equiv,48.4346  ; timeout,300.0000
+./neq/LoopMult10    : not equiv,1.5861   ; not equiv,1.5631   ; not equiv,0.2070  
+./neq/LoopMult15    : not equiv,1.8062   ; not equiv,1.8124   ; not equiv,0.2459  
+./neq/LoopMult2     : not equiv,1.0759   ; not equiv,1.0839   ; not equiv,0.0891  
+./neq/LoopMult20    : not equiv,2.0311   ; not equiv,2.0175   ; not equiv,0.3041  
+./neq/LoopMult5     : not equiv,1.3208   ; not equiv,1.3339   ; not equiv,0.1670  
+./neq/LoopUnreach10 : not equiv,0.3348   ; not equiv,0.3338   ; not equiv,0.1219  
+./neq/LoopUnreach15 : not equiv,0.3332   ; not equiv,0.3344   ; not equiv,0.1225  
+./neq/LoopUnreach2  : not equiv,0.3211   ; not equiv,0.3220   ; not equiv,0.0876  
+./neq/LoopUnreach20 : not equiv,0.3313   ; not equiv,0.3312   ; not equiv,0.1210  
+./neq/LoopUnreach5  : not equiv,0.3362   ; not equiv,0.3349   ; not equiv,0.1218  
+./neq/getSign       : not equiv,0.3178   ; not equiv,0.3191   ; not equiv,0.1206  
