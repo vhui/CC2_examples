@@ -1,13 +1,13 @@
 /* glibc */
 #include <stddef.h>
 extern int __mark(int);
-char *strpbrk(const char *s, const char *accept) {
-    while (__mark(0) & (*s != '\0')) {
-        const char *a = accept;
+char *strpbrk(const char *s1, const char *s2) {
+    while (__mark(0) & (*s1 != '\0')) {
+        const char *a = s2;
         while (__mark(1) & (*a != '\0'))
-            if (*a++ == *s)
-                return (char *)s;
-        ++s;
+            if (*a++ == *s1)
+                return (char *)s1;
+        ++s1;
     }
 
     return NULL;

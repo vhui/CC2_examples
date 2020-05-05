@@ -1,11 +1,11 @@
 /* dietlibc */
 extern int __mark(int);
-char *strpbrk(const char *s, const char *accept) {
+char *strpbrk(const char *s1, const char *s2) {
     register unsigned int i;
-    for (; __mark(0) & (*s); s++)
-        for (i = 0; __mark(1) & accept[i]; i++)
-            if (*s == accept[i])
-                return (char *)s;
+    for (; __mark(0) & (*s1); s1++)
+        for (i = 0; __mark(1) & s2[i]; i++)
+            if (*s1 == s2[i])
+                return (char *)s1;
     return 0;
 }
 
