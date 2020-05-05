@@ -56,9 +56,9 @@ char *strchr(const char *s, int c_in) {
 size_t strcspn(const char *s, const char *reject) {
     size_t count = 0;
 
-    while (__mark(1) & (*s)) {
+    while ((*s)) {
         char ch = *s++;
-        if (__inlineCall(strchr(reject, ch)) == NULL) {
+        if (strchr(reject, ch) == NULL) {
             ++count;
         } else {
             return count;
