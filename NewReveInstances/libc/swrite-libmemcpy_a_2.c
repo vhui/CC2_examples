@@ -14,7 +14,7 @@ struct str_data {
 
 extern int __mark(int);
 
-int _memcpy(int *dest, int *src, int size) {
+int libmemcpy(int *dest, int *src, int size) {
    int *start = src;
    while(__mark(42) & (src - start < size)) {
       *dest = *src;
@@ -31,7 +31,7 @@ int swrite(const void*ptr, size_t nmemb, void* cookie) {
     size_t len=nmemb;
     if (len>tmp) len=tmp;
     if (sd->str) {
-      _memcpy(sd->str+sd->len,ptr,len);
+      libmemcpy(sd->str+sd->len,ptr,len);
       sd->str[sd->len+len]=0;
     }   
     sd->len+=len;

@@ -3,7 +3,7 @@
 // openbsd
 extern int __mark(int);
 void *
-memchr(const void *s, int c, size_t n)
+libmemchr(const void *s, int c, size_t n)
 {
 	if (n != 0) {
 		const unsigned char *p = s;
@@ -71,7 +71,7 @@ memmem(const void *l, size_t l_len, const void *s, size_t s_len)
 
 	/* special case where s_len == 1 */
 	if (s_len == 1)
-		return memchr(l, *cs, l_len);
+		return libmemchr(l, *cs, l_len);
 
 	/* the last position where its possible to find "s" in "l" */
 	last = cl + l_len - s_len;
