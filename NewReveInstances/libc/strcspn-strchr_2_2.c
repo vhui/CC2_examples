@@ -31,7 +31,7 @@ DEF_STRONG(strchr);*/ //ORIGINAL
 extern int __mark(int);
 extern char* __inlineCall(char*);
 
-char *strchr(register const char *t, int c) {
+char *strchr(const char *t, int c) { //register const char *t
     register char ch;
 
     ch = c;
