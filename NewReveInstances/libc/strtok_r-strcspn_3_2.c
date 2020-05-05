@@ -11,7 +11,7 @@
 #include <stddef.h>
 extern int __mark(int);
 
-__attribute__((always_inline))
+//__attribute__((always_inline))
 static char *strchr(register const char *t, int c) {
     register char ch;
 
