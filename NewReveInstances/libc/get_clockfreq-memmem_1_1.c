@@ -49,8 +49,8 @@ memmem(const void *haystack, size_t hl, const void *needle, size_t nl)
 
 
 #define _GNU_SOURCE	1
-#include <argp.h>
-#include <error.h>
+//#include <argp.h>
+//#include <error.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <inttypes.h>
