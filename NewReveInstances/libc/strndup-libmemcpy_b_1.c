@@ -2,7 +2,7 @@ extern int __mark(int);
 extern int strnlen(const char*, size_t);
 
 
-void _memcpy(int *dest, int *src, int size) {
+void libmemcpy(int *dest, int *src, int size) {
    int i = 0;
    while(__mark(42) & (i < size)) {
       dest[i] = src[i];
@@ -25,7 +25,7 @@ strndup(const char *str, size_t maxlen)
         len = strnlen(str, maxlen);
         copy = malloc(len + 1); 
         if (copy != NULL) {
-                (void)_memcpy(copy, str, len);
+                (void)libmemcpy(copy, str, len);
                 copy[len] = '\0';
         }
 
