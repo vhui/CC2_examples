@@ -97,6 +97,7 @@ int loadlibrary(const char* fn) {
     c=ldlp;
     for (i=0; __mark(42); ++i) {
 again:
+      __mark(43);
       if (c[i]==':' || c[i]==0) {
 	if (i<100) {
 	  lp[i]='/';
