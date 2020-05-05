@@ -1,27 +1,27 @@
 /* dietlibc */
 extern int __mark(int);
-char *strchr(const char *t, int c) { //register const char *t
+char *strchr(const char *s, int c_in) { //register const char *s
     register char ch;
 
-    ch = c;
+    ch = c_in;
     for (;__mark(42);) {
-        if (*t == ch)
+        if (*s == ch)
             break;
-        if (!*t)
+        if (!*s)
             return 0;
-        ++t;
-        if (*t == ch)
+        ++s;
+        if (*s == ch)
             break;
-        if (!*t)
+        if (!*s)
             return 0;
-        ++t;
-        if (*t == ch)
+        ++s;
+        if (*s == ch)
             break;
-        if (!*t)
+        if (!*s)
             return 0;
-        ++t;
+        ++s;
     }
-    return (char *)t;
+    return (char *)s;
 }
 
 //////////////////////////https://github.com/google/boringssl/blob/master/crypto/asn1/a_mbstr.c

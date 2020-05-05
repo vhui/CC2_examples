@@ -1,25 +1,25 @@
 /* dietlibc */
 #include <stddef.h>
 extern int __mark(int);
-void *memmove(void *dst, const void *src, size_t count) {
-    char *a = dst;
-    const char *b = src;
-    if (src != dst) {
-        if (src > dst) {
-            while (count--) {
+void *memmove(void *dst0, const void *src0, size_t length) {
+    char *a = dst0;
+    const char *b = src0;
+    if (src0 != dst0) {
+        if (src0 > dst0) {
+            while (length--) {
                 *a++ = *b++;
                 __mark(0);
             }
         } else {
-            a += count - 1;
-            b += count - 1;
-            while (count--) {
+            a += length - 1;
+            b += length - 1;
+            while (length--) {
                 *a-- = *b--;
                 __mark(1);
             }
         }
     }
-    return dst;
+    return dst0;
 }
 
 
