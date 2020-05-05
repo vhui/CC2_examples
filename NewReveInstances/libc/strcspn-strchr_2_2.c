@@ -29,30 +29,29 @@ DEF_STRONG(strchr);*/ //ORIGINAL
 @*/
 #include <stddef.h>
 extern int __mark(int);
-extern char* __inlineCall(char*);
 
-char *strchr(const char *t, int c) { //register const char *t
+char *strchr(const char *s, int c_in) { //register const char *t
     register char ch;
 
-    ch = c;
+    ch = c_in;
     for (;__mark(42);) {
-        if (*t == ch)
+        if (*s == ch)
             break;
-        if (!*t)
+        if (!*s)
             return 0;
-        ++t;
-        if (*t == ch)
+        ++s;
+        if (*s == ch)
             break;
-        if (!*t)
+        if (!*s)
             return 0;
-        ++t;
-        if (*t == ch)
+        ++s;
+        if (*s == ch)
             break;
-        if (!*t)
+        if (!*s)
             return 0;
-        ++t;
+        ++s;
     }
-    return (char *)t;
+    return (char *)s;
 }
 
 
