@@ -1,13 +1,13 @@
 //https://github.com/torvalds/linux/blob/master/lib/string.c#L722
 
 extern int __mark(int);
-int strcmp(const char *s1, const char *s2) {
-    while (*s1 == *s2++) {
-        if (*s1++ == 0)
+int strcmp(const char *p1, const char *p2) {
+    while (*p1 == *p2++) {
+        if (*p1++ == 0)
             return (0);
         __mark(42);
     }
-    return (*(unsigned char *)s1 - *(unsigned char *)--s2);
+    return (*(unsigned char *)p1 - *(unsigned char *)--p2);
 }
 
 
