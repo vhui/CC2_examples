@@ -26,16 +26,8 @@ int strncmp(const char *s1, const char *s2, size_t n) {
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
-//#include <resolv.h>
+#include <resolv.h>
 #include <bits/types/res_state.h>
-/* Things involving an internal (static) resolver context. */
-//__BEGIN_DECLS
-//extern struct __res_state *__res_state(void); // __attribute__ ((__const__));  //MODELLING CHANGE
-//__END_DECLS
-#define _res (*__res_state())
-
-#define RES_RECURSE	0x00000040	/* recursion desired */
-
 #include <net/if.h>
 //#include "dietfeatures.h"
 

@@ -10,6 +10,7 @@
 @*/
 #include <stddef.h>
 extern int __mark(int);
+extern char* __inlineCall(char*);
 
 //__attribute__((always_inline))
 static char *strchr(register const char *t, int c) {
@@ -32,7 +33,7 @@ size_t strcspn(const char *s, const char *reject) {
 
     while (__mark(1) & (*s)) {
         char ch = *s++;
-        if (strchr(reject, ch) == NULL) {
+        if (__inlineCall(strchr(reject, ch)) == NULL) {
             ++count;
         } else {
             return count;
