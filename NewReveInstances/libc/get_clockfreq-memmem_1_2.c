@@ -46,7 +46,7 @@ void *memmem(const void* haystack, size_t hl, const void* needle, size_t nl) {
 #define OPT_TOPLEVEL		304
 
 
-static const struct argp_option options[] =
+/*static const struct argp_option options[] =
   {
     { NULL, 0, NULL, 0, "\
 This is a test for threads so we allow ther user to selection the number of \
@@ -98,50 +98,7 @@ threads are used the stack size should be chosen quite small." },
     { "timing", 'T', NULL, 0,
       "Measure time from startup to the last thread finishing" },
     { NULL, 0, NULL, 0, NULL }
-  };
-
-/* Prototype for option handler.  */
-static error_t parse_opt (int key, char *arg, struct argp_state *state);
-
-/* Data structure to communicate with argp functions.  */
-/*static struct argp argp =
-{
-  options, parse_opt
-};
-
-
-static unsigned long int threads = DEFAULT_THREADS;
-static unsigned long int workload = 75;
-static unsigned long int workcost = 20;
-static unsigned long int rounds = 10;
-static long int starts = 5000;
-static unsigned long int stacksize;
-static long int guardsize = -1;
-static bool progress;
-static bool timing;
-static bool to_thread;
-static unsigned long int toplevel = 1;
-
-
-static long int running;
-static pthread_mutex_t running_mutex = PTHREAD_MUTEX_INITIALIZER;
-
-static pid_t pid;
-static pthread_t tmain;
-
-static clockid_t cl;
-static struct timespec start_time;
-
-
-static pthread_mutex_t sum_mutex = PTHREAD_MUTEX_INITIALIZER;
-unsigned int sum;
-
-static enum
-  {
-    sync_signal,
-    sync_join
-  }
-sync_method; */
+  };  */
 
 
 /* We use 64bit values for the times.  */
