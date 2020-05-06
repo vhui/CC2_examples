@@ -30,7 +30,7 @@ size_t strcspn(const char *s, const char *reject) {
 
     while (__mark(1) & (*s)) {
         char ch = *s++;
-        if (__inlineCall(strchr(reject, ch)) == NULL) {
+        if (strchr(reject, ch) == NULL) {
             ++count;
         } else {
             return count;
