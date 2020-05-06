@@ -1,5 +1,5 @@
 extern int __mark(int);
-extern int strnlen(const char* , size_t);
+//extern int strnlen(const char*, size_t);
 
 
 void libmemcpy(int *dest, int *src, int size) {
