@@ -182,7 +182,7 @@ done:
 #include <unistd.h>
 #include <errno.h>
 //#include "exec_lib.h"
-#include "dietfeatures.h"
+//#include "dietfeatures.h"
 #include <paths.h>
 
 #include <linux/limits.h>

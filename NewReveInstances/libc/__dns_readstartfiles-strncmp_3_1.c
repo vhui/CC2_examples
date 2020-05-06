@@ -28,7 +28,7 @@ int strncmp(const char *s1, const char *s2, size_t n) {
 #include <stdlib.h>
 #include <resolv.h>
 #include <net/if.h>
-#include "dietfeatures.h"
+//#include "dietfeatures.h"
 
 int __dns_fd=-1;
 #ifdef WANT_IPV6_DNS
