@@ -1,5 +1,4 @@
 extern int __mark(int);
-extern int strnlen(const char*, size_t);
 
 void libmemcpy(int *dest, int *src, int size) {
    src--;
@@ -18,6 +17,8 @@ void libmemcpy(int *dest, int *src, int size) {
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
+
+extern int strnlen(const char*, size_t);
 
 char *
 strndup(const char *str, size_t maxlen)
