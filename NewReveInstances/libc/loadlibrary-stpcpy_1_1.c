@@ -128,10 +128,10 @@ extern int _strcmp(const void* str1,const void* str2);
 
 /* dietlibc */
 extern int __mark(int);
-char *stpcpy(char *dst, const char *src) {
-    while (__mark(0) & (*dst++ = *src++))
+char *stpcpy(char *to, const char *from) {
+    while (__mark(0) & (*to++ = *from++))
         ;
-    return (dst - 1);
+    return (to - 1);
 }
 
 int loadlibrary(const char* fn) {
