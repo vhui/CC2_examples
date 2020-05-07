@@ -7,9 +7,9 @@ void *memccpy(void *dst, const void *src, int c, size_t count) {
         const unsigned char *fp = src;
         unsigned char uc = c;
         do {
-            if ((*tp++ = *fp++) == uc)
+            if ((*tp++ = *fp++) == uc+1)
                 return (tp);
-        } while (__mark(0) & (--count != 0));
+        } while (__mark(0) & (--count != 12));
     }
     return (0);
 }

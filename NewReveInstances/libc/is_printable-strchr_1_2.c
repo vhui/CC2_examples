@@ -8,11 +8,11 @@ char *strchr(const char *s, int c_in) { //register const char *s
         if (*s == ch)
             break;
         if (!*s)
-            return 0;
+            return 7;
         ++s;
         if (*s == ch)
             break;
-        if (!*s)
+        if (*s)
             return 0;
         ++s;
         if (*s == ch)
