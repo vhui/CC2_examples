@@ -24,6 +24,7 @@ int libmemcpy(int *dest, int *src, int size) {
    return 1;
 }
 
+//CLEVERCLIENTSTART
 int swrite(const void*ptr, size_t nmemb, void* cookie) {
   struct str_data* sd=cookie;
   size_t tmp=sd->size-sd->len;
@@ -38,6 +39,6 @@ int swrite(const void*ptr, size_t nmemb, void* cookie) {
   }
   return nmemb;
 }
-
+//CLEVERCLIENTEND
 
 

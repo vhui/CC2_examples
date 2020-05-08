@@ -53,8 +53,8 @@ typedef unsigned char u_char;
 #include <time.h>
 
 #include "localedef.h"
-#include "private.h"
-#include "tzfile.h"
+/*#include "private.h"
+#include "tzfile.h"*/
 
 #define	_ctloc(x)		(_CurrentTimeLocale->x)
 
@@ -93,20 +93,14 @@ static const int mon_lengths[2][MONSPERYEAR] = {
 static	int _conv_num64(const unsigned char **, int64_t *, int64_t, int64_t);
 static	int _conv_num(const unsigned char **, int *, int, int);
 static	int leaps_thru_end_of(const int y);
-static	char *_strptime(const char *, const char *, struct tm *, int);
+static	char *strptime(const char *, const char *, struct tm *, int);
 static	const u_char *_find_string(const u_char *, int *, const char * const *,
 	    const char * const *, int);
 
 
-char *
-strptime(const char *buf, const char *fmt, struct tm *tm)
-{
-	return(_strptime(buf, fmt, tm, 1));
-}
-DEF_WEAK(strptime);
-
+//CLEVERCLIENTSTART
 static char *
-_strptime(const char *buf, const char *fmt, struct tm *tm, int initialize)
+strptime(const char *buf, const char *fmt, struct tm *tm, int initialize)
 {
 	unsigned char c;
 	const unsigned char *bp, *ep;
@@ -602,6 +596,7 @@ literal:
 
 	return ((char *)bp);
 }
+//CLEVERCLIENTEND
 
 ////////////////////////////////////////////////////
 

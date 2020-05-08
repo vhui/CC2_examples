@@ -20,6 +20,7 @@ void libmemcpy(int *dest, int *src, int size) {
 
 extern int strnlen(const char*, size_t);
 
+//CLEVERCLIENTSTART
 char *
 strndup(const char *str, size_t maxlen)
 {
@@ -35,4 +36,4 @@ strndup(const char *str, size_t maxlen)
 
         return copy;
 }
-//DEF_WEAK(strndup);
+//CLEVERCLIENTEND

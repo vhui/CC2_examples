@@ -108,6 +108,8 @@ int getdate_err;
 
 
 /* Returns the first weekday WDAY of month MON in the year YEAR.  */
+
+//CLEVERCLIENTSTART
 int
 first_wday (int year, int mon, int wday)
 {
@@ -124,6 +126,6 @@ first_wday (int year, int mon, int wday)
 
   return (1 + (wday - tm.tm_wday + 7) % 7);
 }
-
+//CLEVERCLIENTEND
 
 ///////////////////////////////////////////////

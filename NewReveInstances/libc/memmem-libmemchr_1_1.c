@@ -50,6 +50,7 @@ extern int memcmp (const void *, const void *, unsigned long); // Modified!
  * Find the first occurrence of the byte string s in byte string l.
  */
 
+//CLEVERCLIENTSTART
 void *
 memmem(const void *l, size_t l_len, const void *s, size_t s_len)
 {
@@ -78,4 +79,4 @@ memmem(const void *l, size_t l_len, const void *s, size_t s_len)
 
 	return NULL;
 }
-//DEF_WEAK(memmem);
+//CLEVERCLIENTEND

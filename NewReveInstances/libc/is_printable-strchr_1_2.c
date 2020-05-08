@@ -43,6 +43,8 @@ static int is_printable(uint32_t value);
 #include <stdint.h>
 
 /* Return 1 if the character is permitted in a PrintableString */
+
+//CLEVERCLIENTSTART
 int is_printable(uint32_t value) //static
 {
     int ch;
@@ -63,3 +65,4 @@ int is_printable(uint32_t value) //static
         return 1;
     return 0;
 }
+//CLEVERCLIENTEND

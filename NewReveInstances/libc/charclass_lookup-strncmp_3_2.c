@@ -47,6 +47,8 @@ static struct charclass {
 };
 
 /* look for "class:]" in pattern */
+
+//CLEVERCLIENTSTART
 struct charclass *charclass_lookup(const char *pattern) {
   unsigned int i;
 
@@ -61,5 +63,6 @@ struct charclass *charclass_lookup(const char *pattern) {
 noclass:
   return NULL;
 }
+//CLEVERCLIENTEND
 
 /////////////////////////////////

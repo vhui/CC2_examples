@@ -104,9 +104,9 @@ threads are used the stack size should be chosen quite small." },
 /* We use 64bit values for the times.  */
 typedef unsigned long long int hp_timing_t;
 
-
+//CLEVERCLIENTSTART
 hp_timing_t
-get_clockfreq (void)
+get_clockfreq ()
 {
   /* We read the information from the /proc filesystem.  It contains at
      least one line like
@@ -170,3 +170,4 @@ get_clockfreq (void)
 
   return result;
 }
+//CLEVERCLIENTEND

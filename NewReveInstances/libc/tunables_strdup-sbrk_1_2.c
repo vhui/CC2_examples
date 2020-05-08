@@ -38,6 +38,7 @@ void *sbrk(ptrdiff_t increment) {
 //#include <not-errno.h>
 extern void _dl_fatal_printf(const char*);
 
+//CLEVERCLIENTSTART
 char *
 tunables_strdup (const char *in)
 {
@@ -51,7 +52,6 @@ tunables_strdup (const char *in)
      startup should be reported, so we do.  */
   if (out == (void *)-1)
     _dl_fatal_printf ("sbrk() failure while processing tunables\n");
-////////////////////////////////////////////////////////////////TODO: mod?
 
   i--;
 
@@ -60,5 +60,6 @@ tunables_strdup (const char *in)
 
   return out;
 }
+//CLEVERCLIENTEND
 
 ////////////////////////////////////////////////////////////////

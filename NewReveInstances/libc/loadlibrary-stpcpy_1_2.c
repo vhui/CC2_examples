@@ -135,7 +135,7 @@ stpcpy(char *to, const char *from)
 	return(to);
 }
 
-
+//CLEVERCLIENTSTART
 int loadlibrary(const char* fn) {
   char lp[200];
   int r;
@@ -187,4 +187,4 @@ again:
   }
   return r;
 }
-
+//CLEVERCLIENTEND

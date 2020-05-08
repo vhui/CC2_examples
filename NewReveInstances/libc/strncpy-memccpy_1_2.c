@@ -23,6 +23,8 @@ void *memccpy(void *dst, const void *src, int c, size_t count) {
 
 /* gcc is broken and has a non-SUSv2 compliant internal prototype.
  * This causes it to warn about a type mismatch here.  Ignore it. */
+
+//CLEVERCLIENTSTART
 char *strncpy(char *dest, const char *src, size_t n) {
 #ifdef WANT_FULL_POSIX_COMPAT
   memset(dest,0,n);
@@ -33,3 +35,4 @@ char *strncpy(char *dest, const char *src, size_t n) {
 #endif
   return dest;
 }
+//CLEVERCLIENTEND

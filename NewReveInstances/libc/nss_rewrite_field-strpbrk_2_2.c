@@ -22,6 +22,8 @@ extern char * strdup (const char *s);
    VALUE is NULL, the empty string is returned.  *TO_BE_FREED is
    overwritten with a pointer the caller has to free if the function
    returns successfully.  On failure, return NULL.  */
+
+//CLEVERCLIENTSTART
 const char *
 nss_rewrite_field (const char *value, char **to_be_freed)
 {
@@ -48,3 +50,4 @@ nss_rewrite_field (const char *value, char **to_be_freed)
 
   return *to_be_freed;
 }
+//CLEVERCLIENTEND

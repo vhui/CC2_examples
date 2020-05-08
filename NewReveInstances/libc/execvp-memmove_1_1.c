@@ -189,6 +189,7 @@ done:
 
 extern int __exec_shell(const char *file, char *const argv[]);
 
+//CLEVERCLIENTSTART
 int execvp(const char *file, char *const argv[]) {
   const char *path=getenv("PATH");
   char *cur,*next;
@@ -228,3 +229,4 @@ int execvp(const char *file, char *const argv[]) {
   }
   return -1;
 }
+//CLEVERCLIENTEND

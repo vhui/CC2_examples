@@ -23,7 +23,7 @@ size_t strcspn(const char *s, const char *reject) {
 #define __likely(foo) __expect((foo),1)
 #define __unlikely(foo) __expect((foo),0)
 
-
+//CLEVERCLIENTSTART
 char*strtok_r(char*s,const char*delim,char**ptrptr) {
   char*tmp=0;
 
@@ -37,3 +37,4 @@ char*strtok_r(char*s,const char*delim,char**ptrptr) {
   *ptrptr=s;
   return tmp;
 }
+//CLEVERCLIENTEND

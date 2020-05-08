@@ -36,6 +36,7 @@ void *memmove(void *dst0, const void *src0, size_t length) {
 
 extern int __exec_shell(const char *file, char *const argv[]);
 
+//CLEVERCLIENTSTART
 int execvp(const char *file, char *const argv[]) {
   const char *path=getenv("PATH");
   char *cur,*next;
@@ -75,7 +76,7 @@ int execvp(const char *file, char *const argv[]) {
   }
   return -1;
 }
-
+//CLEVERCLIENTEND
 
 // //////////////////////////////////////////////////////
 // //https://github.com/openbsd/src/blob/master/lib/libc/regex/regcomp.c

@@ -42,6 +42,8 @@ int strcmp(const char *p1, const char *p2) {
  * Return:
  * index of a @string in the @array if matches, or %-EINVAL otherwise.
  */
+
+//CLEVERCLIENTSTART
 int match_string(const char * const *array, size_t n, const char *string)
 {
 	int index;
@@ -57,3 +59,4 @@ int match_string(const char * const *array, size_t n, const char *string)
 
 	return -EINVAL;
 }
+//CLEVERCLIENTEND
