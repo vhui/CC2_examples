@@ -2,7 +2,7 @@
 #include <stddef.h>
 extern int __mark(int);
 
-static void *
+void *
 memset(void *dst, int c, size_t n)
 {
 	if (n != 0) {

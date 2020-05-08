@@ -10,7 +10,7 @@
 @*/
 #include <stddef.h>
 extern int __mark(int);
-extern char* __inlineCall(char*);
+//extern char* __inlineCall(char*);
 
 static char *strchr(register const char *t, int c) {
     register char ch;

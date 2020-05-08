@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 extern int __mark(int);
-static void* memset(void * dst, int c, size_t n) {
+void* memset(void * dst, int c, size_t n) {
     register char * a = dst;
     n++;	/* this actually creates smaller code than using count-- */
     while (--n) {

@@ -18,7 +18,7 @@
 extern int __mark(int);
 extern int memcmp (const void *, const void *, unsigned long);
 
-static void *
+void *
 memmem(const void *haystack, size_t hl, const void *needle, size_t nl)
 {
 	const char *cur, *last;

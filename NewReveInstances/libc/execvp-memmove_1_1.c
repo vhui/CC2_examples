@@ -1,7 +1,7 @@
 // openbsd
 #include <stddef.h>
 extern int __mark(int);
-static void *memmove(void *dst0, const void *src0, size_t length) {
+void *memmove(void *dst0, const void *src0, size_t length) {
     char *dst = dst0;
     const char *src = src0;
     size_t t;
