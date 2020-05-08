@@ -1,5 +1,5 @@
 /* openbsd strchr */
-#include <string.h>
+//#include <string.h>
 
 /*__weak_alias(index, strchr);
 __attribute__((always_inline))
