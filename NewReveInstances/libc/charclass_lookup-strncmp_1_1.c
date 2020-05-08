@@ -3,7 +3,7 @@
 
 extern int __mark(int);
 
-int strncmp(const char *s1, const char *s2, size_t n) {
+static int strncmp(const char *s1, const char *s2, size_t n) {
 
     if (n == 0)
         return (0);

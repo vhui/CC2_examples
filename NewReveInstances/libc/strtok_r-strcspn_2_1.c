@@ -26,7 +26,7 @@ static char *strchr(register const char *t, int c) {
     return (char *)t;
 }
 
-size_t strcspn(const char *s, const char *reject) {
+static size_t strcspn(const char *s, const char *reject) {
     size_t count = 0;
 
     while (__mark(1) & (*s)) {

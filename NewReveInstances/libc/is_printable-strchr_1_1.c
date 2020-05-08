@@ -1,7 +1,7 @@
 /* glibc */
 #include <stddef.h>
 extern int __mark(int);
-char *strchr(const char *s, int c_in) {
+static char *strchr(const char *s, int c_in) {
     unsigned char c;
 
     c = (unsigned char)c_in;

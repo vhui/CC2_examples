@@ -11,7 +11,7 @@ extern int __libc_brk(void *end_data_segment);
 extern void *__curbrk;
 
 
-void *sbrk(ptrdiff_t increment) {
+static void *sbrk(ptrdiff_t increment) {
     void *oldbrk;
 
     /* If this is not part of the dynamic library or the library is used

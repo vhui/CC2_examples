@@ -1,6 +1,6 @@
 /* dietlibc */
 extern int __mark(int);
-char *strpbrk(const char *s1, const char *s2) {
+static char *strpbrk(const char *s1, const char *s2) {
     register unsigned int i;
     for (; __mark(0) & (*s1); s1++)
         for (i = 0; __mark(1) & s2[i]; i++)

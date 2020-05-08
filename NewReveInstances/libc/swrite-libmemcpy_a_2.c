@@ -14,7 +14,7 @@ struct str_data {
 
 extern int __mark(int);
 
-int libmemcpy(int *dest, int *src, int size) {
+static int libmemcpy(int *dest, int *src, int size) {
    int *start = src;
    while(__mark(42) & (src - start < size)) {
       *dest = *src;

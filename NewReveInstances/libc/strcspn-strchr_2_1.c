@@ -25,7 +25,7 @@ extern int __mark(int);
     return (char *)t;
 } */    //ORIGINAL!
 
-char *strchr(const char *s, int c_in) {
+static char *strchr(const char *s, int c_in) {
     unsigned char c;
 
     c = (unsigned char)c_in;

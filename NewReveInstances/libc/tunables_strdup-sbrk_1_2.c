@@ -9,7 +9,7 @@ extern int __libc_brk(void *end_data_segment);
 extern void *__curbrk;
 
 
-void *sbrk(ptrdiff_t increment) {
+static void *sbrk(ptrdiff_t increment) {
     void *oldbrk;
     if (__curbrk == 0)
         if (__libc_brk(0) < 0)

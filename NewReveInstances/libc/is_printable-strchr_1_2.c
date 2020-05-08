@@ -1,6 +1,6 @@
 /* dietlibc */
 extern int __mark(int);
-char *strchr(const char *s, int c_in) { //register const char *s
+static char *strchr(const char *s, int c_in) { //register const char *s
     register char ch;
 
     ch = c_in;

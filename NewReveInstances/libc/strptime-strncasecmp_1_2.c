@@ -656,7 +656,7 @@ const u_char charmap[] = {
 /*     return (0); */
 /* } */
 
-int strncasecmp(const char *s1, const char *s2, size_t len) {
+static int strncasecmp(const char *s1, const char *s2, size_t len) {
     register unsigned int x2 = 0;
     register unsigned int x1 = 0;
     register const char *end = s1 + len;

@@ -1,7 +1,7 @@
 /* openbsd */
 #include <stddef.h>
 extern int __mark(int);
-size_t strcspn(const char *s, const char *reject) {
+static size_t strcspn(const char *s, const char *reject) {
     const char *p, *spanp;
     char c, sc;
     for (p = s; *p & __mark(0);) {

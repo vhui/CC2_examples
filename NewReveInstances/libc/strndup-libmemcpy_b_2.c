@@ -1,6 +1,6 @@
 extern int __mark(int);
 
-void libmemcpy(int *dest, int *src, int size) {
+static void libmemcpy(int *dest, int *src, int size) {
    src--;
    dest--;
 

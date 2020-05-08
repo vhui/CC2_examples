@@ -3,7 +3,7 @@
 // dietlibc
 
 extern int __mark(int);
-void* libmemchr(const void *s, int c, size_t n) {
+static void* libmemchr(const void *s, int c, size_t n) {
   const unsigned char *pc = (unsigned char *) s;
   for (;n--;pc++) {
     if (*pc == c)

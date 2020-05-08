@@ -128,7 +128,7 @@ extern int _strcmp(const void* str1,const void* str2);
 
 /* openbsd */
 extern int __mark(int);
-char *
+static char *
 stpcpy(char *to, const char *from)
 {
 	for (; __mark(0) & ((*to = *from) != '\0'); ++from, ++to);

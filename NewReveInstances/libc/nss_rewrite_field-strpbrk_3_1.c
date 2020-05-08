@@ -1,7 +1,7 @@
 /* glibc */
 #include <stddef.h>
 extern int __mark(int);
-char *strpbrk(const char *s1, const char *s2) {
+static char *strpbrk(const char *s1, const char *s2) {
     while (__mark(0) & (*s1 != '\0')) {
         const char *a = s2;
         while (__mark(1) & (*a != '\0'))

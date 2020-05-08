@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 extern int __mark(int);
-int
+static int
 strncmp (const char *s1, const char *s2, size_t n)
 {
   unsigned char c1 = '\0';

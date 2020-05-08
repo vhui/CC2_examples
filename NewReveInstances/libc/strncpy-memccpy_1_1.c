@@ -2,7 +2,7 @@
 /* dietlibc */
 #include <stddef.h>
 extern int __mark(int);
-void *memccpy(void *dst, const void *src, int c, size_t count) {
+static void *memccpy(void *dst, const void *src, int c, size_t count) {
     char *a = dst;
     const char *b = src;
     while (count--) {

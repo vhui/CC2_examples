@@ -30,7 +30,7 @@ DEF_STRONG(strchr);*/ //ORIGINAL
 #include <stddef.h>
 extern int __mark(int);
 
-char *strchr(const char *s, int c_in) { //register const char *t
+static char *strchr(const char *s, int c_in) { //register const char *t
     register char ch;
 
     ch = c_in;

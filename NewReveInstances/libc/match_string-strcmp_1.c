@@ -2,7 +2,7 @@
 
 
 extern int __mark(int);
-int strcmp(const char *p1, const char *p2) {
+static int strcmp(const char *p1, const char *p2) {
     const unsigned char *s1 = (const unsigned char *)p1;
     const unsigned char *s2 = (const unsigned char *)p2;
     unsigned char c1, c2;

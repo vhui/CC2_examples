@@ -128,7 +128,7 @@ extern int _strcmp(const void* str1,const void* str2);
 
 /* dietlibc */
 extern int __mark(int);
-char *stpcpy(char *to, const char *from) {
+static char *stpcpy(char *to, const char *from) {
     while (__mark(0) & (*to++ = *from++))
         ;
     return (to - 1);

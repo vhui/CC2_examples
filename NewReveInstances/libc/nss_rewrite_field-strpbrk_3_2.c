@@ -1,7 +1,7 @@
 /* openbsd */
 #include <stddef.h>
 extern int __mark(int);
-char *strpbrk(const char *s1, const char *s2) {
+static char *strpbrk(const char *s1, const char *s2) {
     const char *scanp;
     int c, sc;
 

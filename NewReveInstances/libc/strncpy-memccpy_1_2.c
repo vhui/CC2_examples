@@ -1,7 +1,7 @@
 /* openbsd */
 #include <stddef.h>
 extern int __mark(int);
-void *memccpy(void *dst, const void *src, int c, size_t count) {
+static void *memccpy(void *dst, const void *src, int c, size_t count) {
     if (count) {
         unsigned char *tp = dst;
         const unsigned char *fp = src;

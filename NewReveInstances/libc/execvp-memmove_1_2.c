@@ -1,7 +1,7 @@
 /* dietlibc */
 #include <stddef.h>
 extern int __mark(int);
-void *memmove(void *dst0, const void *src0, size_t length) {
+static void *memmove(void *dst0, const void *src0, size_t length) {
     char *a = dst0;
     const char *b = src0;
     if (src0 != dst0) {

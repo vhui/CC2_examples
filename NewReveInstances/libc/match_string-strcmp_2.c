@@ -1,7 +1,7 @@
 //https://github.com/torvalds/linux/blob/master/lib/string.c#L722
 
 extern int __mark(int);
-int strcmp(const char *p1, const char *p2) {
+static int strcmp(const char *p1, const char *p2) {
     while (*p1 == *p2++) {
         if (*p1++ == 0)
             return (0);
